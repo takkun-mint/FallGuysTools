@@ -31,6 +31,7 @@ This tool is available in English and Japanese.
   ![Position.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/Position.png)
   
   <br>
+    
 ## Display of player information<br>
 
   You can see how many people were cleared or eliminated during the round.<br>
