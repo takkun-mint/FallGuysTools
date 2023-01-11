@@ -5,12 +5,17 @@
 
 This is an original Fall Guys tool. It takes time for overall development, etc., as it is developed by an amateur alone with a lot of study.<br>
 
-<br>
+<br><br>
+[Normal.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/Normal.png)
 
 ## Automatic retrieval of server IP address and Ping.<br>
   Ping the server in 5 second increments for display.<br>
   
-  <br>
+  <br><br>
+
+## display switching function <br>
+  You can replace the two display areas with whatever you like from the settings.<br>
+  [Settings.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/Settings.png)
   
 ## Display of time limit<br>
 
@@ -22,6 +27,7 @@ This is an original Fall Guys tool. It takes time for overall development, etc.,
 ## Display of real-time rankings<br>
 
   Displays rankings based on current score during score-based games. Squad mode is also supported.<br>
+  [Position.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/Position.png)
   
   <br>
 ## Display of player information<br>
