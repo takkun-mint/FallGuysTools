@@ -53,9 +53,9 @@ This tool is available in English and Japanese.
   
   <br>
 
-  ## Change Log <br>
-  ・1.0.00 <br>
-    - First Release
+  ## ChangeLog <br>
+  ○ 1.0.00 <br>
+    ・First Release
   
-    ・1.0.01 <br>
-    - "Lily Leapers Limbo" can now display the current elapsed time.
+  ○ 1.0.01 <br>
+    ・ "Lily Leapers Limbo" can now display the current elapsed time.
