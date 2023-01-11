@@ -1,4 +1,4 @@
-# Fall_Guys_Tools
+# FallGuysTools
 
 ## Download
 [FallGuysTools.zip](https://github.com/takkun-mint/FallGuysTools/raw/main/FallGuysTools.zip)
@@ -52,6 +52,7 @@ This tool is available in English and Japanese.
   <br><br>
   
   <br>
-  ## Chenge Log <br>
+
+  ## Change Log <br>
   ・1.0.00 <br>
     - First Release
