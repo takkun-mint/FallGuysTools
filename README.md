@@ -60,3 +60,6 @@ This tool is available in English and Japanese.
   
   ○ 1.0.01 <br>
     ・ "Lily Leapers Limbo" can now display the current elapsed time.
+
+  ○ 1.0.02 <br>
+    ・ Fixed an issue where the elapsed time display did not match the actual time if the goal was not reached when the round ended.
