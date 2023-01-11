@@ -4,6 +4,7 @@
 [FallGuysTools.zip](https://github.com/takkun-mint/FallGuysTools/raw/main/FallGuysTools.zip)
 
 This is an original Fall Guys tool. It takes time for overall development, etc., as it is developed by an amateur alone with a lot of study.<br>
+This tool is available in English and Japanese.
 
 <br><br>
 ![Normal.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/Normal.png)
@@ -50,7 +51,7 @@ This is an original Fall Guys tool. It takes time for overall development, etc.,
   
   <br><br>
   
-##  This tool is available in English and Japanese.
-  
   <br>
-  
+  ## Chenge Log <br>
+  ・1.0.00 <br>
+    - First Release
