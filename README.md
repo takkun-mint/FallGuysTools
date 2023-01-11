@@ -1,0 +1,50 @@
+# Fall_Guys_Tools
+
+## Download
+[FallGuysTools.zip](https://github.com/takkun-mint/FallGuysTools/raw/main/FallGuysTools.zip)
+
+This is an original Fall Guys tool. It takes time for overall development, etc., as it is developed by an amateur alone with a lot of study.<br>
+
+<br>
+
+## Automatic retrieval of server IP address and Ping.<br>
+  Ping the server in 5 second increments for display.<br>
+  
+  <br>
+  
+## Display of time limit<br>
+
+  Round time limit can be displayed. (Note that all times are manually entered and may differ from the actual time.)<br>
+  Overtime support<br>
+  
+  <br>
+  
+## Display of real-time rankings<br>
+
+  Displays rankings based on current score during score-based games. Squad mode is also supported.<br>
+  
+  <br>
+## Display of player information<br>
+
+  You can see how many people were cleared or eliminated during the round.<br>
+  
+  <br>
+  
+## View Log<br>
+
+  Logs can be displayed in real time.<br>
+  
+  <br>
+  
+## Display of player list <br>
+
+  ~~List player names, scores, and clear status.~~<br>
+  
+  Due to an update to Fall Guys, we are no longer able to retrieve player names, so the functionality has been suspended.
+  
+  <br><br>
+  
+##  This tool is available in English and Japanese.
+  
+  <br>
+  
