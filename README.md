@@ -63,3 +63,7 @@ This tool is available in English and Japanese.
 
   ○ 1.0.02 <br>
     ・ Fixed an issue where the elapsed time display did not match the actual time if the goal was not reached when the round ended.
+ 
+  ○ 1.0.10 <br>
+    ・ The elapsed time display can now be selected from the settings.
+    ・ When a new setting item is added, it is now marked next to the setting screen.
