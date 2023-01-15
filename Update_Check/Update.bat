@@ -11,7 +11,6 @@ move /y .\update\* .\
 move /y .\update\bin .\
 move /y .\update\en-US .\
 move /y .\update\ja-JP .\
-move /y .\update\bin\Select_Information_Box.png .\bin
 rmdir /s /q update
 del /q Update.zip
 del /q update.txt
