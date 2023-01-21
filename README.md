@@ -80,3 +80,6 @@ This tool is available in English and Japanese.
 
   ○ 1.0.21 <br>
     ・ Fixed a problem where the flag does not disappear after an update and continues to request an update.
+
+  ○ 1.0.22 <br>
+    ・ Scores of those who have cleared the score-getting game are now displayed correctly.
