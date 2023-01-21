@@ -77,3 +77,6 @@ This tool is available in English and Japanese.
     ・ Fixed a problem in which OverTime text was not displayed correctly during team competitions.
     ・ The time limit for Speed Slider X was changed from 1:40 to 2:45.
     ・ When the player list is displayed and the player himself is playing a round and the elapsed time is displayed in TextA, the decimal point of the elapsed time is not displayed correctly.
+
+  ○ 1.0.21 <br>
+    ・ Fixed a problem where the flag does not disappear after an update and continues to request an update.
