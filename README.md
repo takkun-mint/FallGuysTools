@@ -83,3 +83,6 @@ This tool is available in English and Japanese.
 
   ○ 1.0.22 <br>
     ・ Scores of those who have cleared the score-getting game are now displayed correctly.
+
+  ○ 1.0.23 <br>
+    ・ Only during rounds of scoring games are now sorted by score.
