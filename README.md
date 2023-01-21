@@ -67,3 +67,13 @@ This tool is available in English and Japanese.
   ○ 1.0.10 <br>
     ・ The elapsed time display can now be selected from the settings.
     ・ When a new setting item is added, it is now marked next to the setting screen.
+
+  ○ 1.0.11 <br>
+    ・ Change of conditions for forced updates performed when there are not enough files
+
+  ○ 1.0.20 <br>
+    ・ The player list has been revamped and restored to the way it is displayed.
+    ・ Optimized internal programs.
+    ・ Fixed a problem in which OverTime text was not displayed correctly during team competitions.
+    ・ The time limit for Speed Slider X was changed from 1:40 to 2:45.
+    ・ When the player list is displayed and the player himself is playing a round and the elapsed time is displayed in TextA, the decimal point of the elapsed time is not displayed correctly.
