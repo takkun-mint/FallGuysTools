@@ -86,3 +86,13 @@ This tool is available in English and Japanese.
 
   ○ 1.0.23 <br>
     ・ Only during rounds of scoring games are now sorted by score.
+  
+  ○ 1.0.30 <br>
+    ・ Fixed a problem in which PlayerName was not updated correctly if the player continued to watch the game after the stage in which he/she was eliminated.
+    ・ Almost all of the code now skips handling of exceptions when they occur, and we have fixed as many problems as possible where an exception would appear on the screen during play, making it difficult to play.
+    ・ Fixed a problem in which the number of disconnected players during the loading of a stage would sometimes be displayed lower than the original number of players.
+    ・ The sound effect of the 5-second count can now be disabled in the settings.
+    ・ Fixed a problem in which players who disconnected in the middle of a point-based game were sorted by their points at the time of disconnection.
+    ・ The default frequency of log readout when "Log Display" is not set for TextA and TextB has been changed from 10 ms to 200 ms.
+    ・ The log reading speed can now be set by the user in the settings. (If "Log Display" is selected for TextA and TextB, it will be 10 ms regardless of the setting.)
+    ・ There was a problem with PlayerList being displayed out of order, so sorting is now performed three times each.
