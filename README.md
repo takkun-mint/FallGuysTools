@@ -101,6 +101,7 @@ This tool is available in English and Japanese.
     ・ Fixed a problem in "Finals Marathon" where the time limit for BLAST BALL was incorrect. <br>
     ・ The decimal point of the elapsed time can now be displayed during a round of "PIXEL PAINTERS". <br>
     ・ Fixed a problem where (You) would appear in the PlayerList even though you had already dropped out. <br>
+    ・ Fixed a problem in which the elapsed time would be displayed incorrectly if the player continued to watch the game after the stage in which he/she was eliminated.<br>
     ・ Console names are now displayed in PlayerList. <br>
     ・ Instead of the PlayerID in PlayerList dynamically changing with each round, we switched to an ID that is used throughout the show and can be tracked across stages. <br>
     ・ Information on accessing the server is now displayed. <br>
