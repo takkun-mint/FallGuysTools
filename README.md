@@ -96,3 +96,12 @@ This tool is available in English and Japanese.
     ・ The default frequency of log readout when "Log Display" is not set for TextA and TextB has been changed from 10 ms to 200 ms. <br>
     ・ The log reading speed can now be set by the user in the settings. (If "Log Display" is selected for TextA and TextB, it will be 10 ms regardless of the setting.) <br>
     ・ There was a problem with PlayerList being displayed out of order, so sorting is now performed three times each. <br>
+
+  ○ 1.0.40 <br>
+    ・ Fixed a problem in "Finals Marathon" where the time limit for BLAST BALL was incorrect. <br>
+    ・ The decimal point of the elapsed time can now be displayed during a round of "PIXEL PAINTERS". <br>
+    ・ Fixed a problem where (You) would appear in the PlayerList even though you had already dropped out. <br>
+    ・ Console names are now displayed in PlayerList. <br>
+    ・ Instead of the PlayerID in PlayerList dynamically changing with each round, we switched to an ID that is used throughout the show and can be tracked across stages. <br>
+    ・ Information on accessing the server is now displayed. <br>
+    ・ Current status is now displayed when connecting to a server for custom matches. <br>
