@@ -7,6 +7,10 @@ echo Running update. Please Wait...
 
 timeout 2 > NUL
 
+rmdir /s /q bin
+rmdir /s /q en-US
+rmdir /s /q ja-JP
+
 move /y .\update\* .\
 move /y .\update\bin .\
 move /y .\update\en-US .\
