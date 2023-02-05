@@ -106,3 +106,14 @@ This tool is available in English and Japanese.
     ・ Instead of the PlayerID in PlayerList dynamically changing with each round, we switched to an ID that is used throughout the show and can be tracked across stages. <br>
     ・ Information on accessing the server is now displayed. <br>
     ・ Current status is now displayed when connecting to a server for custom matches. <br>
+
+  ○ 1.1.00 <br>
+    ・ Fixed a problem in which PlayerList and Current Time values were not displayed correctly when the number of seconds after the decimal point in the round start time was 0. <br>
+    ・ SquadList implementation! You'll get a score for each Squad unit! <br>
+    ・ Fixed an issue where the timer for loading rewards was not working. <br>
+    ・ When returning to the main menu when Text A is not "Fall Guys Log", the Fall Guys startup time and the number of lines in the log that have been read are now displayed. <br>
+    ・ Text A was changed to "Elapsed times" to show the elapsed time of the round when the player continues to watch the game after being eliminated. <br>
+    ・ Fixed a problem in which "(You)" was not displayed when opening PlayerList or SquadList in the main menu, even though the last loaded stage was being played. <br>
+    ・ Fixed a problem in which timer correction programs and other programs were incorrectly displaying one second more, which was not corrected properly. <br>
+    ・ Corrected some English text in Information on accessing the server and adjusted text margins. <br>
+    ・ PlayerList and SquadList settings have been changed so that the main window can be moved and the settings window can be operated, changed, and displayed even when displayed. <br>
