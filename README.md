@@ -124,4 +124,8 @@ This tool is available in English and Japanese.
     ・ Fixed a problem in SquadList where the "=" indicating a tie for last place only was not displayed correctly when there was a team tied for last place. <br>
     ・ Fixed a problem that PlayerList and SquadList were sometimes not updated until the tool was restarted. <br>
     ・ Fixed a problem in which "Elapsed times" was not localized correctly in the Japanese settings screen. <br>
+
+  ○ 1.1.02 <br>
+    ・ Changed specifications so that the TIME display is recalculated at the end of a round. <br>
+    ・ The ranks of players who have not been judged clear at the time of ROUND OVER were made equal in the Rank displayed in the PlayerList. <br>
     ・ Adjusted the display ratio of playing time and number of lines of logs read in the main menu. <br>
