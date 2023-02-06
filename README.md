@@ -117,3 +117,11 @@ This tool is available in English and Japanese.
     ・ Fixed a problem in which timer correction programs and other programs were incorrectly displaying one second more, which was not corrected properly. <br>
     ・ Corrected some English text in Information on accessing the server and adjusted text margins. <br>
     ・ PlayerList and SquadList settings have been changed so that the main window can be moved and the settings window can be operated, changed, and displayed even when displayed. <br>
+    ・Changed the font of PlayerList and TextA to make them easier to read. <br>
+
+  ○ 1.1.01 <br>
+    ・ Fixed a problem in SquadList where Rank was displayed as "=-" when Score and PlayerRemain were 0, so that the lowest rank is displayed. <br>
+    ・ Fixed a problem in SquadList where the "=" indicating a tie for last place only was not displayed correctly when there was a team tied for last place. <br>
+    ・ Fixed a problem that PlayerList and SquadList were sometimes not updated until the tool was restarted. <br>
+    ・ Fixed a problem in which "Elapsed times" was not localized correctly in the Japanese settings screen. <br>
+    ・ Adjusted the display ratio of playing time and number of lines of logs read in the main menu. <br>
