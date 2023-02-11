@@ -10,7 +10,7 @@ This tool is available in English and Japanese.<br>
 全体的な開発には時間がかかる可能性があります。<br>
 このツールは英語、日本語でご利用いただけます。<br>
 <br>
-![Normal.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/Normal.png)
+![2nd_Normal.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/2nd_Normal.png)
 ![Normal2.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/Normal2.png)
 <br><br>
 
@@ -23,7 +23,7 @@ This tool is available in English and Japanese.<br>
   <br><br>
 
 ## display switching function・表示切替機能 <br>
-  ![Settings.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/Settings.png)
+  ![2nd_Settings.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/2nd_Settings.png)
   <br>
   You can replace the two display areas with whatever you like from the settings.<br>
   <br>
@@ -40,7 +40,7 @@ This tool is available in English and Japanese.<br>
   <br>
   
 ## Display of real-time rankings・リアルタイムスコア表示 <br>
-  ![Position.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/Position.png)
+  ![2nd_Position.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/2nd_Position.png)
 
   Displays rankings based on current score during score-based games. Squad mode is also supported.<br>
   <br>
