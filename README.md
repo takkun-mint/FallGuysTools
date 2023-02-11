@@ -172,6 +172,13 @@ This tool is available in English and Japanese.<br>
     ・ SquadListにてラウンド開始する前にSquadのチーム数がわかるよう、Rankの部分にチーム数を表示しました。 <br>
     ・ SquadListのレース系ゲームの時、ラウンド終了した時点でスクワッドスコアが0ポイントの場合、PlayerRemainが1以上でもそのチームは強制脱落扱いとするよう仕様を変更しました。 <br>
 
+  ○ 1.1.51 <br>
+    ・ PlayerListのポイント取得ラウンドで、ラウンド開始前に切断したプレイヤーの順位がラウンド終了後に199位になってしまう問題を修正。 <br>
+    ・ PlayerListのポイント取得ラウンドで、ラウンド終了後スコア順に順位をうまく並び替えない問題の修正。 <br>
+    ・ PlayerListのポイント取得ラウンドで、切断したプレイヤーが切断時のスコアで一瞬ソートされたように見える問題の修正。 <br>
+    ・ PlayerListのバレーフォールで途中抜けで勝ち上がったプレイヤーの順位を1位に固定するように変更。 <br>
+
+
 <br><br><br>
 
   ## ChangeLog (English) <br>
@@ -264,3 +271,9 @@ This tool is available in English and Japanese.<br>
     ・ In PlayerList and SquadList, the "=" indicating a tie has been removed so that users can sort by themselves after the end of a round, and all values have been converted to int type to prevent errors from occurring. <br>
     ・ The number of teams is now displayed in the Rank section of the SquadList so that the number of Squad teams can be seen before the start of the round. <br>
     ・ In SquadList racing games, if the squad score is 0 points at the end of the round, the team is forced to drop out even if PlayerRemain is 1 or more. <br>
+
+  ○ 1.1.51 <br>
+    ・ Fixed a problem in PlayerList point acquisition rounds where a player who disconnected before the round started was ranked 199th after the round ended. <br>
+    ・ Fixed a problem in PlayerList that the points-earning rounds did not sort the rankings in order of score after the round was completed. <br>
+    ・ Fixed an issue in PlayerList's point acquisition rounds where disconnected players appear to be momentarily sorted by their score at the time of disconnection. <br>
+    ・ Changed PlayerList to fix the ranking of the player who won in the Valley Falls by exiting in the middle of the game to the first place. <br>
