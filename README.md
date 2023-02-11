@@ -2,16 +2,16 @@
 
 ## Download・ダウンロード
 [FallGuysTools.zip](https://github.com/takkun-mint/FallGuysTools/raw/main/FallGuysTools.zip)
-![Normal.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/Normal.png)
-![Normal2.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/Normal2.png)
-
+<br>
 This is an original Fall Guys tool. It takes time for overall development, etc., as it is developed by an amateur alone with a lot of study.<br>
 This tool is available in English and Japanese.<br>
 <br>
 オリジナルのFall Guys Toolです。知識の乏しい素人が勉強感覚で一人でサクッと開発しているため、<br>
 全体的な開発には時間がかかる可能性があります。<br>
 このツールは英語、日本語でご利用いただけます。<br>
-
+<br>
+![Normal.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/Normal.png)
+![Normal2.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/Normal2.png)
 <br><br>
 
 
@@ -24,6 +24,7 @@ This tool is available in English and Japanese.<br>
 
 ## display switching function・表示切替機能 <br>
   ![Settings.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/Settings.png)
+  <br>
   You can replace the two display areas with whatever you like from the settings.<br>
   <br>
   2つある表示領域にはユーザー自身で好きなものを配置できます。<br>
@@ -68,6 +69,7 @@ This tool is available in English and Japanese.<br>
 ## Display of player list・プレイヤーリストの表示 <br>
 ![PlayerList.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/PlayerList.png)
 ![SquadList.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/SquadList.png)
+<br>
   You can view the player's console name, ID, points, time, and other details. <br>
   When you are in Squad, you can see the points per Squad, the number of players left alive, and more! <br>
   <br>
