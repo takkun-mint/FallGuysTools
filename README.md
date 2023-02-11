@@ -158,18 +158,18 @@ This tool is available in English and Japanese.<br>
     ・ メインメニューでTextAに「ログ表示」を設定していない場合に表示されるプレイ時間とログの行数について、表示比率を調整しました。 <br>
 
   ○ 1.1.50 <br>
-    ・ BOTマークと初心者バリエーション時にアイコンを表示するようにしました。
-    ・ Fall Guysを起動していないと「Please Start Fall Guys」と表示されるようになりました。
-    ・ ツールを起動してあとにゲームを起動すると中途半端にログが読まれるため、10秒間読み込みを一時停止するようにしました。
-    ・ カスタムロビーに入るとプレイ時間などの情報が一瞬消えてしまう問題の修正しました。
-    ・ PlayerListで自分自身、同じパーティーメンバーがラウンドにいる場合、通常と異なる色分けにするようにしました。
-      （SquadListと違って自分自身を中心にリストの行は調整されません。）
-    ・ ゴールしたプレイヤーが切断など、クリアから脱落にステータスが切り替わった時、そのプレイヤー以降にゴールしたプレイヤーの順位を繰り上げるようにしました。
-    ・ バレーフォールなどはScoreでのソートではなく、順位でソートするようにしました。
-    ・ PlayerList,SquadListを表示するWindowの名前を切り替えるようにしました。
-    ・ PlayerList,SquadListでラウンド終了後、ユーザー自身でもソートできるように同率を表す＝の削除、各数値をすべてint型に変換し、エラーが発生しないよう対策しました。
-    ・ SquadListにてラウンド開始する前にSquadのチーム数がわかるよう、Rankの部分にチーム数を表示しました。
-    ・ SquadListのレース系ゲームの時、ラウンド終了した時点でスクワッドスコアが0ポイントの場合、PlayerRemainが1以上でもそのチームは強制脱落扱いとするよう仕様を変更しました。
+    ・ BOTマークと初心者バリエーション時にアイコンを表示するようにしました。 <br>
+    ・ Fall Guysを起動していないと「Please Start Fall Guys」と表示されるようになりました。 <br>
+    ・ ツールを起動してあとにゲームを起動すると中途半端にログが読まれるため、10秒間読み込みを一時停止するようにしました。 <br>
+    ・ カスタムロビーに入るとプレイ時間などの情報が一瞬消えてしまう問題の修正しました。 <br>
+    ・ PlayerListで自分自身、同じパーティーメンバーがラウンドにいる場合、通常と異なる色分けにするようにしました。 <br>
+      （SquadListと違って自分自身を中心にリストの行は調整されません。） <br>
+    ・ ゴールしたプレイヤーが切断など、クリアから脱落にステータスが切り替わった時、そのプレイヤー以降にゴールしたプレイヤーの順位を繰り上げるようにしました。 <br>
+    ・ バレーフォールなどはScoreでのソートではなく、順位でソートするようにしました。 <br>
+    ・ PlayerList,SquadListを表示するWindowの名前を切り替えるようにしました。 <br>
+    ・ PlayerList,SquadListでラウンド終了後、ユーザー自身でもソートできるように同率を表す＝の削除、各数値をすべてint型に変換し、エラーが発生しないよう対策しました。 <br>
+    ・ SquadListにてラウンド開始する前にSquadのチーム数がわかるよう、Rankの部分にチーム数を表示しました。 <br>
+    ・ SquadListのレース系ゲームの時、ラウンド終了した時点でスクワッドスコアが0ポイントの場合、PlayerRemainが1以上でもそのチームは強制脱落扱いとするよう仕様を変更しました。 <br>
 
 <br><br><br>
 
@@ -250,15 +250,15 @@ This tool is available in English and Japanese.<br>
     ・ Adjusted the display ratio of playing time and number of lines of logs read in the main menu. <br>
 
   ○ 1.1.50 <br>
-    ・ Icons are now displayed during BOT marking and novice variations.
-    ・ "Please Start Fall Guys" is now displayed if Fall Guys is not running.
-    ・ When a game is started after the tool is launched, the log is read halfway through the game, so the reading is paused for 10 seconds.
-    ・ Fixed a problem in which play time and other information would momentarily disappear when entering a custom lobby.
-    ・ PlayerList now uses a different color coding than usual if you, yourself, or a member of the same party is in the round.
-      (Unlike SquadList, the rows of the list are not adjusted around themselves.)
-    ・ When a player's status switches from clear to eliminated, for example, due to disconnection, the ranking of players who have finished after that player is moved up.
-    ・ Valley Falls, for example, is now sorted by rank rather than by Score.
-    ・ The name of the Window displaying PlayerList and SquadList is switched.
-    ・ In PlayerList and SquadList, the "=" indicating a tie has been removed so that users can sort by themselves after the end of a round, and all values have been converted to int type to prevent errors from occurring.
-    ・ The number of teams is now displayed in the Rank section of the SquadList so that the number of Squad teams can be seen before the start of the round.
-    ・ In SquadList racing games, if the squad score is 0 points at the end of the round, the team is forced to drop out even if PlayerRemain is 1 or more.
+    ・ Icons are now displayed during BOT marking and novice variations. <br>
+    ・ "Please Start Fall Guys" is now displayed if Fall Guys is not running. <br>
+    ・ When a game is started after the tool is launched, the log is read halfway through the game, so the reading is paused for 10 seconds. <br>
+    ・ Fixed a problem in which play time and other information would momentarily disappear when entering a custom lobby. <br>
+    ・ PlayerList now uses a different color coding than usual if you, yourself, or a member of the same party is in the round. <br>
+      (Unlike SquadList, the rows of the list are not adjusted around themselves.) <br>
+    ・ When a player's status switches from clear to eliminated, for example, due to disconnection, the ranking of players who have finished after that player is moved up. <br>
+    ・ Valley Falls, for example, is now sorted by rank rather than by Score. <br>
+    ・ The name of the Window displaying PlayerList and SquadList is switched. <br>
+    ・ In PlayerList and SquadList, the "=" indicating a tie has been removed so that users can sort by themselves after the end of a round, and all values have been converted to int type to prevent errors from occurring. <br>
+    ・ The number of teams is now displayed in the Rank section of the SquadList so that the number of Squad teams can be seen before the start of the round. <br>
+    ・ In SquadList racing games, if the squad score is 0 points at the end of the round, the team is forced to drop out even if PlayerRemain is 1 or more. <br>
