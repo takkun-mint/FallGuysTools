@@ -165,6 +165,7 @@ This tool is available in English and Japanese.<br>
     ・ PlayerListで自分自身、同じパーティーメンバーがラウンドにいる場合、通常と異なる色分けにするようにしました。 <br>
       （SquadListと違って自分自身を中心にリストの行は調整されません。） <br>
     ・ ゴールしたプレイヤーが切断など、クリアから脱落にステータスが切り替わった時、そのプレイヤー以降にゴールしたプレイヤーの順位を繰り上げるようにしました。 <br>
+    ・ PlayerListでスコア取得ラウンドのとき、リアルタイムでポイントをもとに順位が表示されるようにしました。<br>
     ・ バレーフォールなどはScoreでのソートではなく、順位でソートするようにしました。 <br>
     ・ PlayerList,SquadListを表示するWindowの名前を切り替えるようにしました。 <br>
     ・ PlayerList,SquadListでラウンド終了後、ユーザー自身でもソートできるように同率を表す＝の削除、各数値をすべてint型に変換し、エラーが発生しないよう対策しました。 <br>
@@ -257,6 +258,7 @@ This tool is available in English and Japanese.<br>
     ・ PlayerList now uses a different color coding than usual if you, yourself, or a member of the same party is in the round. <br>
       (Unlike SquadList, the rows of the list are not adjusted around themselves.) <br>
     ・ When a player's status switches from clear to eliminated, for example, due to disconnection, the ranking of players who have finished after that player is moved up. <br>
+    ・ PlayerList now displays rankings based on points in real time during scoring rounds. <br>
     ・ Valley Falls, for example, is now sorted by rank rather than by Score. <br>
     ・ The name of the Window displaying PlayerList and SquadList is switched. <br>
     ・ In PlayerList and SquadList, the "=" indicating a tie has been removed so that users can sort by themselves after the end of a round, and all values have been converted to int type to prevent errors from occurring. <br>
