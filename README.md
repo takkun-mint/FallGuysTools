@@ -178,6 +178,21 @@ This tool is available in English and Japanese.<br>
     ・ PlayerListのポイント取得ラウンドで、切断したプレイヤーが切断時のスコアで一瞬ソートされたように見える問題の修正。 <br>
     ・ PlayerListのバレーフォールで途中抜けで勝ち上がったプレイヤーの順位を1位に固定するように変更。 <br>
 
+  ○ 2.0.00 <br>
+    ・ 超絶大型アップデート！ 制限時間のタイマーが外部表示に対応し、見た目も頑張って似せました！w　ただし、フルHDの環境しかないのでフルHD以外では正しく動作しません！ <br>
+      フルHD以外のモニター画質で遊ばれてる方は設定画面から無効にするか、タイマーが表示されている時にタイマーを左クリック長押しで移動はできます。 <br>
+    ・ ツールを起動した状態でFall Guysを再起動すると、「Please Wait... Null」と表示される問題を修正しました。 <br>
+    ・ ラウンド中にUTC時刻が24時を超えた時、PlayerListのTIMEが-1380分（-23時間）と表示されるか、「-」と表示される問題を修正しました。 <br>
+    ・ せっかくVer1.1.02でラウンド終了時に再計算するように仕様を変えたのに、表示が変わらなかった問題を修正しました。 <br>
+    ・ ラウンド終了時にタイマーの音が再生されてしまう問題を修正しました。 <br>
+    ・ PlayerListにてポイント取得ラウンドの途中にRankでソートした時、エラーが発生してしまう問題を修正しました。 <br>
+    ・ SquadListにて全員のスコアが0のとき、PlayerRemainの値でソートするようにしました。 <br>
+    ・ SquadListのポイント取得ラウンドで、ゴールしたチームのPlayerRemainを0にするようにしました。 <br>
+    ・ サーバーから切断時にWindowの位置を保存するようにしました！　これにより次にツールを開いた時にその位置に移動します！ <br>
+    ・ ゴールや脱落した後にツールを起動すると、経過時間が表示されない問題を修正しました。<br>
+    ・ ラウンド開始直後に経過時間を再計算するようにしました。 <br>
+    
+
 
 <br><br><br>
 
@@ -277,3 +292,17 @@ This tool is available in English and Japanese.<br>
     ・ Fixed a problem in PlayerList that the points-earning rounds did not sort the rankings in order of score after the round was completed. <br>
     ・ Fixed an issue in PlayerList's point acquisition rounds where disconnected players appear to be momentarily sorted by their score at the time of disconnection. <br>
     ・ Changed PlayerList to fix the ranking of the player who won in the Valley Falls by exiting in the middle of the game to the first place. <br>
+
+  ○ 2.0.00 <br>
+    ・ Super big update!!! The time limit timer now supports external display, and we've done our best to make it look and feel like it! However, it won't work properly in anything but full HD, as we only have a full HD environment! <br>
+      If you are playing on a monitor quality other than Full HD, you can disable it from the settings screen, or you can move the timer by left-clicking and holding when the timer is displayed. <br>
+    ・ When restarting Fall Guys with the tool running, the "Please Wait.... Null" message. <br>
+    ・ Fixed a problem in which TIME in PlayerList would display -1380 minutes (-23 hours) or "-" when UTC time exceeded 24:00 during a round. <br>
+    ・ Fixed a problem in which the display did not change even though the specification was changed to recalculate at the end of a round in Ver. 1.1.02. <br>
+    ・ Fixed a problem with the timer sound playing at the end of a round. <br>
+    ・ Fixed an error in PlayerList when sorting by Rank in the middle of a round of point acquisition. <br>
+    ・ In SquadList, when everyone's score is 0, sorting is done by PlayerRemain value. <br>
+    ・ In the SquadList point acquisition round, the PlayerRemain of the team that scored the goal is now set to 0. <br>
+    ・ Window position is now saved when disconnecting from the server!　This way, the next time you open the tool, it will move to that position! <br>
+    ・ Fixed a problem in which elapsed time was not displayed when the tool was started after a goal or dropout.<br>
+    ・ Elapsed time is now recalculated immediately after the start of a round. <br>
