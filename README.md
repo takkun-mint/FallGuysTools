@@ -205,6 +205,10 @@ This tool is available in English and Japanese.<br>
     ・ 「スピードスライダーX」にて誤ったクリア上限が表示されていた問題の修正。 <br>
     ・ 配信者モードに切り替えてもうまく切り替わらなかった問題の修正。 <br>
     ・ タイマーの位置が時々おかしくなる問題の修正。 <br>
+
+  ○ 2.1.02 <br>
+    ・ 「Qualified」のスペルが間違っておりました（泣） <br>
+        とても恥ずかしい気分です(´・ω・｀)　該当箇所含めすべて訂正しました。情報提供ありがとうございました。 <br>
     
 
 
@@ -334,3 +338,7 @@ This tool is available in English and Japanese.<br>
     ・ Fixed a problem in which the "Speed Slider X" was displaying an incorrect upper limit for clearing. <br>
     ・ Fixed an issue where switching to streaming mode did not switch properly. <br>
     ・ Fixed a problem that sometimes caused the timer to be misaligned. <br>
+
+  ○ 2.1.02 <br>
+    ・ The word "Qualified" was misspelled lol <br>
+        I feel very embarrassed. I have corrected everything, including the relevant sections. Thank you for the information. <br>
