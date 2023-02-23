@@ -191,6 +191,15 @@ This tool is available in English and Japanese.<br>
     ・ サーバーから切断時にWindowの位置を保存するようにしました！　これにより次にツールを開いた時にその位置に移動します！ <br>
     ・ ゴールや脱落した後にツールを起動すると、経過時間が表示されない問題を修正しました。<br>
     ・ ラウンド開始直後に経過時間を再計算するようにしました。 <br>
+
+  ○ 2.1.00 <br>
+    ・ 大型アップデートで追加されたタイマーの全ディスプレイに（一応...）対応しました。 <br>
+    ・ 一部のクリアした人数や脱落した人数が表示されないラウンドにクリア数、脱落数を外部表示するようにしました。 <br>
+    ・ ラウンドスタート前にPingの値が外部表示されるようになりました。（一部ステージを除く） <br>
+    ・ SquadListにてサバイバルステージでスタート前に消滅したプレイヤーがいた場合、そのプレイヤーが所属するチームのスコアが異常な値になっていた問題を修正。 <br>
+    ・ SquadListにてポイント取得ラウンドでラウンドが終了したときに残っているチームのPlayerRemainが0になっていたのを修正。 <br>
+    ・ PlayerListにてポイント取得ラウンドでラウンドが終了したときに最下位の人の順位が正しくない問題を修正。 <br>
+    ・ 報酬読み込みのタイマーのカウント音がならない問題を修正。 <br>
     
 
 
@@ -306,3 +315,12 @@ This tool is available in English and Japanese.<br>
     ・ Window position is now saved when disconnecting from the server!　This way, the next time you open the tool, it will move to that position! <br>
     ・ Fixed a problem in which elapsed time was not displayed when the tool was started after a goal or dropout.<br>
     ・ Elapsed time is now recalculated immediately after the start of a round. <br>
+
+  ○ 2.1.00 <br>
+    ・ All displays of timers added in a major update (just in case...) The timer is now supported. <br>
+    ・ Added external display of the number of cleared and dropped rounds for rounds that do not display the number of people who cleared or dropped out of some of the rounds. <br>
+    ・ Ping values are now displayed externally before the round starts. (except for some stages) <br>
+    ・ Fixed an issue in SquadList where if a player disappeared before the start in the survival stage, the score of the team to which the player belonged would be abnormal. <br>
+    ・ Fixed a problem in SquadList where the PlayerRemain of the remaining team was set to 0 when the round ended in a point acquisition round. <br>
+    ・ Fixed a problem in PlayerList where the rank of the lowest ranked person was incorrect when the round ended in a round of point acquisition. <br>
+    ・ Fixed a problem with the timer not sounding a count for the reward loading timer. <br>
