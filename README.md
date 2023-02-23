@@ -200,6 +200,11 @@ This tool is available in English and Japanese.<br>
     ・ SquadListにてポイント取得ラウンドでラウンドが終了したときに残っているチームのPlayerRemainが0になっていたのを修正。 <br>
     ・ PlayerListにてポイント取得ラウンドでラウンドが終了したときに最下位の人の順位が正しくない問題を修正。 <br>
     ・ 報酬読み込みのタイマーのカウント音がならない問題を修正。 <br>
+
+  ○ 2.1.01 <br>
+    ・ 「スピードスライダーX」にて誤ったクリア上限が表示されていた問題の修正。 <br>
+    ・ 配信者モードに切り替えてもうまく切り替わらなかった問題の修正。 <br>
+    ・ タイマーの位置が時々おかしくなる問題の修正。 <br>
     
 
 
@@ -324,3 +329,8 @@ This tool is available in English and Japanese.<br>
     ・ Fixed a problem in SquadList where the PlayerRemain of the remaining team was set to 0 when the round ended in a point acquisition round. <br>
     ・ Fixed a problem in PlayerList where the rank of the lowest ranked person was incorrect when the round ended in a round of point acquisition. <br>
     ・ Fixed a problem with the timer not sounding a count for the reward loading timer. <br>
+
+  ○ 2.1.01 <br>
+    ・ Fixed a problem in which the "Speed Slider X" was displaying an incorrect upper limit for clearing. <br>
+    ・ Fixed an issue where switching to streaming mode did not switch properly. <br>
+    ・ Fixed a problem that sometimes caused the timer to be misaligned. <br>
