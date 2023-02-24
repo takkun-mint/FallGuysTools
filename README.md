@@ -209,6 +209,11 @@ This tool is available in English and Japanese.<br>
   ○ 2.1.02 <br>
     ・ 「Qualified」のスペルが間違っておりました（泣） <br>
         とても恥ずかしい気分です(´・ω・｀)　該当箇所含めすべて訂正しました。情報提供ありがとうございました。 <br>
+
+  ○ 2.1.03 <br>
+    ・ OverTime発生時などでタイマーが乱れて表示されてしまう問題の修正。 <br>
+    ・ 自身が脱落した以降のポイント取得ラウンドで、スコア順でソートされなかった問題の修正。 <br>
+    ・ カウント音の音ズレ軽減のため再生処理の変更。 <br>
     
 
 
@@ -342,3 +347,8 @@ This tool is available in English and Japanese.<br>
   ○ 2.1.02 <br>
     ・ The word "Qualified" was misspelled lol <br>
         I feel very embarrassed. I have corrected everything, including the relevant sections. Thank you for the information. <br>
+
+  ○ 2.1.03 <br>
+    ・ Fixed a problem that timers are displayed incorrectly when OverTime occurs, etc. <br>
+    ・ Fixed a problem in which the rounds were not sorted in order of score in the rounds in which points were obtained after the player himself was eliminated. <br>
+    ・ Modified the playback process to reduce the sound shift of the count sound. <br>
