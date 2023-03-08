@@ -215,6 +215,22 @@ This tool is available in English and Japanese.<br>
     ・ 自身が脱落した以降のポイント取得ラウンドで、スコア順でソートされなかった問題の修正。 <br>
     ・ カウント音の音ズレ軽減のため再生処理の変更。 <br>
     
+  ○ 2.1.50 <br>
+    ・ メインメニューにいるときにTextAをログ表示に切り替えてもすぐに反映されなかった問題の修正。 <br>
+    ・ Squadモードをプレイ中にPlayerListとSquadListを切り替えれるように仕様を変更しました。 <br>
+    ・ SquadListでサバイバルラウンドのとき、最後まで生き残ったプレイヤーは一律制限時間と同じ秒数をポイントにするように変更しました。 <br>
+    ・ 一部のVaultedステージのタイマー情報、OverTime情報、タイマー外部表示モードの追加を行いました。　※1 <br>
+    ・ PlayerListにてクラウンをつかんだプレイヤーのTIMEが表示されない問題を修正し、クラウンをつかんだ瞬間のTIMEを表示するようにしました。 <br>
+      （このためStatsなどの外部ツールのTIMEとは異なるTIMEを出力します。） <br>
+    ・ PlayerListにてタイムアタックのラウンド終了後、TIMEの表示が二転三転する問題を修正しました。 <br>
+    ・ ラウンド中に設定からTextA,TextBの表示切替がうまくいかない問題があるため、ラウンド中は設定を変更できないようにしました。 <br>
+    ・ OverTime発生時の外部タイマー表示をゲームの表示に合わせました。　ただし、視認性に問題があったため、黒の縁取りを追加しました。 <br>
+    ・ SquadListにて同じスコアのチームがいた場合、PlayerRemainが多いチームが優先的に上位に並ぶよう変更しました。（協力：ChatGPT） <br>
+    ・ 外部表示タイマーが意図せず画面の左側に表示されることがあったため、画面の4分の1にタイマーがあった場合位置を初期化するようにしました。 <br>
+    <br>
+    ※1 なお、Vaultedラウンドの機能調整については現在も調整中です。　今回は暫定的なアップデートとなります。 <br>
+    これから数日アップデートの頻度を上げ、随時対応していきます。現在このパッチノートに書いていない変更点もあります。 <br>
+    ただし、こちらも動作が不十分のためこちらもデバッグを重ねてまいります。今後ともFall Guys Toolsをよろしくお願いします。 <br>
 
 
 <br><br><br>
@@ -352,3 +368,20 @@ This tool is available in English and Japanese.<br>
     ・ Fixed a problem that timers are displayed incorrectly when OverTime occurs, etc. <br>
     ・ Fixed a problem in which the rounds were not sorted in order of score in the rounds in which points were obtained after the player himself was eliminated. <br>
     ・ Modified the playback process to reduce the sound shift of the count sound. <br>
+
+  ○ 2.1.50 <br>
+    ・ Fixed an issue where switching TextA to log view when in the main menu was not immediately reflected. <br>
+    ・ Changed specifications to allow switching between PlayerList and SquadList while playing Squad mode. <br>
+    ・ During survival rounds in SquadList, the player who survives to the end is now awarded a uniform number of seconds equal to the time limit. <br>
+    ・Added timer information, OverTime information, and timer external display mode for some Vaulted stages.　*1 <br>
+    ・ Fixed a problem in PlayerList where the TIME of the player who grabbed the crown was not displayed; the TIME at the moment the crown was grabbed is now displayed. <br>
+      (This is why it outputs a TIME different from the TIME of external tools such as Stats.) <br>
+    ・ Fixed a problem in PlayerList where the TIME display was affected by the timing of the display after the end of a time attack round. <br>
+    ・ There is a problem that switching the display of TextA and TextB from settings does not work during a round, so settings cannot be changed during a round. <br>
+    ・ The external timer display when OverTime occurs has been adjusted to match the game display.　However, a black border was added due to visibility issues. <br>
+    ・ In the SquadList, when teams have the same score, the team with the highest PlayerRemain is given priority to be ranked higher. (Cooperation: ChatGPT) <br>
+    ・ External display timers were sometimes unintentionally displayed on the left side of the screen, so the timers are now initialized if they are located to the left of a quarter of the screen. <br>
+    <br>
+    *1 Please note that adjustments to the functionality of the Vaulted round are still being made.　This is a tentative update. <br>
+    We will be updating more frequently over the next few days and will respond as needed. There are some changes that are not currently mentioned in these patch notes. <br>
+    However, we will continue to debug this one as well, as it too is not fully functional. Thank you for your continued support of Fall Guys Tools. <br>
