@@ -232,6 +232,26 @@ This tool is available in English and Japanese.<br>
     これから数日アップデートの頻度を上げ、随時対応していきます。現在このパッチノートに書いていない変更点もあります。 <br>
     ただし、こちらも動作が不十分のためこちらもデバッグを重ねてまいります。今後ともFall Guys Toolsをよろしくお願いします。 <br>
 
+  ○ 2.2.00 <br>
+    ・ Fall Guysがクラッシュなどで異常終了したとき、TextA・Bでステージ情報を選んでいた場合、表示を消すようにしました。 <br>
+    ・ TextA・Bでステージ情報を選んでいた場合、第一ラウンドが始まる直前で前回のラウンドの表示を消すようにしました。 <br>
+    ・ Fall Guysを起動した直後にツールの統計情報（プレイ時間、読み取ったログの行数表示）が表示されない問題の修正。 <br>
+    ・ 報酬確定されるまでにショーから離脱したり、カスタムマッチでゲームが終了後にツールのアップデート確認が行われない問題を修正しました。 <br>
+    ・ 一部ステージでLAPTIMEが正しく動作しない問題についての追加策を取りました。（まだ不完全です。） <br>
+    ・ ステージ情報について、アップデート確認のタイミングで自動的に取得するようにしました。 <br>
+      （一定期間ツールが固まりますが、正常な動作です。これにより、リアルタイムでステージ情報の修正・追加が行なえます。） <br>
+    ・ TextA・Bで「ステージ情報」を選んでいた場合、各種ローカライズされたステージ名が表示されるようになりました。 <br>
+    ・ Squadモードで一部ラウンドを除く全てでクリアボーダーが表示されるようになりました。 <br>
+    ・ SquadListにてスコアやクリアボーダーに合わせて色分けされるようになりました。 <br>
+    ・ PlayerListにてポイント取得ラウンドのとき、脱落圏内にいる場合に色分けされるようになりました。 <br>
+    ・ ポイント取得ラウンドで、脱落圏内にいる場合ビックリマークが表示されるようになりました。 <br>
+    ・ PlayerListやSquadListが時々勝手に更新される問題を修正しました。 <br>
+    ・ SquadListにて自分のチームが画面の中心にならない問題を修正しました。 <br>
+    ・ PlayerList、SquadListの大きさを変更できるようになりました。（再起動するともとに戻ります。） <br>
+    ・ ツールの統計情報にステージデータベースを確認した時間が表示されるようになりました。 <br>
+    ・ 外部表示タイマーの大きさを変更できるようになりました。ウィンドウモードなどでも使えるようになりました。 <br>
+    ・ 設定画面の項目を変更しました。タイマーの音量に関しては近日公開予定となります。 <br>
+
 
 <br><br><br>
 
@@ -385,3 +405,23 @@ This tool is available in English and Japanese.<br>
     *1 Please note that adjustments to the functionality of the Vaulted round are still being made.　This is a tentative update. <br>
     We will be updating more frequently over the next few days and will respond as needed. There are some changes that are not currently mentioned in these patch notes. <br>
     However, we will continue to debug this one as well, as it too is not fully functional. Thank you for your continued support of Fall Guys Tools. <br>
+
+  ○ 2.2.00 <br>
+    ・ When Fall Guys crashes or otherwise terminates abnormally, if stage information was selected in TextA or B, the display will now disappear. <br>
+    ・ If stage information was selected in TextA and B, the display of the previous round is now turned off just before the first round begins. <br>
+    ・ Fixed an issue where the tool's statistics (playing time, display of lines of logs read) were not displayed immediately after starting Fall Guys. <br>
+    ・ Fixed an issue where the tool would not confirm updates after leaving a show before the reward was confirmed or after the game ended in a custom match. <br>
+    ・ We have taken additional measures to address the issue of LAPTIME not working properly in some stages. (Still incomplete.) <br>
+    ・ Stage information is now automatically obtained at the time of update confirmation. <br>
+      (The tool will freeze for a period of time, but this is normal. This allows you to modify and add stage information in real time.) <br>
+    ・ If "Stage Information" was selected in TextA and B, various localized stage names are now displayed. <br>
+    ・ Clear borders are now displayed in all but a few rounds in Squad mode. <br>
+    ・ Color-coding in SquadList according to score and qualify borders. <br>
+    ・ PlayerList is now color-coded when a player is in the elimination zone during a point-getting round. <br>
+    ・ A surprise mark is now displayed when a player is in the elimination zone in a point-getting round. <br>
+    ・ Fixed a problem with PlayerList and SquadList sometimes updating on their own. <br>
+    ・ Fixed a problem in SquadList where my team was not centered on the screen. <br>
+    ・ PlayerList and SquadList can now be resized. (It will return to the original size after restarting.) <br>
+    ・ Tool statistics now show the time the stage database was checked. <br>
+    ・ The size of the external display timer can now be changed. It can now be used in windowed mode, etc. <br>
+    ・ The items on the settings screen have been changed. The timer volume will be available soon. <br>
