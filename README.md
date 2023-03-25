@@ -251,9 +251,20 @@ This tool is available in English and Japanese.<br>
     ・ ツールの統計情報にステージデータベースを確認した時間が表示されるようになりました。 <br>
     ・ 外部表示タイマーの大きさを変更できるようになりました。ウィンドウモードなどでも使えるようになりました。 <br>
     ・ 設定画面の項目を変更しました。タイマーの音量に関しては近日公開予定となります。 <br>
+    ・ 設定画面で外部表示タイマーの位置を調整する時、場所によって移動できない場所がある問題を修正しました。 <br>
 
   ○ 2.2.01 <br>
     ・ SquadListにて自分自身がゴールor落ちてしまった以降、自分のチームを中心に強制ソートをしないようにしました。 <br>
+
+  ○ 2.2.50 <br>
+    ・ タイマーの音量を調整できるようになりました。設定画面から調整できます。（一部機能は近日公開予定） <br>
+    ・ カスタムマッチのゲーム終了後、アップデート確認が二重で行われてしまう問題を修正。 <br>
+    ・ 特定の環境化で外部表示タイマーが表示されたままアップデート確認が行われる問題を修正しました。 <br>
+    ・ PlayerList,SquadListを切り替えた時、ウィンドウの位置が動いてしまう問題を修正しました。 <br>
+    ・ PlayerList,SquadListでパーティー情報を表示できるようになりました。設定画面から切り替えできます。 <br>
+    ・ PlayerListにてコンソールの名前を変更しました。 <br>
+    ・ ツール起動時にフリーズしてしまう問題を修正しました。 <br>
+    ・ PlayerList,SquadListにてユーザー自身でソート設定を触った時、次のラウンドの準備が始まるまでその設定を維持するようにしました。 <br>
 
 
 <br><br><br>
@@ -428,3 +439,14 @@ This tool is available in English and Japanese.<br>
     ・ Tool statistics now show the time the stage database was checked. <br>
     ・ The size of the external display timer can now be changed. It can now be used in windowed mode, etc. <br>
     ・ The items on the settings screen have been changed. The timer volume will be available soon. <br>
+    ・ When adjusting the position of the external display timer on the settings screen, a problem was corrected where it could not be moved in some locations. <br>
+
+  ○ 2.2.50 <br>
+    ・ The timer volume can now be adjusted. It can be adjusted from the settings screen. (Some functions will be available soon) <br>
+    ・ Fixed issue with double update confirmations after the end of a custom match game. <br>
+    ・ Fixed a problem in which the update confirmation was performed with the external display timer still visible in certain environmentalizations. <br>
+    ・ Fixed a problem that caused the window position to move when switching between PlayerList and SquadList. <br>
+    ・ PlayerList and SquadList can now display party information. You can switch between them from the settings screen. <br>
+    ・ Console renamed in PlayerList. <br>
+    ・ Fixed a freezing problem when starting the tools. <br>
+    ・ When a user sets his/her own sort settings in PlayerList or SquadList, the settings will be maintained until the next round is prepared. <br>
