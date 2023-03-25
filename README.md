@@ -266,6 +266,10 @@ This tool is available in English and Japanese.<br>
     ・ ツール起動時にフリーズしてしまう問題を修正しました。 <br>
     ・ PlayerList,SquadListにてユーザー自身でソート設定を触った時、次のラウンドの準備が始まるまでその設定を維持するようにしました。 <br>
 
+  ○ 2.2.51 <br>
+    ・ SquadListにて初期値がPlayerRemainからScoreの降順に変わらない問題を修正。 <br>
+    ・ Extreme ShowやExtreme Party時の「スライム・クライム」、「ホバーボード・ヒーローズ」が選ばれた時、TextA,TextBに「ステージ情報」を選んでいると、「X」がついてしまっていた問題を修正。 <br>
+
 
 <br><br><br>
 
@@ -450,3 +454,7 @@ This tool is available in English and Japanese.<br>
     ・ Console renamed in PlayerList. <br>
     ・ Fixed a freezing problem when starting the tools. <br>
     ・ When a user sets his/her own sort settings in PlayerList or SquadList, the settings will be maintained until the next round is prepared. <br>
+
+  ○ 2.2.51 <br>
+    ・ Fixed a problem in SquadList where the initial value does not change from PlayerRemain to Score in descending order. <br>
+    ・ Fixed a problem in which an "X" was attached to TextA and TextB when "Slime Climb" or "Hoverboard Heroes" was selected during an Extreme Show or Extreme Party and "Stage Information" was selected. <br>
