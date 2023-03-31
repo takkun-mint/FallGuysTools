@@ -270,6 +270,20 @@ This tool is available in English and Japanese.<br>
     ・ SquadListにて初期値がPlayerRemainからScoreの降順に変わらない問題を修正。 <br>
     ・ Extreme ShowやExtreme Party時の「スライム・クライム」、「ホバーボード・ヒーローズ」が選ばれた時、TextA,TextBに「ステージ情報」を選んでいると、「X」がついてしまっていた問題を修正。 <br>
 
+  ○ 2.2.52 <br>
+    ・ ツールが起動できなくなるバグが報告されたため、保存されたウィンドウの位置に移動するタイミングを変更。 <br>
+    ・ Extreme ShowやExtreme Party時の「スライム・クライム」、「ホバーボード・ヒーローズ」が選ばれた時、TextA,TextBに「ステージ情報」を選んでいると、「X」がついてしまっていた問題について追加の対応策を行いました。 <br>
+    ・ PlayerListにて、Xboxの名称が正しく置き換わらない問題を修正。 <br>
+    ・ OverTimeの発生直後や、OverTimeで15秒経過するたびにカウント音が再生される問題の修正。 <br>
+    ・ 5カウント音が時々誤って再生されてしまう問題を修正。 <br>
+    ・ 5カウント音を無効にしたのに、再生されてしまう問題を修正。 <br>
+    ・ PlayerListにて、召喚される前に消滅したプレイヤーの色分けが自分と同じパーティーになってしまっていた問題を修正。 <br>
+    ・ SquadListにて、Scoreが同じチームがいる時に残りプレイヤーが多いチームが優先的に上位に表示されるプログラムが正常に動作しなかった問題を修正。 <br>
+    ・ バージョンが変わるたびに配信ソフト等で認識してくれない問題があったため、バージョン情報を設定画面に移行しました。 <br>
+    ・ 今後、このツールを使った大会の開催に向けて、主催側が使える「大会集計モード」を追加しました。 <br>
+    ・ 非公式大会「Fall Guys研究所杯」のデータを追加しました。 <br>
+
+
 
 <br><br><br>
 
@@ -458,3 +472,16 @@ This tool is available in English and Japanese.<br>
   ○ 2.2.51 <br>
     ・ Fixed a problem in SquadList where the initial value does not change from PlayerRemain to Score in descending order. <br>
     ・ Fixed a problem in which an "X" was attached to TextA and TextB when "Slime Climb" or "Hoverboard Heroes" was selected during an Extreme Show or Extreme Party and "Stage Information" was selected. <br>
+
+  ○ 2.2.52 <br>
+    ・ Changed the timing of moving to the saved window position because a bug was reported that prevented the tool from starting. <br>
+    ・ Additional measures have been taken to address the issue of an "X" being added to TextA and TextB when "Slime Climb" or "Hoverboard Heroes" is selected during an Extreme Show or Extreme Party and "Stage Info" is selected. <br>
+    ・ Fixed a problem in PlayerList where the Xbox name was not replaced correctly. <br>
+    ・ Correction of a problem in which a counting sound is played immediately after the occurrence of OverTime or every time 15 seconds elapses in OverTime. <br>
+    ・ Fixed a problem in which the 5-count sound was sometimes played incorrectly. <br>
+    ・ Fixed a problem where the 5-count sound would play even though it was disabled. <br>
+    ・ Fixed a problem in PlayerList where players who disappeared before being summoned were color-coded to the same party as themselves. <br>
+    ・ Fixed a problem in SquadList where a program that prioritized teams with more PlayerRemain when there were teams with the same Score was not working properly. <br>
+    ・ Since there was a problem that the distribution software, etc. did not recognize each time the version changed, the version information has been moved to the settings screen. <br>
+    ・ We have added a "tournament tally mode" that organizers can use to organize future tournaments using this tool. <br>
+    ・ Data for the unofficial tournament "Fall Guys Institute Cup" was added. <br>
