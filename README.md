@@ -293,6 +293,30 @@ This tool is available in English and Japanese.<br>
     ・ マッチング中の「プレイヤー待機中」を削除し、「つながったサーバー」情報を表示するようにしました。 <br>
     ・ 「大会集計モード」を外部ファイル参照ができるようになりました。 <br>
 
+  ○ 2.5.00 <br>
+    ・ 高DPI環境でテキスト表示やボタン表示などが乱れる問題があったため、暫定的にDPIスケーリングを無効化しました。 <br>
+    ・ ゴールデンゴール形式のOverTimeの5カウント音は「ゲームに合わせる」に設定していても再生されるようにしました。（設定でOFFにしていれば再生されません。） <br>
+    ・ 接続されたサーバーの都市名、国名がデータベース(GeoLite2 City)に存在しない時、"(No Info)"と表示するようにしました。 <br>
+    ・ PlayerListにてポイント取得ラウンドで0点のプレイヤーが複数いて、かつそのうちの誰かが切断した場合に切断したプレイヤーが同率順位としてソートされてしまう問題を修正しました。 <br>
+    ・ ラウンド中にメインメニューに戻るなどして、ツールのアップデート確認が行われた時、外部表示タイマーが画面に残ってしまっていた問題について追加の対応策を行いました。 <br>
+    ・ ラウンド中や開始直前にFall Guysを終了した時、外部表示タイマーが表示されたままになる問題を修正しました。 <br>
+    ・ 一部プログラムファイルに余分なファイルが残ってしまう問題を修正し、自動的に削除されるようにしました。 <br>
+    ・ SquadListにて、バレーフォールのラウンド終了後に全チームが脱落したような色分けになってしまう問題の修正。 <br>
+    ・ 外部表示タイマーをさらに本家のものに近くなるよう調整しました。 <br>
+    ・ スコア取得ラウンドで現在の順位が外部表示されるようにしました。 <br>
+    ・ ロールオフで現在の周期が外部表示されるようになりました。 <br>
+    ・ 設定画面の機能追加数を見込み、大きさをディスプレイサイズに合わせて調整＆ユーザー側でも大きさを調整できるようにしました。（再起動するまで有効） <br>
+    ・ 操作の一部を外部スレッドに移し、処理を最適化しました。 <br>
+    ・ 「GeoLite2 City」データベースを2023年4月7日のものに置き換えました。 <br>
+    ・ ツールを起動した直後にLogを読み込む際、現在の進捗を表示するようにしました。 <br>
+    ・ ラウンド開始前の外部表示タイマーアニメーションが間に合わないと次のラウンド以降は演出をスキップするようにしました。 <br>
+    ・ ログの読み取り方法を一新し、長時間プレイしても全体的に処理が重くならないように調整しました。 <br>
+    ・ ログを読み取った時、何かしらの原因でログの行数がすでに読み込んだ行数に満たない時に行われる再読み込みが動かなかった問題を修正しました。 <br>
+    ・ 報酬読み込みのカウントダウン中に新しい設定項目を表す「！」マークを表示しないようにしました。 <br>
+    ・ ラウンド読み込み中に落ちたプレイヤー数もクリア割合の計算に含まれることで実際のクリア人数との差が生まれてしまう問題の修正しました。 <br>
+    ・ 外部表示タイマーの位置を変更したのにうまく保存できなかったり、保存した位置に移動しないなどの挙動不審状態になっていた問題を修正しました。 <br>
+    
+
 
 <br><br><br>
 
@@ -494,3 +518,36 @@ This tool is available in English and Japanese.<br>
     ・ Since there was a problem that the distribution software, etc. did not recognize each time the version changed, the version information has been moved to the settings screen. <br>
     ・ We have added a "tournament tally mode" that organizers can use to organize future tournaments using this tool. <br>
     ・ Data for the unofficial tournament "Fall Guys Institute Cup" was added. <br>
+
+  ○ 2.2.53 <br>
+    ・ Fixed a problem where players were treated as BOTs. <br>
+    ・ Counting sound setting "Adjust to the game" has been lifted. <br>
+    ・ Fixed a problem with [Your Position] being displayed in "Short Circuit" and "Speed Circuit". <br>
+    ・ "Checking Update..." was displayed even though the log was in the process of being read. was displayed even though the log was in the process of being read. <br>
+    ・ Utilizing the "GeoLite2 City" database, it is now possible to display the name of the country and city of the server to which you are connecting. <br>
+    ・ Ping acquisition timing can now be adjusted. <br>
+    ・ Removed "Waiting for Player" during matching and display "Connected Server" information. <br>
+    ・ The "Tournament Aggregation Mode" can now be referenced to an external file. <br>
+
+  ○ 2.5.00 <br>
+    ・ DPI scaling has been temporarily disabled due to problems with text and button display in high-DPI environments. <br>
+    ・ The 5-count sound of OverTime in Golden Goal format is now played even if the setting is set to "Adjust to game". (It will not be played if it is set to OFF in the settings.) <br>
+    ・ When the city or country name of the connected server does not exist in the database (GeoLite2 City), "(No Info)" is displayed. <br>
+    ・ Fixed a problem in PlayerList where if there were multiple players with 0 points in a point-earning round and one of them disconnected, the disconnected player would be sorted as the same rank. <br>
+    ・ Additional action has been taken to address the issue of the external display timer remaining on the screen when the tool update is confirmed, for example, by returning to the main menu during a round. <br>
+    ・ Fixed a problem where the external display timer would remain visible when exiting Fall Guys during a round or just before the start of a round. <br>
+    ・ Fixed a problem that left extra files in some program files, which are now automatically deleted. <br>
+    ・ Fixed an issue in SquadList where all teams were color-coded as if they had been eliminated after a round of Valley Fall. <br>
+    ・ The external display timer was adjusted to be even closer to the original one. <br>
+    ・ The current ranking is now displayed externally in the score acquisition round. <br>
+    ・ The current cycle is now displayed externally at Roll-off. <br>
+    ・ Expected number of functions to be added to the settings screen, size adjusted to fit the display size & user can adjust the size as well. (Effective until reboot) <br>
+    ・ Some operations were moved to an external thread to optimize processing.<br>
+    ・ Replaced the "GeoLite2 City" database with one dated April 7, 2023. <br>
+    ・ The current progress is now displayed when the Log is read immediately after the tool is started. <br>
+    ・ If the external display timer animation before the start of a round is not completed in time, the production will be skipped after the next round. <br>
+    ・ The log reading method has been redesigned and adjusted so that overall processing is not heavy even after long periods of play. <br>
+    ・ Fixed a problem in which reloading, which occurs when the number of lines in the log is less than the number of lines already read for some reason, did not work when the log is read. <br>
+    ・ "!" to indicate a new setting item during the reward loading countdown. mark indicating a new setting item is not displayed during the reward loading countdown. <br>
+    ・ Fixed a problem in which the number of players who dropped out during round loading was also included in the calculation of the clear percentage, resulting in a discrepancy between the actual number of players who cleared the round and the number of players who cleared the round. <br>
+    ・ Fixed a problem that caused the external display timer to behave erratically, such as not saving properly after changing the position of the external display timer or not moving to the saved position. <br>
