@@ -315,6 +315,15 @@ This tool is available in English and Japanese.<br>
     ・ 報酬読み込みのカウントダウン中に新しい設定項目を表す「！」マークを表示しないようにしました。 <br>
     ・ ラウンド読み込み中に落ちたプレイヤー数もクリア割合の計算に含まれることで実際のクリア人数との差が生まれてしまう問題の修正しました。 <br>
     ・ 外部表示タイマーの位置を変更したのにうまく保存できなかったり、保存した位置に移動しないなどの挙動不審状態になっていた問題を修正しました。 <br>
+
+  ○ 2.5.01 <br>
+    ・ 設定で外部表示タイマーをOFFにしても一瞬だけ表示されてしまう問題を修正しました。 <br>
+    ・ 外部表示タイマーのサイズを調整しても反映されなかった問題を修正しました。 <br>
+    ・ PlayerList,SquadListの切り替えがうまくいかない問題を修正しました。 <br>
+    ・ 設定画面を開いたのに、新しい設定項目を示す「！」マークが表示されてしまう問題を修正しました。 <br>
+    ・ ポイント取得ラウンドで、脱落したプレイヤーが一位になってしまう問題を修正しました。 <br>
+    ・ 報酬読み込みのカウント音が再生されない問題を修正しました。 <br>
+    ・ 設定で5カウント音を無効にすると、ロールオフの周回効果音も再生されないようにしました。 <br>
     
 
 
@@ -551,3 +560,12 @@ This tool is available in English and Japanese.<br>
     ・ "!" to indicate a new setting item during the reward loading countdown. mark indicating a new setting item is not displayed during the reward loading countdown. <br>
     ・ Fixed a problem in which the number of players who dropped out during round loading was also included in the calculation of the clear percentage, resulting in a discrepancy between the actual number of players who cleared the round and the number of players who cleared the round. <br>
     ・ Fixed a problem that caused the external display timer to behave erratically, such as not saving properly after changing the position of the external display timer or not moving to the saved position. <br>
+
+  ○ 2.5.01 <br>
+    ・ Fixed a problem in which the external display timer was displayed only momentarily even if it was turned off in the settings. <br>
+    ・ Fixed a problem in which adjusting the size of the external display timer was not reflected. <br>
+    ・ Fixed a problem that prevented switching between PlayerList and SquadList. <br>
+    ・ Fixed a problem in which the "!" mark indicating a new setting item would appear even though the settings screen was opened. mark indicating a new setting item, even though the settings screen was opened. <br>
+    ・ Fixed a problem in which a player who was eliminated from the competition would finish first in a point-getting round. <br>
+    ・ Fixed problem with reward loading count sound not playing. <br>
+    ・ If the 5-count sound is disabled in the settings, the Roll off circling sound effect is also not played. <br>
