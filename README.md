@@ -324,6 +324,12 @@ This tool is available in English and Japanese.<br>
     ・ ポイント取得ラウンドで、脱落したプレイヤーが一位になってしまう問題を修正しました。 <br>
     ・ 報酬読み込みのカウント音が再生されない問題を修正しました。 <br>
     ・ 設定で5カウント音を無効にすると、ロールオフの周回効果音も再生されないようにしました。 <br>
+
+  ○ 2.5.02 <br>
+    ・ 突然エラー画面が表示されてしまう問題を修正しました。 <br>
+    ・ ゲームを再起動しても再起動を促されてしまう問題を修正しました。 <br>
+    ・ 設定画面で5カウント音を「ゲームに合わせる」にしているとき、エクストリームショーで残り5秒のカウント音が再生されるようにしました。 <br>
+    ・ TextA,Bのフォントの大きさや種類の変更しました。 <br>
     
 
 
@@ -569,3 +575,9 @@ This tool is available in English and Japanese.<br>
     ・ Fixed a problem in which a player who was eliminated from the competition would finish first in a point-getting round. <br>
     ・ Fixed problem with reward loading count sound not playing. <br>
     ・ If the 5-count sound is disabled in the settings, the Roll off circling sound effect is also not played. <br>
+
+  ○ 2.5.02 <br>
+    ・ Fixed a problem where an error screen would suddenly appear. <br>
+    ・ Fixed an issue where restarting the game would prompt a restart. <br>
+    ・ When the 5-count sound is set to "Adjust to game" in the settings screen, the count sound for the remaining 5 seconds is now played in the Extreme Show. <br>
+    ・ Changed font size and type for TextA and B. <br>
