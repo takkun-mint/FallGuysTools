@@ -330,7 +330,19 @@ This tool is available in English and Japanese.<br>
     ・ ゲームを再起動しても再起動を促されてしまう問題を修正しました。 <br>
     ・ 設定画面で5カウント音を「ゲームに合わせる」にしているとき、エクストリームショーで残り5秒のカウント音が再生されるようにしました。 <br>
     ・ TextA,Bのフォントの大きさや種類の変更しました。 <br>
-    
+
+  ○ 2.5.03 <br>
+    ・ ツール起動時にTextA,TextBに設定したものと違う表示がされてしまうことがあったため、起動時は表示しないようにしました。 <br>
+    ・ 最後に保存したツールのウィンドウの位置が画面の領域外だったときに表示されなくなる問題を修正しました。 <br>
+    ・ 大会集計モードにおいて、重大なプログラムミスが発覚したため修正しました。 <br>
+    ・ Squadのラウンド開始前に切断されたプレイヤーを最高得点から引くプログラムの位置を修正しました。 <br>
+    ・ 5カウント音の設定を「ゲームに合わせる」にしていても、カウント音が一部のラウンドで再生されてしまう問題を修正しました。 <br>
+    ・ PlayerListにて、ポイント取得ラウンド時にラウンド開始前に切断されたプレイヤーがポイント別で色が変わってしまう問題を修正しました。 <br>
+    ・ SquadListにて、「バレーフォール」でラウンド終了前に全員切断したスクワッドがいるとき、順位が表示されてしまう問題を修正しました。 <br>
+    ・ SquadListにて、「バレーフォール」でラウンド終了までに勝利判定になったスクワッドについて色分けが行われなかった問題を修正しました。 <br>
+    ・ 大会集計モードにおいて、ラウンド開始前のアニメーションを表示しないようにしました。 <br>
+    ・ ツールが「大会集計モード」のとき、PlayerList(SquadList)を右クリックすると、Tournament ListをCSVにエクスポートできるようにしました。 <br>
+    ・ ツールが「大会集計モード」のとき、PlayerList(SquadList)をホイールクリックすると、CSVからPlayerNameをインポートできるようにしました。 <br>
 
 
 <br><br><br>
@@ -581,3 +593,16 @@ This tool is available in English and Japanese.<br>
     ・ Fixed an issue where restarting the game would prompt a restart. <br>
     ・ When the 5-count sound is set to "Adjust to game" in the settings screen, the count sound for the remaining 5 seconds is now played in the Extreme Show. <br>
     ・ Changed font size and type for TextA and B. <br>
+
+  ○ 2.5.03 <br>
+    ・ Because the display was sometimes different from what was set for TextA and TextB when the tool was started, the display was made not to be displayed when the tools was started. <br>
+    ・ Fixed a problem that prevented the last saved tool window from being displayed when its position was outside the screen area. <br>
+    ・ A serious programming error was discovered in the tournament mode and has been corrected. <br>
+    ・ Corrected the position of the program to subtract disconnected players from the highest score before the start of Squad's round. <br>
+    ・ 5Fixed a problem in which the counting sound would play in some rounds even when the count sound setting was set to "Adjust to game". <br>
+    ・ Fixed a problem in PlayerList where players who were disconnected before the start of a round during a point acquisition round would change color by point. <br>
+    ・ Fixed a problem in SquadList where rankings were displayed when all squads were disconnected before the end of the round in "Valley Fall". <br>
+    ・ Fixed an issue in SquadList where color coding was not performed for squads that were declared winners by the end of the round in "Valley Fall". <br>
+    ・ 大会集計モードにおいて、ラウンド開始前のアニメーションを表示しないようにしました。 <br>
+    ・ Tournament List can be exported to CSV by right-clicking on PlayerList(SquadList) when the tool is in "Tournament Mode". <br>
+    ・ PlayerName can now be imported from CSV by wheel-clicking on PlayerList(SquadList) when the tool is in "tournament Mode". <br>
