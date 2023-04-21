@@ -344,6 +344,10 @@ This tool is available in English and Japanese.<br>
     ・ ツールが「大会集計モード」のとき、PlayerList(SquadList)を右クリックすると、Tournament ListをCSVにエクスポートできるようにしました。 <br>
     ・ ツールが「大会集計モード」のとき、PlayerList(SquadList)をホイールクリックすると、CSVからPlayerNameをインポートできるようにしました。 <br>
 
+  ○ 2.5.04 <br>
+    ・ StageInfoがダウンロードするプログラムが誤って実行されないようになっていた問題を修正しました。 <br>
+    ・ 「パワートリップ」でOverTime限界点までのテキストが誤っていた問題を修正しました。 <br>
+
 
 <br><br><br>
 
@@ -606,3 +610,7 @@ This tool is available in English and Japanese.<br>
     ・ 大会集計モードにおいて、ラウンド開始前のアニメーションを表示しないようにしました。 <br>
     ・ Tournament List can be exported to CSV by right-clicking on PlayerList(SquadList) when the tool is in "Tournament Mode". <br>
     ・ PlayerName can now be imported from CSV by wheel-clicking on PlayerList(SquadList) when the tool is in "tournament Mode". <br>
+
+  ○ 2.5.04 <br>
+    ・ Fixed a problem that prevented StageInfo from erroneously executing the programs it downloads. <br>
+    ・ Fixed a problem with incorrect text up to the OverTime limit point in "Power Trip." <br>
