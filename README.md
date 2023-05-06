@@ -348,6 +348,19 @@ This tool is available in English and Japanese.<br>
     ・ StageInfoがダウンロードするプログラムが誤って実行されないようになっていた問題を修正しました。 <br>
     ・ 「パワートリップ」でOverTime限界点までのテキストが誤っていた問題を修正しました。 <br>
 
+  ○ 2.5.50 <br>
+    ・ スタート前に消滅したプレイヤーが脱落人数としてカウントされず、PlayerInfoの値がずれていた問題を修正しました。 <br>
+    （※問題は表示のみの問題です。実際には正しく脱落判定として処理されておりましたが値がずれていたため修正しました。） <br>
+    ・ ポイント取得ラウンドで開始前に消滅したプレイヤーが同率1位とカウントされてしまう問題について再修正を行いました。 <br>
+    ・ アップデートした直後にStageInfoのダウンロードが重複してしまうため、新しいバージョンがないことを確認してからStageInfoをダウンロードするようにしました。 <br>
+    ・ 起動時に行われるログの読み込み表示がされなかった問題を修正しました。 <br>
+    ・ 外部表示タイマーの位置を調整しました。 <br>
+    ・ ウィンドウが描画されない問題がまだあったため、保存したウィンドウの位置情報(X,Y座標)が0未満のとき、位置を初期化するようにしました。 <br>
+    ・ 外部表示設定をONにしている状態でスコア取得ラウンドのとき、脱落圏内を示す「！」マークが表示と被ってしまうことがある問題を修正しました。 <br>
+    ・ 「GeoLite2 City」データベースを2023年4月28日のものに置き換えました。 <br>
+    ・ 次期シーズン更新に備え、制限時間がデータベース上に登録されていないステージが来たとき、制限時間を表示しないようにしました。 <br>
+    ・ 「エクストリーム・ソロショー」で遊んでいるとき、残り生存しているプレイヤーがゴール可能人数を下回ったときにお知らせしてくれる機能を追加しました。 <br>
+
 
 <br><br><br>
 
@@ -614,3 +627,16 @@ This tool is available in English and Japanese.<br>
   ○ 2.5.04 <br>
     ・ Fixed a problem that prevented StageInfo from erroneously executing the programs it downloads. <br>
     ・ Fixed a problem with incorrect text up to the OverTime limit point in "Power Trip." <br>
+
+  ○ 2.5.50 <br>
+    ・ Fixed a problem in which players who disappeared before the start were not counted as the number of eliminated players and the PlayerInfo value was off. <br>
+    (*The problem is for display only, and was actually handled correctly as a dropout determination, but the value was off, so it has been corrected.) <br>
+    ・ Re-fixed an issue where players who disappeared before the start of a point acquisition round were counted as tied for first place. <br>
+    ・ Since StageInfo downloads are duplicated immediately after an update, we have made sure that there is no newer version before downloading StageInfo. <br>
+    ・ Fixed a problem that prevented the log from being read and displayed at startup. <br>
+    ・ Adjusted the position of the external display timer. <br>
+    ・ Because there was still a problem with windows not being drawn, the position is now initialized when the saved window position information (X,Y coordinates) is less than 0. <br>
+    ・ Fixed a problem in which the "!" mark indicating the dropout zone would be covered by the display during the score acquisition round when the external display setting was turned on. mark indicating the dropout zone was sometimes covered by the display when the external display setting was turned on and a round was being scored. <br>
+    ・　Replaced the "GeoLite2 City" database with one dated April 28, 2023. <br>
+    ・ In preparation for the next season update, the time limit is no longer displayed when a stage arrives whose time limit is not registered in the database. <br>
+    ・ When playing "Extreme Solo Show," a function has been added to notify the player when the number of remaining survivors drops below the number of possible finishers. <br>
