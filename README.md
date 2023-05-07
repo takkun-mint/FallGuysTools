@@ -1,6 +1,7 @@
 # FallGuysTools
 
 ## Download・ダウンロード
+![3rd_Normal.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/3rd_Normal.png)
 [FallGuysTools.zip](https://github.com/takkun-mint/FallGuysTools/raw/main/FallGuysTools.zip)
 <br>
 This is my own Fall Guys Tool. I am developing this tool by myself with a sense of study and with the function that an amateur with little knowledge personally wanted, <br>
@@ -11,7 +12,6 @@ This tool is available in English and Japanese.<br>
 アップデートなどには時間がかかる可能性があります。<br>
 このツールは英語、日本語でご利用いただけます。<br>
 <br>
-![3rd_Normal.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/3rd_Normal.png)
 <br><br>
 
 
