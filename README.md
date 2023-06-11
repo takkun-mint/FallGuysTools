@@ -110,6 +110,46 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ ~ 3.00.00 <br>
+    ・ Fall Guysのログファイルが指定されていない時に確認のダイヤルが無限ループしてしまう問題を修正しました。 <br>
+    ・ PlayerList,SquadListの大きさ、各列のサイズが保存できるようになりました。再起動しても元のサイズになります。 <br>
+    ・ ステージデータベースがファイルに存在しない時、強制的にアップデートを行うようにしました。 <br>
+    ・ Fall Guysを起動するタイミングでもアップデート確認が行われるようにしました。 <br>
+    ・ 「Fall Guys Creative」を起動すると自動的に最小化して、ログを読み取る以外の動作を停止し、軽量化するようにしました。 <br>
+    ・ 実在に沿わない地域が表示されることがあったため、「GeoLite2 City」データベースを廃止し、別のものに置き換えました。 <br>
+    ・ 「GeoLite2 City」データベース廃止に伴い、設定画面の権利表示を削除しました。 <br>
+    ・ 連続してアップデート確認が行われるとステージデータベースがうまくダウンロードされない問題があったため、一度確認を行うと10分間は確認しないようにしました。 <br>
+    ・ カスタムマッチのショー終了後にアップデート確認が行われない問題を修正しました。 <br>
+    ・ クリエイティブコースをプレイする時に「Fall Guys DB」のクリエイティブ情報にアクセスできるボタンを設置しました。 <br>
+    ・ 結果画面からの画面転移に4秒以上時間がかかった時、「画面転移のタイムアウトまで」のカウントダウンが表示されるようにしました。 <br>
+    ・ メインメニューのときに表示される「Fall Guys起動時間」が丸一日経過すると0に戻ってしまう問題を修正し、起動時間を「Fall Guys Client」プロセスの起動時間から取得するようにしました。 <br>
+    ・ 各種メッセージボックスのタイトルが設定されていない関係でプレースホルダーが表示されていた問題を修正しました。 <br>
+    ・ シーズン4（シーズン10）の新しいプレイヤー仕様に対応しました。 <br>
+    ・ シーズン4（シーズン10）の仕様変更に合わせ、BOTの検出仕様も変更しました。 <br>
+    ・ 「クラウンマウンテン」「ロストテンプル」でサーバー上でも完全にクラウンを掴んだタイミングが一致したとき、PlayerListでTIMEが表示されない問題を修正しました。 <br>
+    ・ プレイヤーが同時落ちしたのにも関わらず、PlayerListの順位が別々になっていた問題を修正しました。 <br>
+    ・ PlayerListのポイント取得ラウンドにて、ラウンド途中で脱落判定になったプレイヤーの順位はスコアのソートから外し、安定性を高めました。 <br>
+    ・ PlayerListのTIMEが10分を超えると、記録なしになる問題を修正しました。 <br>
+    ・ ラウンドが開始される時、PlayerListも最前面に表示し直すようにしました。 <br>
+    ・ PlayerListにて自分が脱落していて、かつパーティーメンバーがまだ生き残っている時、PlayerList上で色分けがラウンド開始寸前にならないと表示されない問題を修正しました。 <br>
+    ・ TextA,Bに設定できる「プレイヤー情報」について、決勝戦やチーム戦などの時にクリア割合が表示されないようにしました。 <br>
+    ・ スクワッドショーなどで個人のゴールリミットがあるとき、順位の下に外部表示されるようにしました。 <br>
+    ・ スクワッドショーでレースラウンドの時、ラウンド終了の理由を表示するようにしました。 <br>
+    ・ 設定画面を開くボタンなどが一瞬だけ表示されるなど表示が乱れてしまう問題を修正しました。 <br>
+    ・ APIを使って、クリエイティブコースのコース名や制限時間を取得するようにしました。 <br>
+    ・ Debug画面の表示方法を見直しました。 <br>
+    ・ ラウンド開始直前にラウンドが終了したとき、PlayerListのTIMEが異次元の値になっていた問題を修正しました。 <br>
+    ・ OverTimeの計算方法を変更しました。（表示条の変更はありません） <br>
+    ・ 一部コースに経過時間が外部表示されるようにしました。 <br>
+    ・ ラウンド中にFall Guysがクラッシュなどした時にBOTの表示が残ってしまう問題を修正しました。 <br>
+    ・ ロールオフなどの周回カウンターをプログラムに直接書き込む定数から、ステージデータベースから取得できる動的なものに変更しました。 <br>
+    ・ ステージデータベースからダウンロードしたファイルの読み込みに失敗し、うまく表示ができなかった問題を修正しました。 <br>
+    ・ 余分なファイルを削除するようにしました。 <br>
+    ・ PlayerList,SquadListをクリックした時、自動的に最前面に表示するようにしました。 <br>
+    ・ 外部表示関連の表示位置やサイズなどを細かい微調整を行いました。 <br>
+    ・ 外部表示タイマーの赤タイマーの見た目を一から作り直しました。 <br>
+    ・ プログラムの最適化や細かいバグ修正を行いました。 <br>
+
   ○ 2.5.51 <br>
     ・ 一部プログラムの構文ミスを修正しました。 <br>
     ・ ゲーム上でタイマーが出現したとき、外部表示されているタイマーを削除するようにしました。 <br>
@@ -397,6 +437,46 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ ~ 3.00.00 <br>
+    ・ Fixed a problem that caused the confirmation dial to loop endlessly when the Fall Guys log file was not specified. <br>
+    ・ The size of PlayerList and SquadList and the size of each column can now be saved. They will be the original size after restarting. <br>
+    ・ Force update when stage database does not exist on file. <br>
+    ・ Update confirmation is now also performed at the time of starting Fall Guys. <br>
+    ・ When "Fall Guys Creative" is launched, it automatically minimizes itself, stopping all other operations except reading logs and making it lighter. <br>
+    ・ The "GeoLite2 City" database was discontinued and replaced with a different one, as it sometimes displayed areas that did not conform to actual existence. <br>
+    ・ The rights display on the settings screen has been removed due to the discontinuation of the "GeoLite2 City" database. <br>
+    ・ Because there was a problem that the stage database was not downloaded properly when update confirmations were made continuously, once a confirmation is made, it will not be confirmed for 10 minutes. <br>
+    ・ Fixed issue with update confirmation not being performed after the end of a custom match show. <br>
+    ・ A button to access creative information on the "Fall Guys DB" when playing a creative course. <br>
+    ・ When screen transition from the results screen takes longer than 4 seconds, a "until screen transition timeout" countdown is now displayed. <br>
+    ・ Fixed a problem in which the "Fall Guys startup time" displayed at the main menu returned to 0 after a full day, and the startup time is now taken from the startup time of the "Fall Guys Client" process. <br>
+    ・ Fixed a problem in which placeholders were being displayed due to the title of various message boxes not being set. <br>
+    ・ New player specifications for Season 4 (Season 10) have been addressed. <br>
+    ・ The BOT detection specifications were also changed in accordance with the specification changes for Season 4 (Season 10). <br>
+    ・ Fixed a problem in which TIME was not displayed in PlayerList when the timing of grabbing the crown was perfectly matched, even on the server, in "Fall Mountain" and "Lost Temple." <br>
+    ・ Fixed a problem in which players had separate PlayerList rankings even though they fell at the same time. <br>
+    ・ In the PlayerList rounds for obtaining points, the rankings of players who were eliminated in the middle of a round were removed from the sorting of scores to improve stability. <br>
+    ・ Fixed a problem that caused no recording if the TIME in PlayerList exceeded 10 minutes. <br>
+    ・ When a round is started, the "PlayerList" and "SquadList" is also redisplayed at the forefront. <br>
+    ・ Fixed a problem in the PlayerList where if you were eliminated and your party members were still alive, the color coding on the PlayerList would not appear until just before the start of the round. <br>
+    ・ Regarding "Player Information" that can be set for TextA and B, the clear percentage is no longer displayed during finals, team competitions, etc. <br>
+    ・ When there is an individual goal limit in a squad show, etc., it is now displayed externally below the rankings. <br>
+    ・ When a race round is in the squad show, the reason for the end of the round is now displayed. <br>
+    ・ Fixed a problem in which the display would be disrupted, for example, the button to open the settings screen would appear only for a moment. <br>
+    ・ API to retrieve course names and time limits for creative Rounds. <br>
+    ・ Revised the way the Debug screen is displayed. <br>
+    ・ Fixed a problem in which TIME in PlayerList was set to a different dimensional value when the round ended just before the start of the round. <br>
+    ・ The calculation method of OverTime has been changed. (No change to the display article.) <br>
+    ・ Elapsed time is now externally displayed on some courses. <br>
+    ・ Fixed a problem that left BOTs showing up when Fall Guys crashed or other problems occurred during a round. <br>
+    ・ The roll-off and other lap counters have been changed from constants that are written directly to the program to dynamic ones that can be obtained from the stage database. <br>
+    ・ Fixed a problem in which files downloaded from the stage database failed to load and could not be displayed properly. <br>
+    ・ extra files to be deleted. <br>
+    ・ "PlayerList" and "SquadList" are now automatically brought to the forefront when clicked. <br>
+    ・ Minor tweaks were made to the display position and size of external display-related items. <br>
+    ・ The appearance of the red timer on the external display timer was rebuilt from scratch. <br>
+    ・ Program optimization and minor bug fixes. <br>
 
   ○ 2.5.51 <br>
     ・ Some syntax errors in the program have been corrected. <br>
