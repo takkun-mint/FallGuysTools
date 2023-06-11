@@ -110,6 +110,9 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 3.00.01 <br>
+    ・ テスト中に使用していた仮の値が残ってしまったことにより、外部表示タイマーの設定やカウント音の設定を「ゲームに合わせる」を選んでいても強制的に再生されてしまう問題を修正しました。 <br>
+
   ○ ~ 3.00.00 <br>
     ・ Fall Guysのログファイルが指定されていない時に確認のダイヤルが無限ループしてしまう問題を修正しました。 <br>
     ・ PlayerList,SquadListの大きさ、各列のサイズが保存できるようになりました。再起動しても元のサイズになります。 <br>
@@ -437,6 +440,9 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 3.00.01 <br>
+    ・ Fixed a problem in which the external display timer setting and count sound setting would be forced to play even if "Adjust to game" was selected, due to the fact that the temporary values used during testing remained in place. <br>
 
   ○ ~ 3.00.00 <br>
     ・ Fixed a problem that caused the confirmation dial to loop endlessly when the Fall Guys log file was not specified. <br>
