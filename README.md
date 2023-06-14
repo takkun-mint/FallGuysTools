@@ -110,6 +110,17 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 3.01.00 <br>
+    ・ 外部表示タイマーのサイズを再調整しました。 <br>
+    ・ 接続サーバーの表示方法を「国＆都市」にしているとき、その時の国名を2文字の「国コード」を使用するようにし、表示方法を変更しました。 <br>
+    ・ APIを使ってクリエイティブコースのデータ取得に失敗した時、制限時間を表示しないようにしました。 <br>
+    ・ 経過時間が表示されている時も、ラウンド情報やプレイヤー情報が表示されるようにしました。（Text Bにラウンド情報を設定していない場合に限る） <br>
+    ・ サバイバルステージで「サイ」がいた時、その体数が表示されるようにしました。 <br>
+    ・ PlayerList,SquadListにて「RowHeaders」列の大きさも保存できるようになりました。 <br>
+    ・ Debug画面にて、ショー区切りのアンダーラインが連続して表示されてしまう問題を修正しました。 <br>
+    ・ TextAの「プレイヤー情報」に関するフォントサイズを調整しました。 <br>
+    ・ ファイナルラウンドの時、TextA,Bに「ステージ情報」を表示していると若干色が変わるようにしました。 <br>
+
   ○ 3.00.01 <br>
     ・ テスト中に使用していた仮の値が残ってしまったことにより、外部表示タイマーの設定やカウント音の設定を「ゲームに合わせる」を選んでいても強制的に再生されてしまう問題を修正しました。 <br>
 
@@ -440,6 +451,17 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 3.01.00 <br>
+    ・ External display timers have been resized. <br>
+    ・ When the connection server display method is set to "Country & City", the country name at that time is changed to use a 2-letter "country code" and the display method is changed to use a 2-letter "country code". <br>
+    ・ When the API fails to retrieve data for a creative course, the time limit is no longer displayed. <br>
+    ・ Round and player information is now displayed even when elapsed time is displayed. (Only when round info is not set in Text B) <br>
+    ・ When "rhinos" are present in the survival stage, the number of bodies is now displayed. <br>
+    ・ The size of the "RowHeaders" column can now also be saved in PlayerList and SquadList. <br>
+    ・ Fixed a problem in which underlines for show delimiters were continuously displayed on the Debug screen. <br>
+    ・ Adjusted font size regarding "player information" in TextA. <br>
+    ・ During the final round, "stage information" on TextA and B now changes color slightly. <br>
 
   ○ 3.00.01 <br>
     ・ Fixed a problem in which the external display timer setting and count sound setting would be forced to play even if "Adjust to game" was selected, due to the fact that the temporary values used during testing remained in place. <br>
