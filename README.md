@@ -110,6 +110,11 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 3.01.50 <br>
+    ・ ステージデータベースのダウンロードインターバル（10分）をツールを再起動しても維持されるようにしました。 <br>
+    ・ ステージデータベースダウンロードする時に、ツールの操作が効かなかった仕様を変更し、ダウンロード中でも動作ができるよう変更しました。 <br>
+    ・ プログラムの最適化を行いました。 <br>
+
   ○ 3.01.00 <br>
     ・ 外部表示タイマーのサイズを再調整しました。 <br>
     ・ 接続サーバーの表示方法を「国＆都市」にしているとき、その時の国名を2文字の「国コード」を使用するようにし、表示方法を変更しました。 <br>
@@ -451,6 +456,11 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 3.01.50 <br>
+    ・ The stage database download interval (10 minutes) is now maintained even if the tool is restarted. <br>
+    ・ The specification that the tool operation did not work when downloading the stage database has been changed so that the operation can be performed even while the download is in progress. <br>
+    ・ Optimization of the program. <br>
 
   ○ 3.01.00 <br>
     ・ External display timers have been resized. <br>
