@@ -110,6 +110,12 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 3.01.60 <br>
+    ・ アップデートの確認時にツールが一瞬グレーアウトする問題を修正しました。 <br>
+    ・ 外部表示タイマーの赤タイマーの太さを調整しました。 <br>
+    ・ 「Fall_Guys_Client.exe」のゲーム画面が突然消失した時、ビクトリー画面になった時にゲームを強制終了することができるオプションを追加しました。 <br>
+    ・ 経過時間とステージ情報がTextAに表示されている時のステージ名の長さを調整しました。 <br>
+
   ○ 3.01.50 <br>
     ・ ステージデータベースのダウンロードインターバル（10分）をツールを再起動しても維持されるようにしました。 <br>
     ・ ステージデータベースダウンロードする時に、ツールの操作が効かなかった仕様を変更し、ダウンロード中でも動作ができるよう変更しました。 <br>
@@ -456,6 +462,12 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 3.01.60 <br>
+    ・ Fixed a problem where the tool was momentarily grayed out when confirming an update. <br>
+    ・ Adjusted the thickness of the red timer on the external display timer. <br>
+    ・ Added an option to force the game to quit when the game screen of "Fall_Guys_Client.exe" suddenly disappears and the Victory screen is reached. <br>
+    ・ Adjusted the length of stage names when elapsed time and stage information is displayed in TextA. <br>
 
   ○ 3.01.50 <br>
     ・ The stage database download interval (10 minutes) is now maintained even if the tool is restarted. <br>
