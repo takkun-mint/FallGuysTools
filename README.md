@@ -110,6 +110,13 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 3.01.70 <br>
+    ・ 接続サーバーの表示方法を「国＆都市」にしているとき、その時の国名をAlpha-3（3文字）のものに変更しました。 <br>
+    ・ 外部表示タイマーの赤タイマーの太さを調整しました。 <br>
+    ・ カスタムマッチサーバー接続中にも強制終了ボタンが表示されるようにしました。 <br>
+    ・ Squadモードのときに「パーティー情報を表示」していると、SquadIDも一緒に表示されるようにしました。 <br>
+    ・ プログラムの最適化を行いました。 <br>
+
   ○ 3.01.60 <br>
     ・ アップデートの確認時にツールが一瞬グレーアウトする問題を修正しました。 <br>
     ・ 外部表示タイマーの赤タイマーの太さを調整しました。 <br>
@@ -462,6 +469,13 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 3.01.70 <br>
+    ・ When the connection server display method is set to "Country & City", the country name at that time has been changed to Alpha-3 (3 characters). <br>
+    ・ Adjusted the thickness of the red timer on the external display timer. <br>
+    ・ The force close button is now also displayed during a custom match server connection. <br>
+    ・ When in Squad mode, when "Show Party Info" is selected, SquadID is also displayed together. <br>
+    ・ Program optimizations were made. <br>
 
   ○ 3.01.60 <br>
     ・ Fixed a problem where the tool was momentarily grayed out when confirming an update. <br>
