@@ -110,11 +110,18 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 3.01.75 <br>
+    ・ 一部地域（United Statesなど）のAlpha-3（国名コード）が誤ったものが表示される問題を修正しました。 <br>
+    ・ サーバー接続時にツールが止まる時間を短くしました。 <br>
+    ・ クリエイティブのコース名に半角の「&」が入っていると「\」と出てしまう問題を修正しました。 <br>
+    ・ APIでコース名が取れるため、クリエイティブコースはカスタムで選んだものはすべてAPIを使ってコース名を取得するようにしました。 <br>
+
   ○ 3.01.70 <br>
     ・ 接続サーバーの表示方法を「国＆都市」にしているとき、その時の国名をAlpha-3（3文字）のものに変更しました。 <br>
     ・ 外部表示タイマーの赤タイマーの太さを調整しました。 <br>
     ・ カスタムマッチサーバー接続中にも強制終了ボタンが表示されるようにしました。 <br>
     ・ Squadモードのときに「パーティー情報を表示」していると、SquadIDも一緒に表示されるようにしました。 <br>
+    ・ Google Drive APIを再新バージョンに更新しました。 <br>
     ・ プログラムの最適化を行いました。 <br>
 
   ○ 3.01.60 <br>
@@ -470,11 +477,18 @@ This tool is available in English and Japanese.<br>
 
   ## ChangeLog (English) <br>
 
+  ○ 3.01.75 <br>
+    ・ Fixed a problem in which incorrect Alpha-3 (country code) was displayed for some regions (e.g., United States). <br>
+    ・ The time that the tool stops when connecting to the server has been shortened. <br>
+    ・ Fixed a problem in which "\" would appear in the Creative course name if it contained a one-byte "&" character. <br>
+    ・ Since the API can get the course name, we used the API to get the course name for all creative courses that are custom selected. <br>
+
   ○ 3.01.70 <br>
     ・ When the connection server display method is set to "Country & City", the country name at that time has been changed to Alpha-3 (3 characters). <br>
     ・ Adjusted the thickness of the red timer on the external display timer. <br>
     ・ The force close button is now also displayed during a custom match server connection. <br>
     ・ When in Squad mode, when "Show Party Info" is selected, SquadID is also displayed together. <br>
+    ・ Google Drive API has been updated to a re-new version. <br>
     ・ Program optimizations were made. <br>
 
   ○ 3.01.60 <br>
