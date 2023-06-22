@@ -37,11 +37,11 @@ This tool is available in English and Japanese.<br>
 <br>
   Ping is sent to the game server at any desired interval determined by the user, and the ping value is displayed.<br>
   <br>
-  You can display the country and region of the game server based on the "GeoLite2 City" database. <br>
+  You can display the country and region of the game server. <br>
   <br>
   ユーザーが決めた好きな間隔でゲームサーバーにPingを送信し、Ping値を表示します。 <br>
 <br>
-  「GeoLite2 City」データベースをもとにゲームサーバーの国、地域を表示できます。 <br>
+  ゲームサーバーの国、地域を表示できます。 <br>
   
   <br><br>
 
@@ -109,6 +109,15 @@ This tool is available in English and Japanese.<br>
   <br>
 
   ## 更新ログ (日本語・The English version is below) <br>
+
+  ○ 3.02.00 <br>
+    ・ APIを使ってクリエイティブラウンドを遊ぶときに内部エラーが発生すると制限時間の表示を取りやめるようにしました。 <br>
+    ・ ツール上でクリア人数が表示されている時（クリア可能割合が設定されている時）、ボーダーよりもプレイヤーが脱落したら自動的にクリア可能人数が残り人数になるようにしました。 <br>
+    ・ ポイント取得ラウンドで観戦になったとき、ボーダーになっているプレイヤーが今何ポイント持っているか表示されるようにしました。 <br>
+    ・ クリエイティブコースの名前を一律で大文字設定にならなかった問題を修正しました。 <br>
+    ・ ロールオフなどに表示される「ラウンドカウンター」の仕様を変更し、途中から表示できるようにしました。 <br>
+    ・ スクワッドリストにて全チームのポイントが0のときに残り人数順にされる仕様を撤廃しました。（同率ポイントだと残り人数でソートする仕様があるため） <br>
+    ・ 外部表示のクリア人数表示、脱落人数表示のフォント設定を変更し多少見やすくしました。 <br>
 
   ○ 3.01.75 <br>
     ・ 一部地域（United Statesなど）のAlpha-3（国名コード）が誤ったものが表示される問題を修正しました。 <br>
@@ -476,6 +485,15 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 3.02.00 <br>
+    ・ When using the API to play creative rounds, the display of time limits will be canceled if an internal error occurs. <br>
+    ・ When the number of cleared people is displayed on the tool (when the clearable percentage is set), if more players drop out than the border, the clearable number is automatically set to the number of remaining players. <br>
+    ・ When a player becomes a spectator in a point acquisition round, it now shows how many points the player on the border has now. <br>
+    ・ Fixed an issue where the names of creative courses were not uniformly set to capital letters. <br>
+    ・ The specifications of the "round counter" displayed at roll-off, etc., have been changed so that it can be displayed from the middle of the round. <br>
+    ・ The specification to sort by the number of players remaining in the squad list when all teams have 0 points has been eliminated. (This is because there is a specification to sort by the number of people remaining when the points are the same.) <br>
+    ・ The font settings for the number of people cleared and the number of people dropped out in the external display have been changed to make them somewhat easier to read. <br>
 
   ○ 3.01.75 <br>
     ・ Fixed a problem in which incorrect Alpha-3 (country code) was displayed for some regions (e.g., United States). <br>
