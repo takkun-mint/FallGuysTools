@@ -56,7 +56,7 @@ This tool is available in English and Japanese.<br>
 ![3rd_Normal2.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/3rd_Normal2.png)
 <br>
   Round time limit can be displayed. (Note that all times are manually entered and may differ from the actual time.)<br>
-  Stage information can be regularly updated by DLing stage information from the developer's Google spreadsheet as needed. <br>
+  Stage information can be regularly updated by DownLoading stage information from the developer's Google spreadsheet as needed. <br>
   Overtime support. <br>
   <br>
   ラウンドの制限時間を表示します。（ただし全て手入力のため実際と異なることがあります。）<br>
@@ -109,6 +109,11 @@ This tool is available in English and Japanese.<br>
   <br>
 
   ## 更新ログ (日本語・The English version is below) <br>
+
+  ○ 3.02.01 <br>
+    ・ 「FallGuys_Client.exe」のゲーム画面が突然消失した時に「強制終了する」ボタンが表示されなかった問題を修正しました。 <br>
+    ・ ポイント取得ラウンドで観戦時にボーダーのプレイヤーの点数を表示する時に、ボーダーラインの設定がないと自分のスコアが表示され続ける問題を修正しました。 <br>
+    ・ サーバーから切断したことを検知する要素を増やしました。 <br>
 
   ○ 3.02.00 <br>
     ・ APIを使ってクリエイティブラウンドを遊ぶときに内部エラーが発生すると制限時間の表示を取りやめるようにしました。 <br>
@@ -485,6 +490,11 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 3.02.01 <br>
+    ・ Fixed a problem in which the "Force Quit" button did not appear when the game screen of "FallGuys_Client.exe" suddenly disappeared. <br>
+    ・ Fixed a problem in which when displaying the scores of bordering players when watching in a point-getting round, if no border line is set, your score will continue to be displayed. <br>
+    ・ More elements have been added to detect disconnection from the server. <br>
 
   ○ 3.02.00 <br>
     ・ When using the API to play creative rounds, the display of time limits will be canceled if an internal error occurs. <br>
