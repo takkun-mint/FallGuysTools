@@ -110,6 +110,21 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 3.10.00 <br>
+    ・ 外部表示関連に「自動調整」機能を追加しました！　ウィンドウモードでも自動的にある程度の位置とサイズを調整してくれます！ <br>
+    ・ Fall Guysのアクティブが外れて別ウィンドウの操作をしている時、常に外部表示が表示されてしまう問題を修正しました。 <br>
+    ・ Fall Guysを起動していなくても新しい設定項目がある場合は表示されるようにしました。 <br>
+    ・ ゲームのアクティブ状態が外れにくいよう全体的に調整を行いました。 <br>
+    ・ ウィンドウの位置が保存されているのに画面外に存在していると誤作動を起こして修正されてしまう問題について調整を行いました。 <br>
+    ・ メイン画面転移時に強制終了ボタンを非表示にするようにしました。 <br>
+    ・ カスタムマッチ（プライベートロビー）でサーバーへの再接続回数が25回を超えた時にカウント音と文字表示を赤くするようにしました。 <br>
+    ・ 実はしれっと裏でサーバー接続時に例外エラーが発生していた問題を静かに修正しておきました^^ <br>
+    ・ クリエイティブステージのAPI取得に失敗する問題が多発していたため、最大3回まで再試行するようにしました。 <br>
+    ・ TextAに経過時間を設定している時、一部クリエイティブステージで表示が被ってしまう問題があったため最大文字数を調整しました。 <br>
+    ・ スクワッドのポイント取得ラウンドで、自チームがクリアしたあとに外部表示の表示が残り続ける問題を修正しました。 <br>
+    ・ LAP表示を行うラウンドで表示が被ってしまう問題を修正しました。 <br>
+    ・ 「FallGuys_Client.exe」が消滅したかを検出するプログラムが動作不安定だった問題を修正しました。 <br>
+
   ○ 3.02.01 <br>
     ・ 「FallGuys_Client.exe」のゲーム画面が突然消失した時に「強制終了する」ボタンが表示されなかった問題を修正しました。 <br>
     ・ ポイント取得ラウンドで観戦時にボーダーのプレイヤーの点数を表示する時に、ボーダーラインの設定がないと自分のスコアが表示され続ける問題を修正しました。 <br>
@@ -490,6 +505,21 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 3.10.00 <br>
+    ・ Added "auto-adjustment" feature to external display-related functions!　It automatically adjusts the position and size to some extent even in windowed mode! <br>
+    ・ Fixed a problem where the Fall Guys would always show the external display when the Fall Guys were inactive and operating in a separate window. <br>
+    ・ New configuration items are now displayed when they are available even if Fall Guys is not running. <br>
+    ・ Overall adjustments have been made to make it harder for the game to be out of active state. <br>
+    ・ Adjustments have been made to correct a problem that caused the window to malfunction and correct itself when it existed off-screen even though its position was saved. <br>
+    ・ The force close button is now hidden when the main screen is transitioned. <br>
+    ・ The count sound and text display are now red when the number of reconnections to the server in a custom match (private lobby) exceeds 25 times. <br>
+    ・ In fact, I've quietly fixed the problem that was causing exception errors when connecting to the server behind the scenes. ^_^ <br>
+    ・ Due to a number of problems with failed attempts to retrieve the Creative Stage API, we now retry up to three times. <br>
+    ・ TextAに経過時間を設定している時、一部クリエイティブステージで表示が被ってしまう問題があったため最大文字数を調整しました。 <br>
+    ・ Fixed a problem in the point acquisition round of the squad where the external display remained visible after the team's own team had cleared the round. <br>
+    ・ Fixed a problem that caused the display to be covered in rounds with LAP display. <br>
+    ・ The program that detects if "FallGuys_Client.exe" has disappeared was unstable. <br>
 
   ○ 3.02.01 <br>
     ・ Fixed a problem in which the "Force Quit" button did not appear when the game screen of "FallGuys_Client.exe" suddenly disappeared. <br>
