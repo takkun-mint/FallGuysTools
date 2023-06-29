@@ -516,7 +516,7 @@ This tool is available in English and Japanese.<br>
     ・ The count sound and text display are now red when the number of reconnections to the server in a custom match (private lobby) exceeds 25 times. <br>
     ・ In fact, I've quietly fixed the problem that was causing exception errors when connecting to the server behind the scenes. ^_^ <br>
     ・ Due to a number of problems with failed attempts to retrieve the Creative Stage API, we now retry up to three times. <br>
-    ・ TextAに経過時間を設定している時、一部クリエイティブステージで表示が被ってしまう問題があったため最大文字数を調整しました。 <br>
+    ・ When elapsed time is set in TextA, the maximum number of characters was adjusted because there was a problem that the display was covered in some creative stages. <br>
     ・ Fixed a problem in the point acquisition round of the squad where the external display remained visible after the team's own team had cleared the round. <br>
     ・ Fixed a problem that caused the display to be covered in rounds with LAP display. <br>
     ・ The program that detects if "FallGuys_Client.exe" has disappeared was unstable. <br>
