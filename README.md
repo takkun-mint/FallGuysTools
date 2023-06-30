@@ -110,6 +110,11 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 3.10.01 <br>
+    ・ 外部表示の「自動調整」機能の係数を変更し、より正確な位置になるように調整しました。 <br>
+    今後もこの調整は引き続き行ってまいります。 <br>
+    ・ 外部表示タイマーの赤タイマーのサイズが全解像度で共通の値になっていた問題を修正しました。 <br>
+
   ○ 3.10.00 <br>
     ・ 外部表示関連に「自動調整」機能を追加しました！　ウィンドウモードでも自動的にある程度の位置とサイズを調整してくれます！ <br>
     ・ Fall Guysのアクティブが外れて別ウィンドウの操作をしている時、常に外部表示が表示されてしまう問題を修正しました。 <br>
@@ -505,6 +510,11 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 3.10.01 <br>
+    ・ The coefficients for the "auto-adjustment" function of the external display have been changed and adjusted to be more accurately positioned.　<br> 
+    We will continue to make this adjustment in the future. <br>
+    ・ Fixed a problem in which the size of the red timer on the external display timer was a common value for all resolutions. <br>
 
   ○ 3.10.00 <br>
     ・ Added "auto-adjustment" feature to external display-related functions!　It automatically adjusts the position and size to some extent even in windowed mode! <br>
