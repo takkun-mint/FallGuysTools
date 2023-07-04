@@ -110,6 +110,28 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 3.15.00 <br>
+    ・ Fall Guys未起動から起動した時に想定よりも早く「Please Wait...」が終わってしまっていた問題を修正しました。 <br>
+    ・ カスタムショー（プライベートロビー）での赤表示のタイミングを25回以上から20回以上に変更しました。 <br>
+    ・ 起動した直後や初回のログ読み込み完了後にメイン画面を最前面に表示するようにしました。 <br>
+    ・ 初回起動時のログ読み込みについて、最後のマッチ以降からのログを読み込むようにし、高速化しました。 <br>
+    ・ タイマーが一瞬停止し、2秒分一気に進む問題について発生しにくいようプログラムを調整しました。 <br>
+    ・ サーバー接続時、クリエイティブコースのAPI使用時にエラーが発生した場合は取得に失敗した旨の表示を行うようにしました。 <br>
+    ・ サーバー接続時にサーバーの地域情報の取得が失敗した時は強制的にサーバーのIPアドレスが表示されるようにしました。 <br>
+    ・ サーバー接続時にうまくサーバーの地域情報の取得に失敗したときに例外が発生してしまう問題を修正しました。 <br>
+    ・ サーバー接続時、クリエイティブコースのAPI使用時のタイムアウト秒数を無制限から3秒に設定しました。 <br>
+    ・ クリエイティブコースのAPIで、バージョン10.2.0以降に作成されたコースがエラーになってしまう問題を修正しました。 <br>
+    ・ TextAに経過時間を設定している時、一部クリエイティブステージで表示が被ってしまう問題があったため最大文字数を調整しました。 <br>
+    ・ クリエイティブコースでAPIを使ってクリア割合を取得し、ラウンド開始前に設定されたクリア割合やゴール可能人数が右上に表示されるようにしました。 <br>
+    ・ クリエイティブコースのラウンド開始までの間、TextA,Bに「プレイヤー情報」を表示しているとラウンドのクリア割合と何人がクリアできるかが表示されるようにしました。 <br>
+    ・ Statsなどの外部ツールでゴールタイムやラウンドタイムがズレてしまう問題を修正しました。 <br>
+    ・ スタート直後のタイマー表示プログラムを調整しました。 <br>
+    ・ ステージデータベースのファイルをひとつにまとめました。 <br>
+    ・ ステージデータベースの読み込み方法を最適化しました。 <br>
+    ・ ステージデータベースの保存先を変更しました。 <br>
+    ・ ステージデータベースをダウンロードしたあとにラウンドが進行中、もしくはラウンド準備中のとき、再度ラウンド設定をやり直して上書きするようにしました。 <br>
+    ・ 外部表示の位置を微調整しました。 <br>
+
   ○ 3.10.01 <br>
     ・ 外部表示の「自動調整」機能の係数を変更し、より正確な位置になるように調整しました。 <br>
     今後もこの調整は引き続き行ってまいります。 <br>
@@ -510,6 +532,28 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 3.15.00 <br>
+    ・ Fixed a problem that caused the "Please Wait..." to end earlier than expected when Fall Guys was started from an unstarted program. was ending earlier than expected when Fall Guys were launched from an unlaunched state. <br>
+    ・ Changed the timing of red display in custom shows (private lobbies) from 25 or more times to 20 or more times. <br>
+    ・ The main screen is now displayed at the forefront immediately after startup and after the first log reading is completed. <br>
+    ・ Log reading at first startup has been speeded up by reading logs from since the last match. <br>
+    ・ The program has been adjusted to minimize the problem of the timer stopping for a moment and then advancing for 2 seconds at a time. <br>
+    ・ If an error occurs when connecting to the server or using the Creative Course API, an indication that the acquisition failed is now displayed. <br>
+    ・ Server IP addresses are now forced to be displayed when server regional information fails to be obtained when connecting to a server. <br>
+    ・ Fixed a problem that caused an exception when successfully connecting to a server and failing to obtain the server's regional information. <br>
+    ・ The number of timeout seconds when using the Creative Course API when connecting to the server has been set from unlimited to 3 seconds. <br>
+    ・ Fixed an issue in the Creative Courses API that caused courses created after version 10.2.0 to fail. <br>
+    ・ The maximum number of characters was adjusted because there was a problem that some creative stages were covered by the display when the elapsed time was set in TextA. <br>
+    ・ The API is used in the creative course to get the clear percentage, and the clear percentage and the number of possible finishers set before the start of the round are displayed in the upper right corner of the screen. <br>
+    ・ Until the start of a round of creative courses, the percentage of rounds cleared and how many players can clear the round are now displayed when "Player Information" is displayed on TextA and B. <br>
+    ・ Fixed a problem that caused goal times and round times to be out of sync with external tools such as Stats. <br>
+    ・ Timer display program immediately after start has been adjusted. <br>
+    ・ Stage database files are combined into a single file. <br>
+    ・ Optimized the way the stage database is loaded. <br>
+    ・ Changed the storage location of the stage database. <br>
+    ・ After downloading the stage database, when a round is in progress or in preparation for a round, the round settings are now redone and overwritten again. <br>
+    ・ Fine-tuned the position of the external display. <br>
 
   ○ 3.10.01 <br>
     ・ The coefficients for the "auto-adjustment" function of the external display have been changed and adjusted to be more accurately positioned.　<br> 
