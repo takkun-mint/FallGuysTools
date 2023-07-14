@@ -110,6 +110,35 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.00.00 <br>
+    ・ 新機能「クリエイティブコース検索ツール」(Beta)を追加しました。 <br>
+    コースを入れて検索するか、カスタムマッチ（プライベートロビー）でショーをプレイする時に自動的に更新されます。 <br>
+    ・ カスタムマッチ（プライベートロビー）でコードを入力して遊ぶラウンドを遊ぶ時、ラウンド情報を早く表示するようにしました。 <br>
+    ・ クリエイティブラウンドをプレイする時に使われるAPIの処理がエラーになった時、スタート前に表示される右上のクリア可能人数表示が空欄になってしまう問題を修正しました。 <br>
+    ・ 外部表示の詳細設定を変更できるようにしました。　不必要な項目をOFFにすることで個別に選択することができます。 <br>
+    ・ ツールで表示されるすべての表示についての最前面表示を変更することができるようになりました。 <br>
+    ・ SquadListにて、順位がつくチーム戦でゴールした順番にランキングが表示されるようにしました。 <br>
+    ・ ポイント取得ラウンドでラウンド開始する前にサーバー表示になってしまう問題を修正しました。 <br>
+    ・ 画面転移のタイムアウトまでのカウントダウンについて、転移を完了したというフラグの位置が間違っていたのを修正しました。 <br>
+    ・ 外部表示タイマーの表示を調整しました。 <br>
+    ・ OverTimeの残り回数も外部表示されるようにしました。 <br>
+    ・ プログラムを最適化して安定性を高めました。 <br>
+    ・ 配信者向けにYouTube APIを導入し、配信開始からの時間やそれに応じた外部ファイル出力に対応しました。（特定のYouTuber向け） <br>
+    ・ Squadのレースラウンド、サバイバルラウンドにおいて、ゲーム上では出現していないプレイヤーが人数としてカウントされるのかされないのかが毎回ずれる時があるため、ラウンド終了後の結果画面でログの値から修正するようにしました。 <br>
+    ・ プレイヤーのクリアしたか脱落したかを監視するプログラムの条件が全く違うところで引っかかってしまって、プレイヤーの人数の値がズレてしまう問題を修正しました。 <br>
+    ・ 一部ステージのラウンド開始前にプレイヤーの数が変動した時にPlayerListおよびSquadListが更新されなかった問題を修正しました。 <br>
+    ・ SquadListの「クラウンマウンテン」「ロストテンプル」でラウンド終了後に、全員の残り人数が0になってしまう問題を修正し、クラウンを掴んだプレイヤーだけ生存人数にカウントするようにしました。 <br>
+    ・ SquadListにてサバイバルのファイナルラウンドで別々のチームの最後の2人が同時落ちした時に全チームが脱落になったような表示になる問題を修正しました。 <br>
+    ・ Squadのサバイバルラウンドでクリア割合が設定されている時にボーダーとの得点差を表示するようにしました。 <br>
+    ・ SquadListのレースラウンド、サバイバルラウンドでクリア割合が設定されている時、各チームの理論スコアで逆転が不能になったチームは自動的に脱落と同じ色分けにするようにし、クリアが確定したチームはその時点でクリアの色分けにするようにしました。(試験導入です、今後のアップデートで削除される可能性があります。) <br>
+    ・ SquadListにてサバイバル終了後の画面転移などのカウントダウンで各チームのスコアが動いてしまう問題を修正しました。 <br>
+    ・ SquadListにてラウンドが開始するまで残り人数で自動ソートが行われない問題を修正しました。 <br>
+    ・ SquadListにて現在のFall Guysの仕様に準じて、スコア0のチームがラウンド終了時に強制失格になっているように見える表示を訂正しました。 <br>
+    ・ 「クラウンマウンテン」や「ロストテンプル」などでラウンド終了時に優勝扱いになったプレイヤー数を外部表示するようにしました。 <br>
+    ・ SquadListでパーティー情報を表示している時、全チームに謎のパーティーメンバーが存在している表示になってしまう問題を修正しました。 <br>
+    ・ SquadListにてクリア可能チーム数が表示されるまでにスクワッドの人数が0人になったチームは自動的に削除するようにしました。 <br>
+    ・ ラウンド開始前にショーから離脱した時、PlayerList,SquadListの表示が全チームが脱落判定になる仕様を修正しました。 <br>
+
   ○ 3.15.00 <br>
     ・ Fall Guys未起動から起動した時に想定よりも早く「Please Wait...」が終わってしまっていた問題を修正しました。 <br>
     ・ カスタムショー（プライベートロビー）での赤表示のタイミングを25回以上から20回以上に変更しました。 <br>
@@ -532,6 +561,35 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.00.00 <br>
+    ・ New feature "Creative Course Search Tool" (Beta) has been added. <br>
+    It will automatically update when you put in a course and search or play a show in a custom match (private lobby). <br>
+    ・ When playing a round in a custom match (private lobby) with a code, the round information is now displayed earlier. <br>
+    ・ Fixed a problem in which the number of people who could clear the game in the upper right corner displayed before the start would be blank when there was an error in the API process used when playing a creative round. <br>
+    ・ The detailed settings for the external display can be changed.　Unnecessary items can be selected individually by turning them off. <br>
+    ・ It is now possible to change the foremost view for all displays in the tool. <br>
+    ・ SquadListにて、順位がつくチーム戦でゴールした順番にランキングが表示されるようにしました。 <br>
+    ・ Fixed a problem in the point acquisition round where the server display would appear before the round started. <br>
+    ・ Regarding the countdown to screen transition timeout, the flag indicating that the transition was completed was incorrectly positioned. <br>
+    ・ Adjusted the display of the external display timer. <br>
+    ・ The number of times remaining for OverTime is now also displayed externally. <br>
+    ・ The program has been optimized to improve stability. <br>
+    ・ Introduced YouTube API for distributors to support the time from the start of distribution and external file output accordingly. (For specific YouTubers) <br>
+    ・ In the Squad race and survival rounds, the number of players who do not appear in the game is sometimes shifted from being counted to not being counted in the game to being counted in the log on the results screen after the round is over. <br>
+    ・ Fixed a problem where a condition in the program that monitors whether a player has cleared or dropped out was caught in a completely different place, causing the value of the number of players to be off. <br>
+    ・Fixed a problem in which PlayerList and SquadList were not updated when the number of players changed before the start of a round in some stages. <br>
+    ・ Fixed a problem in SquadList's "Fall Mountain" and "Lost Temple" where everyone's remaining number of players was reduced to zero after the end of the round, so that only the player who grabbed the crown is counted in the number of survivors. <br>
+    ・ Fixed a problem in SquadList that caused all teams to appear as if they were eliminated when the last two players from different teams dropped out at the same time in the final round of a survival game. <br>
+    ・ The score difference from the border is now displayed when a clear percentage is set in the Squad survival round. <br>
+    ・ When a clear percentage is set for the SquadList race and survival rounds, teams whose theoretical scores make reversal impossible for each team will automatically be color-coded the same as eliminated, while teams whose scores are confirmed clear will be color-coded clear at that point. (This is a trial implementation and may be removed in a future update.) <br>
+    ・ Fixed a problem in SquadList where each team's score would move during the countdown, such as screen transitions after the end of survival. <br>
+    ・ Fixed a problem in SquadList where automatic sorting by number of players remaining was not performed until the start of the round. <br>
+    ・ Corrected a display in SquadList that appeared to show a team with a score of 0 being forcibly disqualified at the end of the round, in accordance with the current Fall Guys specifications. <br>
+    ・ The number of players treated as winners at the end of rounds in "Fall Mountain" and "Lost Temple" is now shown externally. <br>
+    ・ Fixed an issue that caused SquadList to display the presence of a mysterious party member on all teams when displaying party information. <br>
+    ・ Teams that have 0 squad members by the time the number of teams available for clearing is displayed in SquadList are now automatically deleted. <br>
+    ・ Fixed the specification that when a team leaves the show before the start of a round, the PlayerList and SquadList displays will determine that all teams have been eliminated from the show. <br>
 
   ○ 3.15.00 <br>
     ・ Fixed a problem that caused the "Please Wait..." to end earlier than expected when Fall Guys was started from an unstarted program. was ending earlier than expected when Fall Guys were launched from an unlaunched state. <br>
