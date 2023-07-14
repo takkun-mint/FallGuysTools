@@ -569,7 +569,7 @@ This tool is available in English and Japanese.<br>
     ・ Fixed a problem in which the number of people who could clear the game in the upper right corner displayed before the start would be blank when there was an error in the API process used when playing a creative round. <br>
     ・ The detailed settings for the external display can be changed.　Unnecessary items can be selected individually by turning them off. <br>
     ・ It is now possible to change the foremost view for all displays in the tool. <br>
-    ・ SquadListにて、順位がつくチーム戦でゴールした順番にランキングが表示されるようにしました。 <br>
+    ・ In SquadList, rankings are now displayed in the order of finish in ranked team competitions. <br>
     ・ Fixed a problem in the point acquisition round where the server display would appear before the round started. <br>
     ・ Regarding the countdown to screen transition timeout, the flag indicating that the transition was completed was incorrectly positioned. <br>
     ・ Adjusted the display of the external display timer. <br>
