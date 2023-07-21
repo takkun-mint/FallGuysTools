@@ -110,6 +110,17 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.01.00 <br>
+    ・ 新しい設定項目「SquadListの理論値表示(Beta)」を公開しました。レースやサバイバルでラウンド中に各チームの理論スコアが表示されます。 <br>
+    ・ サーバー接続時に3文字の国コードを取得する際に例外が出力されてしまう問題を修正し、最大3回までやり直しを行うようにしました。 <br>
+    ・ PlayerList,SquadListにてソートする列、ソート方法が初期値にならない問題を修正しました。 <br>
+    ・ 「クラウンマウンテン」「ロストテンプル」などの優勝したプレイヤー数の表示位置を変更しました。 <br>
+    ・ 画面転移のカウントダウンで新しい設定項目を示す「！」が干渉してしまう問題を修正しました。 <br>
+    ・ Squad関連のショーかどうかを判別するプログラムをラウンド単位からゲーム単位に変更しました。 <br>
+    ・ ダウンロード途中の「StageInfo.csv」が残ってしまい誤作動を起こしていた問題を修正しました。 <br>
+    ・ 自動調整された外部表示関連の高さの定数を変更しました。 <br>
+    ・ 外部表示されるスコアカウントなどの見やすさを向上しました。 <br>
+
   ○ 4.00.00 <br>
     ・ 新機能「クリエイティブコース検索ツール」(Beta)を追加しました。 <br>
     コースを入れて検索するか、カスタムマッチ（プライベートロビー）でショーをプレイする時に自動的に更新されます。 <br>
@@ -561,6 +572,17 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.01.00 <br>
+    ・ A new setting item "SquadList Theoretical Score Display (Beta)" is now available. It displays the theoretical score of each team during a round in Race and Survival. <br>
+    ・ Fixed a problem that caused an exception to be output when retrieving a 3-letter country code when connecting to a server and redoing it up to 3 times. <br>
+    ・ Fixed a problem in PlayerList and SquadList where sorting columns and sort method were not initial values. <br>
+    ・ Changed the display position of the number of players who won "Fall Mountain," "Lost Temple," etc. <br>
+    ・ "!" indicating a new setting item in the screen transition countdown interfered with the screen transition countdown. <br>
+    ・ The program to determine if a show is Squad related has been changed from round by round to game by game. <br>
+    ・ Fixed a problem in which "StageInfo.csv" remained in the middle of downloading, causing a malfunction. <br>
+    ・ Changed auto-adjusted external display-related height constants. <br>
+    ・ Improved visibility of externally displayed score counts, etc. <br>
 
   ○ 4.00.00 <br>
     ・ New feature "Creative Course Search Tool" (Beta) has been added. <br>
