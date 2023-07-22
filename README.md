@@ -110,6 +110,14 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.01.10 <br>
+    ・ SquadListの理論値表示を使っている時、現在のスコアも表示されるようにしました。 <br>
+    ・ SquadListで理論値表示を使っている時、サバイバルなどのステージでボーダーとの差も理論値で表示される問題を修正しました。 <br>
+    ・ PlayerList,SquadListにてソートの初期設定がうまく動かない問題があったため、ラウンド読み込み中のみユーザーがソートしても反映させないようにしました。 <br>
+    ・ SquadListにて、レースラウンドの時の進出確定を判断するプログラムの条件を調整しました。 <br>
+    ・ Squadのサバイバルラウンドの時、ボーダー圏外のチームが全滅しないと暫定でクリア確定にならない問題を修正しました。 <br>
+    ・ 初期設定でSquadListの点数表記を理論値表示にするようにしました。 <br>
+
   ○ 4.01.00 <br>
     ・ 新しい設定項目「SquadListの理論値表示(Beta)」を公開しました。レースやサバイバルでラウンド中に各チームの理論スコアが表示されます。 <br>
     ・ サーバー接続時に3文字の国コードを取得する際に例外が出力されてしまう問題を修正し、最大3回までやり直しを行うようにしました。 <br>
@@ -572,6 +580,14 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.01.10 <br>
+    ・ When using SquadList's theoretical value display, the current score is also displayed. <br>
+    ・ Fixed a problem in which the difference from the border was also displayed as a theoretical value in stages such as Survival when using the theoretical value display in SquadList. <br>
+    ・ There was a problem in PlayerList and SquadList where the initial sorting did not work properly, so we have made it so that sorting by the user is not reflected only during round loading. <br>
+    ・ In SquadList, we have adjusted the conditions of the program that determines the final decision to advance at the time of the race round. <br>
+    ・ Fixed a problem during the Squad survival round where teams outside the border area would have to be wiped out to be provisionally confirmed as qualify. <br>
+    ・ The default setting has been changed so that the SquadList score notation is now displayed in theoretical values. <br>
 
   ○ 4.01.00 <br>
     ・ A new setting item "SquadList Theoretical Score Display (Beta)" is now available. It displays the theoretical score of each team during a round in Race and Survival. <br>
