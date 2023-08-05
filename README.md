@@ -110,6 +110,24 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.50.00 <br>
+    ・ PlayerListとSquadListを一つの表示領域で共有していたのを完全に分離しました。 <br>
+    ・ クリエイティブ系列のラウンドをしたあとに第一ステージをプレイすると「ラウンド検索」ボタンが表示されたままになる問題を修正しました。 <br>
+    ・ クリエイティブ検索ツールにて、開いてない状態でカスタムでコードを入力するクリエイティブコースをプレイするとツールを再起動するまで検索ボタンが押せない問題を修正しました。 <br>
+    ・ 制限時間の計算、経過時間の計算など時間計算に関するプログラムを全て変更し仕様を変更しました。 <br>
+    ・ カスタムでコードを入力するクリエイティブステージをプレイした時、読み込み中にステージ情報に出る％表示のテキストを訂正しました。 <br>
+    ・ Squadのレースラウンドで時間切れでラウンドが終了したのに「進出チーム確定」と間違って表示されてしまう問題を修正しました。 <br>
+    ・ 運営のミスでクリエイティブコースが内部IDと実際のコースと選択されたコースが違っていた時、クリエイティブラウンドの名前をコースIDから修正するようにしました。 <br>
+    ・ 「止まるなキケンスペース」にて外部表示を追加しました。（実際に表示されるのは調整が終わってからとなります。） <br>
+    ・ SquadListの理論値表示を使っている時、ラウンド終了後も理論値で表示されるようにしました。 <br>
+    ・ ショーがSquadかどうかを判別するプログラムのリセットする箇所をサーバー接続時から第1ステージのラウンド開始するタイミングに変更しました。 <br>
+    ・ 「Fall Guys Client.exe」の画面が消失した時、サーバーから切断されるまで「強制終了ボタン」が表示されてもすぐに非表示になってしまう問題を修正しました。 <br>
+    ・ クリエイティブ検索ツールにて、表示が重なることがあったため、全体的に表示を右に寄せました。 <br>
+    ・ クリエイティブ検索ツールにて、サーバーサイドのエラーになったときのローカライズを追加し、エラー発生時にエラーコードをわかりやすく見えるようにしました。 <br>
+    ・ Squadにてラウンド開始前とアニメーション表示中などで左上にクリアチーム数が表示されていない時だけクリアチーム数を表示するようにし、それ以外では従来と同じくサーバー情報を表示するようにしました。 <br>
+    ・ 制限時間が不明なラウンドのとき、残り時間表示を経過時間表示に切り替え、外部表示も別途新しいものを表示するようにしました。 <br>
+
+
   ○ 4.01.10 <br>
     ・ SquadListの理論値表示を使っている時、現在のスコアも表示されるようにしました。 <br>
     ・ SquadListで理論値表示を使っている時、サバイバルなどのステージでボーダーとの差も理論値で表示される問題を修正しました。 <br>
@@ -580,6 +598,23 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.50.00 <br>
+    ・ PlayerList and SquadList, which used to share a single display area, are now completely separated. <br>
+    ・ Fixed an issue where the 'Round Search' button would remain visible when playing the first stage after a round of creative series. <br>
+    ・ Fixed an issue in the Creative Search tool where if you play a creative course that requires you to enter a custom code while it is not open, you cannot press the search button until you restart the tool. <br>
+    ・ All programmes related to time calculation, such as the calculation of time limits and elapsed time, have been changed and the specifications changed. <br>
+    ・ When playing a creative stage that is custom coded, the % text that appears in the stage information during loading has been corrected. <br>
+    ・ Fixed an issue in the Squad race round where the round was incorrectly displayed as "The round was ended as the advancing teams were determined." even though the round had ended due to time running out. <br>
+    ・ When, due to an operational error, a creative course has a different internal ID from the actual course and the selected course, the name of the creative round is now corrected from the course ID. <br>
+    ・ An external display has been added in the 'Hex-A-Terrestrial' section. (The actual display will only appear once adjustments have been made.) <br>
+    ・ When using the SquadList theoretical value display, the theoretical value is still displayed after the end of the round. <br>
+    ・ The point at which the programme that determines whether a show is Squad is reset has been changed from when the server is connected to when the first stage round starts. <br>
+    ・ Fixed an issue where, when the 'Fall Guys Client.exe' screen disappeared, the 'Force Quit Button' would appear and then immediately disappear until it was disconnected from the server. <br>
+    ・ In the creative search tool, the display sometimes overlapped, so the overall display was moved to the right. <br>
+    ・ In the Creative Search tool, localisation has been added when a server-side error occurs, so that the error code is clearly visible when an error occurs. <br>
+    ・ In Squad, the number of clear teams is now only displayed when the number of clear teams is not displayed in the top left-hand corner, such as before the start of a round or during an animation, otherwise the server information is displayed as before. <br>
+    ・ When the time limit is unknown for a round, the remaining time display is switched to the elapsed time display and a new external display is shown separately. <br>
 
   ○ 4.01.10 <br>
     ・ When using SquadList's theoretical value display, the current score is also displayed. <br>
