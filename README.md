@@ -110,6 +110,10 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.50.02 <br>
+    ・ UTC時刻とローカル時刻で日付の差があったとき、時間計算がうまく行かない問題を修正しました。 <br>
+    ・ 「クリエイティブ検索ツール」にて正しい形式で入力されなかったとき、検索ボタンが押せなくなる問題を修正しました。 <br>
+
   ○ 4.50.01 <br>
     ・ SquadListを表示していないときにレースラウンドでアニメーションに入ってもクリアチーム数が表示されない問題を修正しました。 <br>
     ・ 一部テキストを変更しました。(Qualified Border) → (Qualify Border) <br>
@@ -605,6 +609,10 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.50.02 <br>
+    ・ Fixed an issue where time calculations did not work when there was a difference in date between UTC time and local time. <br>
+    ・ Fixed a problem in the 'Creative Search Tool' where the search button could not be pressed if the correct format was not entered. <br>
 
   ○ 4.50.01 <br>
     ・ Fixed an issue where the number of qualify teams was not displayed when entering animation in a race round when SquadList was not displayed. <br>
