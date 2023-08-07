@@ -110,6 +110,13 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.50.01 <br>
+    ・ SquadListを表示していないときにレースラウンドでアニメーションに入ってもクリアチーム数が表示されない問題を修正しました。 <br>
+    ・ 一部テキストを変更しました。(Qualified Border) → (Qualify Border) <br>
+    ・ 2周するLAPステージの経過時間表示がバグってしまう問題について応急処置を行いました。 <br>
+    ・ 新しい設定項目がある場合に表示される「！」のアイコンが画面転移のカウントダウンの開始とともに消えてしまう問題を修正し、転移カウントダウンが表示されるまでの間は表示されるようにしました。 <br>
+
+
   ○ 4.50.00 <br>
     ・ PlayerListとSquadListを一つの表示領域で共有していたのを完全に分離しました。 <br>
     ・ クリエイティブ系列のラウンドをしたあとに第一ステージをプレイすると「ラウンド検索」ボタンが表示されたままになる問題を修正しました。 <br>
@@ -598,6 +605,12 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.50.01 <br>
+    ・ Fixed an issue where the number of qualify teams was not displayed when entering animation in a race round when SquadList was not displayed. <br>
+    ・ Some text has been changed. (Qualified Border) → (Qualify Border) <br>
+    ・ Emergency work has been carried out to address an issue with buggy elapsed time displays in LAP stages with two laps. <br>
+    ・ "!" displayed when there is a new setting item. icon disappears with the start of the screen transition countdown, and is now displayed until the transition countdown is displayed. <br>
 
   ○ 4.50.00 <br>
     ・ PlayerList and SquadList, which used to share a single display area, are now completely separated. <br>
