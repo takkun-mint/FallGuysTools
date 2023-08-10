@@ -110,6 +110,9 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.50.03 <br>
+    ・ ステージデータベースのダウンロードに失敗したとき、一時的にデータベースが破損してしまう問題を修正しました。 <br>
+
   ○ 4.50.02 <br>
     ・ UTC時刻とローカル時刻で日付の差があったとき、時間計算がうまく行かない問題を修正しました。 <br>
     ・ 「クリエイティブ検索ツール」にて正しい形式で入力されなかったとき、検索ボタンが押せなくなる問題を修正しました。 <br>
@@ -609,6 +612,9 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.50.03 <br>
+    ・ Fixed an issue where the database was temporarily corrupted when a stage database download failed. <br>
 
   ○ 4.50.02 <br>
     ・ Fixed an issue where time calculations did not work when there was a difference in date between UTC time and local time. <br>
