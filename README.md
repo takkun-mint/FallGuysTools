@@ -110,6 +110,14 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.51.00 <br>
+    ・ クリエイティブステージで画像がクリエイティブAPI、もしくはステージデータベースに記載されているとき、ラウンド開始前のサムネイル画像を置き換える新機能を追加しました。 <br>
+    ・ 外部サーバーに通信を行うプログラムを共通化しました。（コードの最適化） <br>
+    ・ 「サーバーとの通信が切断された」のログが何度も出力されたとき、何度も「ステージ情報」のFINALラウンドを示す色が点滅したように見える問題を修正しました。 <br>
+    ・ カスタムに追加された「ディスカバリー」のラウンドをプレイするとき、できる限りクリエイティブでコードを入力したときと同じタイミングでラウンド情報を読み込むようにしました。 <br>
+    ・ PlayerListにてラウンド終了まで非表示の状態でラウンド終了後に表示したとき、最後にゴールしたプレイヤーが一位と表示されてしまうなど、表示が乱れてしまう問題を修正しました。 <br>
+    ・ PHASE制のラウンドの表示を追加しました。（動作保証が確定するまでは表示されないようにしております。） <br>
+
   ○ 4.50.03 <br>
     ・ ステージデータベースのダウンロードに失敗したとき、一時的にデータベースが破損してしまう問題を修正しました。 <br>
 
@@ -612,6 +620,14 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.51.00 <br>
+    ・ A new feature has been added to replace the thumbnail image before the start of the round when the image is listed in the Creative API or the stage database in the Creative stage. <br>
+    ・ Common programmes for communicating to external servers. (Code optimisation) <br>
+    ・ Fixed an issue where the colour indicating the FINAL round in 'Stage Info' appeared to flash repeatedly when the 'Communication with server has been disconnected' log was output repeatedly. <br>
+    ・ When playing a custom-added 'Discovery' round, as far as possible, the round information is loaded at the same time as when the code is entered in Creative. <br>
+    ・ Fixed a problem in PlayerList where the display would be incorrect, for example, the last player to finish would be shown as first place, when the list was hidden until the end of the round and then displayed after the end of the round. <br>
+    ・ Added indication of PHASE-based rounds. (They will not be displayed until the guarantee of operation is finalised.) <br>
 
   ○ 4.50.03 <br>
     ・ Fixed an issue where the database was temporarily corrupted when a stage database download failed. <br>
