@@ -110,6 +110,11 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.51.01 <br>
+    ・ クリエイティブのサムネ置き換えの位置調整機能を設定画面に追加しました。 <br>
+    ・ OBSなどの配信ソフト上でうまく外部表示タイマーが映らない問題があったため、外部表示タイマーのデザイナー設定をロールバックしました。 <br>
+    ・ 公式ステージの画像について、APIを経由しなくても（APIが使えない方でも）直接ステージデータベースに画像を登録して表示することができる仕組みを構築しました。(順次対応予定) <br>
+
   ○ 4.51.00 <br>
     ・ クリエイティブステージで画像がクリエイティブAPI、もしくはステージデータベースに記載されているとき、ラウンド開始前のサムネイル画像を置き換える新機能を追加しました。 <br>
     ・ 外部サーバーに通信を行うプログラムを共通化しました。（コードの最適化） <br>
@@ -620,6 +625,11 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.51.01 <br>
+    ・ A new function for adjusting the position of creative thumbnail replacements has been added to the settings screen. <br>
+    ・ The designer settings for the external display timer have been rolled back, as there was a problem with the external display timer not showing up properly on delivery software such as OBS. <br>
+    ・ For official stage images, we have built a system that allows images to be registered and displayed directly in the stage database without having to go through the API (even for those who cannot use the API). (To be supported in due course). <br>
 
   ○ 4.51.00 <br>
     ・ A new feature has been added to replace the thumbnail image before the start of the round when the image is listed in the Creative API or the stage database in the Creative stage. <br>
