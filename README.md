@@ -110,6 +110,12 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.51.02 <br>
+    ・ クリエイティブのサムネ置き換えの自動調整の計算式が間違っていた問題を修正しました。 <br>
+    ・ クリエイティブのサムネ置き換えが入る前に各種位置やサイズの調整を入れるようにしました。 <br>
+    ・ クリエイティブのサムネ置き換えが表示されていないとき、画面にうっすら本来の表示域の影が残ってしまっていた問題を修正しました。 <br>
+    ・ クリエイティブコースをプレイしたあとにツールを再起動するとステージサムネが表示されてしまう問題を修正しました。 <br>
+
   ○ 4.51.01 <br>
     ・ クリエイティブのサムネ置き換えの位置調整機能を設定画面に追加しました。 <br>
     ・ OBSなどの配信ソフト上でうまく外部表示タイマーが映らない問題があったため、外部表示タイマーのデザイナー設定をロールバックしました。 <br>
@@ -625,6 +631,12 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.51.02 <br>
+    ・ Incorrect formula for automatic adjustment of creative thumbnail replacement has been corrected. <br>
+    ・ Various position and size adjustments are now inserted before the creative thumbnail replacement is entered. <br>
+    ・ Fixed an issue where a shadow of the original display area was left on the screen when the creative thumbnail replacement was not displayed. <br>
+    ・ Fixed an issue with the stage thumbnail when restarting the tool after playing a creative course. <br>
 
   ○ 4.51.01 <br>
     ・ A new function for adjusting the position of creative thumbnail replacements has been added to the settings screen. <br>
