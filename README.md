@@ -110,6 +110,10 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.51.03 <br>
+    ・ クリエイティブのサムネ置き換えのうまく動作しなくなる問題を修正しました。 <br>
+    ・ クリエイティブのサムネ置き換え後も二重で画像のダウンロードを行ってしまう問題を修正しました。 <br>
+
   ○ 4.51.02 <br>
     ・ クリエイティブのサムネ置き換えの自動調整の計算式が間違っていた問題を修正しました。 <br>
     ・ クリエイティブのサムネ置き換えが入る前に各種位置やサイズの調整を入れるようにしました。 <br>
@@ -631,6 +635,10 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.51.03 <br>
+    ・ Fixed an issue that prevented the creative thumbnail replacement from working properly. <br>
+    ・ Fixed an issue where images were downloaded in duplicate even after replacing the creative thumbnail. <br>
 
   ○ 4.51.02 <br>
     ・ Incorrect formula for automatic adjustment of creative thumbnail replacement has been corrected. <br>
