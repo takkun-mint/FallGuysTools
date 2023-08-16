@@ -110,6 +110,11 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.51.10 <br>
+    ・ Fall Guysの新しいバージョンに合わせてサーバーから取得したマッチング待機中のプレイヤー数を表示するようにしました。 <br>
+    ・ 「Fall_Guys_Client.exe」を非アクティブからアクティブになったとき、タイマーなどの外部表示の座標を再調整するようにしました。(自動調整ONの場合) <br>
+    ・ プログラムの最適化を行いました。 <br>
+
   ○ 4.51.03 <br>
     ・ クリエイティブのサムネ置き換えのうまく動作しなくなる問題を修正しました。 <br>
     ・ クリエイティブのサムネ置き換え後も二重で画像のダウンロードを行ってしまう問題を修正しました。 <br>
@@ -635,6 +640,11 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.51.10 <br>
+    ・ The number of players waiting to be matched retrieved from the server to match the new version of Fall Guys. <br>
+    ・ When 'Fall_Guys_Client.exe' is made active from inactive, the coordinates of external displays such as timers are readjusted. (When auto-adjustment is ON). <br>
+    ・ Programme optimisation. <br>
 
   ○ 4.51.03 <br>
     ・ Fixed an issue that prevented the creative thumbnail replacement from working properly. <br>
