@@ -110,6 +110,11 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.51.11 <br>
+    ・ マッチメイキング中に待機中のプレイヤー数がわからないときは従来と同様に経過時間を表示するようにしました。 <br>
+    ・ ラウンド終了後の結果画面以降、設定画面を表示するボタンが非表示になってしまう問題を修正しました。 <br>
+    ・ 初心者向けバリエーションを示すマークの判定するラウンドの内部名称を変更しました。 <br>
+
   ○ 4.51.10 <br>
     ・ Fall Guysの新しいバージョンに合わせてサーバーから取得したマッチング待機中のプレイヤー数を表示するようにしました。 <br>
     ・ 「Fall_Guys_Client.exe」を非アクティブからアクティブになったとき、タイマーなどの外部表示の座標を再調整するようにしました。(自動調整ONの場合) <br>
@@ -640,6 +645,11 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.51.11 <br>
+    ・ When the number of waiting players is not known during matchmaking, the elapsed time is now displayed as before. <br>
+    ・ Fixed a problem where the button to display the settings screen was hidden after the results screen after a round. <br>
+    ・ The internal names of the rounds to be judged for the marks indicating onbording variations have been changed. <br>
 
   ○ 4.51.10 <br>
     ・ The number of players waiting to be matched retrieved from the server to match the new version of Fall Guys. <br>
