@@ -110,6 +110,9 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.51.22 <br>
+    ・ 環境によってクリエイティブのサムネ表示の境界線が見えたままになる問題があったため、本来表示される場所以外では角丸にする設定をスキップするようにしました。 <br>
+
   ○ 4.51.21 <br>
     ・ SquadListやそれに付随する全ての表示がうまく行かない問題を修正しました。 <br>
     ・ ツール起動時、ごくまれに長時間フリーズしてしまう問題を修正しました。 <br>
@@ -666,6 +669,9 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.51.22 <br>
+    ・ Because there was a problem with the borders of the creative thumbnail display remaining visible in some environments, the setting to make the corners rounded outside of the places where they are originally displayed has been skipped. <br>
 
   ○ 4.51.21 <br>
     ・ Fixed a problem that prevented SquadList and all associated displays from working. <br>
