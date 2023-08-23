@@ -110,6 +110,11 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.51.21 <br>
+    ・ SquadListやそれに付随する全ての表示がうまく行かない問題を修正しました。 <br>
+    ・ ツール起動時、ごくまれに長時間フリーズしてしまう問題を修正しました。 <br>
+    ・ スコア取得ラウンドで外部表示される「！」マークの座標を調整しました。 <br>
+
   ○ 4.51.20 <br>
     ・ クリエイティブのサムネ置き換え用の画像を重複ダウンロードする問題を修正しました。 <br>
     ・ TextAに「経過時間」を選んでいるとき、ラウンド中に表示されるラウンド名が実際には省略されていないにも関わらず、省略しているような表示がされる問題を修正しました。 <br>
@@ -661,6 +666,10 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.51.21 <br>
+    ・ Fixed a problem that prevented SquadList and all associated displays from working. <br>
+    ・ Fixed a very rare problem of prolonged freezing when starting the tool. <br>
 
   ○ 4.51.20 <br>
     ・ Fixed problem with duplicate download of images for creative thumbnail replacement. <br>
