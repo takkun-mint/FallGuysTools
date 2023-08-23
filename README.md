@@ -110,6 +110,22 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.51.20 <br>
+    ・ クリエイティブのサムネ置き換え用の画像を重複ダウンロードする問題を修正しました。 <br>
+    ・ TextAに「経過時間」を選んでいるとき、ラウンド中に表示されるラウンド名が実際には省略されていないにも関わらず、省略しているような表示がされる問題を修正しました。 <br>
+    ・ ポイント取得ラウンドで脱落圏内を示す「！」マークが表示が被ってっ表示されてしまう問題を修正しました。 <br>
+    ・ ポイント取得ラウンドで表示されるテキストの表示位置を調整しました。 <br>
+    ・ SquadListでラウンド終了後にポイント修正が行われたとき、ラウンドが時間切れで終了したにも関わらず理論値まで1秒差があるような表示になってしまう問題を修正しました。 <br>
+    ・ 一部英語用のテキストを修正しました。 <br>
+    ・ クリエイティブのサムネ置き換えがうまく行かない問題を修正しました。 <br>
+    ・ 「Fall_Guys_Client.exe」の画面が消失したとき、設定画面を開くボタンと「強制終了」ボタンが重なって表示される問題を修正しました。 <br>
+    ・ Squadのポイント取得ラウンドで脱落したとき、クリア可能チーム数表示と現在の順位表示が連続で切り替わり続けてしまう問題を修正しました。 <br>
+    ・ Squadのサバイバルラウンドにて、現在のゲームバージョン(10.3.0)の仕様変更に伴い、自身のチームが脱落確定かつ全滅したとき、全滅後5秒経過した時点で観戦時と同様にボーダーのポイント数を表示するよう仕様を変更しました。 <br>
+    ・ 外部表示タイマーが重複表示されてしまい、ゲームの右上がクリックできなくなったり、各種配信ソフトでうまく描写してくれない問題を修正しました。 <br>
+    ・ Windowsのフォントサイズを変更すると全体的な見た目が崩れることがあったため、フォントサイズによるスケーリングを無効にしました。 <br>
+    ・ 「クリエイティブ検索ツール」にてボタンが押せなくなる問題を修正しました。 <br>
+    ・ 「クリエイティブ検索ツール」にてディスプレイサイズに合わせて横幅のサイズを調整しました。 <br>
+
   ○ 4.51.11 <br>
     ・ マッチメイキング中に待機中のプレイヤー数がわからないときは従来と同様に経過時間を表示するようにしました。 <br>
     ・ ラウンド終了後の結果画面以降、設定画面を表示するボタンが非表示になってしまう問題を修正しました。 <br>
@@ -645,6 +661,22 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.51.20 <br>
+    ・ Fixed problem with duplicate download of images for creative thumbnail replacement. <br>
+    ・ When "Elapsed Time" was selected for TextA, the round name displayed during a round would appear to be abbreviated even though it was not actually abbreviated. <br>
+    ・ "!" mark indicating the elimination zone in the point acquisition round. mark indicating the elimination zone in rounds in which points are earned has been fixed. <br>
+    ・ Adjusted the display position of the text shown in the point acquisition round. <br>
+    ・ Fixed a problem in SquadList where when a point correction was made after the end of a round, it would appear as if there was a one second difference to the theoretical value even though the round ended with time expired. <br>
+    ・ Some text for English has been corrected. <br>
+    ・ Fixed problem with creative thumbnail replacement not working. <br>
+    ・ Fixed a problem in which the "Kill Game" button overlapped with the "Open Settings" button when the "Fall_Guys_Client.exe" screen disappeared. <br>
+    ・ Fixed a problem in which the display of the number of teams available for clearing and the current standings kept switching continuously when a team was eliminated in a round of Squad's point acquisition. <br>
+    ・ In the Squad Survival Round, when a player's team is eliminated and all the players are eliminated, the number of border points will be displayed 5 seconds after the team is eliminated, as in the case of spectating the game. <br>
+    ・ Fixed a problem where the external display timer was duplicated, making the upper right corner of the game unclickable and not well described by various distribution software. <br>
+    ・ Scaling by font size has been disabled because changing the font size in Windows sometimes resulted in a loss of overall appearance. <br>
+    ・ Fixed a problem with the "Creative Search Tool" that prevented the button from being pressed. <br>
+    ・ The width size was adjusted to match the display size in the "Creative Search Tool". <br>
 
   ○ 4.51.11 <br>
     ・ When the number of waiting players is not known during matchmaking, the elapsed time is now displayed as before. <br>
