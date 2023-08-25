@@ -110,6 +110,13 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.51.23 <br>
+    ・ SquadListが潰れて表示されてしまう問題を修正しました。 <br>
+    ・ クリエイティブのサムネ置き換えを有効にするか、無効にするかを選べるようにしました。 <br>
+    ・ 5カウント音の設定を変更するとき、「ゲームに合わせる」を経由すると音量調整する箇所がグレーアウトされたままだったり、グレーアウトされない問題を修正しました。 <br>
+    ・ スコア取得ラウンドで外部表示される「！」マークの座標を調整しました。 <br>
+    ・ その他極秘設定を追加しました。 <br>
+
   ○ 4.51.22 <br>
     ・ 環境によってクリエイティブのサムネ表示の境界線が見えたままになる問題があったため、本来表示される場所以外では角丸にする設定をスキップするようにしました。 <br>
 
@@ -669,6 +676,13 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.51.23 <br>
+    ・ Fixed a problem with SquadList being collapsed. <br>
+    ・ Fixed a problem where when changing the 5-count sound setting, the volume adjustment point remained grayed out or was not grayed out when going through "adjust to game". <br>
+    ・ "!" mark displayed externally in the score acquisition round. mark coordinates adjusted. <br>
+    ・ Enable or disable creative thumbnail replacement. <br>
+    ・ Other secret settings added. <br>
 
   ○ 4.51.22 <br>
     ・ Because there was a problem with the borders of the creative thumbnail display remaining visible in some environments, the setting to make the corners rounded outside of the places where they are originally displayed has been skipped. <br>
