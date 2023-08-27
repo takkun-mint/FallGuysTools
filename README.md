@@ -110,6 +110,15 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.51.24 <br>
+    ・ PlayerListとSquadListを切り替えたとき、切り替え前のListのソート設定が常に引き継がれてしまう問題を修正しました。 <br>
+    ・ Tournament Listの設定を見直しました。 <br>
+    ・ 新しいTournament設定を追加しました。 <br>
+    ・ 一部各種言語のテキストを修正しました。 <br>
+    ・ マッチメイキング中に総経過時間を表示するようにしました。 <br>
+    ・ マッチメイキング中、待機中のプレイヤーの値が「Null」のとき、「Null」と表示するようにしました。 <br>
+    ・ 大会集計モードが有効のとき、大会名しか表示されない仕様を見直しました。 <br>
+
   ○ 4.51.23 <br>
     ・ SquadListが潰れて表示されてしまう問題を修正しました。 <br>
     ・ クリエイティブのサムネ置き換えを有効にするか、無効にするかを選べるようにしました。 <br>
@@ -676,6 +685,15 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.51.24 <br>
+    ・ Fixed a problem in which when switching between PlayerList and SquadList, the sort settings of the list before switching were always inherited. <br>
+    ・ Reviewed Tournament List settings. <br>
+    ・ New Tournament setting added. <br>
+    ・ Some text in various languages has been corrected. <br>
+    ・ Total elapsed time is now displayed during matchmaking. <br>
+    ・ During matchmaking, when the value of the queued player is "Null", "Null" is now displayed. <br>
+    ・ The specification that only the tournament name is displayed when the tournament tally mode (Tourney Mode) is enabled has been revised. <br>
 
   ○ 4.51.23 <br>
     ・ Fixed a problem with SquadList being collapsed. <br>
