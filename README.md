@@ -110,6 +110,23 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.52.00 <br>
+    ・ 内部プログラム処理をデータベースファイルから実行の有無を変更できるようプログラムを大幅に改修しました。 <br>
+    ・ 報酬読み込みまでのカウントダウン中に設定画面を開けるようにしました。 <br>
+    ・ 「クリエイティブ検索ツール」を表示する、および「強制終了する」ボタンが無反応になってしまう問題を修正しました。 <br>
+    ・ 大会集計モードのとき、Tournament Listがすでに開いているとき、タスクバーから再表示させないと行けない問題を修正しました。 <br>
+    ・ レッドタイマー（残り10秒を切るとタイマーが赤くなる時間のこと）になる秒数をステージデータベースから拾えるようにしました。 <br>
+    ・ Tournament Listにて第1ラウンド終了時点でラウンド数が消えてしまう問題について、改善を行いました。 <br>
+    ・ Tournament Listにて、大会ルールで耐久による同時優勝は無効という設定で、「Finalラウンドで同時優勝（耐久）した」という時間を5分固定からそのラウンドの制限時間に変更し、時間超過でも優勝したプレイヤーが1人以下の場合は優勝したとカウントするよう仕様を変更しました。 <br>
+    ・ Tournament Listにて列幅が長すぎることがあったため、列幅を自動で調整するよう仕様を変更しました。 <br>
+    ・ 大会集計モードのとき、ダウンロードした仮データが削除されずに残り続けてしまう問題を修正しました。 <br>
+    ・ 新しい大会に関する情報追加を行いました。 <br>
+    ・ データベースからダウンロードが終わったとき、現在設定されている大会集計モードと一致しない大会情報を削除するプログラムを効率化させました。 <br>
+    ・ ロールオフなどの周回カウンターやパーフェクトマッチなどのPhase制があるラウンドでラウンド開始直後に音を鳴らすようにしました。 <br>
+    ・ マッチングの総経過時間表示が1分を超えると崩れてしまう問題を修正しました。 <br>
+    ・ Toolsの内部ファイルにて、binフォルダ内にある「DL_」から始まるものを全て削除するようプログラムを変更し、効率化させました。 <br>
+    ・ 大会集計モードから通常モードに戻したとき、Tournament Listを非表示にするようにしました。 <br>
+
   ○ 4.51.24 <br>
     ・ PlayerListとSquadListを切り替えたとき、切り替え前のListのソート設定が常に引き継がれてしまう問題を修正しました。 <br>
     ・ Tournament Listの設定を見直しました。 <br>
@@ -685,6 +702,23 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.52.00 <br>
+    ・ The program has been substantially modified so that internal program processing can be changed to run or not run from the database file. <br>
+    ・ The settings screen can now be opened during the countdown to the reward loading. <br>
+    ・ Fixed an issue where the "Show Creative Search Tool" and "Kill Game" buttons would become unresponsive. <br>
+    ・ Fixed a problem where the Tournament List had to be redisplayed from the taskbar when it was already open when in tournament mode. <br>
+    ・ The number of seconds to red timer (meaning the time that the timer turns red when there are less than 10 seconds remaining) can now be picked up from the stage database. <br>
+    ・ The problem that the number of rounds disappears at the end of the first round in the Tournament List has been improved. <br>
+    ・ In the Tournament List, the time for "simultaneous winners (Survival) in the Final Round" was changed from the fixed time of 5 minutes to the time limit of that round, and the specification was changed to count the winner as the winner if less than one player won the tournament even if the time was exceeded. <br>
+    ・ The column widths in the Tournament List were sometimes too long, so the specifications have been changed to adjust the column widths automatically. <br>
+    ・ Fixed a problem in which downloaded temporary data remained in the competition tally mode without being deleted. <br>
+    ・ Added information about new competitions. <br>
+    ・ When downloading from the database is finished, we have streamlined the program to delete tournament information that does not match the currently set tournament aggregation mode. <br>
+    ・ A sound is now played immediately after the start of a round in rounds with a Phase system, such as "ROLL OFF" and other rounds with lap counters and "PERFECT MATCH". <br>
+    ・ Fixed an issue where the total elapsed time display for matching collapsed after one minute. <br>
+    ・ In the Tools internal file, the program has been modified to delete all files beginning with "DL_" in the bin folder to improve efficiency. <br>
+    ・ Tournament List is now hidden when returning from tournament tally mode to normal mode. <br>
 
   ○ 4.51.24 <br>
     ・ Fixed a problem in which when switching between PlayerList and SquadList, the sort settings of the list before switching were always inherited. <br>
