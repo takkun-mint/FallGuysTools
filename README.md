@@ -110,6 +110,13 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.52.01 <br>
+    ・ カスタムマッチ（プライベートロビー）で第一ラウンドの読み込み開始時に極稀にカウント音がなってしまう問題について処理の変更を行いました。 <br>
+    (※当該不具合について、開発者環境にて問題の発生及び修正の確認が取れていません。暫定的な修正となります。) <br>
+    ・ ラウンド終了時に一瞬だけ「クリエイティブ検索ツール」を開くボタンが表示されてしまう問題を修正しました。 <br>
+    ・ 設定画面やPlayerListの表示をするボタンを押したとき、すでに表示されていると一瞬だけ表示が消えてしまう問題を修正しました。 <br>
+    ・ 設定画面やクリエイティブ検索ツールにて、画面の大きさを各ディスプレイのサイズから取得するように仕様を変更しました。 <br>
+
   ○ 4.52.00 <br>
     ・ 内部プログラム処理をデータベースファイルから実行の有無を変更できるようプログラムを大幅に改修しました。 <br>
     ・ 報酬読み込みまでのカウントダウン中に設定画面を開けるようにしました。 <br>
@@ -702,6 +709,13 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.52.01 <br>
+    ・ A change has been made to the handling of a very rare counting sound at the beginning of the loading of the first round in custom matches (private lobby). <br>
+    (*The occurrence of the problem and its correction have not been confirmed in the developer's environment. This is a temporary fix.) <br>
+    ・ Fixed an issue where the button to open the "Creative Search Tool" would appear momentarily at the end of a round. <br>
+    ・ Fixed a problem that caused the display to momentarily disappear when a button was pressed to display the settings screen or PlayerList if it was already displayed. <br>
+    ・ In the settings screen and creative search tool, the specifications have been changed so that the screen size is obtained from the size of each display. <br>
 
   ○ 4.52.00 <br>
     ・ The program has been substantially modified so that internal program processing can be changed to run or not run from the database file. <br>
