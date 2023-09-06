@@ -110,6 +110,9 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.52.02 <br>
+    ・ 「Fall_Guys_Client.exe」の画面が消失したときやビクトリー画面転移時に、強制終了するボタンが表示されないことがある問題を修正しました。 <br>
+
   ○ 4.52.01 <br>
     ・ カスタムマッチ（プライベートロビー）で第一ラウンドの読み込み開始時に極稀にカウント音がなってしまう問題について処理の変更を行いました。 <br>
     (※当該不具合について、開発者環境にて問題の発生及び修正の確認が取れていません。暫定的な修正となります。) <br>
@@ -709,6 +712,9 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.52.02 <br>
+    ・ Fixed a problem in which the force close button was not displayed when the "Fall_Guys_Client.exe" screen was lost or when the Victory screen was transitioned. <br>
 
   ○ 4.52.01 <br>
     ・ A change has been made to the handling of a very rare counting sound at the beginning of the loading of the first round in custom matches (private lobby). <br>
