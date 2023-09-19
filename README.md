@@ -110,6 +110,9 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.52.12 <br>
+    ・ ツールの初期設定に失敗したとき、一度変数を初期化するようにしました。 <br>
+
   ○ 4.52.11 <br>
     ・ 報酬読み込みカウントダウンなどで残り時間が10秒を切っても赤タイマーにならない問題を修正しました。 <br>
 
@@ -729,6 +732,9 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.52.12 <br>
+    ・ Variables are now initialized once when initialization of a tool fails. <br>
 
   ○ 4.52.11 <br>
     ・ Fixed a problem where the red timer does not go off even if the remaining time is less than 10 seconds, e.g., in the reward loading countdown. <br>
