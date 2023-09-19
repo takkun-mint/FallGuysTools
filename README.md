@@ -110,6 +110,9 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.52.11 <br>
+    ・ 報酬読み込みカウントダウンなどで残り時間が10秒を切っても赤タイマーにならない問題を修正しました。 <br>
+
   ○ 4.52.10 <br>
     ・ 「大会集計モード」での設定できる値を追加しました。 <br>
     「ラウンド数に応じた獲得ポイントの減算システム」「脱落したプレイヤーにもポイントを獲得できるシステム」「基礎点(BasePoints)をクリア、脱落関係なく配当するなど」 <br>
@@ -726,6 +729,9 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.52.11 <br>
+    ・ Fixed a problem where the red timer does not go off even if the remaining time is less than 10 seconds, e.g., in the reward loading countdown. <br>
 
   ○ 4.52.10 <br>
     ・ Added values that can be set in the "Tournament Mode". <br>
