@@ -110,6 +110,20 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.52.10 <br>
+    ・ 「大会集計モード」での設定できる値を追加しました。 <br>
+    「ラウンド数に応じた獲得ポイントの減算システム」「脱落したプレイヤーにもポイントを獲得できるシステム」「基礎点(BasePoints)をクリア、脱落関係なく配当するなど」 <br>
+    ・ 「大会集計モード」で大会名をファイル名から各種大会の名前を入力することができるようにしました。 <br>
+    ・ 強制アップデートを行う旨を表示するテキストボックスが重複表示されてしまうことがある問題を修正しました。 <br>
+    ・ データベースのダウンロードの失敗した条件を修正しました。 <br>
+    ・ スクワッドのレースラウンドにて、ラウンド終了時にクリア可能チーム数が表示されない問題を修正しました。 <br>
+    ・ 外部表示タイマーのサイズを微調整しました。 <br>
+    ・ ツールの起動準備中にメインウィンドウが表示されてしまいUIが乱れてしまう問題を修正しました。 <br>
+    ・ 事前に設定されている場所にFall Guysのログファイルが存在しないとき、もう一度再設定できるようにしました。 <br>
+    ・ デバッグモードで利用しているとき、Toolsを再起動するたびにデバッグファイルが全て削除されてしまう問題を修正しました。 <br>
+    ・ ツールの初期設定に失敗したとき、エラーメッセージを表示するようにしました。 <br>
+    ・ ツールの初期設定に失敗しにくくなるようプログラムを最適化しました。 <br>
+
   ○ 4.52.02 <br>
     ・ 「Fall_Guys_Client.exe」の画面が消失したときやビクトリー画面転移時に、強制終了するボタンが表示されないことがある問題を修正しました。 <br>
 
@@ -712,6 +726,20 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.52.10 <br>
+    ・ Added values that can be set in the "Tournament Mode". <br>
+    The system of subtracting points earned according to the number of rounds, a system in which players who drop out of the game can also earn points, and a system in which BasePoints are paid out regardless of whether the player cleared the round or dropped out of the game. <br>
+    ・ In the "Tournament Mode," it is now possible to enter the names of various tournaments from the file name. <br>
+    ・ Fixed a problem in which a text box indicating that a forced update was to be performed was sometimes displayed in duplicate. <br>
+    ・ Corrected failed conditions for database downloads. <br>
+    ・ Fixed a problem in the Squad race round where the number of teams available for clearing was not displayed at the end of the round. <br>
+    ・ Fine-tuned the size of the external display timer. <br>
+    ・ Fixed an issue where the main window would appear while the tool was being prepared for launch, disrupting the UI. <br>
+    ・ When the Fall Guys log file does not exist in the preconfigured location, it can be reconfigured again. <br>
+    ・ Fixed a problem that caused all debug files to be deleted each time Tools was restarted when used in debug mode. <br>
+    ・ Error messages are now displayed when tool initialization fails. <br>
+    ・ The program has been optimized to make the initial setup of the tool less likely to fail. <br>
 
   ○ 4.52.02 <br>
     ・ Fixed a problem in which the force close button was not displayed when the "Fall_Guys_Client.exe" screen was lost or when the Victory screen was transitioned. <br>
