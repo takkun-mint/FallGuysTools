@@ -110,6 +110,21 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.53.00 <br>
+    ・ ツール起動時に「FallGuys_Client.exe」が起動されていないとき、外部表示タイマーのウィンドウが表示されない問題を修正しました。 <br>
+    ・ 一部「FallGuys_client.exe」のステータスを取得、操作するプログラムを最適化しました。 <br>
+    ・ PlayerListにて、ポイント取得ラウンドのときラウンド読み込み中に出現しなかったプレイヤーの脱落判定のログが出力されたとき、0点で計算されてしまう問題を修正しました。 <br>
+    ・ プレイヤーが生き残っているとき、ラウンドが始まる直前のカウントダウンが始まるときに自動的にゲーム画面をアクティブにし、最前面に表示するようにしました。 <br>
+    ※ 動作不安定のため、現時点で無効にしております。 <br>
+    ・ ラウンド終了時にPlayerListの表示が乱れることがあったため、再表示箇所を変更しました。 <br>
+    ・ ログファイルからゲームのフォーカス状況を取得できなくなったため、ツール上でフォーカス状態を取得するようにしました。 <br>
+    ※ ツールの処理速度を考慮して、1秒に1回取得するようにしております。そのため反映に多少時間かかる場合があります。 <br>
+    ・ スクワッドのクリア率が100%のとき、クリア可能チーム数の表示をしないようにしました。 <br>
+    ・ 一部経過時間が外部表示されるラウンドでかつ、ポイント取得ラウンドのとき表示が被ってしまう問題を修正しました。 <br>
+    ・ PlayerListにて一部のポイント取得ラウンドにてPlayerListの描画を常に行うとツールの動作に支障をきたしていたため、一定数のポイント変動で更新されるようにしました。 <br>
+    ・ Tournament Modeにて特定の大会のみ例外設定を追加しました。 <br>
+
+
   ○ 4.52.12 <br>
     ・ ツールの初期設定に失敗したとき、一度変数を初期化するようにしました。 <br>
 
@@ -732,6 +747,20 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.53.00 <br>
+    ・ Fixed a problem in which the External Display Timer window did not appear when "FallGuys_Client.exe" was not started when the tool was started. <br>
+    ・ Optimized the program that retrieves and manipulates the status of some "FallGuys_client.exe" programs. <br>
+    ・ Fixed a problem in PlayerList in which the log of elimination decisions for players who did not appear during round loading during the round of point acquisition was outputted, in which zero points were calculated. <br>
+    ・ When a player is still alive, the game screen is automatically activated and brought to the forefront when the countdown begins just before the start of the round. <br>
+    *  Due to unstable operation, it is disabled at this time. <br>
+    ・ The PlayerList display was sometimes corrupted at the end of a round, so the re-displayed area has been changed. <br>
+    ・ The focus status of the game can no longer be retrieved from the log file, so the focus status is now retrieved on the tools. <br>
+    *  The data is retrieved once per second in consideration of the processing speed of the tool. Therefore, it may take some time to reflect the status. <br>
+    ・ The number of teams that can clear a squad is no longer displayed when the squad's clear rate is 100%. <br>
+    ・ Fixed a problem in which the elapsed time was displayed externally for some rounds, but was also displayed for rounds in which points were acquired. <br>
+    ・ In the PlayerList, constant drawing of the PlayerList in some point acquisition rounds was interfering with the operation of the tool, so the PlayerList is now updated after a certain number of point changes. <br>
+    ・ Added exception setting in Tournament Mode for certain tournaments only. <br>
 
   ○ 4.52.12 <br>
     ・ Variables are now initialized once when initialization of a tool fails. <br>
