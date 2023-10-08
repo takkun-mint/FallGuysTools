@@ -110,6 +110,10 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.53.01 <br>
+    ・ 特定の大会専用モードの改修を行いました。 <br>
+    ・ 初期設定にエラーが発生したとき、毎回1秒クールタイムを入れるようにしました。 <br>
+
   ○ 4.53.00 <br>
     ・ ツール起動時に「FallGuys_Client.exe」が起動されていないとき、外部表示タイマーのウィンドウが表示されない問題を修正しました。 <br>
     ・ 一部「FallGuys_client.exe」のステータスを取得、操作するプログラムを最適化しました。 <br>
@@ -747,6 +751,10 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.53.01 <br>
+    ・ Modifications have been made to certain competition-specific modes. <br>
+    ・ Added 1-second cool time each time an error occurs in the initial setup. <br>
 
   ○ 4.53.00 <br>
     ・ Fixed a problem in which the External Display Timer window did not appear when "FallGuys_Client.exe" was not started when the tool was started. <br>
