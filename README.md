@@ -110,6 +110,24 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.54.00 <br>
+    ・ 必要なファイルが不足して強制アップデートが行われるとき、重複実行されてしまう問題を修正しました。 <br>
+    ・ ツールのデータベースファイルをダウンロードしている最中に終了したとき、次回起動時でエラーになってしまう問題を修正しました。 <br>
+    ・ 一部処理に時間がかかった問題や重複実行されてしまう問題が発生したため、プログラムを最適化しました。 <br>
+    ・ 新しく「カスタムマッチの開設のタイムアウトまで」のカウントダウンを追加しました。 <br>
+    ・ 一部ステージでsquadの判別ができないとき、極稀にsquadなのにsolo用のゲーム設定が表示されてしまう問題を修正しました。 <br>
+    ・ ラウンド開始前にプレイヤーが消滅したとき、PlayerList,SquadListの更新が行われるようにしました。 <br>
+    ・ PlayerListにて、ポイント取得ラウンドで0点で切断したプレイヤーが居るとき、順位の表示が乱れてしまう問題を修正しました。 <br>
+    ・ ラウンド読み込み画面で設定画面の強制非表示＆表示ボタンの削除のタイミングを変更しました。 <br>
+    ・ 「デジのシャッフルセレクション」(Digi's Shuffle Selection)にてラウンド開始前に全く違う制限時間やコース名が表示されてしまう問題を修正しました。 <br>
+    ・ SquadListにてレースラウンドのボーダーで同率のチームがいたとき、本来なら脱落する可能性があるのにクリア確定と色分けされてしまう問題を修正しました。 <br>
+    ・ squadでラウンド終了時にクリア可能チーム数が表示されない問題を修正しました。 <br>
+    ・ Tournament Listにてうまくファイルが出力されない問題を修正しました。 <br>
+    ・ ツールの初期設定に失敗したとき、ログの読み取りやツールの全ての機能を停止するようにしました。 <br>
+    ・ ツールの初期設定の失敗率を下げるため、重複実行されないようにしました。 <br>
+    ・ 設定画面で閉じるボタンを押してしまうと再起動まで表示されない問題を修正しました。 <br>
+    ・ 一部ローカライズ文章を変更しました。 <br>
+
   ○ 4.53.01 <br>
     ・ 特定の大会専用モードの改修を行いました。 <br>
     ・ 初期設定にエラーが発生したとき、毎回1秒クールタイムを入れるようにしました。 <br>
@@ -751,6 +769,24 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.54.00 <br>
+    ・ Fixed a problem that caused duplicate updates to be executed when a forced update was performed due to missing necessary files. <br>
+    ・ Fixed a problem that caused an error on next startup when exiting while the tool's database file was being downloaded. <br>
+    ・ The program has been optimized due to problems with some processes taking a long time and duplicate executions. <br>
+    ・ A new "until timeout for opening a private match" countdown has been added. <br>
+    ・ Fixed a problem in which game settings for SOLO were displayed in spite of squad in extremely rare cases when squad could not be distinguished in some stages. <br>
+    ・ PlayerList and SquadList are updated when a player disappears before the start of a round. <br>
+    ・ Fixed a problem in PlayerList in which the ranking was displayed incorrectly when a player disconnected with zero points in a point-getting round. <br>
+    ・ Changed the timing of the forced hide and show button deletion of the settings screen on the round loading screen. <br>
+    ・ Fixed a problem in "Digi's Shuffle Selection" where completely different time limits and course names were displayed before the start of the round. <br>
+    ・ Fixed an issue in SquadList where teams tied on race round borders would be color-coded as confirmed clear even though they might otherwise be eliminated. <br>
+    ・ Fixed a problem in SQUAD where the number of teams available for clearing was not displayed at the end of the round. <br>
+    ・ Fixed a problem in Tournament List where files were not being output properly. <br>
+    ・ When the initial setup of the tool fails, log reading and all functions of the tool are now stopped. <br>
+    ・ To reduce the failure rate of the tool's initial setup, it is now not executed in duplicate. <br>
+    ・ Fixed a problem in which if the close button is pressed on the settings screen, it will not be displayed until restart. <br>
+    ・ Some localization text has been changed. <br>
 
   ○ 4.53.01 <br>
     ・ Modifications have been made to certain competition-specific modes. <br>
