@@ -110,6 +110,9 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.55.01 <br>
+    ・ カスタムでコードを入力するクリエイティブステージをプレイした時、ラウンド開始直前にラウンドの設定情報が初期値に戻ってしまう問題を修正しました。 <br>
+
   ○ 4.55.00 <br>
     ・ 新しく「ゲーム開始直前にゲームが非アクティブのときに警告を出す機能」を追加しました。　すでに観戦状態の場合は動作しません。 <br>
     ・ ポイント取得ラウンドで脱落圏内に入ったとき、警告の効果音を再生するようにしました。 <br>
@@ -784,6 +787,9 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.55.01 <br>
+    ・ Fixed an issue where round setting information would return to default values just before the start of a round when playing a creative stage where a custom code is entered. <br>
 
   ○ 4.55.00 <br>
     ・ A new function "Warn when a game is inactive just before the game starts" has been added.　It will not work if the game is already in spectator status. <br>
