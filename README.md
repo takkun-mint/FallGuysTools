@@ -123,6 +123,7 @@ This tool is available in English and Japanese.<br>
     ・ 同じコースを周回するラウンドで、ラウンド開始前にLAP1に異常な値が入ってしまう問題やLAP2の小数点以下の数値がマイナスと表示されてしまう問題を修正しました。 <br>
     ・ SquadListにて0ポイントチームがラウンド終了したときの扱いについて、一律設定から「タイムオーバーのとき」「進出チーム確定終了のとき」の2つの要素からクリアか脱落かを判断するように仕様を変更しました。 <br>
     ・ マッチメイキング中に表示される総経過時間について待機時間のミリ秒で合わせないようにし、より正確に表示するようにしました。 <br>
+    ・ ショーから離脱するときにステージのロードと重なってしまうとソフトロックする問題が発生したときに「強制終了ボタン」を表示するようにしました。 <br>
 
   ○ 4.54.00 <br>
     ・ 必要なファイルが不足して強制アップデートが行われるとき、重複実行されてしまう問題を修正しました。 <br>
@@ -797,6 +798,7 @@ This tool is available in English and Japanese.<br>
     ・ Fixed a problem in which an abnormal value would be entered in LAP1 before the start of the round and the decimal point in LAP2 would be displayed as a minus value in rounds where the players were going around the same course. <br>
     ・ The handling of teams with zero points at the end of a round in SquadList has been changed from a uniform setting to one that determines whether a team is cleared or eliminated based on two factors: "when time is over" and "when the team that advances is determined to be eliminated". <br>
     ・ The total elapsed time displayed during matchmaking is now displayed more accurately, instead of being adjusted to the milliseconds of the waiting time. <br>
+    ・ A "Kill Game button" is now displayed when there is a problem with soft-locking when leaving a show if it overlaps with the loading of a stage. <br>
 
 
   ○ 4.54.00 <br>
