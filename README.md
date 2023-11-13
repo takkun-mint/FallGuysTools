@@ -110,6 +110,20 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.55.00 <br>
+    ・ 新しく「ゲーム開始直前にゲームが非アクティブのときに警告を出す機能」を追加しました。　すでに観戦状態の場合は動作しません。 <br>
+    ・ ポイント取得ラウンドで脱落圏内に入ったとき、警告の効果音を再生するようにしました。 <br>
+    ・ Fall Guysクリエイティブからメイン画面に戻ったときにゲームのアクティブ状態を奪ってしまう問題について暫定的な対応を行いました。 <br>
+    ・ カスタムショー（プライベートロビー）開始時に「強制終了する」ボタンが表示されたままになってしまう問題を修正しました。 <br>
+    ・ 極稀に一つ前のラウンドで脱落済みなのにもかかわらず、生存していると判定されてしまい観戦時の経過時間表示や外部表示タイマーが正しく動作しない問題について暫定的な対応を行いました。 <br>
+    ・ ウィンドウが非表示または最小化されている状態の座標を保存してしまい、Tools起動時に毎回ウィンドウが初期位置に戻ってしまう問題を修正しました。 <br>
+    ・ レースラウンドなどでゴール済みのプレイヤーが切断したときの繰り上げ処理を行う際、他の切断されたプレイヤーや測定不能順位（200位）まで繰り上げ処理がされてしまう問題を修正しました。 <br>
+    ・ 1v1ラウンドにてクリアしたプレイヤーを一律で1位とする仕様を廃止しました。 <br>
+    ・ 同じコースを周回するラウンドで、LAP切替時にそのLAPタイムを外部表示するようにしました。 <br>
+    ・ 同じコースを周回するラウンドで、ラウンド開始前にLAP1に異常な値が入ってしまう問題やLAP2の小数点以下の数値がマイナスと表示されてしまう問題を修正しました。 <br>
+    ・ SquadListにて0ポイントチームがラウンド終了したときの扱いについて、一律設定から「タイムオーバーのとき」「進出チーム確定終了のとき」の2つの要素からクリアか脱落かを判断するように仕様を変更しました。 <br>
+    ・ マッチメイキング中に表示される総経過時間について待機時間のミリ秒で合わせないようにし、より正確に表示するようにしました。 <br>
+
   ○ 4.54.00 <br>
     ・ 必要なファイルが不足して強制アップデートが行われるとき、重複実行されてしまう問題を修正しました。 <br>
     ・ ツールのデータベースファイルをダウンロードしている最中に終了したとき、次回起動時でエラーになってしまう問題を修正しました。 <br>
@@ -769,6 +783,21 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.55.00 <br>
+    ・ A new function "Warn when a game is inactive just before the game starts" has been added.　It will not work if the game is already in spectator status. <br>
+    ・ A warning sound effect is now played when a player enters the elimination zone in a point acquisition round. <br>
+    ・ Tentatively addressed the issue of the game taking away the active state of the game when returning to the main screen from Fall Guys Creative. <br>
+    ・ Fixed an issue where the "Kill Game" button would remain visible when starting a custom show (private lobby). <br>
+    ・ A temporary fix has been made for a problem in which the elapsed time display and the external timer do not work properly when watching a match, because it is judged that the player is still alive even though he or she was eliminated in the previous round, which is very rare. <br>
+    ・ Fixed a problem where the coordinates of a hidden or minimized window would be saved, causing the window to return to its initial position every time Tools is launched. <br>
+    ・ Fixed a problem in which when a player who has already finished a race round disconnected from the race, the other disconnected players and the unmeasurable positions (200th) were also moved up in the race. <br>
+    ・ The specification that the player who cleared the first 1v1 round is ranked uniformly as No. 1 has been abolished. <br>
+    ・ In a round of laps around the same course, the LAP time is now displayed externally when switching LAPs. <br>
+    ・ Fixed a problem in which an abnormal value would be entered in LAP1 before the start of the round and the decimal point in LAP2 would be displayed as a minus value in rounds where the players were going around the same course. <br>
+    ・ The handling of teams with zero points at the end of a round in SquadList has been changed from a uniform setting to one that determines whether a team is cleared or eliminated based on two factors: "when time is over" and "when the team that advances is determined to be eliminated". <br>
+    ・ The total elapsed time displayed during matchmaking is now displayed more accurately, instead of being adjusted to the milliseconds of the waiting time. <br>
+
 
   ○ 4.54.00 <br>
     ・ Fixed a problem that caused duplicate updates to be executed when a forced update was performed due to missing necessary files. <br>
