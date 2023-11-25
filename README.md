@@ -110,6 +110,9 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.01 <br>
+    ・ 一部ステージ名において、内部表記用のテキストがステージ名として取得されてしまう問題を修正しました。 <br>
+
   ○ 4.99.00 <br>
     ・ Fall Guysのコンテンツ情報を解析し、自動的にラウンドの設定情報を取得できるようにしました。 <br>
     ・ クリアタイム、脱落タイムをFall Guys Statsと同じ箇所から取得できるようにしました。 <br>
@@ -808,6 +811,9 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.01 <br>
+    ・ In some stage names, text for internal notation was being acquired as the stage name. <br>
 
   ○ 4.99.00 <br>
     ・ Fall Guys content information can be parsed to automatically retrieve information on round settings. <br>
