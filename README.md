@@ -110,6 +110,27 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.00 <br>
+    ・ Fall Guysのコンテンツ情報を解析し、自動的にラウンドの設定情報を取得できるようにしました。 <br>
+    ・ クリアタイム、脱落タイムをFall Guys Statsと同じ箇所から取得できるようにしました。 <br>
+    ・ 第一ラウンド開始前にToolsのステージ情報を更新するようにしました。 <br>
+    ・ Squadを遊んでいるときにPlayerListを開くと一瞬画面がちらつく問題を修正しました。 <br>
+    ・ Squadにて未召喚で脱落判定を受けたプレイヤーが自身と同じパーティーであるかのような表示が行われる問題を修正しました。 <br>
+    ・ 前回修正したはずだった、レースラウンドなどでゴール済みのプレイヤーが切断したときの繰り上げ処理が関係なく行われてしまう問題について今度こそ修正しました。 <br>
+    ・ ポイント取得ラウンドのフラグを最適化しました。 <br>
+    ・ ポイント取得ラウンドにて、ラウンド終了後に脱落したプレイヤーのスコアボードが更新されるとスコアが-5000000と登録されてしまう問題を修正しました。 <br>
+    ・ ポイント取得ラウンドにて、外部表示される「pt」の表示を「pts」に変更し、パーセンテージラウンドでは「%」と表示されるようにしました。 <br>
+    ・ Squadにて結果画面転移時にConnect Serverに表示が戻らない問題を修正しました。 <br>
+    ・ クリエイティブラウンドをプレイするとき、APIから常にステージ名を取得するようにしました。 <br>
+    ・ LAPラウンドにて、LAP2の秒数表示が荒ぶってしまう問題を修正しました。 <br>
+    ・ LAPラウンドにて、ゴールしたときに合計タイム、観戦時にLAP2のタイムが表示されてしまう問題を修正し、ゴール時にLAP2タイム、観戦時に合計タイムを表示するようにしました。 <br>
+    ・ Squadにてレースラウンド、サバイバルラウンドでも脱落圏内にいると警告音を鳴らすようにしました。 <br>
+    ・ SquadListにてサバイバルラウンドのとき、クリア圏内にいるときもボーダーより下のチームに理論点で抜かされる状況（脱落する可能性）に陥ったとき、警告音と「！」マークを表示するようにしました。 <br>
+    ・ Squadにてレースラウンド時にクリア確定、脱落確定時に外部表示テキストを表示するようにしました。（※ステージにゴールできるプレイヤー制限がないものに限ります。） <br>
+    ・ 外部表示関連の座標を調整しました。 <br>
+    ・ ユーザーからの要望を受け、残り5秒以下のときに再生されるタイマーの音量を-3dB下げました。 <br>
+    ・ クリエイティブコース検索ツールにて、プレイされた回数がうまく表示できない問題を修正しました。 <br>
+
   ○ 4.55.01 <br>
     ・ カスタムでコードを入力するクリエイティブステージをプレイした時、ラウンド開始直前にラウンドの設定情報が初期値に戻ってしまう問題を修正しました。 <br>
 
@@ -787,6 +808,28 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.00 <br>
+    ・ Fall Guys content information can be parsed to automatically retrieve information on round settings. <br>
+    ・ Clear and dropout times can now be obtained from the same location as Fall Guys Stats. <br>
+    ・ Tools stage information is now updated before the start of the first round. <br>
+    ・ Fixed a problem with the screen flickering momentarily when opening PlayerList while playing Squad. <br>
+    ・ Fixed a problem in Squad where a player who was not summoned and was dropped was displayed as if he/she was in the same party as the player who was summoned and dropped. <br>
+    ・ The problem that was supposed to be fixed in the previous version, in which the game was moved up when a player who had already finished a race round disconnected, has been fixed this time regardless. <br>
+    ・ Optimized flagging of point acquisition rounds. <br>
+    ・ Fixed a problem in which the scoreboard of a player who was eliminated after a round in a point-earning round would register a score of -5000000 when the scoreboard was updated after the round. <br>
+    ・ Changed the external display of "pt" to "pts" in the point acquisition round and "%" in the percentage round. <br>
+    ・ Fixed a problem in Squad where the display did not return to Connect Server when the results screen was shifted. <br>
+    ・ When playing creative rounds, we now always get the stage name from the API. <br>
+    ・ Fixed a problem in LAP rounds where the seconds display for LAP2 would be rough. <br>
+    ・ Fixed a problem in the LAP round where the total time was displayed at the finish line and the LAP2 time was displayed when spectating, so that the LAP2 time is displayed at the finish line and the total time is displayed when spectating. <br>
+    ・ Squad now sounds a warning sound when in the elimination zone for both the race and survival rounds. <br>
+    ・ In the survival round of SquadList, when a team is in the clear and is still being passed by a team below the border in terms of theoretical points (possibility of elimination), a warning sound and "!" mark is displayed. <br>
+    ・ External display text is now shown in Squad when a race round is confirmed clear or eliminated. (*Only for stages that do not have a player limit on who can finish.) <br>
+    ・ Coordinates related to external display have been adjusted. <br>
+    ・ In response to user requests, the volume of the timer that plays when there are less than 5 seconds remaining has been lowered by -3 dB. <br>
+    ・ Fixed a problem in the Creative Course Search tool where the number of times played was not displayed properly. <br>
+
 
   ○ 4.55.01 <br>
     ・ Fixed an issue where round setting information would return to default values just before the start of a round when playing a creative stage where a custom code is entered. <br>
