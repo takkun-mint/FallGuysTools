@@ -110,6 +110,14 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.02 <br>
+    ・ コンテンツ情報の取得タイミングをコンテンツロード時からラウンド1開始直前に変更しました。 <br>
+    ・ コンテンツ情報の取得に失敗したとき、ラウンド1開始前に失敗の旨のテキストを表示するようにしました。 <br>
+    ・ コンテンツ情報の取得に失敗したとき、既存のデータベースから取得するよう仕様を変更しました。 <br>
+    ・ コンテンツ情報を使用してステージ名を取得したとき、空白がうまく表現できなくなる問題を修正しました。 <br>
+    ・ ラウンドが開始しているのにもかかわらず、ステータスがラウンド開始前の状態と認識し、非アクティブ警告が出てしまう問題を修正しました。 <br>
+    ・ コンテンツアップデートや言語変更でコンテンツ情報が更新されたときに情報が正しく取得できない問題を修正しました。 <br>
+
   ○ 4.99.01 <br>
     ・ 一部ステージ名において、内部表記用のテキストがステージ名として取得されてしまう問題を修正しました。 <br>
 
@@ -811,6 +819,14 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.02 <br>
+    ・ Timing of content information acquisition has been changed from when content is loaded to just before the start of round 1. <br>
+    ・ When the acquisition of content information fails, a text indicating the failure is displayed before the start of round 1. <br>
+    ・ Changed specifications so that when content information fails to be retrieved, it is retrieved from an existing database. <br>
+    ・ Fixed a problem in which whitespace was not well represented when using content information to obtain stage names. <br>
+    ・ Fixed a problem in which the status would recognize the status as before the start of the round and an inactivity warning would be issued, even though the round had already started. <br>
+    ・ Fixed a problem in which information could not be retrieved correctly when content information was updated due to content updates or language changes. <br>
 
   ○ 4.99.01 <br>
     ・ In some stage names, text for internal notation was being acquired as the stage name. <br>
