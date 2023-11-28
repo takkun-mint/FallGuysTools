@@ -110,6 +110,15 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.03 <br>
+    ・ ラウンド1開始直前にToolsが行う様々な動作の影響でPingが一時的に高い値が出てしまう問題があったため、ラウンド1の読み込み開始からラウンド情報を取得が完了するまで一時的にPingの取得を停止するようにしました。 <br>
+    ・ 極稀にToolsの効果音が再生されない問題が発生したため、サーバーから切断後一旦ファイルとの紐づけを削除するようにしました。 <br>
+    ・ 今後のFall Guysの仕様変更の可能性に備えて、「ゲーム上でタイマーの表示される時間」という変数の初期値を-10秒から-1,000,000秒に変更しました。 <br>
+    ・ 上記の項目に合わせ、サドンデス版のオーバータイムが発生したときの「ゲーム上でタイマーが表示される時間」という変数を-10秒から-1,000,000秒に変更しました。 <br>
+    ・ 一部プログラムの最適化、および型の指定を正確にしました。 <br>
+    ・ ショーから離脱するタイミングでゲームのロードが重なったときに発生するソフトロック問題について、強制終了するボタンが表示されない問題を修正しました。 <br>
+    ・ ステージデータベースを最後に取得してから次にダウンロードができるまでのクールタイムの計測が正しく実行されない問題を修正しました。 <br>
+
   ○ 4.99.02 <br>
     ・ コンテンツ情報の取得タイミングをコンテンツロード時からラウンド1開始直前に変更しました。 <br>
     ・ コンテンツ情報の取得に失敗したとき、ラウンド1開始前に失敗の旨のテキストを表示するようにしました。 <br>
@@ -819,6 +828,15 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.03 <br>
+    ・ There was a problem that Ping was temporarily high due to various operations performed by Tools just before the start of Round 1. Therefore, Ping acquisition was temporarily stopped from the start of Round 1 loading until the round information acquisition was completed. <br>
+    ・ In extremely rare cases, the sound effects of Tools were not played, so the connection to the file was deleted once it was disconnected from the server. <br>
+    ・ In preparation for possible future changes to the Fall Guys specification, the initial value of the variable "time the timer is displayed on the game" has been changed from -10 seconds to -1,000,000 seconds. <br>
+    ・ In line with the above item, the variable "time the timer is displayed on the game" when overtime occurs in the Sudden Death version was changed from -10 seconds to -1,000,000 seconds. <br>
+    ・ Some program optimizations and type designations were made more accurate. <br>
+    ・ Fixed a soft lock issue that occurred when the game load overlapped at the time of leaving the show, and the button to force quit was not displayed. <br>
+    ・ Fixed a problem in which the measurement of the cool time between the last retrieval of the stage database and the next available download was not performed correctly. <br>
 
   ○ 4.99.02 <br>
     ・ Timing of content information acquisition has been changed from when content is loaded to just before the start of round 1. <br>
