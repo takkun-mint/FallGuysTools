@@ -110,6 +110,14 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.04 <br>
+    ・ 一部のタイマー効果音が再生されない問題を修正しました。 <br>
+    ・ Toolsのすべての効果音が効果音設定で無効にしても再生されてしまう問題を修正しました。 <br>
+    ・ 上記の設定変更に伴い、一度Toolsの効果音に関する設定を初期化します。ご了承ください。 <br>
+    ・ カスタムでコードを入力するクリエイティブステージやクリエイティブ検索ツールの内部プログラムを最適化しました。 <br>
+    ・ 一部専用モードの挙動を変更しました。 <br>
+    ・ Score.pngの画像を差し替え、外部表示位置を調整しました。 <br>
+
   ○ 4.99.03 <br>
     ・ ラウンド1開始直前にToolsが行う様々な動作の影響でPingが一時的に高い値が出てしまう問題があったため、ラウンド1の読み込み開始からラウンド情報を取得が完了するまで一時的にPingの取得を停止するようにしました。 <br>
     ・ 極稀にToolsの効果音が再生されない問題が発生したため、サーバーから切断後一旦ファイルとの紐づけを削除するようにしました。 <br>
@@ -828,6 +836,14 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.04 <br>
+    ・ Fixed problem with some timer sound effects not playing. <br>
+    ・ Fixed a problem where all sound effects in Tools would play even if disabled in the sound effect settings. <br>
+    ・ The settings related to sound effects in Tools will be initialized once due to the above change of settings. Please understand this. <br>
+    ・ We have optimized the internal programming of the Creative Stage and Creative Search tool, where you can enter custom code. <br>
+    ・ The behavior of some exclusive modes has been changed. <br>
+    ・ Replaced the Score.png image and adjusted the external display position. <br>
 
   ○ 4.99.03 <br>
     ・ There was a problem that Ping was temporarily high due to various operations performed by Tools just before the start of Round 1. Therefore, Ping acquisition was temporarily stopped from the start of Round 1 loading until the round information acquisition was completed. <br>
