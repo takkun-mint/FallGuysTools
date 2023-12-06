@@ -110,6 +110,15 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.05 <br>
+    ・ 必要ファイルが足りないときの強制アップデートが重複してしまう問題を修正しました。強制アップデート後も不足している場合はToolsを終了するようにしました。 <br>
+    ・ 起動時の初回ロード中に効果音が再生されてしまう問題を修正しました。 <br>
+    ・ プログラムを一部改修しました。 <br>
+    ・ ツールの初期設定の変数の初期化の位置を調整し、エラーがさらに発生しにくいようにしました。 <br>
+    ・ ファイル破損防止のため、データベースダウンロード中や処理中にToolsを終了できないようにしました。（見た目は終了したように見えます。） <br>
+    ・ クリエイティブ検索ツールにて、名前の間に空白が存在してしまう問題を修正しました。 <br>
+    ・ ログのタイミングなどでプログラム同士が干渉してしまう問題があるため、Toolsを重複起動できないようにしました。 <br>
+
   ○ 4.99.04 <br>
     ・ 一部のタイマー効果音が再生されない問題を修正しました。 <br>
     ・ Toolsのすべての効果音が効果音設定で無効にしても再生されてしまう問題を修正しました。 <br>
@@ -836,6 +845,15 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.05 <br>
+    ・ Fixed a problem with duplicate forced updates when necessary files are missing. Tools is now terminated when missing files are still missing after a forced update. <br>
+    ・ Fixed a problem with sound effects being played during initial loading at startup. <br>
+    ・ The program has been partially modified. <br>
+    ・ The position of the initialization of variables in the tool's default settings has been adjusted to further reduce the likelihood of errors. <br>
+    ・ To prevent file corruption, Tools cannot be terminated during database download or processing. (It looks like it has closed.) <br>
+    ・ Fixed a problem in the Creative Search tool where spaces existed between names. <br>
+    ・ Tools can no longer be launched in duplicate due to problems with programs interfering with each other, such as log timing. <br>
 
   ○ 4.99.04 <br>
     ・ Fixed problem with some timer sound effects not playing. <br>
