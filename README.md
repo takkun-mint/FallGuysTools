@@ -110,6 +110,11 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.06 <br>
+    ・ 15秒延長方式のOverTimeのとき、Pingが表示が残り時間表示と被ってしまう問題を修正しました。 <br>
+    ・ アップデート通知が無限に出現してしまう問題を修正しました。 <br>
+    ・ 一部効果音が再生されない問題があったため、効果音に関する変数を以前のものにロールバックしました。 <br>
+
   ○ 4.99.05 <br>
     ・ 必要ファイルが足りないときの強制アップデートが重複してしまう問題を修正しました。強制アップデート後も不足している場合はToolsを終了するようにしました。 <br>
     ・ 起動時の初回ロード中に効果音が再生されてしまう問題を修正しました。 <br>
@@ -845,6 +850,11 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.06 <br>
+    ・ Fixed a problem in which the ping display was covered by the remaining time display when using the 15-second extension method of OverTime. <br>
+    ・ Fixed a problem that caused update notifications to appear indefinitely. <br>
+    ・ Due to a problem with some sound effects not playing, the variables related to sound effects have been rolled back to their previous values. <br>
 
   ○ 4.99.05 <br>
     ・ Fixed a problem with duplicate forced updates when necessary files are missing. Tools is now terminated when missing files are still missing after a forced update. <br>
