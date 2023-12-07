@@ -111,7 +111,7 @@ This tool is available in English and Japanese.<br>
   ## 更新ログ (日本語・The English version is below) <br>
 
   ○ 4.99.06 <br>
-    ・ 15秒延長方式のOverTimeのとき、Pingが表示が残り時間表示と被ってしまう問題を修正しました。 <br>
+    ・ 15秒延長方式のOverTimeのとき、Pingの表示が残り時間表示と被ってしまう問題を修正しました。 <br>
     ・ アップデート通知が無限に出現してしまう問題を修正しました。 <br>
     ・ 一部効果音が再生されない問題があったため、効果音に関する変数を以前のものにロールバックしました。 <br>
 
