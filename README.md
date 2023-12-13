@@ -110,6 +110,13 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.07 <br>
+    ・ SquadListにて1v1のラウンドのときに、ソロベースのクリア人数が表示されてしまう問題を修正しました。 <br>
+    ・ SquadListにて1v1のラウンドのときに、OverTime開始後に本来脱落したチームが脱落の色分けにならない問題を修正しました。 <br>
+    ・ 1v1ラウンドにて、OverTime開始時にToolsがオーバータイムモードにならない問題を修正しました。 <br>
+    ・ 一部専用モードの挙動を変更しました。 <br>
+    ・ 今後復活するかもしれないウィークリーショーに合わせ、制限時間がレッドタイマーよりも小さいコースのときラウンド開始前のアニメーションの時点でレッドタイマーにするようにしました。 <br>
+
   ○ 4.99.06 <br>
     ・ 15秒延長方式のOverTimeのとき、Pingの表示が残り時間表示と被ってしまう問題を修正しました。 <br>
     ・ アップデート通知が無限に出現してしまう問題を修正しました。 <br>
@@ -850,6 +857,13 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.07 <br>
+    ・ Fixed an issue in SquadList where the number of people cleared on a solo basis was displayed during 1v1 rounds. <br>
+    ・ Fixed an issue in SquadList where teams originally eliminated after the start of OverTime were not color-coded as eliminated during 1v1 rounds. <br>
+    ・ Fixed a problem in 1v1 rounds where Tools did not enter overtime mode at the start of OverTime. <br>
+    ・ The behavior of some exclusive modes has been changed. <br>
+    ・ To accommodate weekly shows that may return in the future, the red timer is now set at the point of animation before the start of the round when the course time limit is smaller than the red timer. <br>
 
   ○ 4.99.06 <br>
     ・ Fixed a problem in which the ping display was covered by the remaining time display when using the 15-second extension method of OverTime. <br>
