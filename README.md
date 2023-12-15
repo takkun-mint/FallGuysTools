@@ -110,6 +110,11 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.08 <br>
+    ・ 「発見 - ベータ版」のステータス表示に対応しました。 <br>
+    ・ メインメニューにいるときに定期的にコンテンツアップデートが公開されたか確認を入れるようにしました。 <br>
+    ・ 極稀にメインメニューにいるときにステータスが切り替わらなくなる問題を修正しました。 <br>
+
   ○ 4.99.07 <br>
     ・ SquadListにて1v1のラウンドのときに、ソロベースのクリア人数が表示されてしまう問題を修正しました。 <br>
     ・ SquadListにて1v1のラウンドのときに、OverTime開始後に本来脱落したチームが脱落の色分けにならない問題を修正しました。 <br>
@@ -857,6 +862,11 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.08 <br>
+    ・ The status display of "Discovery -Beta" is now supported. <br>
+    ・ We now periodically include a check to see if a content update has been published when you are in the main menu. <br>
+    ・ Fixed a problem where in extremely rare cases the status would not switch when in the main menu. <br>
 
   ○ 4.99.07 <br>
     ・ Fixed an issue in SquadList where the number of people cleared on a solo basis was displayed during 1v1 rounds. <br>
