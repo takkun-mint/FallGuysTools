@@ -110,6 +110,15 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.10 <br>
+    ・ 新言語：「ロシア語」(Beta)を追加しました。 <br>
+    ・ 一部ローカライズ文章を変更しました。 <br>
+    ・ 一部ステータステキストが領域外に出てしまう問題を自動的に補正するようにしました。 <br>
+    ・ Toolsの一部のテキストをゲーム内のコンテンツ情報から拾えるように変更し、表示領域の自動調整を行うようにしました。 <br>
+    ・ ポイント取得ラウンドで、観戦時に全員0ポイントのときに表示されるテキストが見切れてしまっていた問題を修正しました。 <br>
+    ・ Text Aに「経過時間」を割り当てているとき、一部の言語で経過時間表示とステージ名が重なってしまう問題を修正しました。 <br>
+    ・ 一部専用モードの挙動を変更しました。 <br>
+
   ○ 4.99.08 <br>
     ・ 「発見 - ベータ版」のステータス表示に対応しました。 <br>
     ・ メインメニューにいるときに定期的にコンテンツアップデートが公開されたか確認を入れるようにしました。 <br>
@@ -862,6 +871,15 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.10 <br>
+    ・ New language: "Russian" (Beta) is added. <br>
+    ・ Some localization text has been changed. <br>
+    ・ The problem of some status text going out of the area is now automatically corrected. <br>
+    ・ Changed some of the Tools text so that it can be picked up from in-game content information and automatically adjust the display area. <br>
+    ・ Fixed a problem in which the text displayed in the point-getting round when all players had 0 points when watching the game was not visible. <br>
+    ・ When "Elapsed Time" is assigned to Text A, the elapsed time display and stage name overlap in some languages. <br>
+    ・ The behavior of some exclusive modes has been changed. <br>
 
   ○ 4.99.08 <br>
     ・ The status display of "Discovery -Beta" is now supported. <br>
