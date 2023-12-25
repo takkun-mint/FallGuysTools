@@ -110,6 +110,20 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.11 <br>
+    ・ 一部コンテンツ情報の解析が行えない環境において、解析に失敗した場合にGitHubからコンテンツファイルのうち必要なファイルのみを受信するように仕様を変更しました。 <br>
+    ・ （※上記を使った場合は日本語、英語以外のラウンドの名前や一部テキストがコンテンツに合わせてローカライズされません。） <br>
+    ・ ラウンドを読み込む際コンテンツファイルから一部テキストの反映を行うときにエラーが発生してしまいデータベースから情報を再取得してしまう問題を修正しました。 <br>
+    ・ 一部コンテンツ情報の解析が行えない環境において、Toolsが終了できず終了してもバックグラウンドプロセスとして動作をし続け起動できなくなる問題を修正しました。 <br>
+    ・ Toolsが処理中に終了されないようバックグラウンド処理に切り替わったとき、一定時間経過で処理が終わっていなくても強制終了するように仕様を変更しました。 <br>
+    ・ Squadモード時に「クラウンマウンテン」や「ロストテンプル」などでラウンド終了時に優勝扱いになったプレイヤー数を外部表示していたのを、「優勝判定を獲得したチーム数」に変更しました。 <br>
+    ・ 予期しない項目が自動的にサイズが調整されてしまう問題を修正しました。 <br>
+    ・ Text Aにラウンド中に表示されるステージ名について、文字数制限をステージ名だけでなくステージカウンター用ローカライズ文も含めてカウントするよう仕様を変更しました。 <br>
+    ・ 一部Penguinが出現するラウンドにて、Penguinの出現数が表示されるようにしました。 <br>
+    ・ 一部専用モードにてクリエイティブコースのコース制作者IDが取得できない問題を修正しました。 <br>
+    ・ Tools起動時の初回ロードにクリエイティブのサムネを表示してしまう問題を修正しました。 <br>
+    ・ 一部不合理に処理されているプログラムを修正しました。 <br>
+
   ○ 4.99.10 <br>
     ・ 新言語：「ロシア語」(Beta)を追加しました。 <br>
     ・ 一部ローカライズ文章を変更しました。 <br>
@@ -871,6 +885,20 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.11 <br>
+    ・ In environments where some content information cannot be parsed, the specification has been changed so that only the necessary files among the content files are received from GitHub in the event that parsing fails. <br>
+    ・ (*When using the above, names and some text of non-Japanese and non-English rounds will not be localized to match the content.) <br>
+    ・ Fixed a problem in which an error occurred when reflecting some text from a content file when loading a round, causing the information to be retrieved from the database again. <br>
+    ・ Fixed a problem in which Tools could not be closed in environments where some content information could not be analyzed, and even if it was closed, it continued to operate as a background process and could not be started. <br>
+    ・ When Tools switches to background processing to prevent termination during processing, the specification has been changed to force termination after a certain period of time has elapsed even if the processing is not finished. <br>
+    ・ The external display of the number of players treated as winners at the end of rounds in "Fall Mountain" and "Lost Temple" during Squad mode has been changed to "the number of teams that received a winning decision". <br>
+    ・ Fixed a problem where unexpected items were automatically resized. <br>
+    ・ The character limit for the stage name displayed in Text A during a round has been changed to count not only the stage name but also the localized text for the stage counter. <br>
+    ・ The number of penguins in some rounds where penguins appear is now displayed. <br>
+    ・ Fixed a problem in which course creator IDs for creative courses could not be obtained in some dedicated modes. <br>
+    ・ Fixed an issue with displaying creative thumbnails on initial loading when Tools is launched. <br>
+    ・ Some programs that were being processed unreasonably have been corrected. <br>
 
   ○ 4.99.10 <br>
     ・ New language: "Russian" (Beta) is added. <br>
