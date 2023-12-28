@@ -110,9 +110,18 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.12 <br>
+    ・ ラウンド開始後にもゲームの非アクティブ警告表示が残ってしまうバグを修正しました。 <br>
+    ・ クリア割合が設定されているラウンドにてラウンド開始前にメイン画面や外部表示にクリア可能人数/脱落人数が表示されるようにしました。 <br>
+    （上記の変更に伴い、Ping表示に関しては表示位置を変更しました。） <br>
+    ・ Fall Guysを起動したときにクリエイティブコード変数が初期化された状態でクリエイティブ情報を取得しようとしてエラーが発生してしまう問題を修正しました。 <br>
+    ・ Fall Guysのメインメニューにいるときに「TIME」表示が行われてしまう問題を修正しました。 <br>
+    ・ ラウンドのゲームルールが使用できないときに代替として表示される経過時間表示についてラウンド終了後にラウンドの経過時間から再計算を行うようにしました。 <br>
+    ・ 一部テキストがゲーム指定のローカライズに変更されない問題を修正しました。 <br>
+
   ○ 4.99.11 <br>
     ・ 一部コンテンツ情報の解析が行えない環境において、解析に失敗した場合にGitHubからコンテンツファイルのうち必要なファイルのみを受信するように仕様を変更しました。 <br>
-    ・ （※上記を使った場合は日本語、英語以外のラウンドの名前や一部テキストがコンテンツに合わせてローカライズされません。） <br>
+    （※上記を使った場合は日本語、英語以外のラウンドの名前や一部テキストがコンテンツに合わせてローカライズされません。） <br>
     ・ ラウンドを読み込む際コンテンツファイルから一部テキストの反映を行うときにエラーが発生してしまいデータベースから情報を再取得してしまう問題を修正しました。 <br>
     ・ 一部コンテンツ情報の解析が行えない環境において、Toolsが終了できず終了してもバックグラウンドプロセスとして動作をし続け起動できなくなる問題を修正しました。 <br>
     ・ Toolsが処理中に終了されないようバックグラウンド処理に切り替わったとき、一定時間経過で処理が終わっていなくても強制終了するように仕様を変更しました。 <br>
@@ -886,9 +895,18 @@ This tool is available in English and Japanese.<br>
 
   ## ChangeLog (English) <br>
 
+  ○ 4.99.12 <br>
+    ・ Fixed a bug that caused the game inactivity warning indicator to remain after the start of a round. <br>
+    ・ In rounds where a clear ratio is set, the number of qualify/eliminate number of is displayed on the main screen and external display before the start of the round. <br>
+    (*Due to the above changes, the position of the ping indicator has been changed.) <br>
+    ・ Fixed an issue where an error would occur when trying to retrieve creative information with creative code variables initialized when starting Fall Guys. <br>
+    ・ Fixed a problem with the "TIME" display when in the Fall Guys main menu. <br>
+    ・ The elapsed time display, which is displayed as an alternative when round game rules are not available, is now recalculated from the elapsed time of the round after the round is over. <br>
+    ・ Fixed a problem in which some text was not changed to the localization specified by the game. <br>
+
   ○ 4.99.11 <br>
     ・ In environments where some content information cannot be parsed, the specification has been changed so that only the necessary files among the content files are received from GitHub in the event that parsing fails. <br>
-    ・ (*When using the above, names and some text of non-Japanese and non-English rounds will not be localized to match the content.) <br>
+    (*When using the above, names and some text of non-Japanese and non-English rounds will not be localized to match the content.) <br>
     ・ Fixed a problem in which an error occurred when reflecting some text from a content file when loading a round, causing the information to be retrieved from the database again. <br>
     ・ Fixed a problem in which Tools could not be closed in environments where some content information could not be analyzed, and even if it was closed, it continued to operate as a background process and could not be started. <br>
     ・ When Tools switches to background processing to prevent termination during processing, the specification has been changed to force termination after a certain period of time has elapsed even if the processing is not finished. <br>
