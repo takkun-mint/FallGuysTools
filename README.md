@@ -110,6 +110,19 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.13 <br>
+    ・ UserNameに空白が含まれている場合、正しくコンテンツ情報やログファイルの自動設定に失敗してしまう問題を修正しました。 <br>
+    ・ Squadのポイント取得ラウンドで本来クリアチーム数が表示されるところ、「スクワッドチーム数/クリア可能チーム数」と誤った表記になってしまう問題を修正しました。 <br>
+    ・ すでに観戦モードのときにラウンドの読み込みが始まると設定画面が強制的に閉じないようにしました。 <br>
+    ・ Squadのレース、サバイバルラウンドでラウンド終了時にクリア/脱落の表示が残るようにしました。 <br>
+    ・ 処理が一部重複実行されてしまう問題を修正しました。 <br>
+    ・ サーバー情報の取得に関するプログラムを最適化しました。 <br>
+    ・ アクティブ警告の音量を下げました。 <br>
+    ・ ゲームをアクティブにしたのに、アクティブ警告の表示が残ってしまう問題を修正しました。 <br>
+    ・ カスタムサーバーへの接続の上限数をコンテンツ情報から取得できるようにしました。 <br>
+    ・ PINGの表示が見切れてしまう問題を修正しました。 <br>
+    
+
   ○ 4.99.12 <br>
     ・ ラウンド開始後にもゲームの非アクティブ警告表示が残ってしまうバグを修正しました。 <br>
     ・ クリア割合が設定されているラウンドにてラウンド開始前にメイン画面や外部表示にクリア可能人数/脱落人数が表示されるようにしました。 <br>
@@ -894,6 +907,18 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.13 <br>
+    ・ Fixed a problem in which automatic configuration of content information and log files would fail correctly if UserName contained spaces. <br>
+    ・ Fixed a problem in which the number of cleared teams was incorrectly displayed as "number of squad teams/number of teams available for qualify" in the Squad point acquisition round, when it originally displayed the number of cleared teams. <br>
+    ・ The settings screen is no longer forced to close when a round starts loading when already in spectator mode. <br>
+    ・ Squad races and survival rounds now leave a qualify/eliminate indicator at the end of the round. <br>
+    ・ Fixed a problem that caused some processes to be executed in duplicate. <br>
+    ・ Optimized programs related to server information retrieval. <br>
+    ・ The volume of the active warning has been lowered. <br>
+    ・Fixed a problem where the game was activated but the active warning was still displayed. <br>
+    ・ The maximum number of connections to a private server can now be obtained from content information. <br>
+    ・ Fixed a problem where the PING display would be blinded. <br>
 
   ○ 4.99.12 <br>
     ・ Fixed a bug that caused the game inactivity warning indicator to remain after the start of a round. <br>
