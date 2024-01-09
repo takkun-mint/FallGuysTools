@@ -110,6 +110,29 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.20 <br>
+    ・ 新機能【縦型配信支援モード】を追加しました。導入すると制限時間タイマーやクリア可能数が全て外部表示され続けるため、配信ソフトで自由自在にサイズや位置を調整できるようになります。 <br>
+    （※スクワッドの敗退後に観戦を続けた場合、現時点でログファイルを使って観戦中のプレイヤーの特定ができないため、観戦しているプレイヤーの所属するスクワッドのスクワッドスコアは表示できません。） <br>
+    ・ Player情報に関するほぼすべての変数を新しいものに置き換えました。 <br>
+    （上記の変更に伴い、Player情報に関するすべてのプログラムについて、最適化を行いました。） <br>
+    ・ ログファイルからタイムスタンプが消えることを想定し、ログの読み取り速度やタイムスタンプ取得のタイミングを調整しました。 <br>
+    ・ サーバーから現在の経過時間を取得するシミュレーションタイムによる制限時間修正について、PINGを考慮するなどのプログラムの調整を行い再度有効にしました。 <br>
+    （※なお、プレイヤーのゴールタイムに関しては今まで通り修正を行わない値を採用するため、その部分に関する変更はありません。） <br>
+    ・ 観戦状態でラウンド開始前のイントロカメラが再生中にショーから離脱すると一瞬外部表示タイマーが表示されてしまう問題を修正しました。 <br>
+    ・ ファイナルラウンドのラウンド読み込み中にクリア率を元にクリア可能プレイヤー数を表示するプログラムが、プレイヤーが0人でも1人がクリア可能とも解釈可能な表記になってしまっている問題を修正しました。 <br>
+    ・ OverTime発生時に何もテキストが表示されないにもかかわらず、その他のText Aに設定している項目を非表示にしてしまう問題を修正しました。 <br>
+    ・ OverTimeの発生数をデータベースから取得できるよう改善を行いました。 <br>
+    ・ タイムアタックラウンドでプレイヤーのタイムが5分と表示されてしまう問題を修正しました。 <br>
+    ・ ラウンド開始前にクリア判定を受けると、経過時間の表示が負の値として表示されてしまう問題を修正しました。 <br>
+    ・ PlayerListにてBOTを表示したとき、本来ならプレイヤーIDを表示しないといけないところを、ラウンドごとに値が変わるGUYS IDを表示していた問題を修正しました。 <br>
+    ・ SquadListにてサバイバルラウンドのときに本来なら理論点で逆転可能なのに、他のチームと同じスコアだと同着を考慮せず逆転可能状態の色分けが行われない問題を修正しました。 <br>
+    ・ SquadListにて、ラウンド終了条件によってクリア状態が変わるときに結果画面転移時にフラグが初期化されてしまいラウンド終了時点とその後で色分けが変わってしまう問題を修正しました。 <br>
+    ・ Squadのソロベースのクリア制限があるレースラウンドで、ラウンド終了時にクリアできたかどうかの表示が消えてしまう問題を修正しました。 <br>
+    ・ Squadのサバイバルラウンドで、ラウンド終了後にクリアできたかどうかの表示が行われない問題を修正しました。 <br>
+    ・ 一部専用モードの挙動を変更しました。 <br>
+    ・ インターネット接続が不安定のときに、コンテンツアップデート確認プログラムが暴発してしまう問題を修正しました。 <br>
+    ・ 外部表示の経過時間表示について、座標の調整を行いました。 <br>
+
   ○ 4.99.13 <br>
     ・ UserNameに空白が含まれている場合、正しくコンテンツ情報やログファイルの自動設定に失敗してしまう問題を修正しました。 <br>
     ・ Squadのポイント取得ラウンドで本来クリアチーム数が表示されるところ、「スクワッドチーム数/クリア可能チーム数」と誤った表記になってしまう問題を修正しました。 <br>
@@ -908,6 +931,29 @@ This tool is available in English and Japanese.<br>
 
   ## ChangeLog (English) <br>
 
+  ○ 4.99.20 <br>
+    ・ A new function [Vertical Delivery Support Mode] has been added. When introduced, all time limit timers and the number of possible clears will continue to be displayed externally, allowing the delivery software to freely adjust size and position. <br>
+    (*If you continue to watch the game after your squad has been eliminated, you will not be able to view the squad score of the squad to which you are a spectator, as the log file cannot be used to identify the player who is spectating at this time). <br>
+    ・ Almost all variables related to Player information have been replaced with new ones. <br>
+    (With the above changes, we have optimized all programs regarding Player information.) <br>
+    ・ Assuming that timestamps disappear from log files, we adjusted the speed of reading logs and the timing of timestamp acquisition. <br>
+    ・ The time limit modification by simulation time, which obtains the current elapsed time from the server, has been re-enabled by adjusting the program to take PING into account, etc. <br>
+    (*The player's goal time will remain unchanged, as it is still an unmodified value.) <br>
+    ・ Fixed a problem that caused the external display timer to appear momentarily when leaving the show while the intro camera was playing before the start of the round in spectator status. <br>
+    ・ Fixed a problem in which a program that displayed the number of players who could clear a round based on the clear rate during the loading of the final round could be interpreted to mean that one player could clear the round even if there were zero players. <br>
+    ・ Fixed a problem that hides other items set to Text A even though no text is displayed when OverTime occurs. <br>
+    ・ Improvements have been made so that the number of Overtime occurrences can be retrieved from the database. <br>
+    ・ Fixed a problem in which a player's time was displayed as 5 minutes in the Time Attack round. <br>
+    ・ Fixed a problem in which the elapsed time would be displayed as a negative value if a clear decision was received before the start of a round. <br>
+    ・ Fixed a problem in which GUYS IDs, which change from round to round, were being displayed in the PlayerList when BOTs were displayed, when they should have been displayed as player IDs. <br>
+    ・ Fixed a problem in SquadList where, during the survival round, the color coding did not take into account ties and possible upsets if a team had the same score as another team, even though it should be theoretically possible to upsets the other team. <br>
+    ・ Fixed a problem in SquadList where, when the clear status changed depending on the end-of-round condition, the flag was initialized at the time of the transition to the results screen, causing the color coding to change between the end of the round and afterwards. <br>
+    ・ Fixed a problem in a race round with a Squad solo-based clear limit where the indication of whether the round was completed or not would disappear at the end of the round. <br>
+    ・ Fixed a problem in the Squad survival round where the game did not indicate whether the round was completed or not after the round was over. <br>
+    ・ The behavior of some exclusive modes has been changed. <br>
+    ・ Fixed a problem that caused the content update confirmation program to run out of control when the Internet connection was unstable. <br>
+    ・ Coordinates have been adjusted for the elapsed time display on the external display. <br>
+
   ○ 4.99.13 <br>
     ・ Fixed a problem in which automatic configuration of content information and log files would fail correctly if UserName contained spaces. <br>
     ・ Fixed a problem in which the number of cleared teams was incorrectly displayed as "number of squad teams/number of teams available for qualify" in the Squad point acquisition round, when it originally displayed the number of cleared teams. <br>
@@ -916,7 +962,7 @@ This tool is available in English and Japanese.<br>
     ・ Fixed a problem that caused some processes to be executed in duplicate. <br>
     ・ Optimized programs related to server information retrieval. <br>
     ・ The volume of the active warning has been lowered. <br>
-    ・Fixed a problem where the game was activated but the active warning was still displayed. <br>
+    ・ Fixed a problem where the game was activated but the active warning was still displayed. <br>
     ・ The maximum number of connections to a private server can now be obtained from content information. <br>
     ・ Fixed a problem where the PING display would be blinded. <br>
 
