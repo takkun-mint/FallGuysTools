@@ -110,6 +110,24 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.21 <br>
+    ・ ラウンド中にToolsを起動し、縦型配信モードが有効になっていると枠だけ表示されてしまう問題を修正しました。 <br>
+    ・ 応答停止になりにくいよう、ラウンドごとにシステムに応答状態を通知するようにしました。 <br>
+    ・ Squadのレースラウンドで、縦型配信モードが有効でかつソロベースのクリア制限があり、脱落後に観戦を続けた場合にクリアできる人数表示を一つにするよう変更を行いました。 <br>
+    ・ 一部のウィークリーショーにて、第一ラウンドにSquadListが表示できない問題を修正しました。 <br>
+    ・ ソロのポイント取得ラウンドにて、脱落したプレイヤーのスコアがマイナス1,000から獲得したポイントを減算した値が表示されてしまう問題を修正しました。 <br>
+    ・ LAPラウンドにて、別のプレイヤーの周回を誤検出してしまう問題を修正しました。 <br>
+    ・ 一部ウィークリーショーのルールにて、PING表示が固定化され表示されたままになってしまう問題を修正しました。 <br>
+    ・ フォールバック用のデータベースから取得を行った際、エクストリームラウンドがレースラウンドとして認識されない問題を修正しました。 <br>
+    ・ Squadのサバイバルで、縦型配信モードが有効の際に表示される「スクワッドスコア」の更新タイミングを調整しました。 <br>
+    ・ 縦型配信モードが有効でかつ、15秒延長方式のOverTimeでその残り時間がゲームに表示されるシチュエーションで、残り時間のかわりに「スクワッドスコア」が表示されてしまう問題を修正しました。 <br>
+    ・ Squadのレースラウンドにて、クリア確定判定の調整を行いました。 <br>
+    ・ 新しい設定項目が追加されたとき、Toolsを再起動しないとフラグが立たない問題を修正しました。 <br>
+    ・ 外部表示関連の座標の調整を行いました。 <br>
+    ・ 外部表示関連で一部表示がゲームのサイズに調整されなかった問題を修正しました。 <br>
+    ・ SquadListにて0ポイントで全滅してしまったチームをファイナルラウンドのみ全滅順に順位を表示するよう改良を行いました。(プログラムとしてはかなり無理をしているのでBetaとさせていただきます。) <br>
+    ・ すでにクリア判定を受けたプレイヤーが切断や離脱により、ステータスが脱落判定に切り替わったときに行われる順位繰り上げシステムが上手く動作しない問題を修正しました。 <br>
+
   ○ 4.99.20 <br>
     ・ 新機能【縦型配信支援モード】を追加しました。導入すると制限時間タイマーやクリア可能数が全て外部表示され続けるため、配信ソフトで自由自在にサイズや位置を調整できるようになります。 <br>
     （※スクワッドの敗退後に観戦を続けた場合、現時点でログファイルを使って観戦中のプレイヤーの特定ができないため、観戦しているプレイヤーの所属するスクワッドのスクワッドスコアは表示できません。） <br>
@@ -930,6 +948,24 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.21 <br>
+    ・ Fixed a problem in which only the frame was displayed when Tools is launched during a round and Vertical Delivery Support Mode is enabled. <br>
+    ・ To prevent response stoppages, the system is now notified of the response status for each round. <br>
+    ・ In the Squad race round, a change has been made to show the number of people who can clear the race as one if the Vertical Delivery Support Mode is enabled and there is a solo-based clear limit and the player continues to spectate after dropping out of the race. <br>
+    ・ Fixed a problem that prevented SquadList from displaying in the first round for some weekly shows. <br>
+    ・ Fixed a problem in which the score of a player who was eliminated in a solo point-earning round would be displayed as minus 1,000 minus the points earned. <br>
+    ・ Fixed a problem in LAP rounds that caused false detection of another player's rounds. <br>
+    ・ Fixed a problem in which the ping display was fixed and remained displayed in some weekly show rules. <br>
+    ・ Fixed a problem in which Extreme Rounds were not recognized as race rounds when retrieving from the database for fallback. <br>
+    ・ Adjusted the update timing of the "Squad Score" displayed in Squad's Survival when the Vertical Delivery Support Mode is enabled. <br>
+    ・ Fixed a problem in which "Squad Score" was displayed instead of the remaining time in situations where the vertical delivery mode was enabled and the remaining time was displayed in the game with the 15-second extension method of OverTime. <br>
+    ・ In the Squad race round, the clear decision was adjusted. <br>
+    ・ Fixed a problem where when a new configuration item was added, it would not be flagged until Tools was restarted. <br>
+    ・ Coordinates related to external display have been adjusted. <br>
+    ・ Fixed a problem related to external display in which some displays did not adjust to the size of the game. <br>
+    ・ We have improved SquadList so that teams that have been eliminated with 0 points are ranked in order of elimination only in the final round. (This is a bit too much work for the program, so it will be considered Beta.) <br>
+    ・ Fixed a problem in which the rank advancement system, which is performed when a player who has already received a qualify decision switches status to a eliminate decision due to disconnection or leaving the game, did not work properly. <br>
 
   ○ 4.99.20 <br>
     ・ A new function [Vertical Delivery Support Mode] has been added. When introduced, all time limit timers and the number of possible clears will continue to be displayed externally, allowing the delivery software to freely adjust size and position. <br>
