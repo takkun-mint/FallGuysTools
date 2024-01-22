@@ -110,6 +110,15 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.51 <br>
+    ・ ショーから離脱したときにSquadListの色分けが解除される問題を修正しました。 <br>
+    ・ パス情報がコンテンツに存在しないとき、設定がない旨のテキストを追加しました。 <br>
+    ・ パスの残り時間表示に、ブースト情報を追加しました。 <br>
+    ・ パスが未開催のときに次のパスを探すプログラムの探し方が間違っていた問題を修正しました。 <br>
+    ・ コンテンツから情報を取得するとき、値がnullだとエラーになってしまう問題を修正しました。 <br>
+    ・ コンテンツ情報から新たに「パスのブースト情報」を取得できるようにしました。 <br>
+    ・ NTPサーバーによる時刻修正プログラムにおいて、サーバー交信にかかった時間が全く考慮されていなかった問題を修正しました。 <br>
+
   ○ 4.99.50 <br>
     ・ Toolsを起動したときにFall Guysの起動から30秒経過していないと一旦ログの読み込みを一時停止するように仕様を変更しました。 <br>
     ・ Text A,Bにログ情報を表示しているとき、ログの最後の行が空欄だと何も表示されなくなる問題を修正しました。 <br>
@@ -978,6 +987,15 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.51 <br>
+    ・ Fixed problem with SquadList color coding being removed when leaving a show. <br>
+    ・ When path information is not present in the content, text has been added stating that there is no setting. <br>
+    ・ Boost information has been added to the remaining time display for paths. <br>
+    ・ Fixed a problem in which the program's search for the next Fame pass when a Fame pass is not yet held was incorrect. <br>
+    ・ Fixed an error when retrieving information from content if the value is null. <br>
+    ・ New "Fame pass boosting information" can be obtained from content information. <br>
+    ・ The NTP server time correction program did not take into account the time spent communicating with the server. <br>
 
   ○ 4.99.50 <br>
     ・ Changed the specification to pause reading logs once 30 seconds have elapsed from the start of Fall Guys when Tools is launched. <br>
