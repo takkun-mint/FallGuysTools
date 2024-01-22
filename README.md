@@ -110,6 +110,36 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.50 <br>
+    ・ Toolsを起動したときにFall Guysの起動から30秒経過していないと一旦ログの読み込みを一時停止するように仕様を変更しました。 <br>
+    ・ Text A,Bにログ情報を表示しているとき、ログの最後の行が空欄だと何も表示されなくなる問題を修正しました。 <br>
+    ・ Squadのサバイバルラウンドのとき、ラウンド途中にショーを離脱したあとにToolsを立ち上げるとSquadListの表示が本来と違う表示になってしまう問題を修正しました。 <br>
+    ・ Text Aにログ情報を表示しているとき、メインメニューに戻ってもクリエイティブ検索ツールを表示するボタンがゲームを強制終了するボタンから戻らない問題を修正しました。 <br>
+    ・ 接続したサーバーの情報を取得中にToolsの動作が一時停止してしまう問題を修正し、取得中の場合「Loading...」と表示するようにしました。 <br>
+    ・ サバイバルラウンドのラウンド開始にプレイヤーが切断すると、ゲーム上では脱落人数「0/10」と表示されるところ、「1/11」と表示されてしまう問題を修正しました。 <br>
+    ・ Squadにて、自身が脱落したあとも観戦を続けた場合、ラウンド開始前に「スクワッドスコア」を表示するところ、クリア/脱落数が表示されてしまう問題を修正しました。 <br>
+    ・ PlayerList,SquadListにてラウンド開始前に脱落判定を受けたプレイヤーが居るとき、ステータスが切断にならない問題を修正しました。 <br>
+    ・ PlayerList,SquadListの更新タイミングを調整しました。 <br>
+    ・ ポイント取得ラウンドで、全プレイヤーのポイントの読み取りを完了してからPosition表示を行うよう改良しました。 <br>
+    ・ クリア判定を行うプログラムで不具合が起こる可能性があるプログラムの書き方をしていた問題を修正しました。 <br>
+    ・ ポイント取得ラウンドでPlayerListを使っているとき、ラウンド中に切断したプレイヤーが居ると切断したプレイヤーの逆順で順位の並び替えが行われる問題を修正しました。 <br>
+    ・ プログラムの最適化・改善を行いました。 <br>
+    ・ Fall Guysのコンテンツの例外（ゲームルール未設定やステージ名の未設定）があったとき、Toolsが壊れてしまう問題を修正しました。 <br>
+    ・ ラウンド中に表示されるToolsの独自機能について、二重に設定が行われる問題を修正しました。 <br>
+    ・ 新機能：パス終了までのカウントダウン機能を追加しました。 <br>
+    ・ メインメニューにいるときにText Bの項目に現在の時間とパス終了までのカウントダウンを表示するようにしました。 <br>
+    ・ 上記の追加に伴い、NTPサーバーとの交信を行いPCローカル時間との差分を取得し、正しい時間を表示するようプログラムを追加しました。 <br>
+    ・ メインメニューのときに表示されるローテーションテキストについて、1秒に1回更新するようプログラムを変更しました。 <br>
+    ・ メインメニューのときに表示されるローテーションテキストについて、表示時間や表示順について、データベースから変更できるようにしました。 <br>
+    ・ PlayerListにて、今後名前表示が戻ることを想定し、プログラムの書き方を変更しました。 <br>
+    ・ PlayerListにて、「Round Time」のTIMEにラウンドが終了されるまでラウンドの制限時間を表示するよう仕様を変更しました。 <br>
+    ・ SquadListにて、プレイヤー情報を取得するときに未設定のプレイヤーの処理を行わないよう仕様を変更しました。 <br>
+    ・ Squadのレースラウンドにおいて、SquadListのクリア確定判定について、同着を考慮していなかった問題を修正しました。 <br>
+    ・ メインメニューにいるときに設定を変更すると、ログファイルの内容が更新されるまで再表示が行われない問題を修正しました。 <br>
+    ・ Squadのサバイバルラウンドのときにポイント加算プログラムにおいて、誤ったプレイヤーにスコアが追加されることがあった問題を修正しました。 <br>
+    ・ Text Bにログ情報を表示しているとき、デフォルトの表示位置を左上から左中央に変更しました。 <br>
+    ・ 外部表示関連の座標の調整を行いました。 <br>
+
   ○ 4.99.21 <br>
     ・ ラウンド中にToolsを起動し、縦型配信モードが有効になっていると枠だけ表示されてしまう問題を修正しました。 <br>
     ・ 応答停止になりにくいよう、ラウンドごとにシステムに応答状態を通知するようにしました。 <br>
@@ -948,6 +978,36 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.50 <br>
+    ・ Changed the specification to pause reading logs once 30 seconds have elapsed from the start of Fall Guys when Tools is launched. <br>
+    ・ When log information is displayed in Text A and B, if the last line of the log is blank, nothing is displayed. <br>
+    ・ Fixed a problem in the Squad Survival Round in which SquadList would display differently than it should when Tools was launched after leaving the show in the middle of a round. <br>
+    ・ When log information is displayed in Text A, the button to display the creative search tool does not return from the button to force quit the game after returning to the main menu. <br>
+    ・ Fixed a problem in which Tools pauses while retrieving information from a connected server,"Loading..." is now displayed when the information is being acquired. <br>
+    ・ Fixed a problem in which if a player disconnected at the start of a round in a survival round, the game would show "1/11" as the number of players eliminated, when it would show "0/10" in the game. <br>
+    ・ Fixed a problem in Squad where the "Squad Score" would display the number of qualify/eliminate matches before the start of a round if the player continued to watch the match after he/she had been eliminated. <br>
+    ・ Fixed a problem in PlayerList and SquadList in which the status did not become disconnected when a player was eliminated before the start of a round. <br>
+    ・ PlayerList and SquadList update timing has been adjusted. <br>
+    ・ In the point acquisition round, the Position display has been improved so that it is displayed only after all players' points have been read. <br>
+    ・ Fixed a problem in which the program was written in a way that could cause problems in programs that make qualify decisions. <br>
+    ・ When using PlayerList in a point acquisition round, if a player disconnected during the round, the rankings were sorted in reverse order of the disconnected player. <br>
+    ・ Optimization and improvement of the program. <br>
+    ・ Fixed a problem with Fall Guys content exceptions (game rules not set or stage names not set) that would break Tools. <br>
+    ・ Fixed a problem with double settings for Tools' unique features displayed during a round. <br>
+    ・ New: A countdown function to the end of the pass has been added. <br>
+    ・ When in the main menu, the Text B item now displays the current time and the countdown to the end of the pass. <br>
+    ・ With the above addition, a program was added to communicate with the NTP server to obtain the difference from the PC local time and display the correct time. <br>
+    ・ The program has been changed so that the rotating text displayed during the main menu is updated once per second. <br>
+    ・ Rotation text displayed in the main menu can now be changed from the database in terms of display time and display order. <br>
+    ・ In PlayerList, the program has been rewritten in anticipation of the return of name display in the future. <br>
+    ・ In PlayerList, the specification has been changed so that the TIME of "Round Time" displays the time limit of the round until the round is completed. <br>
+    ・ In SquadList, when acquiring player information, the specification has been changed so that unsettled players will not be processed. <br>
+    ・ In the Squad race round, the SquadList qualify determination did not take into account ties. <br>
+    ・ Fixed a problem where changing settings while in the main menu would not reappear until the log file content was updated. <br>
+    ・ Fixed a problem in which scores were sometimes added to the wrong player in the point accrual program during Squad's survival rounds. <br>
+    ・ When log information is displayed in Text B, the default display position has been changed from the upper left to the left center. <br>
+    ・ Coordinates related to external display have been adjusted. <br>
 
   ○ 4.99.21 <br>
     ・ Fixed a problem in which only the frame was displayed when Tools is launched during a round and Vertical Delivery Support Mode is enabled. <br>
