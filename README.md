@@ -110,6 +110,17 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.52 <br>
+    ・ 外部表示で使われるTitan Oneフォントをゲーム内のものに置き換えました。 <br>
+    ・ 上記の変更により、外部表示関連の座標およびプログラムの最適化を行いました。 <br>
+    ・ Fall Guysを起動してから30秒以内にToolsを起動すると内部エラーが発生してしまう問題を修正しました。 <br>
+    ・ ポイント取得ラウンドにて、ラウンド終了時にボーターの点数が更新されない問題を修正しました。 <br>
+    ・ 稀に、第一ラウンド開始前に謎のステージ情報が表示されることがある問題について、対策を行いました。 <br>
+    ・ メインメニューにいるときのローテーションテキストについて、更新頻度を高め、リアルタイム時刻との差をできる限り小さくしました。（仕様上、誤差を0にすることはできません。） <br>
+    ・ 「発見 - ベータ版」を開始時に表示されるテキストが表示されない問題を修正しました。 <br>
+    ・ パスが未開催のときに次のパスを探すプログラムの探し方が間違っていた問題を再度修正しました。 <br>
+    ・ NTPサーバーによる時刻修正プログラムにおいて、調整を行いました。 <br>
+
   ○ 4.99.51 <br>
     ・ ショーから離脱したときにSquadListの色分けが解除される問題を修正しました。 <br>
     ・ パス情報がコンテンツに存在しないとき、設定がない旨のテキストを追加しました。 <br>
@@ -987,6 +998,17 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.52 <br>
+    ・ Replaced the Titan One font used in the external display with the one used in the game. <br>
+    ・ The above changes optimize the coordinates and programs related to the external display. <br>
+    ・ Fixed an internal error that would occur if Tools was launched within 30 seconds of starting Fall Guys. <br>
+    ・ Fixed a problem in which boater scores were not updated at the end of a round in the point acquisition round. <br>
+    ・ Countermeasures have been taken to address a rare issue where mysterious stage information is displayed before the first round begins. <br>
+    ・ For the rotating text when in the main menu, we have increased the update frequency and reduced the difference from the real-time time as much as possible. (Due to specifications, it is not possible to reduce the error to zero.) <br>
+    ・ Fixed a problem with the text displayed at the start of "Discover - Beta" not being displayed. <br>
+    ・ The problem of the program looking for the next path when a pass is not yet held has been corrected again. <br>
+    ・ Adjustments have been made in the time correction program by the NTP server. <br>
 
   ○ 4.99.51 <br>
     ・ Fixed problem with SquadList color coding being removed when leaving a show. <br>
