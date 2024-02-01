@@ -110,6 +110,31 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.53 <br>
+    ・ Toolsの初回起動のとき、ログファイルの自動設定ができない問題を修正しました。 <br>
+    ・ Fall Guysを起動した瞬間からメインメニューのローテーションテキストを表示するよう改良しました。 <br>
+    ・ 自身が脱落したあとも観戦を続けた場合、Squadのラウンド開始直後に外部表示テキストが一瞬乱れてしまう問題を修正しました。 <br>
+    ・ ラウンド開始する前に切断したプレイヤーがいるとき、ラウンド開始までPlayerList,SquadListおよびクリア可能チーム数の再計算が行われない問題を修正しました。 <br>
+    ・ ポイント取得ラウンドにて、ボーダー点数表示が1点分遅れて表示されてしまう問題を修正しました。 <br>
+    ・ 稀に、第一ラウンド開始前に謎のステージ情報が表示されることがある問題について、再度対策を行いました。 <br>
+    ・ 縦型配信支援モードがONの状態でSquadのレースラウンドをプレイするとき、ソロベースでのクリア制限があるラウンドでもクリア可能人数の表示が消えてしまう問題を修正しました。 <br>
+    ・ カスタムショーをホスト、もしくは参加したときに一瞬だけ時刻表示などの表示が消えてしまう問題を修正しました。 <br>
+    ・ SquadListにて、vs形式のラウンドで0点の状態で敗北したチームだけ順に表示が行われてしまう問題を修正しました。 <br>
+    ・ ショーから離脱したときにSquadListの色分けが解除される問題を再度修正しました。 <br>
+    ・ SquadListにて、レースラウンドでのクリア確定判定の調整を行いました。 <br>
+    ・ SquadListにて、サバイバルラウンドでの理論点からボーダー外に転落するか昇格するかを判別するプログラムについて、脱落後観戦を続けた場合に処理が行われない問題を修正しました。 <br>
+    ・ SquadListにて、サバイバルラウンドでの理論点からボーダー外に転落するか昇格するかを判別するプログラムの調整を行いました。 <br>
+    ・ SquadListにて、サバイバルラウンドでのクリア確定判定について、脱落圏内チームの中で一番理論点が高い点数のみを基準にしていたのを、現在の順位と点数から理論点ベースで抜かれる可能性があるチーム数を算出し、その合計数を足してもボーダーから溢れないかどうかで判断するように変更しました。 <br>
+    ・ メインメニューのローテーションテキスト表示時にフレームブーストが掛かっているときに専用の画像を表示するようにしました。 <br>
+    ・ NTPサーバーから時刻を取得するプログラムについて、処理を別スレッドに移行しました。 <br>
+    ・ メインメニューで時刻表示が行われているとき、NTPサーバーから時刻が更新されると、一気に2秒分進んでしまうことがある問題を修正しました。 <br>
+    ・ メインメニューで表示される時刻表示について調整を行いました。 <br>
+    ・ コンテンツファイルからローカライズ文を取得するとき、Unicodeでエンコードされている場合を考慮して表示するようにしました。 <br>
+    ・ コンテンツファイルから読み取れないとき、ローカライズ文もGitHubから取得するようにしました。 <br>
+    ・ 一部画像を実際にゲームで使用されているものに置き換えました。 <br>
+    ・ 外部表示関連の座標の調整を行いました。 <br>
+    ・ ポイント取得ラウンドで表示されるスコア表示について、一通りログを読み切ってから計算を行い処理を行うよう変更しました。 <br>
+
   ○ 4.99.52 <br>
     ・ 外部表示で使われるTitan Oneフォントをゲーム内のものに置き換えました。 <br>
     ・ 上記の変更により、外部表示関連の座標およびプログラムの最適化を行いました。 <br>
@@ -998,6 +1023,30 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.53 <br>
+    ・ Fixed a problem that prevented the automatic setting of log files when Tools is started for the first time. <br>
+    ・ Improved the main menu to display rotating text from the moment Fall Guys is launched. <br>
+    ・ Fixed a problem in which the external display text was momentarily disrupted immediately after the start of Squad's round if the player continued to watch the game after he himself was eliminated. <br>
+    ・ Fixed a problem in which PlayerList, SquadList and the number of teams available for qualify were not recalculated until the start of the round when a player disconnected before the start of the round. <br>
+    ・ Fixed a problem in which the border score display was delayed by one point in the point acquisition round. <br>
+    ・ The issue of mysterious stage information being displayed before the start of the first round in rare cases has been addressed again. <br>
+    ・ When playing a Squad race round with the vertical delivery support mode turned on, the number of people who could clear the round would disappear even if the round had a solo-based qualify limit. <br>
+    ・ Fixed a problem that caused the time display and other displays to momentarily disappear when hosting or participating in a custom show. <br>
+    ・ Fixed a problem in SquadList where only teams that were defeated with 0 points in a vs format round were displayed in order. <br>
+    ・ The problem of SquadList color coding being removed when leaving a show has been fixed again. <br>
+    ・ In SquadList, the program that determines whether a player falls outside the borders or is promoted based on theoretical points in the survival round was not processed if the player continued to watch the game after dropping out. <br>
+    ・ Adjustments have been made in SquadList to the program that determines whether a player falls outside the border or is promoted from a theoretical point in the survival round. <br>
+    ・ In SquadList, the decision to clear the survival round was changed from being based solely on the highest theoretical score among the teams in the elimination zone to calculating the number of teams that could be overtaken based on theoretical scores from the current rankings and scores, and then determining whether the total number of theoretical scores added together does not overflow the border. <br>
+    ・ Dedicated images are now displayed when frame boost is applied when rotating text is displayed in the main menu. <br>
+    ・ The program to get the time from the NTP server has been moved to a separate thread. <br>
+    ・ Fixed a problem in which when the time is displayed in the main menu and the time is updated from an NTP server, the time may advance by 2 seconds at a time. <br>
+    ・ Adjustments have been made to the time display shown in the main menu. <br>
+    ・ When retrieving localized text from content files, Unicode-encoded cases are now taken into account. <br>
+    ・ Localized text is also retrieved from GitHub when it cannot be read from the content file. <br>
+    ・ Some images have been replaced with those actually used in the game. <br>
+    ・ Coordinates related to external display have been adjusted. <br>
+    ・ The score display in the point acquisition round has been changed so that it is calculated and processed after the log has been read through. <br>
 
   ○ 4.99.52 <br>
     ・ Replaced the Titan One font used in the external display with the one used in the game. <br>
