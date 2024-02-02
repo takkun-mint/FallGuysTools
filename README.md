@@ -110,6 +110,15 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.54 <br>
+    ・ エクストリーム関連のショーで遊んだときにSquadList,外部表示関連が予期しない動作を起こしてしまう問題を修正しました。 <br>
+    ・ Squadモードでクリエイティブラウンドをプレイ中、外部表示の経過時間がゲーム内UIと重なるバグがあったため、該当条件で表示を無効化しました。 <br>
+    ・ SquadListにて、vs形式のラウンドでラウンド開始前に全チームが1位の表示が行われてしまう問題について、全体的な調整を行い修正しました。 <br>
+    ・ SquadListにて、11スクワッド以上でFinalラウンドに行ったときに、11位以上のチームの順位が正しく表示されない問題を修正しました。 <br>
+    ・ 縦型配信支援モードの設定を切り替えたとき、スヌーズに表示が切り替わるよう調整を行いました。 <br>
+    ・ Squadのサバイバルラウンドでの点数補正プログラムの調整を行いました。 <br>
+    ・ SquadListにて、レースラウンドでのクリア確定判定の調整を行いました。 <br>
+
   ○ 4.99.53 <br>
     ・ Toolsの初回起動のとき、ログファイルの自動設定ができない問題を修正しました。 <br>
     ・ Fall Guysを起動した瞬間からメインメニューのローテーションテキストを表示するよう改良しました。 <br>
@@ -1023,6 +1032,15 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.54 <br>
+    ・ Fixed a problem that caused unexpected behavior related to SquadList, External Display when playing with Extreme related shows. <br>
+    ・ While playing creative rounds in Squad mode, there was a bug where the elapsed time on the external display overlapped with the in-game UI, so the display has been disabled under the relevant conditions. <br>
+    ・ An overall adjustment has been made in SquadList to correct an issue in which all teams were displayed as #1 before the start of the round in a vs format round. <br>
+    ・ Fixed a problem in SquadList where the rankings of teams ranked 11th or higher were not displayed correctly when 11 or more squads went to the Final Round. <br>
+    ・ Adjustments have been made so that the display switches to snooze when the vertical delivery support mode setting is switched. <br>
+    ・ Adjustments were made to the score correction program in the Squad survival round. <br>
+    ・ In SquadList, the clear determination in the race round has been adjusted. <br>
 
   ○ 4.99.53 <br>
     ・ Fixed a problem that prevented the automatic setting of log files when Tools is started for the first time. <br>
