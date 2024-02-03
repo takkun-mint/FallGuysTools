@@ -110,6 +110,14 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.55 <br>
+    ・ GitHubからローカライズ文を取得したとき、Unicodeを考慮する処理が入っていなかった問題を修正しました。 <br>
+    ・ マッチメイキング中のステータス表示をわかりやすいものに変更しました。 <br>
+    ・ 日本語のテキストにおいて、"Fame"を「フレーム」と誤訳していた問題を修正しました。 <br>
+    ・ ロシア語のテキストの翻訳を全体的に修正しました。（repinekさん、ありがとうございます！） <br>
+    ・ 前回修正したはずだった、Squadモードでクリエイティブラウンドをプレイ中、外部表示の経過時間の表示を無効化する条件がすべて反転してしまっていた問題を修正しました。 <br>
+    
+
   ○ 4.99.54 <br>
     ・ エクストリーム関連のショーで遊んだときにSquadList,外部表示関連が予期しない動作を起こしてしまう問題を修正しました。 <br>
     ・ Squadモードでクリエイティブラウンドをプレイ中、外部表示の経過時間がゲーム内UIと重なるバグがあったため、該当条件で表示を無効化しました。 <br>
@@ -1032,6 +1040,13 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.55 <br>
+    ・ Fixed a problem in which Unicode was not taken into account when localized text was retrieved from GitHub. <br>
+    ・ The status display during matchmaking has been changed to be easier to understand. <br>
+    ・ Fixed a problem in which "Fame" was mistranslated as "frame" in the Japanese text. <br>
+    ・ Overall translation of the Russian text has been corrected. (Thank you, repinek!) <br>
+    ・ Fixed a problem that should have been fixed in the previous version, where all conditions for disabling the elapsed time display on the external display were reversed while playing a creative round in Squad mode. <br>
 
   ○ 4.99.54 <br>
     ・ Fixed a problem that caused unexpected behavior related to SquadList, External Display when playing with Extreme related shows. <br>
