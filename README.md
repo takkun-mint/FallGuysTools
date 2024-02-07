@@ -110,6 +110,20 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.56 <br>
+    ・ メインメニューのときに表示される名声やそのブースト情報表示について、稀に異常な値が入ってしまう問題を修正し、異常があった場合は値の表示を行わないようにしました。 <br>
+    ・ PlayerListとSquadListのParty情報について、初期値で有効にするようにしました。 <br>
+    ・ 報酬読み込みのタイムアウトになったとき、連続でアップデート確認など処理が重複してしまう問題を修正しました。 <br>
+    ・ Squadのレースラウンドのラウンド終了条件に異常終了のテキストを追加しました。 <br>
+    ・ SquadListの計算式を最適化しました。 <br>
+    ・ コンテンツファイルが再読込したときに、解析を再度行うようにしました。 <br>
+    ・ 縦型配信支援モードが無効のとき、Squadのソロベースでの締切があるラウンドで、自身が脱落後も観戦を続けた場合にソロベースでのクリア可能数の表示が行われない問題を修正しました。 <br>
+    ・ PlayerListにて、ポイント取得ラウンドで最後にゴールしたプレイヤーが本来1位を表示する箇所に出てしまう問題を修正しました。 <br>
+    ・ 高速で得点が入るポイント取得ラウンドで、一定数以上のプレイヤーのスコアが更新されたときにPlayerListを更新するプログラムが正常に動作せず、Toolsの動作が少し重くなっていた問題を修正しました。 <br>
+    ・ SquadListにて、vs形式のラウンドで0点の状態で敗北したチームのスコアがIntegerの最低値が表示されてしまう問題を修正しました。 <br>
+    ・ GitHubに最新のコンテンツファイルがあるかを確認するプログラムが暴発し、処理途中でエラーが発生すると存在しないのに新しいコンテンツがあると表示されてしまう問題を修正しました。 <br>
+  
+
   ○ 4.99.55 <br>
     ・ GitHubからローカライズ文を取得したとき、Unicodeを考慮する処理が入っていなかった問題を修正しました。 <br>
     ・ マッチメイキング中のステータス表示をわかりやすいものに変更しました。 <br>
@@ -136,7 +150,7 @@ This tool is available in English and Japanese.<br>
     ・ 稀に、第一ラウンド開始前に謎のステージ情報が表示されることがある問題について、再度対策を行いました。 <br>
     ・ 縦型配信支援モードがONの状態でSquadのレースラウンドをプレイするとき、ソロベースでのクリア制限があるラウンドでもクリア可能人数の表示が消えてしまう問題を修正しました。 <br>
     ・ カスタムショーをホスト、もしくは参加したときに一瞬だけ時刻表示などの表示が消えてしまう問題を修正しました。 <br>
-    ・ SquadListにて、vs形式のラウンドで0点の状態で敗北したチームだけ順に表示が行われてしまう問題を修正しました。 <br>
+    ・ SquadListにて、vs形式のラウンドで0点の状態で敗北したチームだけ順位表示が行われてしまう問題を修正しました。 <br>
     ・ ショーから離脱したときにSquadListの色分けが解除される問題を再度修正しました。 <br>
     ・ SquadListにて、レースラウンドでのクリア確定判定の調整を行いました。 <br>
     ・ SquadListにて、サバイバルラウンドでの理論点からボーダー外に転落するか昇格するかを判別するプログラムについて、脱落後観戦を続けた場合に処理が行われない問題を修正しました。 <br>
@@ -1041,6 +1055,19 @@ This tool is available in English and Japanese.<br>
 
   ## ChangeLog (English) <br>
 
+  ○ 4.99.56 <br>
+    ・ Fixed a problem in which the display of fame and its boost information displayed during the main menu rarely contained abnormal values, and if abnormal values were found, the values would not be displayed. <br>
+    ・ The PlayerList and SquadList Party information is now enabled by default. <br>
+    ・ Fixed a problem that caused duplicate processing, such as consecutive update confirmations, when the reward loading timeout occurred. <br>
+    ・ Added text for abnormal termination to the end-of-round condition for Squad race rounds. <br>
+    ・ Optimized SquadList formula. <br>
+    ・ Analysis is now performed again when the content file is reloaded. <br>
+    ・ Fixed a problem in which, when vertical delivery support mode was disabled, the number of rounds that could be qualifed on a solo basis would not be displayed if the player continued to watch the game after he or she was eliminated in a round in which there was a Squad solo-based deadline. <br>
+    ・ Fixed a problem in PlayerList where the last player to finish in a point-earning round would appear in the place where first place would normally be displayed. <br>
+    ・ Fixed a problem in which the program that updates PlayerList when a certain number of players' scores are updated in a fast scoring point acquisition round was not working properly, causing Tools to run a little sluggishly. <br>
+    ・ Fixed a problem in SquadList where the lowest Integer score was displayed for a team that was defeated with 0 points in a vs format round. <br>
+    ・ Fixed a problem in which a program checking for the latest content file on GitHub would run out of control and display new content even though it did not exist if an error occurred during the process. <br>
+
   ○ 4.99.55 <br>
     ・ Fixed a problem in which Unicode was not taken into account when localized text was retrieved from GitHub. <br>
     ・ The status display during matchmaking has been changed to be easier to understand. <br>
@@ -1066,7 +1093,7 @@ This tool is available in English and Japanese.<br>
     ・ The issue of mysterious stage information being displayed before the start of the first round in rare cases has been addressed again. <br>
     ・ When playing a Squad race round with the vertical delivery support mode turned on, the number of people who could clear the round would disappear even if the round had a solo-based qualify limit. <br>
     ・ Fixed a problem that caused the time display and other displays to momentarily disappear when hosting or participating in a custom show. <br>
-    ・ Fixed a problem in SquadList where only teams that were defeated with 0 points in a vs format round were displayed in order. <br>
+    ・ Fixed an issue in SquadList where only teams that were defeated with 0 points in a vs format round were displayed in the rankings. <br>
     ・ The problem of SquadList color coding being removed when leaving a show has been fixed again. <br>
     ・ In SquadList, the program that determines whether a player falls outside the borders or is promoted based on theoretical points in the survival round was not processed if the player continued to watch the game after dropping out. <br>
     ・ Adjustments have been made in SquadList to the program that determines whether a player falls outside the border or is promoted from a theoretical point in the survival round. <br>
