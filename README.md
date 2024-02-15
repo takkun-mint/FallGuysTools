@@ -110,6 +110,33 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.60 <br>
+    ・ データベースファイルからToolsの設定ファイルを反映するプログラムをすべて新しいのに作り直しました。 <br>
+    ・ 無駄に重複処理が行われていたプログラムを削除しました。 <br>
+    ・ 「クリエイティブ検索ツール」の使用を停止しているときに、強制終了するボタンから表示が戻らなくなる恐れのあるプログラムの書き方を修正しました。 <br>
+    ・ ポイント取得ラウンドで、ラウンド終了時にボーダーポイントが更新されない問題について、やっと原因の特定ができたため修正しました。 <br>
+    ・ 初期設定が更新されるアップデートが来たとき、その反映がTools起動時だけだった問題を修正し、データベースダウンロード時にも同様の処理を行うよう調整を行いました。 <br>
+    ・ 設定画面を開くボタンを押したとき、すでに開いていた場合はボタンが無反応になってしまう問題を修正し、ボタンを押すと再表示するよう仕様を変更しました。 <br>
+    ・ ポイント取得ラウンドのときのポジション表示について、ラウンド終了後にログファイル上のスコアボードが更新されると、大量の負の値が表示されてしまう問題を修正しました。 <br>
+    ・ Pingの取得の際、何かしらのエラーが発生するとパケットロスと同じ扱いにするよう仕様を変更しました。 <br>
+    ・ Squadのラウンドにて、OverTimeになったあとにラウンドが終了した際、レース専用の終了事由テキストが表示されてしまう問題を修正しました。 <br>
+    ・ Tools起動後にコンテンツアップデートを適用したとき、GitHub側の反映遅れを考慮し一定期間コンテンツアップデートの更新確認を停止するようにしました。 <br>
+    ・ データベースや設定ファイルのダウンロード中にToolsの終了を完了するまで終了するプログラムについて、タイムアウト時間を司る変数が未設定という最悪な問題を修正しました。 <br>
+    ・ クリエイティブAPIを使ってコース名やサムネイルを取得するときに、ダウンロードエラーが発生した瞬間処理を中止する仕様を変更し、最大3回再試行するように変更しました。 <br>
+    ・ TextAに経過時間を表示しているときに表示されるステージ名について、文字数による制限ではなく表示領域に合わせて変更するよう仕様を変更しました。 <br>
+    ・ Squadのレースラウンドで、脱落するチーム数が0のとき、ソロベースのクリア可能人数を強制的に「1人」になるように変更しました。 <br>
+    ・ Squadのレースラウンド終了時に表示されるラウンド終了理由を追加しました。 <br>
+    ・ Toolsの効果音について、再読込時に一旦初期化を行うようにしました。（これでも再生できないバグがあるため、また後日別の修正を行う予定です。） <br>
+    ・ メインメニューのときに表示される名声やそのブースト情報表示について、稀に異常な値が入ってしまう問題を再度修正しました。 <br>
+    ・ Toolsのプログラムを調整し、極力内部エラーが発生しないよう全体的に調整を行いました。 <br>
+    ・ クリエイティブ検索ツールにて、制限時間やクリア割合が未設定のときに表示される値が定数だったのを修正し、動的に変更が反映される問題を修正しました。 <br>
+    ・ クリエイティブのサムネイル表示の箇所に動画を再生できるようにしました。 <br>
+    ・ Squadのサバイバルラウンドにて、クリア圏内から脱落圏内に転落したとき、スクワッドスコアが更新されるまで警告マークを表示したままにするようにしました。 <br>
+    ・ クリエイティブ検索ツールにて、文字サイズの調整プログラムを最適化しました。 <br>
+    ・ クリエイティブ検索ツールにて、取得した値を選択してコピーができるように改良を行いました。 <br>
+    ・ クリエイティブ検索ツールにて、タブを追加し更に多くの情報を取得できるようにしました。 <br>
+    
+
   ○ 4.99.56 <br>
     ・ メインメニューのときに表示される名声やそのブースト情報表示について、稀に異常な値が入ってしまう問題を修正し、異常があった場合は値の表示を行わないようにしました。 <br>
     ・ PlayerListとSquadListのParty情報について、初期値で有効にするようにしました。 <br>
@@ -1054,6 +1081,32 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.60 <br>
+    ・ We have reworked all the programs that reflect the Tools configuration file from the database file to a new one. <br>
+    ・ Programs that were being needlessly duplicated were removed. <br>
+    ・ Fixed a program writing that could prevent the display from returning from the force close button when the "Creative Search Tool" is stopped. <br>
+    ・ The issue of border points not being updated at the end of a round in the point acquisition round has been corrected as the cause has finally been identified. <br>
+    ・ Fixed a problem in which updates that updated the default settings were reflected only at Tools startup. <br>
+    ・ Fixed a problem that caused the button to become unresponsive if it was already open when the button to open the settings screen was pressed, and changed the specifications so that the button will be redisplayed when the button is pressed. <br>
+    ・ Fixed a problem with the position display during a point-getting round, where a large number of negative values would be displayed when the scoreboard on the log file was updated after the round was completed. <br>
+    ・ Changed the specification to treat any kind of error when retrieving a ping as packet loss. <br>
+    ・ Fixed a problem in Squad rounds where a race-specific end reason text would appear when a round ended after going Overtime. <br>
+    ・ When a content update is applied after Tools is started, the update confirmation of the content update is stopped for a certain period of time in consideration of the delay in reflection on the GitHub side. <br>
+    ・ Fixed a worst-case problem where the variable governing the timeout period was not set for a program that exits until Tools finishes while downloading databases and configuration files. <br>
+    ・ When using the Creative API to retrieve course names and thumbnails, the specification to abort the process the moment a download error occurs has been changed to retry up to three times. <br>
+    ・ The specifications for stage names displayed when elapsed time is displayed in TextA have been changed so that they are changed according to the display area, rather than being limited by the number of characters. <br>
+    ・ In the Squad race round, when the number of teams elimination is 0, the number of possible solo-based clearers is now forced to be "1". <br>
+    ・ Added a reason for the end of round displayed at the end of a Squad race round. <br>
+    ・ Tools sound effects are now initialized once when reloading. (There is still a bug that prevents playback, so another fix will be made at a later date.) <br>
+    ・ The problem with the display of fame and its boost information displayed during the main menu, which in rare cases contained abnormal values, has been corrected again. <br>
+    ・ The Tools program was adjusted and overall adjustments were made to avoid internal errors as much as possible. <br>
+    ・ In the Creative Search tool, the values displayed when the time limit and clear percentage were not set were constants, and the problem of dynamic changes being reflected has been corrected. <br>
+    ・ Added the ability to play videos in the thumbnail display section of the creative. <br>
+    ・ In the Squad Survival round, when a player falls from the clear zone to the dropout zone, the warning mark will remain displayed until the squad score is updated. <br>
+    ・ In the Creative Search Tool, the text size adjustment program has been optimized. <br>
+    ・ The Creative Search tool has been improved so that the retrieved value can be selected and copied. <br>
+    ・ Added tabs in the Creative Search Tool to allow more information to be retrieved. <br>
 
   ○ 4.99.56 <br>
     ・ Fixed a problem in which the display of fame and its boost information displayed during the main menu rarely contained abnormal values, and if abnormal values were found, the values would not be displayed. <br>
