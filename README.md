@@ -110,6 +110,15 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.61 <br>
+    ・ PlayerList,SquadListのソート機能が正しく動作しない問題を修正しました。 <br>
+    ・ PlayerList関連の機能メンテナンス中、メンテナンス中の項目以外のListも表示できなくなる問題を修正しました。 <br>
+    ・ PlayerListを一度でも閉じてしまうと、Toolsのリセット処理のたびにエラーが出てしまったり、再起動するまでListの表示ができなくなる問題を修正しました。 <br>
+    ・ クラウンを掴むファイナルラウンドにて、ラウンド終了時に「QUALIFIED:1/1」というテキストが表示されてしまう問題を修正しました。 <br>
+    ・ データベースダウンロードしたタイミングがラウンド中だったとき、内部エラーが発生してしまうことのある問題を修正しました。 <br>
+    ・ クリエイティブ検索ツールにて、ゲーム内BGMの試聴用のBGMの音量調整用のテキストがなかったり、音量が保存、適用されない問題を修正しました。 <br>
+    ・ PlayerListを閉じたとき、開くボタンの表示が元に戻らなくなる問題を修正しました。 <br>
+
   ○ 4.99.60 <br>
     ・ データベースファイルからToolsの設定ファイルを反映するプログラムをすべて新しいのに作り直しました。 <br>
     ・ 無駄に重複処理が行われていたプログラムを削除しました。 <br>
@@ -1081,6 +1090,16 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.61 <br>
+    ・ Fixed a problem that prevented the sort function of PlayerList and SquadList from working properly. <br>
+    ・ During maintenance of PlayerList-related functions, lists other than the item under maintenance could not be displayed. <br>
+    ・ Fixed a problem in which, once PlayerList was closed, an error would occur each time Tools was reset or the List could not be displayed until it was restarted. <br>
+    ・ Fixed an issue with the text "QUALIFIED:1/1" at the end of the round in the final round of grabbing crowns. <br>
+    ・ Fixed a problem that could cause an internal error when the database was downloaded during a round. <br>
+    ・ Fixed a problem in the Creative Search Tool where there was no text for adjusting the volume of in-game BGM for auditioning BGM, or where the volume was not saved or applied. <br>
+    ・ Fixed a problem in which the Open button was not restored when PlayerList was closed. <br>
+
 
   ○ 4.99.60 <br>
     ・ We have reworked all the programs that reflect the Tools configuration file from the database file to a new one. <br>
