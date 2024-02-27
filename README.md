@@ -110,6 +110,33 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.70 <br>
+  ・ 連続で強制アップデートが入ったときのフラグが残り続けてしまう問題を修正しました。 <br>
+  ・ Toolsで使う画像を一度変数に入れてそこから参照することで軽量化を行いました。 <br>
+  ・ 全体的に文字列の設定を見直しました。 <br>
+  ・ Tools起動時にFall Guysのゲーム自体が未起動で、そこから起動したときにアップデート確認が正しく行われない問題を修正しました。 <br>
+  ・ その他細かいプログラムの調整、エラーハンドリングを行いました。 <br>
+  ・ ポイント取得ラウンドのボーダー表示にて、切断などによりクリアできる人数よりも残り人数が下回ったとき、値がマイナスになってしまう問題を修正しました。 <br>
+  ・ ポイント取得ラウンドにて、脱落圏内から一気にゴールできるポイントを取得したとき、脱落圏内の警告マークが残ったままになる問題を修正しました。 <br>
+  ・ Squadのサバイバルラウンドで時間切れで終わったとき、本来は同着にもかかわらずプレイヤーのクリア判定のブレで点数が変わってしまう問題を修正しました。 <br>
+  ・ Squadのレースラウンドでラウンド終了した理由が「ゲームのバグによる」という表示条件の誤りを訂正しました。 <br>
+  ・ ラウンドの読み込み開始時に、TIME表示と設定を開くボタンが被ってしまうことがある問題について、発生頻度を抑える処置を行いました。 <br>
+  ・ 新機能：「AFK警告機能」を追加しました。観戦モードにも関わらずAFK（放置）で強制切断される条件を満たしたときに警告を表示する機能となります。 <br>
+  ・ クリエイティブのサムネイル表示が正しく前面表示されない問題を修正しました。 <br>
+  ・ PlayerList,SquadListにて、脱落確定した人のランク表示の隣に「×」マークを表示するようにしました。 <br>
+  ・ Squadのポイント取得ラウンドにて、脱落時にボーダー表示ではなく最終順位がメイン画面に表示されるよう変更を行いました。 <br>
+  ・ Squadのレースラウンドにて、クリア確定判定の調整を行いました。 <br>
+  ・ Squadのサバイバルラウンドで脱落後の観戦中、ゲームのボーダー表示の更新に合わせて表示するよう変更を行いました。 <br>
+  ・ Squadのレース、サバイバルのラウンド終了時にクリア状態表示の表示が安定しない問題を修正しました。 <br>
+  ・ SquadListにて、ポイントが0点で全滅したチームの得点が「-0」と表示されてしまう問題を修正しました。 <br>
+  ・ 「パーフェクトマッチ」「カウントフルーツ」にて、足場が消えるまでのカウントダウンの表示が安定しないことがある問題を修正しました。 <br>
+  ・ メイン画面の表示にて、Fameブースト状態のときに表示が点滅したり値がズレてしまったりするバグを修正しました。 <br>
+  ・ 一部専用モードの挙動を変更しました。 <br>
+  ・ OBSのWebSocketを使った自動制御モードを追加しました。これは現在、クローズドベータを行い将来的に開放する予定です。 <br>
+  ・ クリエイティブ検索ツールにて、BGMの試奏の音量設定がうまく行かない問題を修正しました。 <br>
+  ・ 外部表示関連の調整を行いました。 <br>
+  ・ 開発ツールやGoogle Drive APIなどのバージョンを更新しました。 <br>
+
   ○ 4.99.61 <br>
     ・ PlayerList,SquadListのソート機能が正しく動作しない問題を修正しました。 <br>
     ・ PlayerList関連の機能メンテナンス中、メンテナンス中の項目以外のListも表示できなくなる問題を修正しました。 <br>
@@ -1090,6 +1117,33 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.70 <br>
+  ・ Fixed a problem where a flag would remain in place when a series of forced updates were received. <br>
+  ・ We reduced weight by putting the images used in Tools once in a variable and referencing them from there. <br>
+  ・ Overall, the string settings were reviewed. <br>
+  ・ Fixed an issue where the Fall Guys game itself was not yet launched when Tools was launched, and when launched from there, the update confirmation was not performed correctly. <br>
+  ・ Other minor program adjustments and error handling were made. <br>
+  ・ Fixed a problem in which the border display of the point acquisition round would show a minus value when the number of remaining players was less than the number that could qualify the round due to disconnection or other reasons. <br>
+  ・ Fixed a problem in which the warning mark in the dropout area remained when a point was acquired in the point acquisition round that would allow a player to finish the race from the dropout area all at once. <br>
+  ・ Fixed a problem in which when a Squad survival round ended with time running out, the score would change due to a blurring of the player's clear judgment, even though the game was originally a tie. <br>
+  ・ Corrected an error in the display condition that the reason for round termination in the Squad race round was "due to a bug in the game". <br>
+  ・ The problem that the TIME display and the button to open settings are sometimes covered when a round starts to load has been addressed to reduce the frequency of occurrence. <br>
+  ・ New function: "AFK Warning Function" has been added. This function displays a warning when a player meets the conditions for being forced to disconnect due to AFK (abandonment) despite being in spectator mode. <br>
+  ・ Fixed an issue where the thumbnail view of creatives was not displayed correctly in the front view. <br>
+  ・ In PlayerList and SquadList, an "X" mark is now displayed next to the rank of those who are confirmed to have eliminated. <br>
+  ・ In the Squad point-earning rounds, the final ranking is now displayed on the main screen instead of showing the border when a player is eliminated. <br>
+  ・ In the Squad race round, the clear decision was adjusted. <br>
+  ・ Changes have been made to display the game's border display as it updates while watching the game after being eliminated in the Squad's survival round. <br>
+  ・ Fixed a problem in which the clear status display was not stable at the end of a round of Squad races and survival. <br>
+  ・ Fixed a problem in SquadList where the scores of teams that were wiped out with zero points were displayed as "-0". <br>
+  ・ In "Perfect Match" and "Sum Fruits," the display of the countdown until the scaffolding disappears was sometimes unstable. <br>
+  ・ Fixed a bug in the main screen display that caused the display to blink or the value to be out of alignment when in the Fame boost state. <br>
+  ・ The behavior of some exclusive modes has been changed. <br>
+  ・ We have added an automatic control mode using OBS WebSocket. This is currently in closed beta and will be opened in the future. <br>
+  ・ Fixed a problem in the Creative Search Tool where the volume setting for the BGM test piece did not work. <br>
+  ・ External display-related adjustments were made. <br>
+  ・ Updated versions of development tools, Google Drive API, etc. <br>
 
   ○ 4.99.61 <br>
     ・ Fixed a problem that prevented the sort function of PlayerList and SquadList from working properly. <br>
