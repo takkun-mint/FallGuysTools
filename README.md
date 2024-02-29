@@ -110,6 +110,11 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.71 <br>
+  ・ クリエイティブAPIを使ったサバイバルラウンドにおいて、暫定的な対応を行いました。 <br>
+  ・ 外部表示ディスプレイの一部のテキストがディスプレイの大きさを考慮してサイズ調整が正しく行われない問題について対応を行いました。 <br>
+  ・ アップデートに合わせ、Titan Oneフォントを元に戻し、データベース上で切り替えできるようにしました。（一部を除く） <br>
+
   ○ 4.99.70 <br>
   ・ 連続で強制アップデートが入ったときのフラグが残り続けてしまう問題を修正しました。 <br>
   ・ Toolsで使う画像を一度変数に入れてそこから参照することで軽量化を行いました。 <br>
@@ -1117,6 +1122,11 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.71 <br>
+  ・ Tentative action was taken in the Survival Round using the Creative API. <br>
+  ・ A problem has been addressed regarding some text on external display displays not being properly sized to take into account the size of the display. <br>
+  ・ In conjunction with the update, the Titan One font has been restored and can be switched on the database. (with a few exceptions) <br>
 
   ○ 4.99.70 <br>
   ・ Fixed a problem where a flag would remain in place when a series of forced updates were received. <br>
