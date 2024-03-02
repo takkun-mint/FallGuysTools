@@ -110,6 +110,14 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.72 <br>
+  ・ カスタム（プライベート）ショーでサーバーを探索中にカウント音が暴発してしまう問題を修正しました。 <br>
+  ・ 一定時間以上Toolsを起動していると、効果音が正しく再生されなくなる問題についてリセット時に変数を初期化する暫定処置を行いました。 <br>
+  ・ クリエイティブ検索ツールにて、新しいクリエイティブ背景「火山」に対応しました。 <br>
+  ・ クリエイティブ検索ツールにて、日本語のテキストを変更しました。 <br>
+  ・ 外部表示関連の座標の調整を行いました。 <br>
+  
+
   ○ 4.99.71 <br>
   ・ クリエイティブAPIを使ったサバイバルラウンドにおいて、暫定的な対応を行いました。 <br>
   ・ 外部表示ディスプレイの一部のテキストがディスプレイの大きさを考慮してサイズ調整が正しく行われない問題について対応を行いました。 <br>
@@ -1122,6 +1130,13 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.72 <br>
+  ・ Fixed a problem that caused the counting sound to go out of order while searching for a server in a custom (private) show. <br>
+  ・ A temporary fix has been made to initialize variables upon reset regarding the problem of sound effects not playing properly after running Tools for a certain period of time. <br>
+  ・ The creative search tool now supports the new creative background "volcano". <br>
+  ・ Changed Japanese text in the Creative Search Tool. <br>
+  ・ Coordinates related to external display have been adjusted. <br>
 
   ○ 4.99.71 <br>
   ・ Tentative action was taken in the Survival Round using the Creative API. <br>
