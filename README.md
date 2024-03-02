@@ -113,6 +113,7 @@ This tool is available in English and Japanese.<br>
   ○ 4.99.72 <br>
   ・ カスタム（プライベート）ショーでサーバーを探索中にカウント音が暴発してしまう問題を修正しました。 <br>
   ・ 一定時間以上Toolsを起動していると、効果音が正しく再生されなくなる問題についてリセット時に変数を初期化する暫定処置を行いました。 <br>
+  ・ 「サバイバル・シャッフル」にてクリア/脱落数の表示が逆になってしまう問題を修正しました。 <br>
   ・ クリエイティブ検索ツールにて、新しいクリエイティブ背景「火山」に対応しました。 <br>
   ・ クリエイティブ検索ツールにて、日本語のテキストを変更しました。 <br>
   ・ 外部表示関連の座標の調整を行いました。 <br>
@@ -1135,6 +1136,7 @@ This tool is available in English and Japanese.<br>
   ・ Fixed a problem that caused the counting sound to go out of order while searching for a server in a custom (private) show. <br>
   ・ A temporary fix has been made to initialize variables upon reset regarding the problem of sound effects not playing properly after running Tools for a certain period of time. <br>
   ・ The creative search tool now supports the new creative background "volcano". <br>
+  ・ Fixed a problem in "Survival Shuffle" in which the number of qualfied/eliminated entries was displayed in reverse. <br>
   ・ Changed Japanese text in the Creative Search Tool. <br>
   ・ Coordinates related to external display have been adjusted. <br>
 
