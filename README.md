@@ -110,6 +110,21 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.73 <br>
+  ・ 誤ったログファイルを指定してしまうことがあったため、「Player.log」以外のファイル名を弾くよう仕様を変更しました。 <br>
+  ・ クリアしたプレイヤーの割合表示について、人数計算に含まれないプレイヤーは計算から除外するようにしました。 <br>
+  ・ ポイント取得ラウンドのうち、高速で点数が変わるラウンドについて、PlayerListへの描画を割合に加え「一定数以上の得点変動が起きたとき」という条件を追加しました。 <br>
+  ・ カスタム（プライベート）ショーや「ディスカバリー（ベータ）」で開始したクリエイティブラウンドにおいて、ラウンド開始前にクリア割合が表示されない問題を修正しました。 <br>
+  ・ メイン画面時に表示されるパス終了や名声ブースト情報がコンテンツに存在しないときに、存在しない旨のテキストが表示されず常に表示を削除してしまう問題を修正しました。 <br>
+  ・ ステージデータベースの更新が完了したタイミングがラウンド開始前後だったときに再設定するプログラムについて、スレッドエラーを起こしてしまう問題を修正しました。 <br>
+  ・ Fall Guys起動時にデータベースの更新が正しく行われない問題を修正しました。 <br>
+  ・ クリエイティブ検索ツールにて、一部のフォントが正しく割り当てられていない問題を修正しました。 <br>
+  ・ クリエイティブ検索ツールにて、すべてのデータ取得が完了するまで描画を一時停止するように仕様を変更しました。 <br>
+  ・ クリエイティブ検索ツールにて、説明文の「\n」テキストに対応しました。 <br>
+  ・ クリエイティブ検索ツールにて、処理を処理がかかるAPI通信の処理を外部スレッドに移し、処理実行中Toolsの動作が極力止まらないよう調整を行いました。 <br>
+  ・ 外部表示関連の座標の調整を行いました。 <br>
+  ・ Ver 10.8.0専用のゲーム内フォント「Titan One」を採用し再度調整を行いました。 <br>
+
   ○ 4.99.72 <br>
   ・ カスタム（プライベート）ショーでサーバーを探索中にカウント音が暴発してしまう問題を修正しました。 <br>
   ・ 一定時間以上Toolsを起動していると、効果音が正しく再生されなくなる問題についてリセット時に変数を初期化する暫定処置を行いました。 <br>
@@ -1131,6 +1146,21 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.73 <br>
+  ・ Changed the specification to play file names other than "Player.log" because it was sometimes possible to specify the wrong log file. <br>
+  ・ Regarding the display of the percentage of qualified players, players who are not included in the headcount calculation are now excluded from the calculation. <br>
+  ・ For the rounds in which the score changes at high speed among the point acquisition rounds, the condition "when a certain number of score changes occur" was added in addition to the drawing to the PlayerList as a percentage. <br>
+  ・ Fixed an issue where the clear percentage was not displayed before the start of a round in creative rounds started in Custom (Private) shows and "Discovery (Beta)". <br>
+  ・ Fixed a problem in which when the pass end or fame boost information displayed during the main screen does not exist in the content, the text indicating that it does not exist is not displayed and is always removed from the display. <br>
+  ・ Fixed a problem that caused a thread error for programs that reset the stage database when the update of the stage database was completed before or after the start of a round. <br>
+  ・ Fixed problem with database not updating properly when starting Fall Guys. <br>
+  ・ Fixed an issue in the Creative Search tool where some fonts were not assigned correctly. <br>
+  ・ In the creative search tool, the specification has been changed to pause drawing until all data acquisition is complete. <br>
+  ・ The Creative Search Tool now supports "\n" text in the description. <br>
+  ・ In the Creative Search Tool, the processing of API communications that require processing has been moved to an external thread, and adjustments have been made so that the operation of Tools does not stop during processing as much as possible. <br>
+  ・ Coordinates related to external display have been adjusted. <br>
+  ・ The in-game font "Titan One", exclusive to Ver 10.8.0, has been adopted and adjusted again. <br>
 
   ○ 4.99.72 <br>
   ・ Fixed a problem that caused the counting sound to go out of order while searching for a server in a custom (private) show. <br>
