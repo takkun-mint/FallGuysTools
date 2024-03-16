@@ -110,6 +110,19 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.74 <br>
+  ・ 1stラウンド読み込み開始時に前回最後に遊んだラウンドの名前がしばらく表示されたままになる問題を修正しました。 <br>
+  ・ クリエイティブAPIを使ってラウンド情報を取得するとき、重複して検索されてしまう問題を修正しました。 <br>
+  ・ クリエイティブ検索ツールにて、画面に表示されているときにクリエイティブラウンドが出現すると自動的に検索するよう仕様を変更しました。 <br>
+  ・ 接続されたサーバーの情報が取得できなかったとき、内部エラーが発生してしまう問題を修正しました。 <br>
+  ・ クリエイティブAPIを使ってラウンド情報を取得するとき、サムネイルが即座に表示されない問題を修正しました。 <br>
+  ・ ラウンド終了時に順位が確定するラウンドにて、PlayerList上の表示が乱れてしまう問題を修正しました。 <br>
+  ・ OverTime発生時、まれにゲームが非アクティブであるメッセージが表示されてしまう問題を修正しました。 <br>
+  ・ ゲームルールのラウンド終了条件が「time_elapsed」のとき、初期値をレースにする設定を削除し、不明なときは表示しないようにしました。 <br>
+  ・ AFK警告の効果音が無限に流れてしまう問題を修正しました。 <br>
+  ・ クリエイティブ検索ツールにて、サムネイルの取得のときに内部エラーが発生してしまったときにエラーが表示されないようにしました。 <br>
+  ・ クリエイティブ検索ツールにて、2行以上に分かれて表示されるテキストが溢れてしまう問題を発生しにくいよう調整を行いました。 <br>
+
   ○ 4.99.73 <br>
   ・ 誤ったログファイルを指定してしまうことがあったため、「Player.log」以外のファイル名を弾くよう仕様を変更しました。 <br>
   ・ クリアしたプレイヤーの割合表示について、人数計算に含まれないプレイヤーは計算から除外するようにしました。 <br>
@@ -1146,6 +1159,20 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.74 <br>
+  ・ Fixed a problem where the name of the last round last played would remain displayed for a while when the 1st round loading started. <br>
+  ・ Fixed duplicate searches when retrieving round information using the Creative API. <br>
+  ・ In the Creative Search Tool, specifications have been changed to automatically search for creative rounds when they appear on the screen. <br>
+  ・ Fixed a problem that caused an internal error when information on the connected server could not be obtained. <br>
+  ・ Fixed an issue where thumbnails were not immediately displayed when retrieving round information using the Creative API. <br>
+  ・ Fixed a problem in which the display on the PlayerList was corrupted in rounds in which rankings were determined at the end of the round. <br>
+  ・ Fixed a problem in which, in rare cases, a game inactivity message would appear when OverTime occurred. <br>
+  ・ Removed the setting that initially sets the race as the initial value when the round end condition in the game rules is "time_elapsed", so that it is not displayed when it is unknown. <br>
+  ・ Fixed a problem that caused the AFK warning sound effect to play indefinitely. <br>
+  ・ In the Creative Search Tool, an error is no longer displayed when an internal error occurs when retrieving thumbnails. <br>
+  ・ Adjustments have been made to the Creative Search tool to reduce the problem of overflowing text that is displayed on two or more separate lines. <br>
+
 
   ○ 4.99.73 <br>
   ・ Changed the specification to play file names other than "Player.log" because it was sometimes possible to specify the wrong log file. <br>
