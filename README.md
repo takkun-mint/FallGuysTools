@@ -110,6 +110,13 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.75 <br>
+  ・ ログファイルを設定しても反映されず起動できない問題を修正しました。 <br>
+  ・ ログファイルを設定時に「Player.log」以外を選んだときにも終了するかどうかのオプションを表示するようにしました。 <br>
+  ・ Toolsの内部的な初期化の過程で失敗したときに外部スレッドエラーが発生してしまう問題を修正しました。 <br>
+  ・ クリエイティブ検索ツールにて、背景が設定されていないときに何も表示されない問題を修正しました。 <br>
+  ・ クリエイティブ検索ツールにて、必要以上に文字サイズが小さくなってしまう項目が存在する問題を修正しました。 <br>
+
   ○ 4.99.74 <br>
   ・ 1stラウンド読み込み開始時に前回最後に遊んだラウンドの名前がしばらく表示されたままになる問題を修正しました。 <br>
   ・ クリエイティブAPIを使ってラウンド情報を取得するとき、重複して検索されてしまう問題を修正しました。 <br>
@@ -1159,6 +1166,13 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.75 <br>
+  ・ Fixed a problem in which a log file could not be set and started without being reflected. <br>
+  ・ When setting the log file, an option to exit or not is now displayed even when a file other than "Player.log" is selected. <br>
+  ・ Fixed a problem that caused an external thread error when the internal initialization process of Tools failed. <br>
+  ・ Fixed an issue in the Creative Search tool where nothing is displayed when no background is set. <br>
+  ・ Fixed an issue in the Creative Search tool where some items had a smaller font size than necessary. <br>
 
   ○ 4.99.74 <br>
   ・ Fixed a problem where the name of the last round last played would remain displayed for a while when the 1st round loading started. <br>
