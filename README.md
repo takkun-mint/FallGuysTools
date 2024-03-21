@@ -110,6 +110,13 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.76 <br>
+  ・ ログファイルの設定するプログラムにおいて、最適化を行いました。 <br>
+  ・ 同じコースを周回するラウンドにおいて、ゴールできずに脱落したときLAPのタイムが0秒と表示される問題を修正しました。 <br>
+  ・ カスタム（プライベート）ロビーでコードを入力してプレイするクリエイティブラウンドにて、ラウンド開始前のクリア可能割合の外部表示の位置ズレやラウンド開始後にも表示が残ってしまう問題を修正しました。 <br>
+  ・ クリエイティブ検索ツールにて、ラウンドの更新時刻の小数点以下が全て0のときに項目が表示されなくなる問題を修正しました。 <br>
+  
+
   ○ 4.99.75 <br>
   ・ ログファイルを設定しても反映されず起動できない問題を修正しました。 <br>
   ・ ログファイルを設定時に「Player.log」以外を選んだときにも終了するかどうかのオプションを表示するようにしました。 <br>
@@ -1166,6 +1173,12 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.76 <br>
+  ・ Optimizations have been made in the programs that set up log files. <br>
+  ・ Fixed a problem in which the LAP time was displayed as 0 seconds when a competitor failed to finish a round of laps around the same course and eliminated of the competition. <br>
+  ・ In creative rounds played by entering a code in the custom (private) lobby, fixed a problem in which the external display of the clearable percentage before the start of the round was misaligned and the display remained after the round started. <br>
+  ・ Fixed a problem in the Creative Search Tool where an item would not be displayed when all decimal places in the round's update time were 0. <br>
 
   ○ 4.99.75 <br>
   ・ Fixed a problem in which a log file could not be set and started without being reflected. <br>
