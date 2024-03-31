@@ -110,6 +110,15 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.77 <br>
+  ・ 外部表示タイマーにて、BIGタイマーを使用するラウンドでラウンド開始直後に一瞬だけ秒数が消えてしまう問題について発生がしにくいよう調整を行いました。 <br>
+  ・ ステージデータベースからコンテンツ情報でラウンドの分類の取得ができないものについてピンポイントで調整できるよう仕様を変更しました。 <br>
+  ・ クリエイティブ検索ツールにて、BGMの再生中にウィンドウを閉じても再生が続いてしまう問題を修正しました。 <br>
+  ・ （今回のアップデートと関係ありませんが。）クリエイティブ検索ツールにて、音源のURLがリンク切れになっていた問題を修正しました。 <br>
+  ・ クリエイティブ検索ツールにて、BGMのダウンロードに失敗したときに1度に限り再試行を行うよう変更を行い、再試行後もエラーになった場合はダイアログを表示するようにしました。 <br>
+  ・ メイン画面転移時に開発者からデータベースを通じてメッセージを表示できるようにしました。(Beta) <br>
+
+
   ○ 4.99.76 <br>
   ・ ログファイルの設定するプログラムにおいて、最適化を行いました。 <br>
   ・ 同じコースを周回するラウンドにおいて、ゴールできずに脱落したときLAPのタイムが0秒と表示される問題を修正しました。 <br>
@@ -1173,6 +1182,14 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.77 <br>
+  ・ In the external display timer, the number of seconds disappears for a moment immediately after the start of a round when the BIG timer is used in a round. <br>
+  ・ Changed specifications to allow pinpoint adjustment for those round classifications that cannot be retrieved from the stage database with content information. <br>
+  ・ Fixed an issue in the Creative Search tool where playback would continue even if the window was closed while the background music was playing.。 <br>
+  ・ (Not related to this update, but...) Fixed a problem in the Creative Search Tool where the URL of a sound source was a broken link. <br>
+  ・ In the Creative Search Tool, we have made a change to retry only once when the download of BGM fails, and to display a dialog box if an error still occurs after the retry. <br>
+  ・ Messages can now be displayed from the developer through the database when the main screen is transitioned.(Beta) <br>
 
   ○ 4.99.76 <br>
   ・ Optimizations have been made in the programs that set up log files. <br>
