@@ -110,6 +110,32 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.80 <br>
+  ・ 一部分のプログラムにおいて、最適化を行いました。 <br>
+  ・ メイン画面転移時に開発者からデータベースを通じてメッセージを表示する機能が不発してしまう問題について調整を行いました。 <br>
+  ・ カスタムマッチ（プライベートマッチ）開始時にサーバー接続の再接続数について、外部表示するようにしました。 <br>
+  ・ 報酬読み込み画面のタイムアウトまでのカウントダウンについて、外部表示するようにしました。 <br>
+  ・ ログのバグやゲームのバグにより不安定になることがあったため、リザルト画面転移時に生存状態か観戦状態かのフラグを毎回更新するようにしました。 <br>
+  ・ クリエイティブラウンドにおいて、APIが使えない環境でも”エラーログ”からゲームタイプを取得できるようにしました。 <br>
+  ・ プレイヤー情報を表示しているとき、リザルト画面転移時にプレイヤー数が変動してしまうことがある問題を修正しました。 <br>
+  ・ 外部表示タイマーについて、ミリ秒表示に対応しました。該当するラウンドではミリ秒まで表示されます。 <br>
+  ・ クリエイティブAPIを使った情報取得の際、ベースとなるゲームルールについて、ラウンドの種類から変更できるようにしました。 <br>
+  ・ PlayerList、SquadListにおいて、最後にユーザー自身がソートした状態が保存されない問題を修正しました。 <br>
+  ・ SquadListにおいて、クリア時に付与される内部的な点数について、データベースから調整できるようにしました。 <br>
+  ・ SquadListにおいて、1v1ラウンドを遊んでいるときに自身のチーム専用の色分けが行われない問題を修正しました。 <br>
+  ・ SquadListにおいて、ポイント取得ラウンドで最後の1チームの枠に複数チームが同時にゴールをし、かつそのチームのポイントに差があるときに片方のチームが脱落したような表示になってしまう問題を修正しました。 <br>
+  ・ SquadListにおいて、クリアが確定したときに効果音を再生するようにしました。 <br>
+  ・ 各ラウンドに動く様々な関数において、実行場所を変更し挙動を軽くしました。 <br>
+  ・ メイン画面に表示されるローテーションテキストにおいて、データベースから更に柔軟に調整ができるよう内部処理の変更を行いました。 <br>
+  ・ PlayerListにおいて、順位が同率のときゴールタイムなどを考慮してソートを行うよう変更を行いました。 <br>
+  ・ 設定画面において、Toolsの効果音の音量を調整したときにプレビューが再生されるようにしました。 <br>
+  ・ クリエイティブ検索ツールにて、ラウンドの種類からベースとなるゲームルールを変更できるよう調整を行いました。 <br>
+  ・ 外部表示タイマーやスコア表示機能などにおいて、座標の指定をInt型からFloat型に変更し、ディスプレイサイズによってもっと細かく調整を行えるようにしました。 <br>
+  ・ 一部専用効果音を追加し置き換えました。 <br>
+  ・ 5カウント効果音の再生状況に関するプログラムを変更しました。 <br>
+  ・ 「Fall Guys Creative」で既存のラウンドをロードするときに「強制終了する」ボタンを表示するようにしました。 <br>
+  ・ クリエイティブ検索ツールにて、ラウンドの制作者名にNintendoの内部値が含まれる場合、APIの順序的にNintendoのあとに書かれた他のプラットフォームまで表示が削除される問題を修正しました。 <br>
+
   ○ 4.99.77 <br>
   ・ 外部表示タイマーにて、BIGタイマーを使用するラウンドでラウンド開始直後に一瞬だけ秒数が消えてしまう問題について発生がしにくいよう調整を行いました。 <br>
   ・ ステージデータベースからコンテンツ情報でラウンドの分類の取得ができないものについてピンポイントで調整できるよう仕様を変更しました。 <br>
@@ -1182,6 +1208,32 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.80 <br>
+  ・ Optimizations were made in some programs. <br>
+  ・ Adjustments have been made to address a problem that was causing the developer's ability to display messages through the database to fail when the main screen is transitioned. <br>
+  ・ The number of server connections reconnected at the start of a custom match (private match) is now displayed externally. <br>
+  ・ The countdown to timeout on the reward loading screen is now displayed externally. <br>
+  ・ The logs were sometimes unstable due to bugs in the logs or in the game, so the flag of whether the player is alive or watching the game is now updated each time when the result screen is transitioned. <br>
+  ・ In creative rounds, game types can now be obtained from the "error log" even in environments where the API is not available. <br>
+  ・ Fixed a problem in which the number of players would sometimes change during the transition to the result screen when player information was displayed. <br>
+  ・ For external display timers, milliseconds are now supported. In the relevant rounds, up to milliseconds are displayed. <br>
+  ・ When using the Creative API to retrieve information, the base game rules can now be changed from round type. <br>
+  ・ In PlayerList and SquadList, the last user's own sorting state was not saved. <br>
+  ・ In SquadList, the internal points awarded for clearing can now be adjusted from the database. <br>
+  ・ Fixed an issue in SquadList where color coding was not done exclusively for one's own team when playing 1v1 rounds. <br>
+  ・ Fixed a problem in SquadList that caused one team to appear as if it had been eliminated when multiple teams were finishing in the last team's slot in a point-earning round and there was a difference in points between the two teams. <br>
+  ・ In SquadList, sound effects are now played when a clear is confirmed. <br>
+  ・ The execution locations of various functions that run in each round have been changed to lighten their behavior. <br>
+  ・ Internal processing of the rotation text displayed on the main screen has been changed to allow for more flexible adjustment from the database. <br>
+  ・ In PlayerList, the sorting is now based on goal time and other factors when there is a tie in the standings. <br>
+  ・ In the settings screen, a preview is now played when the volume of Tools sound effects is adjusted. <br>
+  ・ Adjustments have been made to the Creative Search tool to allow changing the base game rules from round type. <br>
+  ・ In the external display timer and score display functions, coordinates are now specified as Float type instead of Int type, allowing for more fine-tuning according to display size. <br>
+  ・ Some exclusive sound effects were added and replaced. <br>
+  ・ Changed the program regarding the playback status of 5-count sound effects. <br>
+  ・ Added "Kill Game" button when loading an existing round in "Fall Guys Creative". <br>
+  ・ Fixed a problem in the Creative Search Tool where if the creator name of a round contained the internal value of Nintendo, the display would be deleted up to other platforms written after Nintendo in the API order. <br>
 
   ○ 4.99.77 <br>
   ・ In the external display timer, the number of seconds disappears for a moment immediately after the start of a round when the BIG timer is used in a round. <br>
