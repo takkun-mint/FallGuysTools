@@ -135,6 +135,7 @@ This tool is available in English and Japanese.<br>
   ・ 5カウント効果音の再生状況に関するプログラムを変更しました。 <br>
   ・ 「Fall Guys Creative」で既存のラウンドをロードするときに「強制終了する」ボタンを表示するようにしました。 <br>
   ・ クリエイティブ検索ツールにて、ラウンドの制作者名にNintendoの内部値が含まれる場合、APIの順序的にNintendoのあとに書かれた他のプラットフォームまで表示が削除される問題を修正しました。 <br>
+  ・ PINGの長さによって、PING表示を赤くするようにしました。 <br>
 
   ○ 4.99.77 <br>
   ・ 外部表示タイマーにて、BIGタイマーを使用するラウンドでラウンド開始直後に一瞬だけ秒数が消えてしまう問題について発生がしにくいよう調整を行いました。 <br>
@@ -1234,6 +1235,7 @@ This tool is available in English and Japanese.<br>
   ・ Changed the program regarding the playback status of 5-count sound effects. <br>
   ・ Added "Kill Game" button when loading an existing round in "Fall Guys Creative". <br>
   ・ Fixed a problem in the Creative Search Tool where if the creator name of a round contained the internal value of Nintendo, the display would be deleted up to other platforms written after Nintendo in the API order. <br>
+  ・ The ping indication is now red depending on the length of the ping. <br>
 
   ○ 4.99.77 <br>
   ・ In the external display timer, the number of seconds disappears for a moment immediately after the start of a round when the BIG timer is used in a round. <br>
