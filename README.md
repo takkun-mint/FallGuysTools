@@ -110,6 +110,9 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.81 <br>
+  ・ ...。<br>
+
   ○ 4.99.80 <br>
   ・ 一部分のプログラムにおいて、最適化を行いました。 <br>
   ・ メイン画面転移時に開発者からデータベースを通じてメッセージを表示する機能が不発してしまう問題について調整を行いました。 <br>
@@ -1209,6 +1212,9 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.81 <br>
+  ・ Coming Soon <br>
 
   ○ 4.99.80 <br>
   ・ Optimizations were made in some programs. <br>
