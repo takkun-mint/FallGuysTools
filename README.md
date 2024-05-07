@@ -110,8 +110,43 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
-  ○ 4.99.81 <br>
-  ・ ...。<br>
+  ○ 4.99.90 <br>
+  ・ Fall Guys Ver 10.9.0に対応しました！！ <br>
+  ・ 自由探索時のマッチング表記を正しく行うよう対応を行いました。 <br>
+  ・ 現在のスクワッドやデュオなどの挙動を鑑み、サバイバルラウンド中は右上に本来は表示される「スクワッドスコア」を「あと何人脱落したらラウンドが強制的に締め切られるか」という情報を表示するよう変更しました。 <br>
+  ・ 一部ポイント取得ラウンドで、各ポイント間にかかった所要時間を表示するようにしました。 <br>
+  ・ 現在のスクワッドやデュオなどでの挙動を鑑み、サバイバルラウンド終了時に「なぜラウンドが終了したのか」という理由を表示するようにしました。 <br>
+  ・ Google Drive APIを廃止し、ステージデータベースをクールタイム無しで取得できるようにしました。 <br> <br>
+  ・ Fall Guys のアクティブ状態を確認するプログラムを別スレッドに移し、軽量化を行いました。 <br>
+  ・ Fall Guys が未起動のときに予期しない定期実行プログラムが動いてしまっている問題を修正しました。 <br>
+  ・ コンテンツアップデート後、ファイル保存の時間を考慮し一定時間動作を停止するようにしました。 <br>
+  ・ コンテンツのリロードが入った際に一時的にGitHubに新しいコンテンツ情報がないかを確認する動作を一時停止するものについて、コンテンツのロード時ではなくダウンロードに変更しました。 <br>
+  ・ 起動した直後にログファイルを読み込んだときにラウンド開始前のタイマーアニメーションが動作しなくなることがある問題を修正しました。 <br>
+  ・ サーバーと接続した瞬間のPing交信をメインスレッド上で行うよう変更しました。 <br>
+  ・ サーバー接続時にスクワッドIDなどもリセットするようにしました。 <br>
+  ・ カスタムマッチ（プライベートロビー）時のサーバー探索の外部表示が正しく表示されない問題を修正しました。 <br>
+  ・ カスタムマッチ（プライベートロビー）時のサーバー探索の外部表示を探索開始直後から表示するようにしました。 <br>
+  ・ 各ラウンド終了後のリザルト画面から次のラウンドローテーションまでに表示される画面転移のタイムアウトまでのカウントダウンについてデータベースから有効/無効を選べるようにしました。 <br>
+  ・ 脱落後のリザルト画面で自身のパーティーIDやスクワッドIDも初期化するようにしました。 <br>
+  ・ 10.9.0アップデートの仕様変更でショーの名前がうまく取れない問題を修正しました。 <br>
+  ・ クリエイティブAPIで一部予期しない変数の動作が合った問題を修正しました。 <br>
+  ・ 現在のスクワッドの仕様上、スクワッドスコアが1000点を超えることがあるため、1000点以上でも正しく表示するよう変更しました。（以前は内部の計算の都合上、1000で割った値を表示していました。） <br>
+  ・ 一部コンテンツの言語によって、ローカライズの指定方法に差異がある問題の修正のため、一部テキストの取得先を変更しました。 <br>
+  ・ 一部ポイント取得ラウンドで外部表示のテキストに複数の情報を表示しようと、ちらつきが発生する問題を修正しました。 <br>
+  ・ 制限時間が少ないラウンドで、ラウンド開始前のタイマーアニメーションの始まるのが遅くなっていた問題を修正しました。 <br>
+  ・ ポイント取得ラウンドのラウンド読み込み時に、サーバー表示とポジション表示が重なる問題について発生頻度を抑える処置を行いました。 <br>
+  ・ Pingの取得頻度を高めにしていると処理が間に合わずパケットロスという表示になってしまう問題を修正しました。 <br>
+  ・ 取得するラウンドIDとデータベースから取得するIDをそれぞれ分けて実行できるよう改修を行いました。 <br>
+  ・ 自由探索のゲームルールをコンテンツやデータベースから取得できるようにしました。 <br>
+  ・ ラウンド読み込み時にTIMEと設定画面を表示するボタンが重なって表示される問題について、発生頻度を抑える処置を行いました。 <br>
+  ・ クリエイティブAPIを使えない環境で、ゲームの種別を取得するプログラムが意味をなしていない問題を修正しました。 <br>
+  ・ チーム戦のクリア率について、コンテンツファイルのクリア率がでたらめなことがあったため、チーム数と脱落チーム数から計算を行うよう仕様を追加しました。 <br>
+  ・ Toolsの一定処理終了後に効果音が暴発してしまう問題について、発生頻度を抑える処置を行いました。 <br>
+  ・ サーバーから切断したのにもかかわらず、Pingの表示が赤くなってしまったり警告表示が表示されたままになる問題を修正しました。 <br>
+  ・ スクワッド系列のラウンドでコンテンツ上のゲームルールが極端な値で設定されているときに、クリアチーム数が計算上0となってしまい全チーム脱落したような表示になってしまう問題を修正しました。 <br>
+  ・ 一部Toolsの初期設定に失敗したとき、エラー内容が表示されない問題を修正しました。 <br>
+  ・ クリエイティブ検索ツールにて、機種名が正しくローカライズされない問題を修正しました。 <br>
+  ・ その他事細かいプログラムの最適化や効率化を行いました。 <br>
 
   ○ 4.99.80 <br>
   ・ 一部分のプログラムにおいて、最適化を行いました。 <br>
@@ -1213,8 +1248,43 @@ This tool is available in English and Japanese.<br>
 
   ## ChangeLog (English) <br>
 
-  ○ 4.99.81 <br>
-  ・ Coming Soon <br>
+  ○ 4.99.90 <br>
+  ・ Fall Guys Ver 10.9.0 is now supported! <br>
+  ・ Correct matching notation during free search has been addressed. <br>
+  ・ In light of the current behavior of squads, duos, etc., the "squad score" that is originally displayed in the upper right corner during survival rounds has been changed to show information on how many more players will be eliminated to force the round to be closed. <br>
+  ・ The time required between each point in some point acquisition rounds is now displayed. <br>
+  ・ In view of the current behavior in squads and duos, etc., the reason why the round ended is now displayed at the end of a survival round. <br>
+  ・ Google Drive API has been deprecated so that stage databases can be retrieved with no cool time. <br> <br>
+  ・ The program that checks the active status of Fall Guys was moved to a separate thread to reduce weight. <br>
+  ・ Fixed a problem where Fall Guys was running unexpected periodic programs when not running. <br>
+  ・ After updating contents, operation is stopped for a certain period of time to allow time for file saving. <br>
+  ・ Changed the behavior of temporarily pausing to check for new content information on GitHub when content reloads come in to download instead of when content is loaded. <br>
+  ・ Fixed a problem where the timer animation before the start of a round would not work when a log file was read immediately after startup. <br>
+  ・ Changed to ping communication on the main thread at the moment of connection to the server. <br>
+  ・ Squad IDs, etc. are now reset when connecting to the server. <br>
+  ・ Fixed an issue where the external view of server search was not displayed correctly during a custom match (private lobby). <br>
+  ・ The external display of server search during a custom match (private lobby) is now displayed immediately after the search starts. <br>
+  ・ The countdown from the results screen after each round to the next round rotation can now be enabled/disabled from the database. <br>
+  ・ The result screen after elimination also initializes the own party ID and squad ID. <br>
+  ・ Fixed a problem with the 10.9.0 update specification change that prevented the show from being named properly. <br>
+  ・ Fixed an issue with some unexpected variable behavior in the Creative API. <br>
+  ・ Due to the current squad specifications, squad scores may exceed 1000 points, so we have changed the display to correctly show squad scores even if they exceed 1000 points. (Previously, due to internal calculation reasons, the score was displayed divided by 1000.) <br>
+  ・ Changed where some text is retrieved to correct a problem in which localization is specified differently depending on the language of some content. <br>
+  ・ Fixed a problem that caused flickering when trying to display multiple pieces of information in the text of the external display in some point acquisition rounds. <br>
+  ・ Fixed a problem in which the timer animation before the start of a round was slow to start in rounds with a small time limit. <br>
+  ・ The problem of the server display overlapping with the position display when loading a round of point acquisition rounds has been reduced in frequency. <br>
+  ・ Fixed a problem in which the frequency of ping acquisition was set too high, resulting in the display of packet loss. <br>
+  ・ Modifications have been made to allow separate execution of the round ID to be retrieved and the ID to be retrieved from the database. <br>
+  ・ Game rules for free exploration can be retrieved from the content and database. <br>
+  ・ The problem of TIME and the button to display the settings screen overlapping when loading a round has been addressed to reduce the frequency of occurrence. <br>
+  ・ Fixed a problem where the program to get the game type did not make sense in environments where the Creative API is not available. <br>
+  ・ Regarding the clear rate for team competitions, since the clear rate in the content file was sometimes bullshit, we added a specification to calculate the rate based on the number of teams and the number of teams eliminated. <br>
+  ・ The problem of sound effects going out of order after a certain number of Tools processes has been addressed to reduce the frequency of the problem. <br>
+  ・ Fixed a problem that caused the ping display to turn red or the warning message to remain displayed even though the user disconnected from the server. <br>
+  ・ Fixed a problem in which the number of cleared teams would be calculated to zero when the game rules on the content were set to extreme values in the squad series rounds, causing all teams to appear to have been eliminated. <br>
+  ・ Fixed a problem in which the error content was not displayed when initialization of some Tools failed. <br>
+  ・ Fixed a problem in the Creative Search tool where model names were not localized correctly. <br>
+  ・ Other minor program optimization and efficiency improvements were made. <br>
 
   ○ 4.99.80 <br>
   ・ Optimizations were made in some programs. <br>
