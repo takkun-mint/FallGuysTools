@@ -110,6 +110,14 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.91 <br>
+  ・ スクワッド系列の最初のステージで、うまくラウンド設定が行われなくなる不具合を修正しました。 <br>
+  ・ ロールオフなどのステージで使用される、周回カウンターがラウンド開始直後に表示されず、開始直後の効果音も再生されない問題を修正しました。 <br>
+  ・ 一部プログラムでエラーの温床となっていたコードを修正しました。 <br>
+  ・ データベースのダウンロードがTools起動したあと、再起動するまで実行されない問題について追加の対応を行いました。 <br>
+  ・ 2024年5月8日頃に公開されたコンテンツアップデート以降、コンテンツの内容を読み込めなくなる問題を修正しました。 <br>
+  ・ コンテンツファイルより、ショー設定についても取得できるよう変更を行いました。 <br>
+
   ○ 4.99.90 <br>
   ・ Fall Guys Ver 10.9.0に対応しました！！ <br>
   ・ 自由探索時のマッチング表記を正しく行うよう対応を行いました。 <br>
@@ -1247,6 +1255,14 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.91 <br>
+  ・ Fixed a problem with the first stage of the squad series that prevented the round from being set properly. <br>
+  ・ Fixed a problem in which the lap counter, used in stages such as "roll off", was not displayed immediately after the start of a round and the sound effect immediately after the start was not played. <br>
+  ・ Fixed code that was causing a hotbed of errors in some programs. <br>
+  ・ Additional action has been taken to address the issue of database downloads not running until after Tools has been started and then restarted. <br>
+  ・ Fixed an issue that prevented content from loading after a content update published on or about May 8, 2024. <br>
+  ・ Show settings can also be retrieved from the content file. <br>
 
   ○ 4.99.90 <br>
   ・ Fall Guys Ver 10.9.0 is now supported! <br>
