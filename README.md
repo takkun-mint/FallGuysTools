@@ -110,6 +110,25 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.92 <br>
+  ・ コンテンツリロード待機時間のとき、Toolsの表示をクリアするようにしました。 <br>
+  ・ 開発者からのお知らせ画面で各ローカライズから内容を引っ張れるようにしました。 <br>
+  ・ 探索モードにおいて、パーティーのゲストとして参加していると、ラウンド中のマッチメイキング中に表示が乱れてしまう問題を修正しました。 <br>
+  ・ 探索モードにおいて、ラウンド中にマッチメイキングを行っている際、ラウンドの制限時間表示が時々止まってしまう問題を修正しました。 <br>
+  ・ ラウンドの読み込み画面から、イントロカメラの画面に進んだときに一部ラウンド種類で正しくUI更新が入らなかった問題を修正しました。 <br>
+  ・ イントロカメラ画面に転移した際、再度ラウンドの設定をリロードするようにしました。 <br>
+  ・ 報酬読み込みの待機中、一瞬だけ外部表示タイマーが映り込むのが個人的に気になったので、最初の1秒は表示しないようにしました。 <br>
+  ・ Toolsのメイン画面を最小化しているときにラウンドが読み込まれ、その後表示を元に戻したとき、経過時間の隣に表示されるラウンド名が表示されない問題について対応を行いました。 <br>
+  ・ Squad系列をプレイしているときに、ゲームの本来の表示を上書きして人数表示をするプログラムについて、ラウンド開始まで上書きを行わないようにしました。 <br>
+  ・ コンテンツアップデートで変更された一部のポイント取得ラウンドにおいて、表示が正しくなくなる問題について対応を行いました。 <br>
+  ・ ポイント取得ラウンドでポイントに小数点以下があるとき、各種Listでは小数点以下2桁まで、外部表示では1桁まで表示するようにしました。 <br>
+  ・ サーバーから切断したのにもかかわらず、Ping表示と警告表示が消えない問題について前回の修正後に点滅するような挙動になっていた問題を修正しました。 <br>
+  ・ SquadListにおいて、「バレーフォール」などの1v1ステージにてラウンド終了後に敗退したチームの点数が0になってしまっていた問題を修正しました。 <br>
+  ・ Squadのサバイバルにおいて人数不利によりラウンド開始直後から脱落圏内になったときに、警告効果音が再生されない問題を修正しました。 <br>
+  ・ メイン画面にいるときに表示されるローテーションテキストが最初の表示に戻ったときに、データベースの更新も行うようにしました。 <br>
+  ・ クリエイティブ検索ツールにおいて、本家側の名称変更に基づき「レース」を「コース」に変更しました。（ロシア語は後日変更） <br>
+  ・ その他、安定性の向上やプログラムの最適化も行いました。 <br>
+
   ○ 4.99.91 <br>
   ・ スクワッド系列の最初のステージで、うまくラウンド設定が行われなくなる不具合を修正しました。 <br>
   ・ ロールオフなどのステージで使用される、周回カウンターがラウンド開始直後に表示されず、開始直後の効果音も再生されない問題を修正しました。 <br>
@@ -1255,6 +1274,25 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.92 <br>
+  ・ Tools display is now cleared when waiting for content reload. <br>
+  ・ The content can now be pulled from each localization on the Developer Announcements screen. <br>
+  ・ Fixed an issue in the Exploration mode where the display would be disrupted during rounds of matchmaking when participating as a guest in a party. <br>
+  ・ Fixed a problem in the search mode where the round time limit display would occasionally stop when matchmaking during a round. <br>
+  ・ Fixed an issue where some round types did not correctly receive UI updates when advancing from the round loading screen to the intro camera screen. <br>
+  ・ Reload the round settings again when transitioning to the intro camera screen. <br>
+  ・ I was personally concerned about the external display timer showing up for a moment while waiting for the reward to load, so I decided not to show it for the first second. <br>
+  ・ When the main screen of Tools is minimized and a round is loaded and then restored, the round name displayed next to the elapsed time is not displayed. <br>
+  ・ When playing a squad series, the program that overwrites the original display of the game to show the number of players is no longer overwritten until the start of the round. <br>
+  ・ The issue of incorrect display in some point acquisition rounds changed by the content update has been addressed. <br>
+  ・ When there is a decimal point in the point acquisition round, it is displayed to two decimal places in the various Lists and to one decimal place in the external display. <br>
+  ・ Fixed a flashing behavior after the previous fix for an issue where the ping and warning indications did not disappear despite disconnecting from the server. <br>
+  ・ In SquadList, in 1v1 stages such as "Valley Fall" the score of the team eliminated after the round was zero. <br>
+  ・ Fixed a problem in Squad Survival in which warning sound effects were not played when the player was in the elimination zone immediately after the start of a round due to disadvantage in number of players. <br>
+  ・ The database is now also updated when the rotating text displayed when on the main screen is returned to its initial display. <br>
+  ・ In the Creative Search Tool, "race" has been changed to "course" based on the name change on the home page. (Russian will be changed at a later date) <br>
+  ・ Other improvements in stability and program optimization were also made. <br>
 
   ○ 4.99.91 <br>
   ・ Fixed a problem with the first stage of the squad series that prevented the round from being set properly. <br>
