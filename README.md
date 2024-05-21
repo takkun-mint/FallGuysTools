@@ -110,6 +110,23 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.93 <br>
+  ・ マッチメイク開始時に、パーティーメンバーの接続待機に時間がかかったとき、タイムアウトまでの残り時間を表示するようにしました。（残り10秒から表示） <br>
+  ・ レース系のラウンドにおいて、ラウンド終了条件を満たしてから終了を保留する時間が設定されているとき、その時間をラウンド開始前に表示するようにしました。（ファイナルの場合は0でも表示されます。）（探索モードでは無効です） <br>
+  ・ コンテンツのリロード待機中に待機している旨を表示するようにしました。 <br>
+  ・ クリエイティブ検索ツールにて、背景に対するローカライズの設定をデータベースから指定できるように変更し、ジャングル背景が対応できていなかった問題を修正しました。 <br>
+  ・ コンテンツファイルの保存待機処理について、コンテンツのダウンロードが行われないと実行されないようにしました。 <br>
+  ・ メインメニューに転移した直後にPCの内部時計との誤差を調べるようにしました。 <br>
+  ・ ポイント取得ラウンドでポイントに小数点があるとき、外部表示とメイン画面の表示には桁あわせを行うよう変更しました。 <br>
+  ・ ラウンド終了時に勝利した人数を表示するものについて、予選ラウンドにも表示を対応させました。（今のところの表示予定はありません。） <br>
+  ・ スクワッドのサバイバルラウンドで終了理由を表示するプログラムについて、データベースより表示するかどうかを選べるようにしました。 <br>
+  ・ スクワッドのレースラウンドで終了理由を表示するプログラムにて、最後の一人が残り時間ギリギリでゴールしたとき、終了理由が「時間切れ」になってしまう問題を修正し、クリアや脱落が確定したチーム数を考慮して表示するようにしました。 <br>
+  ・ ゲームルールに指定されているラウンド終了条件が「time_elapsed」の場合、Unityラウンドでの挙動とToolsの挙動が正しくない問題を修正しました。 <br>
+  ・ ラウンドの開始のカウントダウン前に経過時間の表示テキストが一瞬だけ消えてしまう問題を修正しました。（開始時に一瞬消えるのは正常な動作です。） <br>
+  ・ カスタムゲーム終了後にメインメニューに帰ってきたとき、メインメニューのローテーションテキストが止まってしまう問題を修正しました。 <br>
+  ・ 外部表示テキストが一部大きく表示したときに、ほんの少し表示がはみ出てしまう問題を修正しました。 <br>
+  ・ その他、プログラムの最適化やエラーハンドリングを行いました。 <br>
+
   ○ 4.99.92 <br>
   ・ コンテンツリロード待機時間のとき、Toolsの表示をクリアするようにしました。 <br>
   ・ 開発者からのお知らせ画面で各ローカライズから内容を引っ張れるようにしました。 <br>
@@ -1274,6 +1291,23 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.93 <br>
+  ・ At the start of matchmaking, when it takes time for party members to wait for connection, the remaining time until timeout is displayed. (Displayed from 10 seconds remaining) <br>
+  ・ In race-based rounds, when a time is set to hold off the end of the round after the round end condition is met, the time is now displayed before the round starts. (In the case of finals, the time is also displayed at 0.) (This is disabled in search mode.) <br>
+  ・ When content is waiting to be reloaded, a message indicating that it is waiting is now displayed. <br>
+  ・ In the Creative Search tool, localization settings for backgrounds have been changed so that they can be specified from the database, and a problem with jungle backgrounds not being supported has been corrected. <br>
+  ・ The content file save standby process is now not executed until the content has been downloaded. <br>
+  ・ Immediately after transferring to the main menu, the error with the PC's internal clock is now checked. <br>
+  ・ When there is a decimal point in the point acquisition round, the external display and the main screen display are now adjusted for the decimal point. <br>
+  ・ Regarding the display of the number of winners at the end of a round, we have added support for displaying the number of winners in the preliminary rounds as well. (There are no current plans to display this information.) <br>
+  ・ For the program that displays the reason for the end in the survival round of the squad, it is now possible to choose whether or not to display the reason from the database. <br>
+  ・ In the program that displays the reason for the end of a race round in a squad, when the last person finishes just before the time remaining, the reason for the end of the race is now displayed as "Time is Over", taking into account the number of teams that have been cleared or eliminated. <br>
+  ・ Fixed an issue with incorrect behavior in Unity rounds and Tools when the round end condition specified in the game rules is "time_elapsed". <br>
+  ・ Fixed a problem where the elapsed time display text would disappear momentarily before the countdown at the start of a round. (It is normal for the text to disappear momentarily at the start of a round.) <br>
+  ・ Fixed a problem where the rotating text in the main menu would stop when returning to the main menu after a custom game. <br>
+  ・ Fixed a problem in which some external display text would overhang the display just a little bit when displayed in a larger size. <br>
+  ・ Other program optimization and error handling were also performed. <br>
 
   ○ 4.99.92 <br>
   ・ Tools display is now cleared when waiting for content reload. <br>
