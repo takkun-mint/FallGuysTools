@@ -110,6 +110,25 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.95 <br>
+  ・ 「クリエイティブコース検索ツール」が名前を改め「コース検索ツール」に生まれ変わりました！ Unityラウンドのlevel_roundのIDを入れると詳細情報を確認できます！（これはBeta版です。正しい動作を行わない可能性もあります。） <br>
+  ・ コース検索ツールにおいて、クリエイティブのコードを入れたとき、全く違う文字列でも正しい形式に合わせてくれるようにしました。（※文字数が一致している必要があります。） <br>
+  ・ コース検索ツールにおいて、15文字制限を撤廃しました。 <br>
+  ・ コース検索ツールにおいて、サムネイル画像に対して右クリックを行うと、クリップボードにコピーおよびpngファイルとして保存できるようにしました。 <br>
+  <br>
+  ・ 開発者からのお知らせダイアログで、ローカライズファイルからの値の取り出しプログラムが正常に動作していない問題を修正しました。 <br>
+  ・ 探索モードにおいて、モード終了までラウンド数カウンターをリセットしないように変更しました。 <br>
+  ・ ロビー画面で放置しているときにデータベースからファイルを更新するプログラムがToolsのバージョン確認を飛ばしてダウンロードしていた問題を修正し、Toolsのアップデートが配信された場合はその時点でダウンロードができるようにしました。 <br>
+  ・ カスタム（プライベート）ゲームでコードを入力して遊ぶクリエイティブラウンドにおいて、ラウンド開始直前に初期値の設定が反映されてしまう問題を修正しました。 <br>
+  ・ ラウンド読込中の画面において、ファイナルラウンドでクリア率が0％でもパーセントの表示やクリア可能人数を表示するようにしました。 <br>
+  ・ クリエイティブラウンドの読み込み画面において、TIMEの表示と設定を開く画面が重なってしまう問題を修正しました。 <br>
+  ・ ラウンド終了条件を満たしてからの猶予タイムを表示するプログラムにおいて、想定外のラウンドにも表示されてしまう問題を修正しました。 <br>
+  ・ Unityラウンドでも「コース検索ツール」で詳細が表示されるようにしました。 <br>
+  ・ ポイント取得ラウンドにおいて、ラウンド開始直前に初期値に戻ってしまい、レースラウンドの判定になってしまう問題を修正しました。 <br>
+  ・ BOTが1体以上ラウンドを勝ち残ったとき、設定画面を開くボタンとBOTの表示が重なっていないにも関わらず、設定を開くボタンが非表示になってしまう問題を修正しました。 <br>
+  ・ レガシー機能が悪さをして起動できない方がいらっしゃったので、レガシー機能をコメントアウトで全て無効化しました。 <br>
+  ・ 一部プログラムを最適化しました。 <br>
+
   ○ 4.99.93 <br>
   ・ マッチメイク開始時に、パーティーメンバーの接続待機に時間がかかったとき、タイムアウトまでの残り時間を表示するようにしました。（残り10秒から表示） <br>
   ・ レース系のラウンドにおいて、ラウンド終了条件を満たしてから終了を保留する時間が設定されているとき、その時間をラウンド開始前に表示するようにしました。（ファイナルの場合は0でも表示されます。）（探索モードでは無効です） <br>
@@ -1291,6 +1310,25 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.95 <br>
+  ・ The “Creative Course Search Tool” has been renamed and rebranded as the “Course Search Tool”! Enter the level_round ID of a Unity round to see detailed information! (This is a Beta version. This is a Beta version and may not work correctly.) <br>
+  ・ In Course Search Tool, when you put in the code for a creative, it will now match the correct format, even if it is a completely different string of characters. (*The number of characters must match.) <br>
+  ・ The 15-character limit has been removed in the course search tool. <br>
+  ・ In the course search tool, right-click on a thumbnail image to copy it to the clipboard and save it as a png file. <br>
+  <br>
+  ・ Fixed a problem in the Developer Notification dialog where the program for retrieving values from a localization file was not working properly. <br>
+  ・ In search mode, the rounds counter is not reset until the end of the mode. <br>
+  ・ Fixed a problem in which a program updating files from the database when left on the lobby screen was skipping the Tools version check and downloading the file when the Tools update is delivered. <br>
+  ・ In creative rounds played by entering a code in a custom (private) game, the default setting was reflected just before the start of the round. <br>
+  ・ On the screen during round loading, the percentage and the number of players who can clear the final round are now displayed even if the clear rate is 0% in the final round. <br>
+  ・ Fixed an issue where the TIME display and the screen for opening settings overlapped on the Creative Round loading screen. <br>
+  ・ In a program that displays the grace time after the end-of-round condition is met, a problem has been corrected in which the time was displayed even for unexpected rounds. <br>
+  ・ Unity rounds will now also display details in the “Course Search Tool”. <br>
+  ・ Fixed a problem in the point acquisition round where the round would return to its initial value just before the start of the round, resulting in a race round decision. <br>
+  ・ Fixed a problem in which the button to open settings was hidden when one or more BOTs won a round, even though the button to open settings did not overlap with the BOT display. <br>
+  ・ We have disabled all legacy functions by commenting them out, as some people were unable to start them due to legacy functions misbehaving. <br>
+  ・ Some programs have been optimized. <br>
 
   ○ 4.99.93 <br>
   ・ At the start of matchmaking, when it takes time for party members to wait for connection, the remaining time until timeout is displayed. (Displayed from 10 seconds remaining) <br>
