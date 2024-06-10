@@ -110,6 +110,28 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.96 <br>
+  ・ TextA領域に表示される「経過時間」の項目について、他の項目（ログ表示以外）と併用ができるようになりました。（ラウンド中は「経過時間」の変更はできません） <br>
+  ・ コース検索ツールにおいて、ラウンドの進行に合わせて自動更新される機能について、自動更新を行わないオプションを追加しました。 <br>
+  ・ コース検索ツールにおいて、コードを入力する際リアルタイム補正プログラムを無効化し、検索時に12桁連続で数値を入れたり4桁の組み合わせの間が任意の文字列でも検索が実行できるよう変更を行いました。 <br>
+  ・ 報酬読み込みがタイムアウトするまでのカウントダウン時に表示される外部表示について、残り10秒を下回っているのにもかかわらず、タイマーの縁取りが変わらない問題を修正しました。 <br>
+  ・ カスタム（プライベート）ゲームでコードを入力して遊ぶクリエイティブラウンドにおいて、レースタイプかつタグに「ハード」が含まれている場合は経過時間の外部表示とタイマーのミリ秒表示を行うようにしました。 <br>
+  ・ コース検索ツールを開いたとき、Unityラウンドの場合は自動検索されない問題を修正しました。 <br>
+  ・ ポイント取得ラウンドのラウンド中、途中棄権したプレイヤーがゲーム上に召喚すらされていないプレイヤーよりもPlayerList上のランキングが下になってしまう問題を修正しました。 <br>
+  ・ メイン画面時に表示される現在の時刻表示について、PCの地域設定のオプションメニューから表示形式を変更できるようにしました。 <br>
+  ・ コース検索ツールにおいて、コースの検索中に「Loading...」を表示するようにしました。 <br>
+  ・ コース検索ツールにおいて、ラウンドの進行に合わせた自動更新のあと、別のコースを検索しても結果が変わらなくなる問題を修正しました。 <br>
+  ・ コース検索ツールにおいて、「最大プレイヤー数」の「表示を参加できるプレイヤー数」に変更しました。 <br>
+  ・ コース検索ツールにおいて、クリエイティブ以外のコースが見つからないときのエラーメッセージを変更しわかりやすくしました。 <br>
+  ・ コース検索ツールにおいて、ノックアウトの一部のラウンドの説明文が空欄になる問題を修正し、デフォルトの値を参照するようにしました。 <br>
+  ・ コース検索ツールにおいて、ゲームモードがファイナルとなってしまう問題を修正し、正しくラウンド分類が表示されるようにしました。 <br>
+  ・ コース検索ツールにおいて、level_roundの値でクリエイティブラウンドを検索したとき、ゲームで採用されているバージョンの値を参照するようにしました。 <br>
+  ・ コース検索ツールにおいて、Unityコースのサムネイル参照の間、Toolsのすべての動作が停止してしまう問題を修正しました。 <br>
+  ・ コース検索ツールのデバッグ者向け機能が有効にならない問題の修正しました。 <br>
+  ・ クリエイティブラウンド出現時にコース検索ツールで自動検索するポイントを変更しました。 <br>
+  ・ 自由探索で遊んだとき、コース検索ツールにコース情報が入らない問題を修正しました。 <br>
+  ・ Fall Guysを起動後1ラウンドも遊ばずにコース検索ツールを開いたとき、「not creative」とエラーが表示されてしまう問題を修正しました。 <br>
+
   ○ 4.99.95 <br>
   ・ 「クリエイティブコース検索ツール」が名前を改め「コース検索ツール」に生まれ変わりました！ Unityラウンドのlevel_roundのIDを入れると詳細情報を確認できます！（これはBeta版です。正しい動作を行わない可能性もあります。） <br>
   ・ コース検索ツールにおいて、クリエイティブのコードを入れたとき、全く違う文字列でも正しい形式に合わせてくれるようにしました。（※文字数が一致している必要があります。） <br>
@@ -1311,12 +1333,33 @@ This tool is available in English and Japanese.<br>
 
   ## ChangeLog (English) <br>
 
+  ○ 4.99.96 <br>
+  ・ The “Elapsed Time” item displayed in the TextA area can now be used in conjunction with other items (other than log display). (The “Elapsed Time” cannot be changed during a round.) <br>
+  ・ In the course search tool, an option to disable automatic updates has been added for a feature that automatically updates as the round progresses. <br>
+  ・ In the course search tool, the real-time correction program has been disabled when entering a code, and changes have been made so that searches can be performed even when entering 12 consecutive digits or any string of characters between 4-digit combinations. <br>
+  ・ Fixed a problem with the external display that appears during the countdown until the reward loading times out, where the timer borders do not change even though there are less than 10 seconds remaining. <br>
+  ・ In creative rounds played by entering a code in a custom (private) game, the elapsed time is now displayed externally and the timer displays milliseconds if the race type and tag contains “hard”. <br>
+  ・ Fixed a problem where the course search tool would not automatically search for Unity rounds when opened. <br>
+  ・ Fixed a problem in which a player who abstained during a round of point acquisition rounds would be ranked lower on PlayerList than a player who was not even summoned on the game. <br>
+  ・ The current time displayed on the main screen can now be changed from the options menu of the PC's regional settings. <br>
+  ・ In the course search tool, “Loading...” is now displayed while searching for a course. is now displayed while searching for a course in the course search tool. <br>
+  ・ Fixed a problem in the course search tool where, after an automatic update as the round progressed, searching for a different course would not change the results. <br>
+  ・ In the course search tool, “Maximum number of players” has been changed to “Number of players allowed to participate”. <br>
+  ・ In the course search tool, the error message when a course other than Creative is not found has been changed to make it easier to understand. <br>
+  ・ In the course search tool, the description of some knockout rounds is now blank and references default values. <br>
+  ・ Fixed a problem in the course search tool where the game mode was set to Final, and the round classification is now displayed correctly. <br>
+  ・ In the course search tool, when searching for creative rounds by the level_round value, the value now refers to the version used in the game. <br>
+  ・ Fixed a problem in the Course Search tool where all actions in Tools would stop during thumbnail browsing of Unity courses. <br>
+  ・ Fixed a problem that prevented the course search tool from activating the debugger feature. <br>
+  ・ Changed the point where the course search tool automatically searches for a course when a creative round appears. <br>
+  ・ Fixed a problem in which course information was not entered into the course search tool when playing in search. <br>
+  ・ Fixed an issue where an error message “not creative” would appear when opening the course search tool without having played a single round after launching Fall Guys. <br>
+
   ○ 4.99.95 <br>
   ・ The “Creative Course Search Tool” has been renamed and rebranded as the “Course Search Tool”! Enter the level_round ID of a Unity round to see detailed information! (This is a Beta version. This is a Beta version and may not work correctly.) <br>
   ・ In Course Search Tool, when you put in the code for a creative, it will now match the correct format, even if it is a completely different string of characters. (*The number of characters must match.) <br>
   ・ The 15-character limit has been removed in the course search tool. <br>
   ・ In the course search tool, right-click on a thumbnail image to copy it to the clipboard and save it as a png file. <br>
-  <br>
   ・ Fixed a problem in the Developer Notification dialog where the program for retrieving values from a localization file was not working properly. <br>
   ・ In search mode, the rounds counter is not reset until the end of the mode. <br>
   ・ Fixed a problem in which a program updating files from the database when left on the lobby screen was skipping the Tools version check and downloading the file when the Tools update is delivered. <br>
