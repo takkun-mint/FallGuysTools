@@ -110,6 +110,27 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.97 <br>
+  ・ Toolsがバッググラウンドで処理をしている または、時間のかかる処理を行っている間、読み込みアイコンが表示されるようにしました。 <br>
+  ・ コンテンツのリロードが終わっても「コンテンツアップデートがある」という通知が表示されてしまう問題について、発生頻度を下げる対応を行いました。 <br>
+  ・ 探索モードやカスタム（プライベート）ロビーでコードを入力して遊ぶクリエイティブラウンドなどをプレイしたとき、APIとの通信に失敗した旨のテキストが表示されない問題を修正しました。 <br>
+  ・ ラウンドの読み込み過程でメインウィンドウを最小化表示にしているとき、TextAの項目に「経過時間」と「ステージ情報」を表示しているとステージ情報が「...」だけになる問題について、今度こそ修正を行いました。 <br>
+  ・ Fall Guysのバージョンアップに合わせ、PlayerListのプラットフォーム表示、コース検索ツールの作成機種や作成者のプラットフォーム情報をデータベースから随時反映できるよう変更を行いました。 <br>
+  ・ コース検索ツールのリニューアルに合わせ、常時検索ツールを開くボタンを表示するようにしました。（今までの動作とは干渉しないよう調整を掛けております。） <br>
+  ・ サドンデス版OverTime発生時に、データベース指定に「外部表示タイマーをミリ秒まで表示する」と設定されていてもミリ秒表示を行わないよう変更を行いました。 <br>
+  ・ 15秒延長方式のOverTime発生時でかつゲーム側でカウントダウンが表示されない一部のラウンドで、15秒カウントダウンが表示されない問題を修正しました。 <br>
+  ・ クリエイティブラウンド（カスタム（プライベート）ロビーでコードを入力して遊ぶクリエイティブは例外）を遊んでいて、かつコース検索ツールを開いているとき、Toolsのラウンド設定とコース検索ツールの取得のため2回API通信を行っている問題を改善し、ラウンド設定で使った通信結果をコース検索ツールでも転用できるよう変更を行いました。 <br>
+  ・ サムネイル置き換え機能がゲーム内に追加されたため、置き換えプログラムのほとんどを停止し、データベースからは別途変更を行えるよう調整を行いました。 <br>
+  ・ フルーツを数えるロジックラウンドで、足場落下までのカウントダウンがゲーム内に復活したため、Tools側での表示を停止し、表示されている間はSquadのサバイバルラウンドで表示されるボーダー表示も停止するようにしました。 <br>
+  ・ 制限時間が極端に短いレベルにおいて、ラウンド開始前のタイマー演出が正しく動作しない問題について、以前の修正がうまく行ってなかったので修正を行いました。 <br>
+  ・ Toolsの設定画面でTextAに「ログファイル」のチェックボックスを外しても「経過時間」の項目が無効化されたままになってしまう問題を修正しました。 <br>
+  ・ Squadのポイント取得ラウンドで、SquadList上のランキングについて、以前までは「同着で複数のチームがゴールしたときはスコアが高いほうが順位が高くなる」という仕様を変更し、「同着でゴールしたら同着として処理をする」という方式に変更しました。 <br>
+  ・ 一部ポイント取得ラウンドで表示される「各ポイント間にかかった秒数を出力」するプログラムについて、表示時間が終了しても一定時間表示が戻らなくなる問題を修正しました。 <br>
+  ・ コース検索ツールにおいて、API側でエラーが発生したときにAPI側のエラーメッセージが表示されるようにしました。 <br>
+  ・ コース検索ツールにおいて、APIから通信がブロックされたときにエラーコードが表示されない問題を修正しました。 <br>
+  ・ コース検索ツールにおいて、level_roundの値で検索をしたときに全く関係ないレベルの設定が表示されてしまう問題を修正しました。 <br>
+  ・ コース検索ツールにおいて、カスタム（プライベート）ロビーでの参加人数人数も表示するようにしました。 <br>
+
   ○ 4.99.96 <br>
   ・ TextA領域に表示される「経過時間」の項目について、他の項目（ログ表示以外）と併用ができるようになりました。（ラウンド中は「経過時間」の変更はできません） <br>
   ・ コース検索ツールにおいて、ラウンドの進行に合わせて自動更新される機能について、自動更新を行わないオプションを追加しました。 <br>
@@ -1332,6 +1353,27 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.97 <br>
+  ・ The loading icon is now displayed while Tools is running in the bagground or performing time-consuming processing. <br>
+  ・ The issue of the "content update is available" notification appearing even after the content has been reloaded has been addressed to reduce the frequency of its occurrence. <br>
+  ・ Fixed an issue where the text indicating that communication with the API failed when playing creative rounds, such as those played by entering a code in the Explore mode or custom (private) lobbies. <br>
+  ・ When the main window is in minimized view during the round loading process and the "Elapsed Time" and "Stage Information" are displayed in the TextA item, the stage information would be "...". has been fixed this time. <br>
+  ・ In conjunction with the Fall Guys version upgrade, changes have been made to the PlayerList platform display and the course search tool to reflect the creation model and creator platform information from the database as needed. <br>
+  ・ The "Open Search Tool" button is now always displayed in conjunction with the renewal of the Course Search Tool. (We have made some adjustments so that it does not interfere with the existing behavior.) <br>
+  ・ The SuddenDeath version of OverTime has been changed so that milliseconds are not displayed when OverTime occurs, even if "display external display timer to milliseconds" is set in the database specification. <br>
+  ・ Fixed a problem in which the 15-second countdown was not displayed in some rounds when the 15-second extension method of OverTime occurred and the countdown was not displayed on the game side. <br>
+  ・ When playing a creative round (with the exception of creative rounds played by entering a code in the custom (private) lobby) and the course search tool is open, the API communication was being used twice to retrieve the Tools round settings and the course search tool. The communication results used in the round setting can be used in the course search tool as well. <br>
+  ・ Since the thumbnail replacement function was added to the game, most of the replacement programs were stopped and adjustments were made to allow changes to be made separately from the database. <br>
+  ・ The countdown to falling scaffolding has been restored to the game in the logic round of counting fruit, so the display on the Tools side has been stopped, and the border display shown in the Squad survival round will also be stopped while it is displayed. <br>
+  ・ The problem of the timer direction before the start of the round not working correctly on levels with extremely short time limits has been corrected, as the previous fix did not work. <br>
+  ・ Fixed a problem in which the "Elapsed Time" item remained disabled even if the "Log File" checkbox was unchecked in TextA on the Tools settings screen. <br>
+  ・ In the Squad point-earning round, the previous specification for the ranking on SquadList was changed to "If multiple teams finish in a tie, the one with the higher score will have the higher ranking" and the system was changed to "If teams finish in a tie, it will be treated as a tie. <br>
+  ・ The program that "outputs the number of seconds spent between each point" displayed in some point acquisition rounds has been corrected, where the display would not return for a certain period of time after the display time ended. <br>
+  ・ In the course search tool, API-side error messages are now displayed when an error occurs on the API side. <br>
+  ・ In the course search tool, an error code was not displayed when communication was blocked from the API. <br>
+  ・ In the course search tool, a problem was corrected in which completely unrelated level settings were displayed when searching by level_round value. <br>
+  ・ The course search tool now also displays the number of participants in a custom (private) lobby. <br>
 
   ○ 4.99.96 <br>
   ・ The “Elapsed Time” item displayed in the TextA area can now be used in conjunction with other items (other than log display). (The “Elapsed Time” cannot be changed during a round.) <br>
