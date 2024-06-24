@@ -110,6 +110,22 @@ This tool is available in English and Japanese.<br>
 
   ## 更新ログ (日本語・The English version is below) <br>
 
+  ○ 4.99.98 <br>
+  ・ カスタム（プライベート）ロビーでサーバとの再接続回数表示が外部表示されなかった問題を修正しました。 <br>
+  ・ カスタム（プライベート）ロビーでサーバーとの再接続回数の最初数回について外部表示を行わないよう調整を行いました。 <br>
+  ・ 接続されたサーバーの地域情報の取得に失敗したとき、Toolsの処理中を示すビーンが表示されたままになる問題を修正しました。 <br>
+  ・ Squadのレースラウンドにおいて、ラウンド終了事由の表示「ゲームのバグ...」について特殊な条件で誤った事由が表示されてしまう問題を修正しました。 <br>
+  ・ 前回のアップデートで15秒延長方式のOverTime発生時にミリ秒表示を絶対に行わないと仕様変更をしましたが、データベースから遠隔で操作できるようにしました。 <br>
+  ・ 探索モードやカスタム（プライベート）ロビーで遊ぶクリエイティブラウンドにおいて、コンテンツから必要なテンプレートゲーム設定を取得できるよう改良を行いました。 <br>
+  ・ レベルの途中で表示されるToolsの独自機能について、大幅な改修を行いました。 <br>
+  ・ OverTime発生時に表示される外部表示タイマーについて、全て想定の”逆”で設定されていた問題を修正しました。 <br>
+  ・ Squadのレース・サバイバルラウンドにおいて、自身のSquadの進出が確定したときや脱落が確定してしまったときにアイコンを表示し、視覚的にわかりやすくしました。 <br>
+  ・ Toolsの処理アイコンのビーンの表示状態を逐一確認し、非表示に行えるようにしました。 <br>
+  ・ コース検索ツールにおいて、Tools起動から一回目の検索を行うと確定で404エラーが発生してしまう問題を修正しました。 <br>
+  ・ コース検索ツールにおいて、処理アイコンのビーンズが表示されない問題を修正しました。 <br>
+  ・ 一部のPhase表示ラウンドで効果音を追加しました。 <br>
+
+
   ○ 4.99.97 <br>
   ・ Toolsがバッググラウンドで処理をしている または、時間のかかる処理を行っている間、読み込みアイコンが表示されるようにしました。 <br>
   ・ コンテンツのリロードが終わっても「コンテンツアップデートがある」という通知が表示されてしまう問題について、発生頻度を下げる対応を行いました。 <br>
@@ -1353,6 +1369,21 @@ This tool is available in English and Japanese.<br>
 <br><br><br>
 
   ## ChangeLog (English) <br>
+
+  ○ 4.99.98 <br>
+  ・ Fixed a problem in the custom (private) lobby where the number of times reconnected to the server was not displayed externally. <br>
+  ・ Adjusted the custom (private) lobby so that the first few times of reconnection with the server are not displayed externally. <br>
+  ・ Fixed a problem in which a bean indicating that Tools was in process would remain on the display when attempts to retrieve regional information for a connected server failed. <br>
+  ・ In the Squad race rounds, the "Game bug..." display of the reason for the end of the round in the Squad race rounds, under special conditions, the wrong reason would be displayed. <br>
+  ・ In the last update, the specification was changed to never display milliseconds when the 15-second extension method of OverTime occurs, but it can now be operated remotely from the database. <br>
+  ・ Improved the ability to retrieve the necessary template game settings from the content in creative rounds played in exploration mode and in custom (private) lobbies. <br>
+  ・ Significant modifications have been made to Tools' unique features that are displayed in the middle of the level. <br>
+  ・ Fixed a problem in which all external display timers displayed when OverTime occurred were set "backwards" from what was expected. <br>
+  ・ In the Squad race and survival rounds, icons are displayed when a competitor is confirmed to advance in his/her Squad or when he/she is eliminated, making it easier to understand visually. <br>
+  ・ The display state of the bean of the processing icon in Tools can now be checked and hidden at any time. <br>
+  ・ In the course search tool, a 404 error would occur on confirmation when performing the first search after starting Tools. <br>
+  ・ Fixed a problem in the course search tool where the processing icon beans were not displayed. <br>
+  ・ Added sound effects for some Phase display rounds. <br>
 
   ○ 4.99.97 <br>
   ・ The loading icon is now displayed while Tools is running in the bagground or performing time-consuming processing. <br>
