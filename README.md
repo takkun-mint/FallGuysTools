@@ -112,6 +112,32 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2024.7.20 (2024/07/24 更新)` <br>
+  ・ Fall Guysのバージョン11.1.0の内容に対応しました。 <br>
+  ・ 探索モードで出現するサバイバルラウンドにおいて、新しく採用された「制限時間のみ作成者の設定に準ずる」という要素に対応しました。 <br>
+  ・ アップデートにより、スコア表示の表示位置が変わったため対応を行いました。 <br><br>
+  ・ 新機能「報酬バグ警告表示」に対応しました。本来はクリアできているのに、脱落として報酬が確定してしまうバグに遭遇した時にその旨を表示するメッセージボックスを表示するようにしました。 <br>
+  ・ ショーから離脱した時に出力されるログの文字列変更に対応しました。 <br>
+  ・ パーティー参加しているときに探索モードのラウンド中マッチメイキングをキャンセルしてやり直す時、ステータスがリセットされない問題を修正しました。（※キャンセルしてもステータスが戻らない問題がありますが、パーティーのゲストで参加していると「キャンセルをした」というログが出力されないため、修正できません。） <br>
+  ・ かなり限定的な環境で、報酬読み込み待機中にリセットのログが出力されてしまう問題があったため、報酬読み込み中はリセットログが出力されても無視するようにしました。 <br>
+  ・ クリエイティブラウンドが出現した時、シェアコードのログが出力された時点で内容をAPIから読み込むようにしました。 <br>
+  ・ 探索モードでハンティングラウンドを遊んだ時、ラウンド中マッチメイキングで一定時間マッチできなかった時に表示される警告マークが荒ぶってしまう問題を修正しました。 <br>
+  ・ 探索モードでラウンドをクリアしたり脱落した時、データベースからファイルを更新できるようにしました。 <br>
+  ・ クリア率が100％のハンティングラウンドにおいて、スコア表示を非表示にするプログラムがうまく動作しない問題を修正しました。 <br>
+  ・ コース（レース）ラウンドにおいて、クリア率が0％だとクリア可能人数表示が0と表示されてしまう問題を修正しました。 <br>
+  ・ 探索モードでのラウンド内マッチメイキング中に、TextA,Bの領域に表示される「プレイヤー情報」が更新されない事がある問題を修正しました。 <br>
+  ・ カスタム（プライベート）ロビーでコードを入力して遊ぶクリエイティブラウンドにおいて、データベースから取得する値を動的に変更し、デフォルト値などから変更できるようにしました。 <br>
+  ・ ラウンド中に表示されるToolsの独自機能（スコア部分二表示される）について、コンテンツからの値をデータベースから指定できるようにしました。 <br>
+  ・ 名声利用パス情報やブースト情報がコンテンツに存在しない時、メインメニューのカウントダウンが数秒に一回機能しなくなる問題を修正しました。 <br>
+  ・ コース検索ツールにおいて、Unityラウンドのサムネイルがうまく取得できなくなる問題を修正しました。 <br>
+  ・ コース検索ツールにおいて、説明文が全く記載されていないクリエイティブラウンドを検索すると、ゲーム内で表示されるテキストが表示されない問題を修正しました。 <br>
+  ・ Fall Guysのローカライズが一部運営によって破壊されたため、コース検索ツールにおいて値が取得できないローカライズについて、データベースに記載された初期値を表示するようにしました。 <br>
+  ・ コース検索ツールにおいて、クリエイティブラウンドをlevel_roundの値で検索した時にUnityラウンドとして一部空欄のまま出力されてしまう問題を修正しました。 <br>
+  ・ Toolsの独自機能が動くラウンドが出現したショーをプレイしてから別のショーを遊ぶ前にToolsを起動すると即クラッシュしてしまう問題を修正しました。 <br>
+  ・ 一部変数の型の定義を見直しました。 <br>
+  ・ 一部専用モードの機能追加・改善を行いました。 <br>
+
+
   ○ `2024.7.10 (2024/07/11 更新)` <br>
   ・ 一貫性がなかったバージョン連番の仕様変更。 <br>
   ・ 一部専用モードの仕様や意図しない動作の修正。 <br>
@@ -1394,7 +1420,32 @@ This tool is available in English, Japanese, and Russian.<br>
 <details>
     <summary>Details</summary>
 
-  ○ `2024.7.10 (11/07/2024 update)` <br>
+  ○ `2024.7.20 (07/24/2024 update)` <br>
+  ・ The content of Fall Guys version 11.1.0 is now supported. <br>
+  ・ In the survival rounds that appear in the Explore mode, the newly adopted "only the time limit is subject to the creator's settings" element is now supported. <br>
+  ・ The display position of the score display has been changed due to an update. <br><br>
+  ・ A new feature, "Reward Bug Warning Display," is now supported. A message box is now displayed to indicate when a bug is encountered that causes a reward to be confirmed as an omission, even though it was originally qualified. <br>
+  ・ Added support for changing the string of the log output when leaving a show. <br>
+  ・ Fixed a problem where status was not reset when canceling and redoing a round of matchmaking in Explore mode while participating in a party. (*The problem does not return status after canceling, but cannot be corrected because the "canceled" log is not output when you are a guest in a party.) <br>
+  ・ In a very limited environment, there was a problem with the reset log being output while waiting for the reward to load, so the reset log is now ignored even if it is output while the reward is loading. <br>
+  ・ When a creative round appears, the contents are read from the API as soon as the share code log is output. <br>
+  ・ When playing a hunting round in Explore mode, the warning mark displayed when a match could not be made for a certain period of time in matchmaking during the round would become wildly inconsistent. <br>
+  ・ When a round is cleared or dropped out in Explore mode, the file can now be updated from the database. <br>
+  ・ Fixed a problem in which the program to hide the score display did not work properly in hunting rounds with a 100% qualify percentage. <br>
+  ・ Fixed a problem in which the number of people who could qualify a course (race round) would be displayed as 0 if the qualify percentage was 0%. <br>
+  ・ Fixed an issue where the "Player Information" displayed in the TextA,B area was sometimes not updated during in-round matchmaking in the Explore mode. <br>
+  ・ In the Creative Round, which is played by entering code in a custom (private) lobby, the values retrieved from the database can be dynamically changed from the default values, etc. <br>
+  ・ For the unique feature of Tools displayed during a round (the score portion is displayed twice), the values from the content can now be specified from the database. <br>
+  ・ Fixed a problem where the countdown in the main menu would stop working once every few seconds when no fame usage pass information or boost information was present in the content. <br>
+  ・ Fixed a problem in the course search tool where thumbnails of Unity rounds could not be retrieved properly. <br>
+  ・ Fixed an issue in the course search tool where searching for a creative round with no description at all would not show the text displayed in the game. <br>
+  ・ Since some localizations of Fall Guys have been broken by the management, the default values listed in the database are now displayed for those localizations whose values cannot be retrieved in the course search tool. <br>
+  ・ Fixed a problem in the course search tool where creative rounds were being output as Unity rounds with some empty fields when searching for creative rounds by level_round value. <br>
+  ・ Fixed a problem that caused an immediate crash if Tools is launched after playing a show in which a round in which Tools' own functionality runs appeared, but before playing another show. <br>
+  ・ The type definitions of some variables have been revised. <br>
+  ・ Added and improved functions in some exclusive modes. <br>
+
+  ○ `2024.7.10 (07/11/2024 update)` <br>
   ・ Change of specifications for version sequential numbering, which was not consistent. <br>
   ・ Correction of specifications and unintended behavior in some exclusive modes. <br>
   ・ In accordance with the specifications on the game, when there is a reward to be received, a force close button is now displayed when disconnected from the server at the round loading screen. <br>
@@ -1419,7 +1470,7 @@ This tool is available in English, Japanese, and Russian.<br>
   ・ Fixed a problem in which a bean indicating that Tools was in process would remain on the display when attempts to retrieve regional information for a connected server failed. <br>
   ・ In the Squad race rounds, the "Game bug..." display of the reason for the end of the round in the Squad race rounds, under special conditions, the wrong reason would be displayed. <br>
   ・ In the last update, the specification was changed to never display milliseconds when the 15-second extension method of OverTime occurs, but it can now be operated remotely from the database. <br>
-  ・ Improved the ability to retrieve the necessary template game settings from the content in creative rounds played in exploration mode and in custom (private) lobbies. <br>
+  ・ Improved the ability to retrieve the necessary template game settings from the content in creative rounds played in Explore mode and in custom (private) lobbies. <br>
   ・ Significant modifications have been made to Tools' unique features that are displayed in the middle of the level. <br>
   ・ Fixed a problem in which all external display timers displayed when OverTime occurred were set "backwards" from what was expected. <br>
   ・ In the Squad race and survival rounds, icons are displayed when a competitor is confirmed to advance in his/her Squad or when he/she is eliminated, making it easier to understand visually. <br>
@@ -1509,7 +1560,7 @@ This tool is available in English, Japanese, and Russian.<br>
   ○ `4.99.92` <br>
   ・ Tools display is now cleared when waiting for content reload. <br>
   ・ The content can now be pulled from each localization on the Developer Announcements screen. <br>
-  ・ Fixed an issue in the Exploration mode where the display would be disrupted during rounds of matchmaking when participating as a guest in a party. <br>
+  ・ Fixed an issue in the Explore mode where the display would be disrupted during rounds of matchmaking when participating as a guest in a party. <br>
   ・ Fixed a problem in the search mode where the round time limit display would occasionally stop when matchmaking during a round. <br>
   ・ Fixed an issue where some round types did not correctly receive UI updates when advancing from the round loading screen to the intro camera screen. <br>
   ・ Reload the round settings again when transitioning to the intro camera screen. <br>
@@ -1560,7 +1611,7 @@ This tool is available in English, Japanese, and Russian.<br>
   ・ The problem of the server display overlapping with the position display when loading a round of point acquisition rounds has been reduced in frequency. <br>
   ・ Fixed a problem in which the frequency of ping acquisition was set too high, resulting in the display of packet loss. <br>
   ・ Modifications have been made to allow separate execution of the round ID to be retrieved and the ID to be retrieved from the database. <br>
-  ・ Game rules for free exploration can be retrieved from the content and database. <br>
+  ・ Game rules for free Explore can be retrieved from the content and database. <br>
   ・ The problem of TIME and the button to display the settings screen overlapping when loading a round has been addressed to reduce the frequency of occurrence. <br>
   ・ Fixed a problem where the program to get the game type did not make sense in environments where the Creative API is not available. <br>
   ・ Regarding the clear rate for team competitions, since the clear rate in the content file was sometimes bullshit, we added a specification to calculate the rate based on the number of teams and the number of teams eliminated. <br>
