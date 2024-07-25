@@ -112,6 +112,12 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2024.7.21 (2024/07/26 更新)` <br>
+  ・ 接続先のサーバーを調べるために行うAPI通信のタイムアウト時間を3秒から60秒に延長しました。 <br>
+  ・ 前回修正したはずのコース検索ツールにおいて、一部ローカライズがMTによって破壊された箇所について、調べたラウンドがlevel_roundに存在している時、データベース参照ができていない問題を修正しました。 <br>
+  ・ コース検索ツールにて、Unityラウンドをlevel_roundの値で検索した時のサムネイルをダウンロードするタイムアウト時間を20秒から60秒に延長しました。 <br>
+  ・ 一部専用モードの仕様を変更しました。 <br>
+
   ○ `2024.7.20 (2024/07/24 更新)` <br>
   ・ Fall Guysのバージョン11.1.0の内容に対応しました。 <br>
   ・ 探索モードで出現するサバイバルラウンドにおいて、新しく採用された「制限時間のみ作成者の設定に準ずる」という要素に対応しました。 <br>
@@ -1419,6 +1425,12 @@ This tool is available in English, Japanese, and Russian.<br>
   ## ChangeLog (English) <br>
 <details>
     <summary>Details</summary>
+
+  ○ `2024.7.21 (07/26/2024 update)` <br>
+  ・ The timeout period for API communication to check the server to connect to has been extended from 3 seconds to 60 seconds. <br>
+  ・ Fixed a problem in the course search tool, which should have been fixed last time, where some localizations were destroyed by MT, and the database reference was not working when the round looked up existed in level_round. <br>
+  ・ In the course search tool, the timeout period for downloading thumbnails when searching for Unity rounds by level_round value has been extended from 20 to 60 seconds. <br>
+  ・ The specifications of some exclusive modes have been changed. <br>
 
   ○ `2024.7.20 (07/24/2024 update)` <br>
   ・ The content of Fall Guys version 11.1.0 is now supported. <br>
