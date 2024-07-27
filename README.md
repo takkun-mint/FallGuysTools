@@ -112,6 +112,10 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2024.7.30 (2024/07/27 更新)` <br>
+  ・ Toolsの変数最適化計画のPart 1を実行しました。 <br>
+  ・ OverTimeが発生中にデータベースのリロードや自身のクリア判定or脱落判定が出ると、残り時間表示が初期値にリセットされてしまう問題を修正しました。 <br>
+
   ○ `2024.7.21 (2024/07/26 更新)` <br>
   ・ 接続先のサーバーを調べるために行うAPI通信のタイムアウト時間を3秒から60秒に延長しました。 <br>
   ・ 前回修正したはずのコース検索ツールにおいて、一部ローカライズがMTによって破壊された箇所について、調べたラウンドがlevel_roundに存在している時、データベース参照ができていない問題を修正しました。 <br>
@@ -1425,6 +1429,10 @@ This tool is available in English, Japanese, and Russian.<br>
   ## ChangeLog (English) <br>
 <details>
     <summary>Details</summary>
+
+  ○ `2024.7.30 (27/07/2024 更新)` <br>
+  ・ Part 1 of Tools' Variables optimization plan was executed. <br>
+  ・ Fixed a problem in which the remaining time display would be reset to the initial value if the database was reloaded or if a qualified or eliminated decision was made by the user while OverTime was occurring. <br>
 
   ○ `2024.7.21 (07/26/2024 update)` <br>
   ・ The timeout period for API communication to check the server to connect to has been extended from 3 seconds to 60 seconds. <br>
