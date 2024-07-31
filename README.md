@@ -108,13 +108,23 @@ This tool is available in English, Japanese, and Russian.<br>
   
   <br>
 
-  ## 更新ログ (日本語・The English version is below) <br>
+  ## 更新ログ (日本語) <br>
   <details>
     <summary>詳細を表示</summary>
+
+  ○ `2024.7.40 (2024/07/31 更新)` <br>
+  ・ ポイント取得ラウンドで、外部領域に表示される順位表示に加え、ボーダーとのポイント差も同時に表示するようにしました。 <br>
+  ・ 自由探索モードにおいて、マッチメイキング中にラウンドが終了し、サーバーから切断されるとステータス表示が行われない問題を修正しました。 <br>
+  ・ 一部、Toolsの独自機能を有するクリエイティブラウンドにおいて、正しく動作しなくなってしまった問題を修正しました。 <br>
+  ・ Squadのポイント取得ラウンドで、ソロベースでのクリア率が100％のラウンドで順位表示が行われなくなる問題を修正しました。 <br>
+  ・ OverTime発生中のデータベースなどのリロードによりラウンド設定が再読込された時、一部不十分な修正が含まれていたため、再修正しました。 <br>
+  ・ エクストリーム予選でのクリア確定表示について、この項目についてもFall Guysのバージョン11.1.0以前の座標に表示するようにしました。 <br>
 
   ○ `2024.7.30 (2024/07/27 更新)` <br>
   ・ Toolsの変数最適化計画のPart 1を実行しました。 <br>
   ・ OverTimeが発生中にデータベースのリロードや自身のクリア判定or脱落判定が出ると、残り時間表示が初期値にリセットされてしまう問題を修正しました。 <br>
+  ・ 一部変数の挙動を修正しました。 <br>
+  ・ Squadのポイント取得ラウンドで脱落圏内で表示されるエクスクラメーションマークについて、本来はSquadのクリア率を判断しないといけないところ、ソロベースでのクリア率で判断してしまっていたミスを修正しました。 <br>
 
   ○ `2024.7.21 (2024/07/26 更新)` <br>
   ・ 接続先のサーバーを調べるために行うAPI通信のタイムアウト時間を3秒から60秒に延長しました。 <br>
@@ -1430,7 +1440,15 @@ This tool is available in English, Japanese, and Russian.<br>
 <details>
     <summary>Details</summary>
 
-  ○ `2024.7.30 (27/07/2024 更新)` <br>
+  ○ `2024.7.40 (31/07/2024 update)` <br>
+  ・ In the point acquisition round, in addition to the rank display in the external area, the point difference from the border is also displayed at the same time. <br>
+  ・ Fixed a problem in Explore mode where the status display would not be displayed if a round ended during matchmaking and the player was disconnected from the server. <br>
+  ・ Fixed a problem that prevented some creative rounds with Tools' proprietary features from working properly. <br>
+  ・ Fixed a problem in which the ranks were not displayed in rounds with a 100% clear rate on a solo basis in Squad's point acquisition rounds. <br>
+  ・ When the round settings were reloaded by reloading the database or other data during an OverTime event, the round settings contained some insufficient corrections. <br>
+  ・ Regarding the display of clear confirmations in the Extreme Qualifier, this item is now also displayed on the Fall Guys version 11.1.0 or earlier coordinates. <br>
+
+  ○ `2024.7.30 (27/07/2024 update)` <br>
   ・ Part 1 of Tools' Variables optimization plan was executed. <br>
   ・ Fixed a problem in which the remaining time display would be reset to the initial value if the database was reloaded or if a qualified or eliminated decision was made by the user while OverTime was occurring. <br>
 
