@@ -112,6 +112,11 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2024.8.00 (2024/08/02 更新)` <br>
+  ・ タイルの復活速度が表示されるラウンドで、グラフの傾きの値が0のときはラウンド開始前に値を表示し、ラウンド開始後には表示を行わないよう変更しました。 <br>
+  ・ 自由探索モード時のマッチメイキング中のステータス表示について、安定性を向上させました。 <br>
+  ・ コース検索ツールにおいて、Unityラウンドでのラウンド終了条件が「time_elapsed」のとき、ゲーム側ではクリア率の設定を無視するため、クリア率表示を「--%」と表示するようにしました。 <br>
+
   ○ `2024.7.40 (2024/07/31 更新)` <br>
   ・ ポイント取得ラウンドで、外部領域に表示される順位表示に加え、ボーダーとのポイント差も同時に表示するようにしました。 <br>
   ・ 自由探索モードにおいて、マッチメイキング中にラウンドが終了し、サーバーから切断されるとステータス表示が行われない問題を修正しました。 <br>
@@ -1439,6 +1444,11 @@ This tool is available in English, Japanese, and Russian.<br>
   ## ChangeLog (English) <br>
 <details>
     <summary>Details</summary>
+
+  ○ `2024.8.00 (02/07/2024 update)` <br>
+  ・ In rounds where tile revival speed is displayed, if the value of the graph slope is 0, the value is displayed before the start of the round and not displayed after the start of the round. <br>
+  ・ Improved the stability of the status display during matchmaking in Explore mode. <br>
+  ・ In the course search tool, when the round end condition in the Unity round is “time_elapsed”, the game ignores the qualify rate setting, so the clear rate display now shows “--%”. <br>
 
   ○ `2024.7.40 (31/07/2024 update)` <br>
   ・ In the point acquisition round, in addition to the rank display in the external area, the point difference from the border is also displayed at the same time. <br>
