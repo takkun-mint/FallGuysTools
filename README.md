@@ -112,6 +112,15 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2024.8.10 (2024/08/05 更新)` <br>
+  ・ 新機能「サバイバルラウンド強制脱落警告機能」を追加しました。クリアする方法がなく、選ばれた時点で脱落が確定してしまうゴミラウンドが出現した時に警告を表示するようにしました。 <br>
+  ・ 「報酬バグ警告機能」について、開発中に取りやめた外部表示要素が表示されたり、警告音が再生されなかったりする一連の不具合について修正を行いました。 <br>
+  ・ ポイント取得ラウンドでのボーダーまでの点差を外部表示する要素について、誰も脱落しない場合の表示追加やボーダーまでの計算方法を変更するなど仕様を変更しました。 <br>
+  ・ 一部変数などを整理し最適化を行いました。 <br>
+  ・ タイルの復活する速度が表示されるラウンドで、スクワッド系列で予選で出現した時、値が0と表示され、その後のクリア状況を表示するテキストも想定と異なるフォントで表示されてしまう問題を修正しました。 <br>
+  ・ ゲームルールのラウンド終了条件が「time_elapsed」のとき、クリアできる％を非表示にするよう変更しました。 <br>
+  ・ 外部表示で警告が表示されている時、ユーザーの設定を無視して強制表示＆前面に警告を表示するようにしました。 <br>
+
   ○ `2024.8.00 (2024/08/02 更新)` <br>
   ・ タイルの復活速度が表示されるラウンドで、グラフの傾きの値が0のときはラウンド開始前に値を表示し、ラウンド開始後には表示を行わないよう変更しました。 <br>
   ・ 自由探索モード時のマッチメイキング中のステータス表示について、安定性を向上させました。 <br>
@@ -1445,7 +1454,16 @@ This tool is available in English, Japanese, and Russian.<br>
 <details>
     <summary>Details</summary>
 
-  ○ `2024.8.00 (02/07/2024 update)` <br>
+  ○ `2024.8.10 (05/08/2024 update)` <br>
+  ・ Added a new function “Survival Round Forced elimination Warning Function”. The warning is now displayed when a garbage round appears in which there is no way to qualify the round and elimination is confirmed as soon as the round is selected. <br>
+  ・ A series of problems with the “Reward Bug Alert Function” have been corrected, including the display of external display elements that were dropped during development and the failure of the alert sound to play. <br>
+  ・ The specifications for the external display of the point difference to the border in the point acquisition round have been changed, including the addition of a display when no one elimination and a change in the calculation method to the border. <br>
+  ・ Some variables, etc. were rearranged and optimized. <br>
+  ・ In rounds where the speed at which tiles are revived is displayed, when they appeared in the qualifying round in the squad series, the value was displayed as 0. The text displaying the subsequent clear status was also displayed in a different font than expected. <br>
+  ・ Changed to hide the % that can be cleared when the round end condition in the game rules is “time_elapsed”. <br>
+  ・ When a warning is displayed in the external display, the user's settings are ignored to force the display & display the warning in the topmost. <br>
+
+  ○ `2024.8.00 (02/08/2024 update)` <br>
   ・ In rounds where tile revival speed is displayed, if the value of the graph slope is 0, the value is displayed before the start of the round and not displayed after the start of the round. <br>
   ・ Improved the stability of the status display during matchmaking in Explore mode. <br>
   ・ In the course search tool, when the round end condition in the Unity round is “time_elapsed”, the game ignores the qualify rate setting, so the clear rate display now shows “--%”. <br>
