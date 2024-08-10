@@ -112,6 +112,21 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2024.8.20 (2024/08/10 更新)` <br>
+  ・ Debugの処理情報の取得システムを作りました。（まだ完全には対応していないため、後日全て対応を行います。） <br>
+  ・ ポイント取得ラウンドでボーダーまでの点差を外部表示する要素について、脱落するプレイヤーがいない時に誤った点差が表示されてしまう問題を修正しました。 <br>
+  ・ クリエイティブラウンドのAPIの通信中、Toolsの処理が停止しないよう変更を行いました。 <br>
+  ・ クリエイティブラウンドで、Toolsの独自機能が表示されるラウンドにおいて、ラウンドのデフォルト時間で表示の切り捨てが行われてしまう問題を修正しました。 <br>
+  ・ カスタム（プライベート）ロビーでコードを入力して遊ぶクリエイティブラウンドで、選んだクリエイティブがサバイバルでかつ、一人で遊んだ時に「HEX-A-GONE」が出現したのにもかかわらず、クリエイティブの表示が行われてしまう問題を修正しました。 <br>
+  ・ カスタム（プライベート）ロビーでコードを入力して遊ぶクリエイティブラウンドを遊んだ時、Fall Guysのバージョン「11.1.0」以前の座標でオブジェクトを表示するようにしました。 <br>
+  ・ コース検索ツールにおいて、サバイバルラウンドの開始人数が変更されたことに伴った変更で、サバイバルラウンドの時、プレイできる最少人数を1人から2人に変更しました。 <br>
+  ・ コース検索ツールにおいて、BGMの再生ボタンを押すと一定時間Toolsの動作が停止してしまう問題を修正しました。 <br>
+  ・ ラウンド設定が再読込された時にOverTimeが発動していると残り時間の表示が誤ってしまう問題を修正しました。 <br>
+  ・ データベースの更新時にラウンド設定が読み込まれそうな時や、ラウンド検索ツールで検索をしようとしたときにエラーになってしまう問題を修正し、自動で再読み込みを行うようにしました。 <br>
+  ・ 極稀な環境下で、メイン画面に制限時間が表示されているのに、設定画面を開くボタンで隠れてしまうことがある問題を修正しました。 <br>
+  ・ Tools独自のPhaseラウンドのカウントダウンSEが再生されるラウンドにおいて、再生される秒数の処理が反転してしまう問題を修正しました。 <br>
+  ・ PhaseラウンドのカウントダウンSEが極端に小さい問題を修正しました。 <br>
+
   ○ `2024.8.10 (2024/08/05 更新)` <br>
   ・ 新機能「サバイバルラウンド強制脱落警告機能」を追加しました。クリアする方法がなく、選ばれた時点で脱落が確定してしまうゴミラウンドが出現した時に警告を表示するようにしました。 <br>
   ・ 「報酬バグ警告機能」について、開発中に取りやめた外部表示要素が表示されたり、警告音が再生されなかったりする一連の不具合について修正を行いました。 <br>
@@ -1453,6 +1468,21 @@ This tool is available in English, Japanese, and Russian.<br>
   ## ChangeLog (English) <br>
 <details>
     <summary>Details</summary>
+
+  ○ `2024.8.20 (10/08/2024 update)` <br>
+  ・ We have created a system for retrieving Debug processing information. (It is not fully supported yet, we will address all of this at a later date.) <br>
+  ・ Fixed a problem in which an element that externally displays the point difference to the border in a point acquisition round would display an incorrect point difference when there were no players elimination of the round. <br>
+  ・ Changes have been made so that Tools processing does not stop while the Creative Round API is communicating. <br>
+  ・ Fixed an issue in creative rounds where the display was truncated by the round's default time in rounds where Tools' unique features were displayed. <br>
+  ・ Fixed a problem in which a creative round played by entering a code in a custom (private) lobby would display a creative even though the “HEX-A-GONE” appeared when the chosen creative was survival and played by one person. <br>
+  ・ When playing a creative round where you enter a code in the custom (private) lobby, the object is now displayed with the coordinates of the Fall Guys version “11.1.0” or earlier. <br>
+  ・ In the course search tool, the minimum number of players allowed in a survival round has been changed from one to two, in accordance with the change in the starting number of players for survival rounds. <br>
+  ・ In the course search tool, a problem that caused Tools to stop working for a certain period of time when the BGM play button was pressed has been fixed. <br>
+  ・ Fixed a problem that caused the remaining time to be incorrectly displayed if OverTime was activated when the round settings were reloaded. <br>
+  ・ Fixed a problem that caused an error when the round settings were about to be loaded when updating the database or when trying to search with the round search tool, so that the round settings are reloaded automatically. <br>
+  ・ Fixed a problem in which, under extremely rare circumstances, the time limit could be displayed on the main screen but hidden by the button to open the settings screen. <br>
+  ・ Fixed a problem in which the seconds played process was inverted in rounds in which Tools' own Phase round countdown SE was played. <br>
+  ・ Fixed a problem with extremely small countdown SE for Phase round. <br>
 
   ○ `2024.8.10 (05/08/2024 update)` <br>
   ・ Added a new function “Survival Round Forced elimination Warning Function”. The warning is now displayed when a garbage round appears in which there is no way to qualify the round and elimination is confirmed as soon as the round is selected. <br>
