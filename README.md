@@ -112,6 +112,14 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2024.8.30 (2024/08/12 更新)` <br>
+  ・ Tools自身のログ出力機能を実行しました。Toolsの処理内容を細かくテキストファイルで出力します。(※あくまでも開発者などの関係者が読めるように作っていますので日本語での出力になり、今後出力情報の増減は随時行います。) <br>
+  ・ Toolsのメイン画面を最小化している時にTextAに「ラウンド名」と「経過時間」を表示していて、かつメイン画面が処理のタイミングで最小化されているときに「...」とだけ出力されてしまう問題について、以前の修正内容に不備があったため、再度修正を行いました。 <br>
+  ・ 一部ラウンドが出現すると、内部的にエラーが発生していた問題を修正しました。 <br>
+  ・ Toolsを起動したタイミングによって、OverTimeの処理が暴発してしまう問題を修正しました。 <br>
+  ・ 一部ラウンドが「time_elapsed」と誤った判定をされてしまい、ラウンド終了時に脱落と表示される問題を修正しました。 <br>
+  ・ ラウンド中ではないのにもかかわらず、設定を開くボタンが非表示になってしまう問題を修正しました。 <br>
+
   ○ `2024.8.20 (2024/08/10 更新)` <br>
   ・ Debugの処理情報の取得システムを作りました。（まだ完全には対応していないため、後日全て対応を行います。） <br>
   ・ ポイント取得ラウンドでボーダーまでの点差を外部表示する要素について、脱落するプレイヤーがいない時に誤った点差が表示されてしまう問題を修正しました。 <br>
@@ -1468,6 +1476,14 @@ This tool is available in English, Japanese, and Russian.<br>
   ## ChangeLog (English) <br>
 <details>
     <summary>Details</summary>
+
+  ○ `2024.8.30 (2024/08/12 更新)` <br>
+  ・ Tools' own log output function has been implemented, which outputs detailed information about Tools' processing in a text file. (*This is only for developers and other related parties to read, so the output is in Japanese, and we will increase or decrease the output information as needed.) <br>
+  ・ When the main screen of Tools is minimized and “Round name” and “Elapsed time” are displayed in TextA, and the main screen is minimized at the time of processing, “...” was output when the main screen is minimized and the main screen is minimized at the time of processing, the previous correction was inadequate and has been corrected again. <br>
+  ・ Fixed an internal error that occurred when some rounds appeared. <br>
+  ・ Fixed a problem that caused OverTime processing to run out of control depending on when Tools was started. <br>
+  ・ Fixed a problem in which some rounds were incorrectly judged as “time_elapsed” and were displayed as eliminated at the end of the round. <br>
+  ・ Fixed a problem in which the Open Settings button was hidden even though the round was not in progress. <br>
 
   ○ `2024.8.20 (10/08/2024 update)` <br>
   ・ We have created a system for retrieving Debug processing information. (It is not fully supported yet, we will address all of this at a later date.) <br>
