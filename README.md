@@ -112,6 +112,20 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2024.8.40 (2024/08/19 更新)` <br>
+  ・ ログに出力される項目数を増やしました。 <br>
+  ・ Tools側で将来的に例外エラーが表示される状況になっても、表示をしないようにし、ログに記録できるようにしました。 <br>
+  ・ コンテンツダウンロードをした事により、Toolsが一時的に処理を停止している時にその旨を表示するテキストが一部隠れてしまう問題を修正しました。 <br>
+  ・ クリエイティブラウンドを読み込んだ時、外部スレッドの処理状況により処理が間に合わず、一部不適切な表示が行われてしまう問題を修正しました。 <br>
+  ・ 自由探索において、マッチメイキング中にラウンドが終了したとき、一時的にステータス表示が消えてしまう問題を修正しました。 <br>
+  ・ ラウンドの制限時間のカウントなど、毎秒実行される要素について、処理の最適化を行いました。 <br>
+  ・ ポイント取得ラウンドで外部表示されるボーダーとの得点差について、不適切なボーダーを参照していたため修正しました。 <br>
+  ・ OverTime発生時にラウンド設定がリロードされると正しい制限時間が表示されない問題について、追加の対応策を行いました。 <br>
+  ・ 一部Toolsの独自機能について、さらなる使用用途の増加を見越し要素を追加しました。 <br>
+  ・ 脱落したラウンド以降も観戦している時、ラウンドが終了するとTextA項目に表示される経過時間が0になってしまう問題を修正しました。 <br>
+  ・ 報酬バグが発生した時に再生される警告音の周期が遅い問題を修正しました。 <br>
+  ・ 一部よく使われる変数や関数を共通項目へ移行しました。 <br>
+
   ○ `2024.8.30 (2024/08/12 更新)` <br>
   ・ Tools自身のログ出力機能を実行しました。Toolsの処理内容を細かくテキストファイルで出力します。(※あくまでも開発者などの関係者が読めるように作っていますので日本語での出力になり、今後出力情報の増減は随時行います。) <br>
   ・ Toolsのメイン画面を最小化している時にTextAに「ラウンド名」と「経過時間」を表示していて、かつメイン画面が処理のタイミングで最小化されているときに「...」とだけ出力されてしまう問題について、以前の修正内容に不備があったため、再度修正を行いました。 <br>
@@ -1477,7 +1491,21 @@ This tool is available in English, Japanese, and Russian.<br>
 <details>
     <summary>Details</summary>
 
-  ○ `2024.8.30 (2024/08/12 更新)` <br>
+  ○ `2024.8.40 (19/08/2024 update)` <br>
+  ・ The number of items output to the log has been increased. <br>
+  ・ Even if a situation arises in the future on the Tools side where an exception error is displayed, it will not be displayed and can be logged. <br>
+  ・ Fixed a problem in which the text indicating that Tools has temporarily stopped processing due to content downloading was partially hidden. <br>
+  ・ Fixed a problem in which when a creative round was loaded, some inappropriate display would occur due to the processing status of an external thread that could not be processed in time. <br>
+  ・ Fixed a problem in Explore mode where the status display would temporarily disappear when a round ended during matchmaking. <br>
+  ・ Optimized processing for elements that are executed every second, such as counting round time limits. <br>
+  ・ The score difference from the externally displayed border in the point acquisition round has been corrected, as it was referring to an incorrect border. <br>
+  ・ Additional action has been taken to address the issue where the correct time limit is not displayed when the round setting is reloaded during an OverTime event. <br>
+  ・ Elements have been added to some of Tools' unique functions in anticipation of further increase in usage. <br>
+  ・ Fixed a problem in which the elapsed time displayed in the TextA item would be set to 0 when the round ended while the player was still watching the game after the round in which he/she was eliminated. <br>
+  ・ Fixed a problem with the slow cycle of the warning sound played when a reward bug occurs. <br>
+  ・ Some commonly used variables and functions have been moved to common items. <br>
+
+  ○ `2024.8.30 (12/08/2024 update)` <br>
   ・ Tools' own log output function has been implemented, which outputs detailed information about Tools' processing in a text file. (*This is only for developers and other related parties to read, so the output is in Japanese, and we will increase or decrease the output information as needed.) <br>
   ・ When the main screen of Tools is minimized and “Round name” and “Elapsed time” are displayed in TextA, and the main screen is minimized at the time of processing, “...” was output when the main screen is minimized and the main screen is minimized at the time of processing, the previous correction was inadequate and has been corrected again. <br>
   ・ Fixed an internal error that occurred when some rounds appeared. <br>
