@@ -112,6 +112,31 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2024.9.00 (2024/09/04 更新)` <br>
+  ・ Fall Guysのバージョン11.2.0の要素に対応しました。 <br>
+  ・ コンテンツのダウンロード後にToolsで重大エラーが発生してしまい、再起動まで動作できなくなる問題を修正しました。 <br>
+  ・ 一部クリエイティブラウンドでAPIとの通信が完了するまで待機する処理でTools全体の動作が止まらないように調整しました。 <br>
+  ・ クリエイティブのAPI通信が規定を超えたとき、Toolsでエラーが発生してしまい強制終了してしまう問題を修正しました。 <br>
+  ・ 一部ゲームルール「ポイントラウンドで、クリア条件のスコア数をユーザー指定のものにする」というものに対応しました。 <br>
+  ・ ポイント取得ラウンドで外部表示されるものについて、ラウンド中以外では表示しないよう調整を行いました。 <br>
+  ・ ポイント取得ラウンドで、ボーダーとの差分を表示する際、誤った参照を行っていたため修正しました。（ボーダーより上ならボーダー+1のスコアを参照、ボーダーより下ならボーダーの点数を参照） <br>
+  ・ クリエイティブの作成画面でテストプレイなどを行っている際、誤って通常ラウンドの設定を読み込み、表示が行われてしまったり、Fall Guys側で1回もショーを遊ばずにテストプレイなどを行うと、Nullエラーが発生してしまう問題を修正しました。 <br>
+  ・ 自由探索や、カスタム（プライベート）ロビーでコードを入力して遊ぶクリエイティブをプレイする時に、コンテンツファイルからゲームルールを取得するプログラムが正しく動作しなかったため、修正しました。 <br>
+  ・ コンテンツファイルからゲームルールを読み込む時、チームラウンドではデフォルトのタイマータイプをBIG TIMERに変更しました。 <br>
+  ・ PlayerListにおいて、ラウンド中にTIMEの列にリアルタイムの経過時間を表示するようにしました。 <br>
+  ・ 自由探索モードにおいて、次のラウンドを探索中にラウンドが終了した時、マッチングの総経過時間を表示する部分が荒ぶって表示されてしまう問題を修正しました。 <br>
+  ・ 自由探索モードにおいて、次のラウンドを探索中にマッチングの総経過時間の隣に表示されるアイコンが「初心者マーク」になってしまう問題を修正しました。 <br>
+  ・ PlayerListおよびSquadListにおいて、ラウンド終了後に同着を示す「=」を表示したままにできるようListのプログラムを改修しました。 <br>
+  ・ PlayerListおよびSquadListにおいて、全体的にソートプログラムを最適化し、ラウンド途中や正しい形に変換をして計算するようにしました。 <br>
+  ・ カウントアップのタイマーとカウントダウンのタイマーが同時に始動すると、タイマーのプログラムが飛び飛びになってしまう問題を修正しました。 <br>
+  ・ カスタム（プライベート）ロビーでサーバーとの再接続回数の条件が迫った時、外部表示のテキストも赤縁取りで表示するようにしました。 <br>
+  ・ ToolsのデータベースファイルをDLするときにDLの速度によっては不安定になってしまい、正しく動作が完了せずToolsの読込中を示すGUYSくんが表示されたままになってしまう問題を修正しました。 <br>
+  ・ コース検索ツールにおいて、ポイントラウンドの表示や背景の対応、およびクリアに必要なポイント数も表示できるようにしました。（クリエイティブコースをコード入力で検索した場合のみ） <br>
+  ・ Fall Guysのバージョンアップに合わせ、コース検索ツールのクリエイティブサバイバルラウンドの最小プレイヤー数を2から1に変更しました。 <br>
+  ・ コース検索ツールにおいて、ゲームルール側の説明文などの位置変更にあわせ対応しました。 <br>
+  ・ クリエイティブラウンドで、かつToolsの独自機能が使われている時、外部表示の一部テキストが重なってしまい正しく表示されない問題を修正しました。 <br>
+  ・ その他、細かい最適化やプログラムの変数の調整などを行いました。 <br>
+
   ○ `2024.8.40 (2024/08/19 更新)` <br>
   ・ ログに出力される項目数を増やしました。 <br>
   ・ Tools側で将来的に例外エラーが表示される状況になっても、表示をしないようにし、ログに記録できるようにしました。 <br>
@@ -1490,6 +1515,31 @@ This tool is available in English, Japanese, and Russian.<br>
   ## ChangeLog (English) <br>
 <details>
     <summary>Details</summary>
+
+  ○ `2024.9.00 (04/09/2024 更新)` <br>
+  ・ Fall Guys version 11.2.0 elements are now supported. <br>
+  ・ Fixed a problem that caused a critical error in Tools after downloading content, which prevented it from working until it was restarted. <br>
+  ・ Adjustments have been made so that the entire Tools operation will not be halted by a process that waits until communication with the API is completed in some creative rounds. <br>
+  ・ Fixed a problem that caused an error in Tools and forced termination when Creative's API communication exceeded the specified limit. <br>
+  ・ Some game rules “In point rounds, the number of scores for the clear condition is user-specified” are now supported. <br>
+  ・ Adjustments have been made so that external displays in the point acquisition round are not displayed except during the round. <br>
+  ・ In the point acquisition round, the difference from the border was incorrectly referenced when displaying the difference from the border. (If above the border, the score of border +1 is referenced; if below the border, the score of the border is referenced.) <br>
+  ・ Fixed a problem in which a Null error would occur if a test play, etc., was being performed on the Create Creative screen and the normal round settings were accidentally loaded and displayed, or if a test play, etc., was performed without playing a single show on the Fall Guys' side. <br>
+  ・ The program that retrieves the game rules from the content file did not work properly when playing Explore mode or when playing creatives that are played by entering a code in a custom (private) lobby. <br>
+  ・ When loading game rules from a content file, the default timer type was changed to BIG TIMER for team rounds. <br>
+  ・ In PlayerList, real-time elapsed time is now displayed in the TIME column during rounds. <br>
+  ・ In the Explore mode, when a round ended while searching for the next round, the portion displaying the total elapsed time for matching was displayed wildly. <br>
+  ・ Fixed an issue in the Explore mode where the icon displayed next to the total elapsed time for matching while searching for the next round would become a “beginner mark”. <br>
+  ・ In PlayerList and SquadList, the list program has been modified so that the “=” indicating a tie can remain displayed after the end of a round. <br>
+  ・ In PlayerList and SquadList, the overall sorting program has been optimized to calculate mid-round and correct form conversions. <br>
+  ・ Fixed a problem that caused timer programs to skip when the count-up timer and count-down timer were started at the same time. <br>
+  ・ When the condition of the number of times to reconnect with the server is approaching in the custom (private) lobby, the text in the external display is now also displayed with a red border. <br>
+  ・ Fixed a problem in which Bean, which indicates that Tools is being loaded, would remain on the screen without completing the operation correctly. <br>
+  ・ In the course search tool, point rounds can now be displayed and backgrounds supported, as well as the number of points required to clear the course. (Only when searching for creative courses by entering a code) <br>
+  ・ The minimum number of players for Creative Survival Rounds in the course search tool has been changed from 2 to 1 in conjunction with the Fall Guys version upgrade. <br>
+  ・ In the course search tool, the position of explanatory text on the game rules side has been changed. <br>
+  ・ Fixed a problem in which some text in the external display overlapped and did not display correctly when using the Creative Round and Tools' own functions. <br>
+  ・ Other minor optimizations and adjustments to program variables were made. <br>
 
   ○ `2024.8.40 (19/08/2024 update)` <br>
   ・ The number of items output to the log has been increased. <br>
