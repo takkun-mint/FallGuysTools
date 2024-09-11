@@ -112,6 +112,20 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2024.9.10 (2024/09/11 更新)` <br>
+  ・ カスタム（プライベート）ロビーコードを入力して遊ぶクリエイティブラウンドにおいて、ラウンドのタイプがポイントラウンドのとき、クリアボーダーの表示やPlayerList上のScoreが異常な数値になってしまう問題を修正しました。 <br>
+  ・ ポイント取得ラウンドで脱落したとき、一瞬だけボーダーとの差が異常な数値が表示されてしまう問題を修正しました。 <br>
+  ・ クリエイティブAPIを使ったラウンド情報取得プログラムにおいて、ポイントラウンドにおけるクリアに必要なスコア数の取得ができていない問題を修正しました。（直ちには影響しませんが一応。） <br>
+  ・ Squadのサバイバルラウンドにおいて、自身のチームが脱落したときに、Toolsの外部表示がワンテンポ遅れて再表示される問題を修正しました。 <br>
+  ・ 自由探索において、ゲーム上のUIが再表示されるまでの時間の変更に伴い、Toolsでも外部表示の再表示されるまでの時間を調整しました。（パーティーを組んだ状態では不安定な動作になりますが、ログの都合上できるところまで調整をしました。） <br>
+  ・ クリエイティブAPIが使えない人向けにエラーログからラウンドの種別を取得するプログラムについて、ポイントラウンドが適用されていないミスを修正しました。 <br>
+  ・ 一部ポイント取得ラウンドで、外部表示される経過時間の座標を変更しました。 <br>
+  ・ 外部表示される要素について、若干の座標やフォントサイズなどを調整しました。 <br>
+  ・ 自由探索モードにおいて、ラウンド中にマッチングをしているときにラウンドが終了すると、ステータスが更新されるまでマッチングの総経過時間のテキストが赤く表示されてしまう問題を修正しました。 <br>
+  ・ コース検索ツールにおいて、クリエイティブAPIから提供された情報を処理するときに想定していないテキストが返されたときにエラーになってしまう問題を修正しました。 <br>
+  ・ コース検索ツールにおいて、クリエイティブラウンドを検索し、高評価と低評価の値があるときに高評価率を表示するようにしました。 <br>
+  ・ コース検索ツールにおいて、特定の要素内でエラーが発生したとき、エラーの理由が表示されない問題を修正しました。 <br>
+
   ○ `2024.9.00 (2024/09/04 更新)` <br>
   ・ Fall Guysのバージョン11.2.0の要素に対応しました。 <br>
   ・ コンテンツのダウンロード後にToolsで重大エラーが発生してしまい、再起動まで動作できなくなる問題を修正しました。 <br>
@@ -1516,7 +1530,22 @@ This tool is available in English, Japanese, and Russian.<br>
 <details>
     <summary>Details</summary>
 
-  ○ `2024.9.00 (04/09/2024 更新)` <br>
+
+  ○ `2024.9.10 (11/09/2024 update)` <br>
+  ・ In creative rounds played by entering a custom (private) lobby code, when the round type was a points round, the clear border display and the Score on the PlayerList would show abnormal values. <br>
+  ・ Fixed a problem in which when a player was eliminated in a point acquisition round, an abnormal difference from the border was displayed for a brief moment. <br>
+  ・ Fixed a problem in the round information retrieval program using the Creative API, where the number of scores required to clear a round in a points round were not being retrieved. (This does not immediately affect you, but just in case.) <br>
+  ・ Fixed an issue in Squad's Survival round where the Tools external display would reappear with a one-tempo delay when one's team was eliminated. <br>
+  ・ In the Explore mode, the time until the external display is redisplayed in Tools has been adjusted in accordance with the change in the time until the UI on the game is redisplayed. (The behavior is unstable when in a party, but we have adjusted it as much as we can for logging purposes.) <br>
+  ・ Fixed a mistake in which point rounds were not applied to a program that obtains the round type from the error log for those who cannot use the Creative API. <br>
+  ・ Changed the coordinates of the elapsed time displayed externally in some point acquisition rounds. <br>
+  ・ Slightly adjusted coordinates, font size, etc. for externally displayed elements. <br>
+  ・ In the Explore mode, when matching during a round and the round ends, the text for the total elapsed time of the match is now displayed in red until the status is updated. <br>
+  ・ Fixed an error in the course search tool when processing information provided by the Creative API when unexpected text was returned. <br>
+  ・ In the course search tool, creative rounds are now searched and the high rating percentage is displayed when there are high and low rated values. <br>
+  ・ In the course search tool, when an error occurs within a particular element, the reason for the error is not displayed. <br>
+
+  ○ `2024.9.00 (04/09/2024 update)` <br>
   ・ Fall Guys version 11.2.0 elements are now supported. <br>
   ・ Fixed a problem that caused a critical error in Tools after downloading content, which prevented it from working until it was restarted. <br>
   ・ Adjustments have been made so that the entire Tools operation will not be halted by a process that waits until communication with the API is completed in some creative rounds. <br>
