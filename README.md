@@ -112,6 +112,13 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2024.9.20 (2024/09/12 更新)` <br>
+  ・ ポイント取得ラウンドにおいて、外部表示されるボーダーとの点差について、残り全員がクリアできるときに「+∞ pts」と表示しないようにしました。（当該状況になった場合は順位のみ表示します。） <br>
+  ・ Toolsのバージョンアップ時に連続してアップデート要求が行われないようにしました。 <br>
+  ・ Toolsのバージョンアップ時にGitHubの反映待ちを考慮し、一定期間はアップデートを要求しないようにしました。 <br>
+  ・ Toolsのバージョンアップ時に、現在のバージョンと次回のバージョンの連番IDを表示するようにしました。 <br>
+  ・ 前回のアップデートにおいて、クリエイティブAPIからポイントラウンドのクリアに必要なスコア数を修正した際、データの型に問題が合ったため修正しました。 <br>
+
   ○ `2024.9.10 (2024/09/11 更新)` <br>
   ・ カスタム（プライベート）ロビーコードを入力して遊ぶクリエイティブラウンドにおいて、ラウンドのタイプがポイントラウンドのとき、クリアボーダーの表示やPlayerList上のScoreが異常な数値になってしまう問題を修正しました。 <br>
   ・ ポイント取得ラウンドで脱落したとき、一瞬だけボーダーとの差が異常な数値が表示されてしまう問題を修正しました。 <br>
@@ -1531,10 +1538,17 @@ This tool is available in English, Japanese, and Russian.<br>
     <summary>Details</summary>
 
 
+  ○ `2024.9.20 (12/09/2024 update)` <br>
+  ・ In the point acquisition round, the point difference from the externally displayed border is no longer displayed as “+∞ pts” when all remaining players can qualify the border. (When this situation occurs, only the rank is displayed.) <br>
+  ・ Prevented consecutive update requests when upgrading Tools. <br>
+  ・ Considering the wait for reflection of GitHub when upgrading Tools, updates are not requested for a certain period of time. <br>
+  ・ When Tools is upgraded, the sequential IDs of the current version and the next version are displayed. <br>
+  ・ In the last update, there was a problem with the data type when modifying the number of scores required to qualify a points round from the Creative API. <br>
+
   ○ `2024.9.10 (11/09/2024 update)` <br>
-  ・ In creative rounds played by entering a custom (private) lobby code, when the round type was a points round, the clear border display and the Score on the PlayerList would show abnormal values. <br>
+  ・ In creative rounds played by entering a custom (private) lobby code, when the round type was a points round, the qualify border display and the Score on the PlayerList would show abnormal values. <br>
   ・ Fixed a problem in which when a player was eliminated in a point acquisition round, an abnormal difference from the border was displayed for a brief moment. <br>
-  ・ Fixed a problem in the round information retrieval program using the Creative API, where the number of scores required to clear a round in a points round were not being retrieved. (This does not immediately affect you, but just in case.) <br>
+  ・ Fixed a problem in the round information retrieval program using the Creative API, where the number of scores required to qualify a round in a points round were not being retrieved. (This does not immediately affect you, but just in case.) <br>
   ・ Fixed an issue in Squad's Survival round where the Tools external display would reappear with a one-tempo delay when one's team was eliminated. <br>
   ・ In the Explore mode, the time until the external display is redisplayed in Tools has been adjusted in accordance with the change in the time until the UI on the game is redisplayed. (The behavior is unstable when in a party, but we have adjusted it as much as we can for logging purposes.) <br>
   ・ Fixed a mistake in which point rounds were not applied to a program that obtains the round type from the error log for those who cannot use the Creative API. <br>
