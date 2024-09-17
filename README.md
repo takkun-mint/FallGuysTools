@@ -112,6 +112,14 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2024.9.30 (2024/09/17 更新)` <br>
+  ・ 自由探索において、ラウンド内マッチメイキングをキャンセルしてもう一度行うとき、前回のマッチングステータスが表示されることがある問題を修正しました。 <br>
+  ・ クリエイティブAPIを使ってラウンド情報を取得するとき、制限時間を取得しないラウンドにおいてクリア割合や目標スコアが取得できていなかった問題を修正しました。 <br>
+  ・ 自由探索において、ラウンド切替時にエラーが発生し強制終了されることがある問題を修正しました。 <br>
+  ・ コース検索ツールにおいて、クリエイティブのシェアコードで検索を行いAPIとの通信に失敗したとき、エラーコードに関わらず404のNotFoundエラーになってしまう問題を修正しました。 <br>
+  ・ カスタム（プライベート）マッチでコードを入力して遊ぶクリエイティブラウンドで遊んだとき、データベースからラウンド情報が取得できていない問題を修正しました。 <br>
+  ・ ソースコードのマジックナンバーについて定義を行い、全体的にコードの調整を行いました。 <br>
+
   ○ `2024.9.20 (2024/09/12 更新)` <br>
   ・ ポイント取得ラウンドにおいて、外部表示されるボーダーとの点差について、残り全員がクリアできるときに「+∞ pts」と表示しないようにしました。（当該状況になった場合は順位のみ表示します。） <br>
   ・ Toolsのバージョンアップ時に連続してアップデート要求が行われないようにしました。 <br>
@@ -1537,6 +1545,13 @@ This tool is available in English, Japanese, and Russian.<br>
 <details>
     <summary>Details</summary>
 
+  ○ `2024.9.30 (17/09/2024 update)` <br>
+  ・ Fixed an issue in Explore mode where the previous matching status was sometimes displayed when canceling matchmaking within a round and trying again. <br>
+  ・ Fixed a problem in which clear percentage and target score could not be obtained for rounds that did not have a time limit when round information was obtained using the Creative API. <br>
+  ・ Fixed a problem in which an error would occur during round switching in Explore mode and the game would be forcibly terminated. <br>
+  ・ Fixed a problem in the course search tool that resulted in a 404 NotFound error regardless of the error code when a search was performed with a creative share code and communication with the API failed. <br>
+  ・ Fixed a problem in which round information was not being retrieved from the database when playing in creative rounds played by entering a code in a custom (private) match. <br>
+  ・ Definitions were made for the magic number in the source code, and the code was adjusted throughout. <br>
 
   ○ `2024.9.20 (12/09/2024 update)` <br>
   ・ In the point acquisition round, the point difference from the externally displayed border is no longer displayed as “+∞ pts” when all remaining players can qualify the border. (When this situation occurs, only the rank is displayed.) <br>
