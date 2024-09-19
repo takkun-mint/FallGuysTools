@@ -112,6 +112,11 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2024.9.40 (2024/09/19 更新)` <br>
+  ・ 自由探索において、ゲーム上のUIの仕様に合わせて、Toolsの外部表示のタイミング・表示方法を調整しました。 <br>
+  ・ 接続されたサーバーの通信中、cca3方式の通信中も暫定的にcca2を表示するようにしました。（例: 日本の場合、cca2がJP、cca3がJPN） <br>
+  ・ 接続されたサーバーの通信のタイムアウト時間を60秒から10秒に変更しました。 <br>
+
   ○ `2024.9.30 (2024/09/17 更新)` <br>
   ・ 自由探索において、ラウンド内マッチメイキングをキャンセルしてもう一度行うとき、前回のマッチングステータスが表示されることがある問題を修正しました。 <br>
   ・ クリエイティブAPIを使ってラウンド情報を取得するとき、制限時間を取得しないラウンドにおいてクリア割合や目標スコアが取得できていなかった問題を修正しました。 <br>
@@ -1544,6 +1549,11 @@ This tool is available in English, Japanese, and Russian.<br>
   ## ChangeLog (English) <br>
 <details>
     <summary>Details</summary>
+
+  ○ `2024.9.40 (19/09/2024 update)` <br>
+  ・ In Explore mode, the timing and display method of Tools' external display was adjusted to match the UI specifications on the game. <br>
+  ・ During communication of connected servers, cca2 is tentatively displayed even during communication of cca3 method. (e.g., for Japan, cca2 is JP and cca3 is JPN) <br>
+  ・ Communication timeout for connected servers has been changed from 60 seconds to 10 seconds. <br>
 
   ○ `2024.9.30 (17/09/2024 update)` <br>
   ・ Fixed an issue in Explore mode where the previous matching status was sometimes displayed when canceling matchmaking within a round and trying again. <br>
