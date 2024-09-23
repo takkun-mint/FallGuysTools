@@ -112,6 +112,17 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2024.9.50 (2024/09/23 更新)` <br>
+  ・ PCの言語設定が「ポーランド語」など一部の地域において、Toolsの初期設定に失敗し起動できない問題について対応を行いました。 <br>
+  ・ 自由探索のマッチメイキングを開始してすぐにキャンセルしたとき、TextAに「経過時間」を表示しているとフォントサイズが小さくなってしまう問題を修正しました。 <br>
+  ・ 自由探索以外のモードで、自身がクリアや脱落などで外部表示が一時的に非表示になったあと、再表示されない問題を修正しました。 <br>
+  ・ Toolsの独自機能（LAPやPhaseの計算）に関する値の調整プログラムについて、重複で実行されており意図しない設定になっていたため、修正を行いました。 <br>
+  ・ Squadのレースラウンドにおいて、ソロベースでクリア制限があるとき、残りプレイヤー数全員がクリアできるまで脱落者が出たとき、表示をクリアするようにしました。 <br>
+  ・ Squadのレースラウンドにおいて、ソロベースのクリア制限があるとき、クリア確定を示すメダル表示が表示されない問題を修正しました。 <br>
+  ・ コース検索ツールにおいて、level_roundの値で検索するときにコンテンツファイルの読み込み直後などで変数の値が0のときに404エラーになってしまう問題を修正し、一度だけ再検索を行うようにしました。 <br>
+  ・ 外部表示のミリ秒表示タイマーにおいて、ラウンド終了後にタイマーの表示がそのままになってしまう問題を修正し、ラウンド終了後にラウンドの総経過時間から再計算を行うようにしました。 <br>
+
+
   ○ `2024.9.40 (2024/09/19 更新)` <br>
   ・ 自由探索において、ゲーム上のUIの仕様に合わせて、Toolsの外部表示のタイミング・表示方法を調整しました。 <br>
   ・ 接続されたサーバーの通信中、cca3方式の通信中も暫定的にcca2を表示するようにしました。（例: 日本の場合、cca2がJP、cca3がJPN） <br>
@@ -1549,6 +1560,16 @@ This tool is available in English, Japanese, and Russian.<br>
   ## ChangeLog (English) <br>
 <details>
     <summary>Details</summary>
+
+  ○ `2024.9.50 (23/09/2024 update)` <br>
+  ・ The problem of initialization of Tools failing to start in some regions, such as “Polish” PC language setting, has been addressed. <br>
+  ・ Fixed an issue where the font size would be reduced when the “elapsed time” was displayed in TextA when the matchmaking for a Explore mode was started and immediately cancelled. <br>
+  ・ Fixed a problem in which the external display did not reappear after it was temporarily hidden by qualify itself or eliminate in modes other than Explore mode. <br>
+  ・ The program for adjusting values related to Tools' proprietary functions (LAP and Phase calculations) was being executed in duplicate, resulting in unintended settings. <br>
+  ・ In Squad race rounds, when there is a solo-based qualify limit, the display is now qualified when someone eliminate until all remaining players have qualified. <br>
+  ・ Fixed a problem in the Squad race rounds where the medal display did not appear to indicate a confirmed qualify when there was a solo-based qualify limit. <br>
+  ・ In the course search tool, when searching by level_round value, a 404 error occurs when the variable value is 0, such as immediately after loading a content file, etc. This problem has been corrected, and the search will be performed again only once. <br>
+  ・ Fixed a problem with the millisecond display timer on the external display that caused the timer display to remain the same after the end of a round, and recalculate from the total elapsed time of the round after the end of the round. <br>
 
   ○ `2024.9.40 (19/09/2024 update)` <br>
   ・ In Explore mode, the timing and display method of Tools' external display was adjusted to match the UI specifications on the game. <br>
