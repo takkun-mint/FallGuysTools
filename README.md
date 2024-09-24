@@ -112,6 +112,11 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2024.9.60 (2024/09/24 更新)` <br>
+  ・ データベースから各種言語のローカライズを取得できるようにしました。（動的に変更やテキストの追加・言語の追加もできるように作りました。） <br>
+  ・ Squadにおいて、チームが全滅したときに外部表示が表示されたままになってしまう問題を修正しました。 <br>
+  ・ コース検索ツールにおいて、Unityラウンドを検索したときサムネイルの取得に失敗したときにビーンの絵文字を表示するようにしました。 <br>
+
   ○ `2024.9.50 (2024/09/23 更新)` <br>
   ・ PCの言語設定が「ポーランド語」など一部の地域において、Toolsの初期設定に失敗し起動できない問題について対応を行いました。 <br>
   ・ 自由探索のマッチメイキングを開始してすぐにキャンセルしたとき、TextAに「経過時間」を表示しているとフォントサイズが小さくなってしまう問題を修正しました。 <br>
@@ -1560,6 +1565,11 @@ This tool is available in English, Japanese, and Russian.<br>
   ## ChangeLog (English) <br>
 <details>
     <summary>Details</summary>
+
+  ○ `2024.9.60 (24/09/2024 update)` <br>
+  ・ We have made it possible to retrieve various language localizations from the database. (We also made it possible to dynamically change or add text and languages) <br>
+  ・ Fixed a problem in Squad where the external display would remain visible when a team was wiped out. <br>
+  ・ In the course search tool, when searching for a Unity round, the bean emoji is now displayed when it fails to retrieve the thumbnail. <br>
 
   ○ `2024.9.50 (23/09/2024 update)` <br>
   ・ The problem of initialization of Tools failing to start in some regions, such as “Polish” PC language setting, has been addressed. <br>
