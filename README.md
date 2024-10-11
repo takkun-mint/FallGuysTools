@@ -75,6 +75,7 @@ This tool is available in English, Japanese, and Russian.<br>
 
   
   <br>    
+  
 ## Display of player information・プレイヤー情報の表示 <br>
 
   You can see how many people were cleared or eliminated during the round.<br>
@@ -112,6 +113,41 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2024.10.00 (2024/10/12 更新)` <br>
+  ・ ゲームルール以外からチーム戦の情報を取得する異例なラウンドにおいて、専用のステータス状態を表示する新機能を追加しました！ <br>
+  ・ Toolsのファイルダウンロードシステムを見直し、データベースのダウンロード・コース検索ツールのUnityラウンドのサムネイルおよびBGMの試聴に必要なファイル、全てのダウンロード時間を前バージョンの半分まで短縮できるようにしました。 <br>
+  ・ Toolsを起動するときにエラーが発生してしまうことがある問題を修正しました。 <br>
+  ・ Fall Guysを起動して間もないタイミングでToolsを起動するとメイン画面が点滅してしまう問題を修正しました。 <br>
+  ・ 自由探索モードの途中にToolsを起動しても正しく総ラウンドプレイ数がカウントされるようにしました。 <br>
+  ・ 自由探索モード以外でもラウンド終了時にサーバーから切断された場合、画面遷移までラウンドの情報を保持するようにしました。 <br>
+  ・ 自由探索モードにおいて、マッチメイキング中にラウンドが終了した場合の処理を最適化し、表示が崩れにくいよう再度調整を行いました。 <br>
+  ・ Tools起動時にUIが正しく表示されるようにしました。 <br>
+  ・ 毎ラウンドごとに破棄していたプレイヤー情報をゲーム単位で保存できるよう改良を行い、ラウンドに召喚されることなく脱落判定を受けたプレイヤーについて、ラウンドを遡って情報を表示できるようにしました。 <br>
+  ・ データベースファイルによる変更点がToolsを再起動するまで反映されない要素があったため、システムを丸ごと変更しTools起動中にデータベース更新で受けた内容を即座に適用できるようにしました。（一部ローカライズ項目を除く） <br>
+  ・ マッチメイキング中のステータスの都合により、極稀にマッチングの強制キャンセルまでのカウントダウンが表示されたままになってしまう問題を修正しました。 <br>
+  ・ TextA,Bの領域に「ラウンド情報」を設定しているとき、第一ラウンド開始前にファイナルラウンドのフラグが一瞬だけ消え、点滅したように見える問題を修正しました。 <br>
+  ・ Toolsでファイルをダウンロードする要素について、「Tempファイルへの保存のみ」をしていましたが、リセットのタイミングでTempファイルからも削除するようにしました。 <br>
+  ・ クリエイティブAPIを使った通信を行う際、処理が渋滞を起こすと必要な要素が取得できないことがある問題を修正しました。 <br>
+  ・ ラウンドが始まる前にサーバーから切断された場合、全プレイヤーが開始前脱落扱いになりオーバーフローエラーになってしまう問題を修正しました。 <br>
+  ・ 一部ラウンドにおいて、ラウンドが終了したとき・自身のクリアステータスが更新されたときでも外部表示のUIを非表示にしないようにしました。 <br>
+  ・ ラウンド終了後の画面遷移のタイミングで、PlayerList,SquadListをログファイルに出力を行い、問題発生時のサポートを行いやすくしました。 <br>
+  ・ Fall Guysの報酬サーバーから想定外のタイミングで報酬を受け取ってしまい、一部ラウンド中に経過時間表示などが使えなくなる問題があったためリセットタイミングの調整を行いました。（突然一つ前のゲームの報酬が届くことがあったため） <br>
+  ・ データベースファイルのみからラウンド情報を取得したとき、データベースの一部要素からラウンドの終了条件を大まかに取得できるようにしました。 <br>
+  ・ ポイント取得ラウンドにおいて、ラウンドの読み込みが想定よりもかかったとき、まだ生き残っているのにもかかわらずボーダーを表示してしまうことがある問題を修正しました。 <br>
+  ・ ゲームルール以外からチーム戦の情報を取得する異例なラウンドにおいて、チーム数に応じてクリア可能プレイヤー数を独自に計算する機能を行わないように変更しました。 <br>
+  ・ カスタム（プライベート）ロビーでコードを入力して遊ぶクリエイティブを遊んだとき、データベースからの指定が足りていないとポイント取得ラウンドを遊んだときに正しく順位やボーダー表示を行ってくれない問題を修正しました。 <br>
+  ・ Toolsの独自機能であるLap/Phaseシステムについて、システムを組み直し効果音を動的に切り替えれるようになったり、データベースからURLを指定してToolsのフォルダに存在しない効果音を再生できるようにしました。 <br>
+  ・ Toolsを起動して、ログを高速で読み込んでいるとき極稀に効果音が再生されてしまう問題を修正しました。 <br>
+  ・ データベースファイルのDL終了後、ファイルが破損したりしているのにもかかわらずファイルの置き換えを行うことによってToolsが初期設定エラーになってしまい強制アップデートが発生してしまう問題を修正しました。 <br>
+  ・ Toolsの設定ファイルの読込中、開発途中の存在しないキーを読み込もうとしたときに変数のリセット不足によりエラーが発生してしまうことがある問題を修正しました。 <br>
+  ・ コース検索ツールにおいて、サムネイルのダウンロード中に画像をコピーや保存ができてしまう問題を修正しました。（読込中を示すアイコンが保存されてしまいます） <br>
+  ・ コース検索ツールにおいて、サムネイルのダウンロード中にアイコンを表示するようのタイマーの間隔を21億ミリ秒に変更し、サムネイルがダウンロードされたのに反映されない問題を修正しました。 <br>
+  ・ コース検索ツールにおいて、サムネイルのダウンロードに失敗したときに表示されるアイコンが表示されない問題を修正しました。 <br>
+  ・ コース検索ツールにおいて、BGMの試聴を開始するたびにファイルをダウンロードしないようにし、一度試聴を行うと次のコース検索をするまでキャッシュから再生できるようにしました。 <br>
+  ・ 外部表示されるミリ秒タイマーについて、ラウンド終了後にラウンドの総経過時間から再計算を行った際、誤った残り時間が表示されてしまう問題を修正しました。 <br>
+  ・ 必要なファイルが不足しているときに強制アップデートができなくなってしまう問題を修正しました。 <br>
+  ・ 一部要素の関数化、コードの最適化を行いました。 <br>
+  
   ○ `2024.9.60 (2024/09/24 更新)` <br>
   ・ データベースから各種言語のローカライズを取得できるようにしました。（動的に変更やテキストの追加・言語の追加もできるように作りました。） <br>
   ・ Squadにおいて、チームが全滅したときに外部表示が表示されたままになってしまう問題を修正しました。 <br>
@@ -1565,6 +1601,41 @@ This tool is available in English, Japanese, and Russian.<br>
   ## ChangeLog (English) <br>
 <details>
     <summary>Details</summary>
+
+  ○ `2024.10.00 (12/10/2024 update)` <br>
+  ・ A new feature has been added to display exclusive status conditions in unusual rounds where information on team competitions is obtained from outside of the game rules! <br>
+  ・ The file download system in Tools has been revised to reduce download times for all files required for thumbnails and background music previews of Unity rounds in the Database Download and Course Search tools by up to half from the previous version. <br>
+  ・ Fixed a problem that could cause an error when starting Tools. <br>
+  ・ Fixed a problem that caused the main screen to blink when starting Tools shortly after starting Fall Guys. <br>
+  ・ The total number of rounds played is now counted correctly even if Tools is started in the middle of the Explore mode. <br>
+  ・ Round information is now retained until screen transition when disconnected from the server at the end of a round, even when not in Explore mode. <br>
+  ・ In the Explore mode, the processing when a round ends during matchmaking has been optimized, and the display has been adjusted again to prevent corruption. <br>
+  ・ The UI is now displayed correctly when Tools is launched. <br>
+  ・ Player information, which had been discarded each round, has been improved so that it can be saved on a game-by-game basis, and information can be displayed retroactively for players who were not summoned for a round but were eliminated. <br>
+  ・ Since there were elements where changes made by the database file were not reflected until Tools was restarted, the entire system was changed so that the contents received by database update can be immediately applied during Tools startup. (Except for some localized items) <br>
+  ・ Fixed an issue where, due to status reasons during matchmaking, the countdown to forced cancellation of a match would remain displayed in extremely rare cases. <br>
+  ・ When “Round Information” is set in the TextA,B area, the Final Round flag disappears momentarily before the first round starts and appears to blink. <br>
+  ・ Regarding the element that downloads files in Tools, we had been “saving only to the Temp file”, but we now delete it from the Temp file as well at the time of resetting. <br>
+  ・ Fixed an issue where necessary elements could not be retrieved when communicating using the Creative API if the process was congested. <br>
+  ・ Fixed a problem where if a player was disconnected from the server before a round started, all players would be treated as eliminated before the start of the round, resulting in an overflow error. <br>
+  ・ In some rounds, the UI of the external display is not hidden even when the round is finished or when the player's qualify status is updated. <br>
+  ・ PlayerList and SquadList are output to a log file at the timing of screen transitions after the end of a round to facilitate support when problems occur. <br>
+  ・ Adjusted the reset timing of the Fall Guys rewards server, as there was a problem with rewards being received at an unexpected time from the Fall Guys rewards server, causing the elapsed time display, etc., to be unavailable during some rounds. (Because sometimes rewards from the previous game would suddenly arrive). <br>
+  ・ When round information is obtained only from a database file, it is now possible to roughly obtain the end condition of a round from some elements of the database. <br>
+  ・ Fixed a problem in point acquisition rounds where, if the round took longer than expected to load, the borders were sometimes displayed even though the player was still alive. <br>
+  ・ In unusual rounds where team competition information is obtained from outside the game rules, the function to independently calculate the number of clearable players based on the number of teams has been changed to no longer be performed. <br>
+  ・ Fixed a problem in which when playing a creative played by entering a code in the custom (private) lobby, if the code was not specified enough from the database, the rank and border would not be displayed correctly when playing a round of point acquisition. <br>
+  ・ The Lap/Phase system, a unique feature of Tools, has been reorganized to allow dynamic switching of sound effects and to allow playback of sound effects that do not exist in the Tools folder by specifying a URL from the database. <br>
+  ・ Fixed a problem in which sound effects would play in extremely rare cases when Tools is activated and logs are being read at high speed. <br>
+  ・ Fixed a problem in which replacing a file after the database file DL was finished, even though the file was corrupted or otherwise damaged, would cause Tools to make an initial setup error, resulting in a forced update. <br>
+  ・ Fixed a problem that could cause an error due to insufficient resetting of variables when trying to read a non-existent key in the middle of development while reading Tools configuration files. <br>
+  ・ Fixed a problem in the course search tool where images could be copied or saved while thumbnails were being downloaded. (The icon indicating that the image was being loaded would be saved.) <br>
+  ・ In the course search tool, the timer interval for displaying icons while downloading thumbnails has been changed to 2.1 billion milliseconds to correct a problem where thumbnails were downloaded but not reflected. <br>
+  ・ Fixed a problem in the course search tool where the icon displayed when a thumbnail failed to download was not displayed. <br>
+  ・ In the course search tool, the file is no longer downloaded each time a BGM preview is started, and once a preview is performed, it can be played from the cache until the next course search. <br>
+  ・ Fixed a problem in which the millisecond timer displayed externally would incorrectly display the remaining time when recalculated from the total elapsed time of the round after the round was completed. <br>
+  ・ Fixed a problem that prevented forced updates when necessary files were missing. <br>
+  ・ Functionalization of some elements and code optimization. <br>
 
   ○ `2024.9.60 (24/09/2024 update)` <br>
   ・ We have made it possible to retrieve various language localizations from the database. (We also made it possible to dynamically change or add text and languages) <br>
