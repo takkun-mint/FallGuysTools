@@ -1,7 +1,9 @@
 # FallGuysTools
 
 ## Download・ダウンロード
+
 ![3rd_Normal.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/3rd_Normal.png) <br>
+
 [FallGuysTools.zip](https://github.com/takkun-mint/FallGuysTools/raw/main/FallGuysTools.zip)
 <br>
 This is my own Fall Guys Tool. I am developing this tool by myself with a sense of study and with the function that an amateur with little knowledge personally wanted, <br>
@@ -14,8 +16,8 @@ This tool is available in English, Japanese, and Russian.<br>
 <br>
 <br><br>
 
-
 ## External Display Functions・外部表示機能 <br>
+
 ![Timer_1.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/Timer_1.png)
 ![Timer_2.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/Timer_2.png)
 ![PointRound.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/PointRound.png)
@@ -31,8 +33,8 @@ This tool is available in English, Japanese, and Russian.<br>
   設定画面にある「配信者モード」を有効にするとOBSなどの配信ソフトにも映せますよ！ <br>
   <br><br>
 
-
 ## Automatic retrieval of server IP address and Ping・サーバのアドレスとPingの表示 <br>
+
 ![server.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/server.png)
 <br>
   Ping is sent to the game server at any desired interval determined by the user, and the ping value is displayed.<br>
@@ -46,6 +48,7 @@ This tool is available in English, Japanese, and Russian.<br>
   <br><br>
 
 ## display switching function・表示切替機能 <br>
+
   ![3rd_Settings.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/3rd_Settings.png)
   <br>
   You can replace the two display areas with whatever you like from the settings.<br>
@@ -53,6 +56,7 @@ This tool is available in English, Japanese, and Russian.<br>
   2つある表示領域にはユーザー自身で好きなものを配置できます。<br>
   
 ## Display of time limit・制限時間の表示 <br>
+
 ![3rd_Normal2.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/3rd_Normal2.png)
 <br>
   Round time limit can be displayed. (Note that all times are manually entered and may differ from the actual time.)<br>
@@ -66,6 +70,7 @@ This tool is available in English, Japanese, and Russian.<br>
   <br>
   
 ## Display of real-time rankings・リアルタイムスコア表示 <br>
+
   ![2nd_Position.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/2nd_Position.png)
 
   Displays rankings based on current score during score-based games. Squad mode is also supported.<br>
@@ -73,8 +78,7 @@ This tool is available in English, Japanese, and Russian.<br>
   スコア取得ラウンドで現在のポイントをもとに順位が表示されます。<br>
   もちろん、Squad対応です。<br>
 
-  
-  <br>    
+  <br>
   
 ## Display of player information・プレイヤー情報の表示 <br>
 
@@ -93,6 +97,7 @@ This tool is available in English, Japanese, and Russian.<br>
   <br>
   
 ## Display of player list・プレイヤーリストの表示 <br>
+
 ![2nd_PlayerList.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/2nd_PlayerList.png)
 ![2nd_SquadList.png](https://github.com/takkun-mint/FallGuysTools/raw/main/Image/2nd_SquadList.png)
 <br>
@@ -104,14 +109,20 @@ This tool is available in English, Japanese, and Russian.<br>
   スクワッドの時はスクワッド毎のポイント、残り生存しているプレイヤー数などを確認できます！ <br>
   パーティーに入っているかどうか、スクワッドに含まれるパーティーの数なども設定次第では確認できますよ！ <br>
   
-  
   <br><br>
   
   <br>
 
-  ## 更新ログ (日本語) <br>
+## 更新ログ (日本語) <br>
+
   <details>
     <summary>詳細を表示</summary>
+
+  ○ `2024.10.10 (2024/10/12 更新)` <br>
+  ・ 一部Toolsの独自でテキスト表示を行うラウンドにおいて、フォントサイズの調整を行い、データベースから動的に変更を行えるようにしました。 <br>
+  ・ データベースファイルの適用システムの変更に伴い、メインメニューのローテーションテキストに表示される、データベースの更新時刻が更新されない問題を修正しました。 <br>
+  ・ ゲームルール以外からチーム戦の情報を取得する異例なラウンドにおいて、タイムアップ間際に専用のテキストの表示が固まってしまう問題を修正しました。 <br>
+  ・ タイルの復活時間を表示するラウンドで表示が行われなかったり、本来はラウンド中に非表示にするべき項目が非表示にならない問題を修正しました。 <br>
 
   ○ `2024.10.00 (2024/10/12 更新)` <br>
   ・ ゲームルール以外からチーム戦の情報を取得する異例なラウンドにおいて、専用のステータス状態を表示する新機能を追加しました！ <br>
@@ -162,7 +173,6 @@ This tool is available in English, Japanese, and Russian.<br>
   ・ Squadのレースラウンドにおいて、ソロベースのクリア制限があるとき、クリア確定を示すメダル表示が表示されない問題を修正しました。 <br>
   ・ コース検索ツールにおいて、level_roundの値で検索するときにコンテンツファイルの読み込み直後などで変数の値が0のときに404エラーになってしまう問題を修正し、一度だけ再検索を行うようにしました。 <br>
   ・ 外部表示のミリ秒表示タイマーにおいて、ラウンド終了後にタイマーの表示がそのままになってしまう問題を修正し、ラウンド終了後にラウンドの総経過時間から再計算を行うようにしました。 <br>
-
 
   ○ `2024.9.40 (2024/09/19 更新)` <br>
   ・ 自由探索において、ゲーム上のUIの仕様に合わせて、Toolsの外部表示のタイミング・表示方法を調整しました。 <br>
@@ -319,7 +329,6 @@ This tool is available in English, Japanese, and Russian.<br>
   ・ 一部変数の型の定義を見直しました。 <br>
   ・ 一部専用モードの機能追加・改善を行いました。 <br>
 
-
   ○ `2024.7.10 (2024/07/11 更新)` <br>
   ・ 一貫性がなかったバージョン連番の仕様変更。 <br>
   ・ 一部専用モードの仕様や意図しない動作の修正。 <br>
@@ -339,7 +348,6 @@ This tool is available in English, Japanese, and Russian.<br>
   ・ NTPサーバーから現在の時刻を取得する時に、Toolsの処理中を示すビーンくんのアイコンが非表示にならない問題について、追加の対応を行いました。 <br>
   ・ 一部Phase表示ラウンドで表示される外部表示関連の座標の調整を行いました。 <br>
 
-
   ○ `4.99.98` <br>
   ・ カスタム（プライベート）ロビーでサーバとの再接続回数表示が外部表示されなかった問題を修正しました。 <br>
   ・ カスタム（プライベート）ロビーでサーバーとの再接続回数の最初数回について外部表示を行わないよう調整を行いました。 <br>
@@ -354,7 +362,6 @@ This tool is available in English, Japanese, and Russian.<br>
   ・ コース検索ツールにおいて、Tools起動から一回目の検索を行うと確定で404エラーが発生してしまう問題を修正しました。 <br>
   ・ コース検索ツールにおいて、処理アイコンのビーンズが表示されない問題を修正しました。 <br>
   ・ 一部のPhase表示ラウンドで効果音を追加しました。 <br>
-
 
   ○ `4.99.97` <br>
   ・ Toolsがバッググラウンドで処理をしている または、時間のかかる処理を行っている間、読み込みアイコンが表示されるようにしました。 <br>
@@ -535,14 +542,12 @@ This tool is available in English, Japanese, and Russian.<br>
   ・ クリエイティブ検索ツールにて、BGMのダウンロードに失敗したときに1度に限り再試行を行うよう変更を行い、再試行後もエラーになった場合はダイアログを表示するようにしました。 <br>
   ・ メイン画面転移時に開発者からデータベースを通じてメッセージを表示できるようにしました。(Beta) <br>
 
-
   ○ `4.99.76` <br>
   ・ ログファイルの設定するプログラムにおいて、最適化を行いました。 <br>
   ・ 同じコースを周回するラウンドにおいて、ゴールできずに脱落したときLAPのタイムが0秒と表示される問題を修正しました。 <br>
   ・ カスタム（プライベート）ロビーでコードを入力してプレイするクリエイティブラウンドにて、ラウンド開始前のクリア可能割合の外部表示の位置ズレやラウンド開始後にも表示が残ってしまう問題を修正しました。 <br>
   ・ クリエイティブ検索ツールにて、ラウンドの更新時刻の小数点以下が全て0のときに項目が表示されなくなる問題を修正しました。 <br>
   
-
   ○ `4.99.75` <br>
   ・ ログファイルを設定しても反映されず起動できない問題を修正しました。 <br>
   ・ ログファイルを設定時に「Player.log」以外を選んだときにも終了するかどうかのオプションを表示するようにしました。 <br>
@@ -586,7 +591,6 @@ This tool is available in English, Japanese, and Russian.<br>
   ・ クリエイティブ検索ツールにて、日本語のテキストを変更しました。 <br>
   ・ 外部表示関連の座標の調整を行いました。 <br>
   
-
   ○ `4.99.71` <br>
   ・ クリエイティブAPIを使ったサバイバルラウンドにおいて、暫定的な対応を行いました。 <br>
   ・ 外部表示ディスプレイの一部のテキストがディスプレイの大きさを考慮してサイズ調整が正しく行われない問題について対応を行いました。 <br>
@@ -653,7 +657,6 @@ This tool is available in English, Japanese, and Russian.<br>
     ・ クリエイティブ検索ツールにて、文字サイズの調整プログラムを最適化しました。 <br>
     ・ クリエイティブ検索ツールにて、取得した値を選択してコピーができるように改良を行いました。 <br>
     ・ クリエイティブ検索ツールにて、タブを追加し更に多くの情報を取得できるようにしました。 <br>
-    
 
   ○ `4.99.56` <br>
     ・ メインメニューのときに表示される名声やそのブースト情報表示について、稀に異常な値が入ってしまう問題を修正し、異常があった場合は値の表示を行わないようにしました。 <br>
@@ -668,14 +671,12 @@ This tool is available in English, Japanese, and Russian.<br>
     ・ SquadListにて、vs形式のラウンドで0点の状態で敗北したチームのスコアがIntegerの最低値が表示されてしまう問題を修正しました。 <br>
     ・ GitHubに最新のコンテンツファイルがあるかを確認するプログラムが暴発し、処理途中でエラーが発生すると存在しないのに新しいコンテンツがあると表示されてしまう問題を修正しました。 <br>
   
-
   ○ `4.99.55` <br>
     ・ GitHubからローカライズ文を取得したとき、Unicodeを考慮する処理が入っていなかった問題を修正しました。 <br>
     ・ マッチメイキング中のステータス表示をわかりやすいものに変更しました。 <br>
     ・ 日本語のテキストにおいて、"Fame"を「フレーム」と誤訳していた問題を修正しました。 <br>
     ・ ロシア語のテキストの翻訳を全体的に修正しました。（repinekさん、ありがとうございます！） <br>
     ・ 前回修正したはずだった、Squadモードでクリエイティブラウンドをプレイ中、外部表示の経過時間の表示を無効化する条件がすべて反転してしまっていた問題を修正しました。 <br>
-    
 
   ○ `4.99.54` <br>
     ・ エクストリーム関連のショーで遊んだときにSquadList,外部表示関連が予期しない動作を起こしてしまう問題を修正しました。 <br>
@@ -813,7 +814,6 @@ This tool is available in English, Japanese, and Russian.<br>
     ・ ゲームをアクティブにしたのに、アクティブ警告の表示が残ってしまう問題を修正しました。 <br>
     ・ カスタムサーバーへの接続の上限数をコンテンツ情報から取得できるようにしました。 <br>
     ・ PINGの表示が見切れてしまう問題を修正しました。 <br>
-    
 
   ○ `4.99.12` <br>
     ・ ラウンド開始後にもゲームの非アクティブ警告表示が残ってしまうバグを修正しました。 <br>
@@ -976,7 +976,6 @@ This tool is available in English, Japanese, and Russian.<br>
     ・ PlayerListにて一部のポイント取得ラウンドにてPlayerListの描画を常に行うとツールの動作に支障をきたしていたため、一定数のポイント変動で更新されるようにしました。 <br>
     ・ Tournament Modeにて特定の大会のみ例外設定を追加しました。 <br>
 
-
   ○ `4.52.12` <br>
     ・ ツールの初期設定に失敗したとき、一度変数を初期化するようにしました。 <br>
 
@@ -1110,7 +1109,6 @@ This tool is available in English, Japanese, and Russian.<br>
     ・ 2周するLAPステージの経過時間表示がバグってしまう問題について応急処置を行いました。 <br>
     ・ 新しい設定項目がある場合に表示される「！」のアイコンが画面転移のカウントダウンの開始とともに消えてしまう問題を修正し、転移カウントダウンが表示されるまでの間は表示されるようにしました。 <br>
 
-
   ○ `4.50.00` <br>
     ・ PlayerListとSquadListを一つの表示領域で共有していたのを完全に分離しました。 <br>
     ・ クリエイティブ系列のラウンドをしたあとに第一ステージをプレイすると「ラウンド検索」ボタンが表示されたままになる問題を修正しました。 <br>
@@ -1127,7 +1125,6 @@ This tool is available in English, Japanese, and Russian.<br>
     ・ クリエイティブ検索ツールにて、サーバーサイドのエラーになったときのローカライズを追加し、エラー発生時にエラーコードをわかりやすく見えるようにしました。 <br>
     ・ Squadにてラウンド開始前とアニメーション表示中などで左上にクリアチーム数が表示されていない時だけクリアチーム数を表示するようにし、それ以外では従来と同じくサーバー情報を表示するようにしました。 <br>
     ・ 制限時間が不明なラウンドのとき、残り時間表示を経過時間表示に切り替え、外部表示も別途新しいものを表示するようにしました。 <br>
-
 
   ○ `4.01.10` <br>
     ・ SquadListの理論値表示を使っている時、現在のスコアも表示されるようにしました。 <br>
@@ -1598,9 +1595,16 @@ This tool is available in English, Japanese, and Russian.<br>
 
 <br><br><br>
 
-  ## ChangeLog (English) <br>
+## ChangeLog (English) <br>
+
 <details>
     <summary>Details</summary>
+
+  ○ `2024.10.10 (12/10/2024 更新)` <br>
+  ・ In some Tools' own rounds of text display, the font size has been adjusted so that it can be changed dynamically from the database. <br>
+  ・ Fixed a problem in which the update time of the database, which appears in the rotation text of the main menu, was not updated due to a change in the system for applying database files. <br>
+  ・ Fixed an issue that caused the display of dedicated text to freeze near tie-ins in unusual rounds where information about the team competition was obtained from outside of the game rules. <br>
+  ・ Fixed a problem in which tile revival time was not displayed in rounds that display tile revival time, and items that should be hidden during the round were not hidden. <br>
 
   ○ `2024.10.00 (12/10/2024 update)` <br>
   ・ A new feature has been added to display exclusive status conditions in unusual rounds where information on team competitions is obtained from outside of the game rules! <br>
@@ -2043,7 +2047,6 @@ This tool is available in English, Japanese, and Russian.<br>
   ・ In the Creative Search Tool, an error is no longer displayed when an internal error occurs when retrieving thumbnails. <br>
   ・ Adjustments have been made to the Creative Search tool to reduce the problem of overflowing text that is displayed on two or more separate lines. <br>
 
-
   ○ `4.99.73` <br>
   ・ Changed the specification to play file names other than "Player.log" because it was sometimes possible to specify the wrong log file. <br>
   ・ Regarding the display of the percentage of qualified players, players who are not included in the headcount calculation are now excluded from the calculation. <br>
@@ -2107,7 +2110,6 @@ This tool is available in English, Japanese, and Russian.<br>
     ・ Fixed a problem that could cause an internal error when the database was downloaded during a round. <br>
     ・ Fixed a problem in the Creative Search Tool where there was no text for adjusting the volume of in-game BGM for auditioning BGM, or where the volume was not saved or applied. <br>
     ・ Fixed a problem in which the Open button was not restored when PlayerList was closed. <br>
-
 
   ○ `4.99.60` <br>
     ・ We have reworked all the programs that reflect the Tools configuration file from the database file to a new one. <br>
@@ -2398,7 +2400,6 @@ This tool is available in English, Japanese, and Russian.<br>
     ・ In response to user requests, the volume of the timer that plays when there are less than 5 seconds remaining has been lowered by -3 dB. <br>
     ・ Fixed a problem in the Creative Course Search tool where the number of times played was not displayed properly. <br>
 
-
   ○ `4.55.01` <br>
     ・ Fixed an issue where round setting information would return to default values just before the start of a round when playing a creative stage where a custom code is entered. <br>
 
@@ -2416,7 +2417,6 @@ This tool is available in English, Japanese, and Russian.<br>
     ・ The handling of teams with zero points at the end of a round in SquadList has been changed from a uniform setting to one that determines whether a team is cleared or eliminated based on two factors: "when time is over" and "when the team that advances is determined to be eliminated". <br>
     ・ The total elapsed time displayed during matchmaking is now displayed more accurately, instead of being adjusted to the milliseconds of the waiting time. <br>
     ・ A "Kill Game button" is now displayed when there is a problem with soft-locking when leaving a show if it overlaps with the loading of a stage. <br>
-
 
   ○ `4.54.00` <br>
     ・ Fixed a problem that caused duplicate updates to be executed when a forced update was performed due to missing necessary files. <br>
@@ -2445,7 +2445,7 @@ This tool is available in English, Japanese, and Russian.<br>
     ・ Optimized the program that retrieves and manipulates the status of some "FallGuys_client.exe" programs. <br>
     ・ Fixed a problem in PlayerList in which the log of elimination decisions for players who did not appear during round loading during the round of point acquisition was outputted, in which zero points were calculated. <br>
     ・ When a player is still alive, the game screen is automatically activated and brought to the forefront when the countdown begins just before the start of the round. <br>
-    *  Due to unstable operation, it is disabled at this time. <br>
+    *Due to unstable operation, it is disabled at this time. <br>
     ・ The PlayerList display was sometimes corrupted at the end of a round, so the re-displayed area has been changed. <br>
     ・ The focus status of the game can no longer be retrieved from the log file, so the focus status is now retrieved on the tools. <br>
     *  The data is retrieved once per second in consideration of the processing speed of the tool. Therefore, it may take some time to reflect the status. <br>
@@ -2674,7 +2674,7 @@ This tool is available in English, Japanese, and Russian.<br>
     ・ Fine-tuned the position of the external display. <br>
 
   ○ `3.10.01` <br>
-    ・ The coefficients for the "auto-adjustment" function of the external display have been changed and adjusted to be more accurately positioned.　<br> 
+    ・ The coefficients for the "auto-adjustment" function of the external display have been changed and adjusted to be more accurately positioned.　<br>
     We will continue to make this adjustment in the future. <br>
     ・ Fixed a problem in which the size of the red timer on the external display timer was a common value for all resolutions. <br>
 
