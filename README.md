@@ -118,6 +118,11 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2024.10.20 (2024/10/14 更新)` <br>
+  ・ Discordの連携機能が実装されました！ Fall Guysの進行に合わせて自分自身のアクティビティが自動で更新されるようになり進捗を共有できるようになりました！ <br>
+  ・ クリエイティブラウンドをプレイしている状態でToolsを起動すると、ラウンド情報の読み込みに失敗してしまう問題を修正しました。 <br>
+  ・ 各種変数の調整・変更を行いました。 <br>
+
   ○ `2024.10.10 (2024/10/12 更新)` <br>
   ・ 一部Toolsの独自でテキスト表示を行うラウンドにおいて、フォントサイズの調整を行い、データベースから動的に変更を行えるようにしました。 <br>
   ・ データベースファイルの適用システムの変更に伴い、メインメニューのローテーションテキストに表示される、データベースの更新時刻が更新されない問題を修正しました。 <br>
@@ -1600,7 +1605,12 @@ This tool is available in English, Japanese, and Russian.<br>
 <details>
     <summary>Details</summary>
 
-  ○ `2024.10.10 (12/10/2024 更新)` <br>
+  ○ `2024.10.20 (14/10/2024 update)` <br>
+  ・ Discord integration has been implemented! Now you can share your progress by automatically updating your own activity as Fall Guys progresses! <br>
+  ・ Fixed a problem in which round information would fail to load when Tools was launched while a creative round was being played. <br>
+  ・ Various variables were adjusted and changed. <br>
+
+  ○ `2024.10.10 (12/10/2024 update)` <br>
   ・ In some Tools' own rounds of text display, the font size has been adjusted so that it can be changed dynamically from the database. <br>
   ・ Fixed a problem in which the update time of the database, which appears in the rotation text of the main menu, was not updated due to a change in the system for applying database files. <br>
   ・ Fixed an issue that caused the display of dedicated text to freeze near tie-ins in unusual rounds where information about the team competition was obtained from outside of the game rules. <br>
