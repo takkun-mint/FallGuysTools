@@ -118,6 +118,23 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2024.11.0.1 (2024/11/21 更新)` <br>
+  ・ 設定画面が刷新されました！ より細かい設定が可能になります！ <br>
+  ・ 設定画面の全体的な改修のため、ユーザー自身で設定した全ての項目が初期値に戻りました...。 <br>
+  ・ 新機能「RTAモード」！ 様々なお題から好きなものを選んで記録に挑戦しよう！なお、お題は随時追加されるぞ！ <br>
+  ・ 全体的なプログラムの改修工事を行いました。 <br>
+  ・ クリエイティブAPIをCloudSeekerかDBか、両方使うかどうかを指定できるようにしました。 <br>
+  ・ 各種効果音について、要素ごとに調整ができるようになりました。 <br>
+  ・ 自由探索モードで追加された新ゲームルール「クリエイター指定のクリア率を採用する」に対応しました。 <br>
+  ・ Toolsを起動したとき、クリエイティブラウンドを連続でプレイしているとAPI通信が重複していたため、すでに終了済みのラウンドについてはAPIとの通信を行わないようにしました。 <br>
+  ・ ゲームルールの仕様変更に合わせ、クリエイティブのバージョン不一致状態でユーザー指定がされている場合、制限時間やクリア率などを表示しないようにしました。 <br>
+  ・ 同じコースを周回するラウンドにおいて、ゴール時にLAP2のタイムとゴールしたときのタイムが同じになってしまう問題を修正しました。 <br>
+  ・ 各ポイント間のタイムが表示されるラウンドで、全く関係ない内部値が表示されてしまう問題を修正しました。 <br>
+  ・ Discord連携機能について、各ラウンドの待ち時間に表示されるラウンド数がズレてしまうことがある問題を修正しました。 <br>
+  ・ 特定の言語において、日付型変数と文字列変数の相互変換ができない問題を修正しました。 <br>
+  ・ 外部表示関連の座標の調整を行いました。 <br>
+  ・ 全体的に処理に余裕をもたせ、軽量化を行いました。 <br>
+
   ○ `2024.10.20 (2024/10/14 更新)` <br>
   ・ Discordの連携機能が実装されました！ Fall Guysの進行に合わせて自分自身のアクティビティが自動で更新されるようになり進捗を共有できるようになりました！ <br>
   ・ クリエイティブラウンドをプレイしている状態でToolsを起動すると、ラウンド情報の読み込みに失敗してしまう問題を修正しました。 <br>
@@ -1604,6 +1621,23 @@ This tool is available in English, Japanese, and Russian.<br>
 
 <details>
     <summary>Details</summary>
+
+  ○ `2024.11.0.1 (21/11/2024 update)` <br>
+  ・ The settings screen has been revamped! More detailed settings are now available! <br>
+  ・ Due to the overall renovation of the settings screen, all items set by the users themselves have been returned to their default values.... <br>
+  ・ New feature “RTA Mode”! Choose your favorite theme from various subjects and challenge the record! The new themes will be added as needed! <br>
+  ・ The overall program was renovated. <br>
+  ・ You can now specify whether to use the Creative API as CloudSeeker, DB, or both. <br>
+  ・ Various sound effects can now be adjusted for each element. <br>
+  ・ New game rule added in Explore mode: “Adopt a creator-specified qualify rate” is now supported. <br>
+  ・ When the Tools was launched, the API communication was duplicated when creative rounds were played consecutively, so communication with the API is no longer performed for rounds that have already been completed. <br>
+  ・ In accordance with the specification change of the game rules, the time limit and qualify rate are no longer displayed when a user is designated in a creative version mismatch state. <br>
+  ・ Fixed a problem in which the time in LAP2 was the same as the time at the finish line in rounds that lapped the same course. <br>
+  ・ Fixed a problem in which completely unrelated internal values were displayed in rounds where the time between each point was displayed. <br>
+  ・ Regarding the Discord linkage function, the number of rounds displayed in the waiting time of each round was sometimes out of sync. <br>
+  ・ Fixed a problem that prevented mutual conversion of date-type variables and string variables in certain languages. <br>
+  ・ Coordinates related to external display have been adjusted. <br>
+  ・ Overall, we have made the process more spacious and lightweight. <br>
 
   ○ `2024.10.20 (14/10/2024 update)` <br>
   ・ Discord integration has been implemented! Now you can share your progress by automatically updating your own activity as Fall Guys progresses! <br>
