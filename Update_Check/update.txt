@@ -1,3 +1,3 @@
-Ver: {2024.11.0.5}
+Ver: {2024.11.0.6}
 Fourced = False
 HideVersion = False
