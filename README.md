@@ -118,6 +118,26 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2024.12.0.0 (2024/12/15 更新)` <br>
+  ・ Tools起動時に問題が発生した時、ログファイルに出力されなくなる問題を修正しました。 <br>
+  ・ 外部表示関連で自動調整をOFFにしているとき、配信者モードに切り替えても反映されない問題を修正しました。 <br>
+  ・ コンテンツアップデートをダウンロード後、一定期間サーバーへの確認を停止するプログラムが正しく動作していない問題を修正しました。 <br>
+  ・ 開発者からのお知らせ画面が正しく表示されない問題を修正しました。 <br>
+  ・ Discord RPCにおいて、ビクトリー画面の他に、リザルト画面に転移した時でも「ゲーム終了」と表示されるようにしました。 <br>
+  ・ コース検索ツールにおいて、検索中にテキストボックスの値が更新されると、無限に読み込みが続いてしまう問題を修正し、検索中は各種値を操作できないようにしました。 <br>
+  ・ Toolsのメイン画面において、ポイント取得ラウンドの表示が乱れてしまう問題・スクワッドのボーダー数が正しく表示されない問題を修正しました。 <br>
+  ・ コース検索ツールにおいて、指定バージョンで検索できなかった時に一定のゲームルールについて機能を停止するプログラムが正しく動作していない問題を修正しました。 <br>
+  ・ ラウンドをクリアしたプレイヤーが切断した時に発生する順位繰り上げシステムにおいて、正しく動作していない問題を修正しました。 <br>
+  ・ 特定のポイント取得ラウンドでスコアが「NaN」と表示される問題やオーバーフローエラーが発生してしまう問題を修正しました。 <br>
+  ・ ゲームルールに追加された「ユーザーが指定したクリア率を採用する」という項目において正しく取得できなかった問題を修正しました。 <br>
+  ・ Squadのレース/サバイバルラウンドにおいて、一部サウンドが再生されないことがある問題を修正しました。 <br>
+  ・ Toolsの連続バージョンアップ回避のため、GitHubで更新を確認してから一定時間確認を停止するプログラムが正しく動作していない問題を修正しました。 <br>
+  ・ 一部設定項目が正しく反映されていなかった問題を修正しました。 <br>
+  ・ 一部設定項目において、ローカライズが正しく割り当てられていない問題を修正しました。 <br>
+  ・ 一部専用モードにおいて機能の調整を行い、機能追加や最適化を行いました。 <br>
+  ・ 管理者モードにおいて、管理者設定にしたのにも関わらず、設定が反映されない問題を修正しました。 <br>
+  ・ 全体的にプログラムの最適化を行いました。 <br>
+
   ○ `2024.11.0.1 (2024/11/21 更新)` <br>
   ・ 設定画面が刷新されました！ より細かい設定が可能になります！ <br>
   ・ 設定画面の全体的な改修のため、ユーザー自身で設定した全ての項目が初期値に戻りました...。 <br>
@@ -1621,6 +1641,26 @@ This tool is available in English, Japanese, and Russian.<br>
 
 <details>
     <summary>Details</summary>
+
+  ○ `2024.12.0.0 (15/12/2024 update)` <br>
+  ・ Fixed a problem that prevented output to the log file when a problem occurred during Tools startup. <br>
+  ・ Fixed a problem in which the automatic adjustment was not reflected even after switching to distributor mode when the automatic adjustment was turned off in the external display-related section. <br>
+  ・ Fixed a problem in which a program that stops checking in to the server for a certain period of time after downloading content updates was not working properly. <br>
+  ・ Fixed an issue that prevented the developer notification screen from displaying correctly. <br>
+  ・ In Discord RPC, “End of Game” is now displayed when the player transitions to the result screen in addition to the Victory screen. <br>
+  ・ In the course search tool, if a text box value is updated during a search, it will continue to load indefinitely, and various values cannot be manipulated during the search. <br>
+  ・ In the main screen of Tools, the display of point acquisition rounds and the number of squad borders were not displayed correctly. <br>
+  ・ Fixed a problem in the course search tool where the program that stops the functionality for certain game rules when the search fails with the specified version was not working correctly. <br>
+  ・ Fixed a problem in the ranking advancement system that occurs when a player disconnects after completing a round, which was not working properly. <br>
+  ・ Fixed a problem that caused scores to be displayed as “NaN” and overflow errors in certain point acquisition rounds. <br>
+  ・ Fixed a problem in which the game could not be obtained correctly in the item “Adopt a user-specified clearance rate” added to the game rules. <br>
+  ・ Fixed an issue where some sounds would not play in the Squad race/survival round. <br>
+  ・ Fixed a problem in which a program that stops checking for updates on GitHub for a certain period of time after confirming an update was not working properly to avoid continuous version upgrades of Tools. <br>
+  ・ Fixed a problem in which some setting items were not reflected correctly. <br>
+  ・ Fixed a problem in which localization was not assigned correctly for some setting items. <br>
+  ・ Adjustments were made to functions in some dedicated modes, and functions were added and optimized. <br>
+  ・ In administrator mode, a problem has been corrected in which settings were not reflected even though they were set to administrator. <br>
+  ・ Overall, the program was optimized. <br>
 
   ○ `2024.11.0.1 (21/11/2024 update)` <br>
   ・ The settings screen has been revamped! More detailed settings are now available! <br>
