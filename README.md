@@ -118,7 +118,7 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
-  ○ `2025.01.0.0 (2025/01/22 更新)` <br>
+  ○ `2025.1.0.0 (2025/01/22 更新)` <br>
   ・ RTAモードにおいて、各種処理タイミングでPCの内部時計とNTPサーバーとの誤差分を差し引く動作が連続で発生してしまう問題を修正しました。 <br>
   ・ マッチメイキングの途中のフェーズ、プレイヤー待機の箇所において正式にサーバー開放の時刻が取得できてかつ、一定以上時間がかかっているとタイムアウトまでの残り時間が表示されるようにしました。 <br>
   ・ タイムアタックラウンドにおいて、ログの出力順と最終順位が一致していることが分かったため、PlayerListなどにおいて正しい順位が表示されるようになりました。　（なおRTAモードの条件として”1位になる”などの条件が選ばれている場合は、このアップデートによりタイムアタックでの最終順位が1位ではないと達成していないと判断されることになります。　ご了承ください。） <br>
@@ -1660,7 +1660,7 @@ This tool is available in English, Japanese, and Russian.<br>
 <details>
     <summary>Details</summary>
 
-  ○ `2025.01.0.0 (22/01/2025 update)` <br>
+  ○ `2025.1.0.0 (22/01/2025 update)` <br>
   ・ In RTA mode, a problem has been corrected in which the operation of subtracting the amount of error between the PC's internal clock and the NTP server occurs continuously at various processing timings. <br>
   ・ In the middle of the matchmaking phase, the time remaining until timeout is displayed when the server is officially opened and a certain amount of time has elapsed in the player waiting area. <br>
   ・ In the Time Attack rounds, it was found that the order of the log output and the final ranking were the same, so the correct ranking is now displayed in PlayerList and other places.　(Please note that if you have selected a condition such as “finish first” as a condition for RTA mode, you will be considered to have not achieved it unless your final rank in the Time Attack round is first.　Please be aware of this.) <br>
