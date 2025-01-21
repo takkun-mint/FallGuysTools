@@ -118,6 +118,24 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2025.01.0.0 (2025/01/22 更新)` <br>
+  ・ RTAモードにおいて、各種処理タイミングでPCの内部時計とNTPサーバーとの誤差分を差し引く動作が連続で発生してしまう問題を修正しました。 <br>
+  ・ マッチメイキングの途中のフェーズ、プレイヤー待機の箇所において正式にサーバー開放の時刻が取得できてかつ、一定以上時間がかかっているとタイムアウトまでの残り時間が表示されるようにしました。 <br>
+  ・ タイムアタックラウンドにおいて、ログの出力順と最終順位が一致していることが分かったため、PlayerListなどにおいて正しい順位が表示されるようになりました。　（なおRTAモードの条件として”1位になる”などの条件が選ばれている場合は、このアップデートによりタイムアタックでの最終順位が1位ではないと達成していないと判断されることになります。　ご了承ください。） <br>
+  ・ 一部Toolsで指定していたコンテンツからのローカライズにおいて、データベースより指定できるようにしました。 <br>
+  ・ Discord RPCにおいて、第一ラウンド開始前にも関わらず「ファイナル」とフラグ付けされてしまう問題や前回最後に遊んだラウンドが表示されてしまう問題を修正しました。 <br>
+  ・ Squadのポイント取得ラウンドにおいて、タイムアップにより脱落したチームの順位がボーダーよりも上の時、脱落の配色にならない問題を修正しました。 <br>
+  ・ コース検索ツールにおいて、ゲームモードの表示枠に”ファイナル”とタグ付けされる条件を追加し、ゲームルール上でもファイナルラウンドと定義づけされていればフラグ付けされるよう変更しました。 <br>
+  ・ 外部表示の座標をリセットした時、設定しているディスプレイ解像度が1920×1080ではないとき、正しく解像度に合わせた座標に戻らない問題を修正しました。 <br>
+  ・ 外部表示のスコア領域に表示されるテキストにおいて、全体的な処理方法に変更を加え、連続で表示のリセットが入ってしまう問題を修正し、正しく表示したいテキストが表示されるよう調整を行いました。 <br>
+  ・ データベースからの指定できるTools独自の変数を増やし、より多くの情報を動的に表示できるようにしました。 <br>
+  ・ RTAモードにおいてユーザーが指定できる最大目標数の設定が、開発者のデータベースから反映できなかった問題を修正しました。 <br>
+  ・ RTAモードを選択する時、開催期間外のお題を選択後に開催期間内の項目に切り替えても、一部ボタンがグレーアウトしてしまう問題を修正しました。 <br>
+  ・ RTAモードにおいて、お題を選択して確定させたタイミングで設定画面の表示を消すようにしました。 <br>
+  ・ Toolsのリセット作業の途中で、一部効果音が暴発してしまう問題について、問題箇所をやっと...！発見できましたので、修正致しました。完全に症状が消えたかどうかにつきましては、引き続き調査してまいります。 <br>
+  ・ 全体的に大幅な改修工事を行いました。マジックナンバーの修正なども行いました。　プログラムの修正・可読性の向上においては引き続き取り組んでまいります。 <br>
+  ・ 一部専用モードの動作の調整・問題の修正などを行いました。 <br>
+
   ○ `2024.12.0.0 (2024/12/15 更新)` <br>
   ・ Tools起動時に問題が発生した時、ログファイルに出力されなくなる問題を修正しました。 <br>
   ・ 外部表示関連で自動調整をOFFにしているとき、配信者モードに切り替えても反映されない問題を修正しました。 <br>
@@ -1641,6 +1659,24 @@ This tool is available in English, Japanese, and Russian.<br>
 
 <details>
     <summary>Details</summary>
+
+  ○ `2025.01.0.0 (22/01/2025 update)` <br>
+  ・ In RTA mode, a problem has been corrected in which the operation of subtracting the amount of error between the PC's internal clock and the NTP server occurs continuously at various processing timings. <br>
+  ・ In the middle of the matchmaking phase, the time remaining until timeout is displayed when the server is officially opened and a certain amount of time has elapsed in the player waiting area. <br>
+  ・ In the Time Attack rounds, it was found that the order of the log output and the final ranking were the same, so the correct ranking is now displayed in PlayerList and other places.　(Please note that if you have selected a condition such as “finish first” as a condition for RTA mode, you will be considered to have not achieved it unless your final rank in the Time Attack round is first.　Please be aware of this.) <br>
+  ・ Localization from content specified by some Tools can now be specified from the database. <br>
+  ・ Fixed a problem in Discord RPC where the game was flagged as “Final” even before the first round started and the last round played last time was displayed. <br>
+  ・ Fixed a problem in Squad's point-earning rounds where teams eliminated due to time-up would not be colored in the elimination color scheme when their ranking was above the border. <br>
+  ・ In the course search tool, a condition has been added to the game mode display frame to tag the course as “final” and flag it if it is also defined as a final round in the game rules. <br>
+  ・ Fixed a problem in which when the coordinates of an external display are reset, they do not return to the coordinates correctly matched to the resolution when the display resolution set is not 1920 x 1080. <br>
+  ・ In the text displayed in the score area of the external display, changes were made to the overall processing method to correct a problem that caused the display to reset continuously, and adjustments were made to correctly display the text desired to be displayed. <br>
+  ・ More Tools-specific variables can be specified from the database, allowing more information to be displayed dynamically. <br>
+  ・ Fixed a problem in which the maximum number of targets a user could specify in RTA mode could not be reflected from the developer's database. <br>
+  ・ When selecting RTA mode, some buttons were grayed out when switching to an item within the event period after selecting an item outside the event period. <br>
+  ・ In RTA mode, the display of the settings screen is now turned off when a subject is selected and confirmed. <br>
+  ・ Regarding the problem of some sound effects going out of order during the Tools reset process, we have finally... found the problem area! We have found the problem and fixed it. We will continue to investigate whether or not the symptoms have completely disappeared. <br>
+  ・ Overall, we did significant renovation work. We have also corrected magic numbers.　We will continue to work on program modifications and readability improvements. <br>
+  ・ Adjustment of operation and correction of problems in some dedicated modes. <br>
 
   ○ `2024.12.0.0 (15/12/2024 update)` <br>
   ・ Fixed a problem that prevented output to the log file when a problem occurred during Tools startup. <br>
