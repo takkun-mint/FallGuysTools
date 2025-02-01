@@ -118,6 +118,13 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2025.2.0.0 (2025/02/02 更新)` <br>
+  ・ コース検索ツールにおいて、履歴保存機能が追加されました。過去に検索したものもサクッと再検索できます！ <br>
+  ・ 一部クリエイティブコースをプレイ後にToolsを起動したとき、ログの読み込みが停止してしまう問題を修正しました。 <br>
+  ・ Toolsを起動直後、Discord RPCにステータスとは全く関係ない情報が出力されてしまう問題を修正しました。 <br>
+  ・ 一部のラウンドのギミック情報が出力されるラウンドにおいて、表示終了後もテキストが残り続けてしまう問題を修正しました。 <br>
+  ・ 全体的に変数の差し替えなど処理の最適化を行いました。プログラムの修正・可読性の向上においては引き続き取り組んでまいります。 <br>
+
   ○ `2025.1.0.0 (2025/01/22 更新)` <br>
   ・ RTAモードにおいて、各種処理タイミングでPCの内部時計とNTPサーバーとの誤差分を差し引く動作が連続で発生してしまう問題を修正しました。 <br>
   ・ マッチメイキングの途中のフェーズ、プレイヤー待機の箇所において正式にサーバー開放の時刻が取得できてかつ、一定以上時間がかかっているとタイムアウトまでの残り時間が表示されるようにしました。 <br>
@@ -1659,6 +1666,13 @@ This tool is available in English, Japanese, and Russian.<br>
 
 <details>
     <summary>Details</summary>
+
+  ○ `2025.2.0.0 (02/02/2025 update)` <br>
+  ・ A history saving function has been added to the course search tool. You can quickly re-search past searches! <br>
+  ・ Fixed a problem that caused log reading to stop when Tools was launched after playing some creative courses. <br>
+  ・ Fixed a problem in which information completely unrelated to the status was output to Discord RPC immediately after starting Tools. <br>
+  ・ Fixed a problem in which the text remained after the end of the display in some rounds where gimmick information was output for some rounds. <br>
+  ・ Overall, we have optimized the process by replacing variables. We will continue to work on modifying and improving the readability of the program. <br>
 
   ○ `2025.1.0.0 (22/01/2025 update)` <br>
   ・ In RTA mode, a problem has been corrected in which the operation of subtracting the amount of error between the PC's internal clock and the NTP server occurs continuously at various processing timings. <br>
