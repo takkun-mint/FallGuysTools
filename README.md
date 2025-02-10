@@ -118,6 +118,13 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2025.2.1.0 (2025/02/10 更新)` <br>
+  ・ 外部表示領域に新設定項目「Pingの常時表示」を追加しました。 一部使えないラウンドを除き、ラウンド開始前にのみ表示されていたPing表示をラウンド中表示し続けることができます。 <br>
+  ・ コース検索ツールにおいて、検索ボックスをクリックした時点でテキストが全選択されるように変更しました。 コピー＆ペースト時により早く入力できます！ <br>
+  ・ データベースからの指定できるTools独自の変数を増やし、より多くの情報を動的に表示できるようにしました。 <br>
+  ・ 一部専用モードの動作の調整・問題の修正などを行いました。 <br>
+  ・ プログラムの最適化を行いました。プログラムの修正・可読性の向上においては引き続き取り組んでまいります。 <br>
+
   ○ `2025.2.0.0 (2025/02/02 更新)` <br>
   ・ コース検索ツールにおいて、履歴保存機能が追加されました。過去に検索したものもサクッと再検索できます！ <br>
   ・ 一部クリエイティブコースをプレイ後にToolsを起動したとき、ログの読み込みが停止してしまう問題を修正しました。 <br>
@@ -1666,6 +1673,13 @@ This tool is available in English, Japanese, and Russian.<br>
 
 <details>
     <summary>Details</summary>
+
+  ○ `2025.2.1.0 (10/02/2025 update)` <br>
+  ・ A new setting item “Constant Ping Display” has been added to the external display area. Except for some unusable rounds, the ping display, which was displayed only before the start of the round, can be kept displayed throughout the round. <br>
+  ・ In the course search tool, the text is now fully selected when the search box is clicked. This allows for quicker input when copying and pasting! <br>
+  ・ More Tools-specific variables can be specified from the database, allowing more information to be displayed dynamically. <br>
+  ・ Adjustment of operation and correction of problems in some dedicated modes. <br>
+  ・ We have optimized the program. We will continue our efforts in modifying and improving the readability of the program. <br>
 
   ○ `2025.2.0.0 (02/02/2025 update)` <br>
   ・ A history saving function has been added to the course search tool. You can quickly re-search past searches! <br>
