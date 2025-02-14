@@ -118,6 +118,17 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2025.2.2.0 (2025/02/15 更新)` <br>
+  ・ 設定画面に「言語切り替え」機能を追加しました。通常ではPCの設定言語になりますが都合が悪い場合は別途変更することができます。 <br>
+  ・ DiscordRPCにおいて、ビクトリー画面転移から報酬の受取画面までの間、「ゲーム終了」というテキストになっているのにもかかわらず、最終ラウンドのラウンドに読み込まれたプレイヤー数が表示されてしまう問題を修正しました。 <br>
+  ・ カスタムからコードを入力して遊ぶクリエイティブラウンドにおいて、CloudSeeker導入によるバージョン別検索対応したのにも関わらず、最新バージョンでラウンドが読み込まれなかった場合、バージョン不一致としてデータの取得をやめてしまう問題を修正しました。 <br>
+  ・ カスタムからコードを入力して遊ぶクリエイティブラウンドにおいて、CloudSeekerが使えずDBで検索し、最新バージョンで読み込まれなかった場合、クリア率が0％として処理されたり、PlayerListのRoundTimeが果てしない数字が出力されてしまう問題を修正しました。 <br>
+  ・ Squad系列のレースラウンドにおいて、0ポイントチームがラウンド終了後クリア判定としてSquadListに表示されてしまう問題を修正しました。 <br>
+  ・ 一部言語において、設定画面のテキストが見切れてしまう問題を修正しました。 <br>
+  ・ 一部言語において、設定画面の一部要素にローカライズが割り当てされていない問題を修正しました。 <br>
+  ・ 一部専用モードの動作の調整・問題の修正などを行いました。 <br>
+  ・ プログラム上のマジックナンバーの訂正・プログラムの最適化などを行いました。 引き続きプログラムの最適化・改善は続けてまいります。 <br>
+
   ○ `2025.2.1.0 (2025/02/10 更新)` <br>
   ・ 外部表示領域に新設定項目「Pingの常時表示」を追加しました。 一部使えないラウンドを除き、ラウンド開始前にのみ表示されていたPing表示をラウンド中表示し続けることができます。 <br>
   ・ コース検索ツールにおいて、検索ボックスをクリックした時点でテキストが全選択されるように変更しました。 コピー＆ペースト時により早く入力できます！ <br>
@@ -1673,6 +1684,17 @@ This tool is available in English, Japanese, and Russian.<br>
 
 <details>
     <summary>Details</summary>
+
+  ○ `2025.2.2.0 (15/02/2025 update)` <br>
+  ・ A “language switch” function has been added to the settings screen. Normally, the language is set to the language of the PC, but if this is not convenient, it can be changed separately. <br>
+  ・ Fixed a problem in DiscordRPC where the number of players loaded in the last round of rounds was displayed in the Victory screen transition to the Reward Receipt screen, even though the text was “End of Game”. <br>
+  ・ Fixed a problem in which data acquisition was stopped as a version mismatch when a round was not loaded with the latest version of a creative round played by entering a code from a custom round, even though the round was version-searchable by introducing CloudSeeker. <br>
+  ・ In creative rounds played by entering a code from custom, if CloudSeeker was not available and the latest version was not loaded by searching in the DB, the clear rate would be treated as 0% and the RoundTime in PlayerList would output an unending number. Fixed. <br>
+  ・ Fixed a problem in Squad-affiliated race rounds where a 0-point team would appear in SquadList as a qualified decision after the round. <br>
+  ・ Fixed a problem in which the text on the settings screen was cut off in some languages. <br>
+  ・ Fixed a problem in which localization was not assigned to some elements of the settings screen in some languages. <br>
+  ・ Adjustment of operation and correction of problems in some dedicated modes. <br>
+  ・ We have corrected magic numbers on the program and optimized the program. We will continue to optimize and improve the program. <br>
 
   ○ `2025.2.1.0 (10/02/2025 update)` <br>
   ・ A new setting item “Constant Ping Display” has been added to the external display area. Except for some unusable rounds, the ping display, which was displayed only before the start of the round, can be kept displayed throughout the round. <br>
