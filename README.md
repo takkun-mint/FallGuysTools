@@ -118,6 +118,26 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2025.3.0.0 (2025/03/04 更新)` <br>
+  ・ 基盤システムである「.Net」のバージョンを6.0から9.0にアップデートしました。 <br>
+  ・ 基盤システム更新に伴い、各種設定を見直しFall Guys Toolsのフォルダに生成されるものを最小限に抑えました。 既存のFall Guys Toolsのフォルダごと削除していただき再インストールするとファイルがきれいになります。 <br>
+  ・ コース検索ツールにおいて、クリエイティブコースを検索したときに新しく「名声情報」「クラウン情報」を追加しました。 <br>
+  ・ 一部要素にしか対応していなかったコンテンツデータのGitHub対応について、全てに対応させました。これによりコンテンツ解析機能が使えない環境でもローカライズ以外全ての要素にアクセスできるようになりました。 <br>
+  ・ ゲームルールにおいて、「クリエイター指定の要素を採用する」について、遊んでいるショーの種類によって制御方法を変更するように変更しました。 <br>
+  ・ Tools上で計算されたクリア人数が不一致だった場合、暫定的に計算上のクリア人数を増やし、ポイントラウンドで表示されるボーダーを調整するようにしました。 <br>
+  ・ カスタムでコードを入力してクリエイティブサバイバルを1人でプレイしたとき、メイン画面に表示される想定クリア人数について、1人ではなく0人と表示するよう変更しました。 <br>
+  ・ カスタムでコードを入力して遊ぶクリエイティブラウンドをプレイ時、稀にフラグが機能せずにデフォルトの制限時間とクリア率で処理されてしまう問題を修正しました。 <br>
+  ・ クリエイティブAPIとの通信後、一定期間またはTools自体がフリーズしてしまう問題について、対応を行いました。 しばらく状況を注視します。 <br>
+  ・ クリエイティブコースのタグに「Art」が含まれているとき、経過時間の外部表示を停止していましたが、停止対象を全体から探索・コード検索時のみに変更しました。 <br>
+  ・ 経過時間の外部表示について、データベース側から別の表示形式に変更できるよう調整を行い、ついでにプログラムの改修を行いました。 <br>
+  ・ コース検索ツールにおいて、クリエイティブラウンドを検索時にバージョンを入力するテキストボックス上でEnterキーを押しても検索が実行されるよう変更を行いました。 <br>
+  ・ コース検索ツールにおいて、クリエイティブラウンドを検索時に、表示される項目「更新時刻」の出力形式について、コンピューターの言語に合わせた表示形式で表示されるよう変更を行いました。 <br>
+  ・ 重複起動判定について、プログラム側で手動で行っていましたが基盤システム上の仕組みに変更しました。 <br>
+  ・ データベースからの指定できるTools独自の変数を増やし、より多くの情報を動的に表示できるようにしました。 <br>
+  ・ 一部専用モードの動作の調整・問題の修正などを行いました。 <br>
+  ・ GitHubのレジストリに対応させました。うまくできているか不安ですがこれにより過去バージョンにロールバックなどしやすくなると思います。（過去バージョンはデータベース更新ができない仕様です。ご了承ください。） <br>
+  ・ プログラムの大幅な最適化を行いました。プログラムの修正・可読性の向上においては引き続き取り組んでまいります。 <br>
+
   ○ `2025.2.2.0 (2025/02/15 更新)` <br>
   ・ 設定画面に「言語切り替え」機能を追加しました。通常ではPCの設定言語になりますが都合が悪い場合は別途変更することができます。 <br>
   ・ DiscordRPCにおいて、ビクトリー画面転移から報酬の受取画面までの間、「ゲーム終了」というテキストになっているのにもかかわらず、最終ラウンドのラウンドに読み込まれたプレイヤー数が表示されてしまう問題を修正しました。 <br>
@@ -1684,6 +1704,26 @@ This tool is available in English, Japanese, and Russian.<br>
 
 <details>
     <summary>Details</summary>
+
+  ○ `2025.3.0.0 (04/03/2025 update)` <br>
+  ・ ".Net", the underlying system, was updated from version 6.0 to 9.0. <br>
+  ・ With the update of the underlying system, we have reviewed various settings to minimize what is generated in the Fall Guys Tools folder. Please delete the entire existing Fall Guys Tools folder and reinstall to clean up the files. <br>
+  ・ In the course search tool, new “Fame Info” and “Crown Info” have been added when searching for creative courses. <br>
+  ・ The GitHub support for content data, which had been supported for only some elements, is now supported for all elements. This allows access to all elements except localization, even in environments where content analysis functions are not available. <br>
+  ・ In the game rules, regarding “adopting elements specified by the creator,” the control method has been changed depending on the type of show being played. <br>
+  ・ In the event of a discrepancy in the number of cleared participants calculated on Tools, the calculated number of cleared participants is tentatively increased and the border displayed in the points round is adjusted. <br>
+  ・ When a custom code is entered and Creative Survival is played by one person, the number of people expected to clear the game on the main screen is now displayed as 0 instead of 1. <br>
+  ・ Fixed a rare issue when playing a creative round where a custom code was entered and played, the flag would not work and the default time limit and clear rate would be used. <br>
+  ・ We have addressed the issue where Tools itself freezes for a certain period of time or after communicating with the Creative API. We will monitor the situation closely for a while. <br>
+  ・ The external display of elapsed time was stopped when “Art” was included in the tag of a creative course, but the target of the stop was changed from the entire course to only the search and code search. <br>
+  ・ The external display of elapsed time was adjusted so that it can be changed to another display format from the database side, and the program was also modified. <br>
+  ・ In the course search tool, a change has been made to allow searches to be performed even if the Enter key is pressed on the text box for entering a version when searching for a creative round. <br>
+  ・ In the course search tool, the output format of the “updated time” item displayed when searching for creative rounds has been changed so that it is displayed in a format that matches the language of the computer. <br>
+  ・ The duplicate activation determination, which was done manually on the program side, has been changed to a mechanism on the infrastructure system. <br>
+  ・ More Tools-specific variables can be specified from the database, allowing more information to be displayed dynamically. <br>
+  ・ Adjustment of operation and correction of problems in some dedicated modes. <br>
+  ・ We have added support for the GitHub registry. I'm not sure if I've done it right, but I think this will make it easier to roll back to past versions. (Please note that database updates are not available for past versions. Please understand.) <br>
+  ・ We have made significant optimization of the program. We will continue our efforts in modifying and improving the readability of the program. <br>
 
   ○ `2025.2.2.0 (15/02/2025 update)` <br>
   ・ A “language switch” function has been added to the settings screen. Normally, the language is set to the language of the PC, but if this is not convenient, it can be changed separately. <br>
