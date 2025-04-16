@@ -118,6 +118,24 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2025.4.0.0 (2025/04/16 更新)` <br>
+  ・ 設定画面において、効果音の試聴ができるようにしました。 音量調整時に参考にしてください。 <br>
+  ・ Fall Guysを起動していない状態でもコンテンツアップデートの更新情報を受け取れるようにしました。 <br>
+  ・ 基盤システム更新に伴い、ロビー時のお知らせウィンドウについて正しく動作していなかった問題を修正しました。 <br>
+  ・ 誤った報酬情報を受け取ったときに表示される警告文について、全く関係ない箇所で表示されてしまう問題を修正しました。 <br>
+  ・ コース検索ツールにおいて、自動更新のチェックボックスを外していてもラウンドが読み込まれた際に、検索欄の内容が変更されてしまう問題を修正しました。 <br>
+  ・ ポイント取得ラウンドで表示される一部のテキストについて外部参照に切り替え、英語のテキストを差し替えました。 <br>
+  ・ 一部チームラウンドにおいて、ラウンド終了時に脱落してしまう旨のテキストが表示されてしまう問題を修正しました。 <br>
+  ・ vsラウンドにおいて、オーバータイム発生時に表示されるテキストに不備があった問題を修正しました。 <br>
+  ・ LAP制のクリエイティブラウンドにおいて、経過時間を表示する外部表示テキストの位置を変更しました。 <br>
+  ・ Fall Guys側でクリアしているのにAFK機能が動作することを示す警告表示についてラウンド終了時に表示を削除するようにしました。 <br>
+  ・ PlayerListにおいて、Squadの脱落後ラウンドが切り替わる前などにSquadメンバーが色分けサれなくなる問題を修正しました。 <br>
+  ・ SquadListにおいて、vsラウンドで途中抜けが発生したときに不適切な位置に色分けされたチーム情報が表示されてしまう問題を修正しました。 <br>
+  ・ クリエイティブAPIを使用する、すべての要素のプログラムの処理を変更しました。 より安定して動作するはずです。 <br>
+  ・ Squadのサバイバルラウンドにおいて、自身のチームがこのまま行くと脱落圏内に入るときに外部表示の項目に表示されるエクスクラメーションマークについて、正しく表示できていなかった問題を修正しました。 <br>
+  ・ 一部データベース側からローカライズのプログラムを取得する際、極端にToolsの動作が重くなっていた問題を修正しました。 <br>
+  ・ Toolsの機能を一部増強しました。より多くの情報が表示できるようになったToolsにご期待ください。 <br>
+
   ○ `2025.3.0.0 (2025/03/04 更新)` <br>
   ・ 基盤システムである「.Net」のバージョンを6.0から9.0にアップデートしました。 <br>
   ・ 基盤システム更新に伴い、各種設定を見直しFall Guys Toolsのフォルダに生成されるものを最小限に抑えました。 既存のFall Guys Toolsのフォルダごと削除していただき再インストールするとファイルがきれいになります。 <br>
@@ -1704,6 +1722,24 @@ This tool is available in English, Japanese, and Russian.<br>
 
 <details>
     <summary>Details</summary>
+
+  ○ `2025.4.0.0 (16/04/2025 update)` <br>
+  ・ The sound effect can now be auditioned on the settings screen. Please refer to it when adjusting the volume. <br>
+  ・ Fall Guys can now receive content update updates even when it is not running. <br>
+  ・ With the update of the infrastructure system, an issue that was not working properly regarding the notification window in the lobby has been corrected. <br>
+  ・ Fixed a problem with the warning message that appears when incorrect reward information is received, where it appears in a completely unrelated area. <br>
+  ・ Fixed a problem in the course search tool where the contents of the search field would change when a round was loaded even if the Auto Update checkbox was unchecked. <br>
+  ・ Switched to external references for some text displayed in the point acquisition round and replaced the English text. <br>
+  ・ Fixed a problem in some team rounds in which a text indicating that the team would be eliminated at the end of the round was displayed. <br>
+  ・ In vs. rounds, a problem with incomplete text displayed when overtime occurs has been corrected. <br>
+  ・ In creative rounds under the LAP system, the position of the external display text showing the elapsed time has been changed. <br>
+  ・ The warning display indicating that the AFK function operates even though it is cleared on the Fall Guys side is now removed at the end of the round. <br>
+  ・ Fixed a problem in PlayerList where Squad members were not color-coded after the Squad was eliminated and before the round was switched. <br>
+  ・ Fixed a problem in SquadList where color-coded team information was displayed in the incorrect position when a player dropped out in the middle of a vs. round. <br>
+  ・ Changed program handling of all elements that use the Creative API. It should work more stably. <br>
+  ・ In the Squad survival round, the exclamation mark that appears in the External Display item when a team is in the elimination zone if it continues, was not being displayed correctly. <br>
+  ・ Fixed a problem that caused extreme slowdown of Tools when retrieving localization programs from some database side. <br>
+  ・ We have enhanced some functions of Tools. Please look forward to Tools now being able to display more information. <br>
 
   ○ `2025.3.0.0 (04/03/2025 update)` <br>
   ・ ".Net", the underlying system, was updated from version 6.0 to 9.0. <br>
