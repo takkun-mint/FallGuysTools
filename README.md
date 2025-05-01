@@ -118,6 +118,13 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2025.5.0.0 (2025/05/01 更新)` <br>
+  ・ 同じコースを周回するLAPラウンドにおいて、周回時に暫定順位を表示するようにしました。 <br>
+  ・ 同じコースを周回するLAPラウンドにおいて、3周目以降も表示できるように調整を行いました。（チーム戦はFall Guysの仕様上実装ができません） <br>
+  ・ 設定画面において、「Toolsについて」の項目を追加しました。ゲーム内情報やToolsに関連するリンクを追加しました。 <br>
+  ・ 一部開発者モードにおいて、機能の追加を行いました。 <br>
+  ・ プログラムの最適化を行いました。プログラムの修正・可読性の向上においては引き続き取り組んでまいります。 <br>
+
   ○ `2025.4.0.0 (2025/04/16 更新)` <br>
   ・ 設定画面において、効果音の試聴ができるようにしました。 音量調整時に参考にしてください。 <br>
   ・ Fall Guysを起動していない状態でもコンテンツアップデートの更新情報を受け取れるようにしました。 <br>
@@ -1722,6 +1729,13 @@ This tool is available in English, Japanese, and Russian.<br>
 
 <details>
     <summary>Details</summary>
+
+  ○ `2025.5.0.0 (01/05/2025 update)` <br>
+  ・ In LAP rounds that go around the same course, provisional standings are now displayed during the lap. <br>
+  ・ Adjustments have been made to allow the LAP rounds around the same course to continue to be displayed after the third lap. (Team competitions cannot be implemented due to Fall Guys specifications.) <br>
+  ・ Added “About Tools” section in the settings screen. Added in-game information and links related to Tools. <br>
+  ・ Some functions have been added in the developer mode. <br>
+  ・ We have optimized the program. We will continue our efforts in modifying and improving the readability of the program. <br>
 
   ○ `2025.4.0.0 (16/04/2025 update)` <br>
   ・ The sound effect can now be auditioned on the settings screen. Please refer to it when adjusting the volume. <br>
