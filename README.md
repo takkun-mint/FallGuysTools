@@ -118,6 +118,11 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2025.5.1.0 (2025/05/05 更新)` <br>
+  ・ PCの言語を特定の地域に設定している場合、断続的にエラーが発生してしまう問題を修正しました。（コース検索ツールで発生する可能性があった要素もこのアップデートで修正されています。） <br>
+  ・ Squadのポイントラウンドにおいて、PlayerListに表示を切り替えたときスコアが順位も考慮してソートされるようシステムの変更を行いました。 <br>
+  ・ RTAモードにおいて、ファイルの暗号化システムを基盤システム更新に合わせて非推奨となっていた処理を将来的にも使える処理に変更しました。 <br>
+
   ○ `2025.5.0.0 (2025/05/01 更新)` <br>
   ・ 同じコースを周回するLAPラウンドにおいて、周回時に暫定順位を表示するようにしました。 <br>
   ・ 同じコースを周回するLAPラウンドにおいて、3周目以降も表示できるように調整を行いました。（チーム戦はFall Guysの仕様上実装ができません） <br>
@@ -1729,6 +1734,11 @@ This tool is available in English, Japanese, and Russian.<br>
 
 <details>
     <summary>Details</summary>
+
+  ○ `2025.5.1.0 (05/05/2025 update)` <br>
+  ・ Fixed an intermittent error that could occur when the PC language is set to a specific region. (Elements that could occur in the course search tool are also fixed in this update.) <br>
+  ・ In Squad point rounds, the system has been changed so that scores are sorted by rank when switching the display to PlayerList. <br>
+  ・ In RTA mode, the file encryption system has been changed from a deprecated process to a process that can be used in the future in accordance with the update of the underlying system. <br>
 
   ○ `2025.5.0.0 (01/05/2025 update)` <br>
   ・ In LAP rounds that go around the same course, provisional standings are now displayed during the lap. <br>
