@@ -118,6 +118,20 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2025.5.2.0 (2025/05/19 更新)` <br>
+  ・ 一部地域設定により、断続的にエラーが発生してしまう問題を修正しました。 <br>
+  ・ SquadListの一部設定項目が正しい値として保存されない問題を修正しました。 <br>
+  ・ Toolsのフォルダがクラウドサービスの同期対象のとき、断続的にファイル更新を行っていた処理を見直し、%temp%の活用やToolLogをロックするなど同期が行われにくくなるよう処理を変更しました。 <br>
+  ・ 光ったボタンを取り合うラウンドにおいて、光るボタンの出現数を表示できるようになりました。 <br>
+  ・ Toolsに必要な画像データの読み込みに失敗したとき、エラーとして強制アップデートを行うよう変更を行いました。 <br>
+  ・ Toolsを起動時にFall Guysを起動していない、かつコンテンツアップデートが確認されたとき、効果音が再生されなくなる問題を修正しました。 <br>
+  ・ 一部サバイバルラウンドにおいて、ラウンド終了後に脱落人数を表示する外部表示UIの数値部分に誤った値が表示されてしまう問題を修正しました。 <br>
+  ・ Toolsの独自機能が動作するラウンドにおいて、一部地域設定により小数点が正しく処理されなかった問題を修正しました。 <br>
+  ・ Toolsを起動するとき、過去のログを読み込んでいる最中にも外部表示UIが断続的に更新されてしまう問題を修正しました。 <br>
+  ・ SquadListにおいて、ラウンド途中に切断したプレイヤーの情報が適切に処理されずに本来のスコアとズレが生じてしまう問題を修正しました。 <br>
+  ・ Squadのサバイバルラウンドにおいて、理論点ベースで逆転が可能になったとき、新しいアイコンが表示されるようにしました。 <br>
+  ・ Squadのレースラウンドにおいて、ボーダー以下のチームが全滅などの理由により、1人でもゴールできればラウンド突破が確定するとアイコンとテキストでお知らせするようにしました。 <br>
+
   ○ `2025.5.1.0 (2025/05/05 更新)` <br>
   ・ PCの言語を特定の地域に設定している場合、断続的にエラーが発生してしまう問題を修正しました。（コース検索ツールで発生する可能性があった要素もこのアップデートで修正されています。） <br>
   ・ Squadのポイントラウンドにおいて、PlayerListに表示を切り替えたときスコアが順位も考慮してソートされるようシステムの変更を行いました。 <br>
@@ -1734,6 +1748,20 @@ This tool is available in English, Japanese, and Russian.<br>
 
 <details>
     <summary>Details</summary>
+
+  ○ `2025.5.2.0 (19/05/2025 update)` <br>
+  ・ Fixed a problem that caused intermittent errors due to some regional settings. <br>
+  ・ Fixed a problem in which some setting items in SquadList were not saved as correct values. <br>
+  ・ When the Tools folder is subject to synchronization with cloud services, the process of intermittently updating files has been reviewed, and the process has been changed to prevent synchronization by utilizing %temp% and locking ToolLog. <br>
+  ・ The number of glowing buttons can now be displayed in rounds in which players compete for the glowing buttons. <br>
+  ・ When Tools fails to load the necessary image data, an error message is displayed and a forced update is performed. <br>
+  ・ Fixed an issue where sound effects would not play if Fall Guys was not running when Tools was launched and a content update was confirmed. <br>
+  ・ In some survival rounds, the wrong value was displayed in the numerical part of the external display UI that shows the number of people eliminated after the end of the round. <br>
+  ・ Fixed a problem in which decimal points were not handled correctly by some regional settings in rounds in which Tools' proprietary functions were operating. <br>
+  ・ Fixed a problem that caused the external display UI to refresh intermittently when launching Tools, even while reading past logs. <br>
+  ・ Fixed a problem in SquadList where information on players who disconnected in the middle of a round was not properly handled, resulting in discrepancies between the original score and the player's score. <br>
+  ・ In the Squad survival round, a new icon is now displayed when a reversal is possible on a theoretical point basis. <br>
+  ・ In the Squad race rounds, if a team below the border is eliminated or for some other reason, if one person is able to finish the race, the icon and text will notify the team that the round is through. <br>
 
   ○ `2025.5.1.0 (05/05/2025 update)` <br>
   ・ Fixed an intermittent error that could occur when the PC language is set to a specific region. (Elements that could occur in the course search tool are also fixed in this update.) <br>
