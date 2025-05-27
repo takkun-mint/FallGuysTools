@@ -118,6 +118,17 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2025.5.3.0 (2025/05/27 更新)` <br>
+  ・ マッチメイキング中に一部効果音が誤って再生されてしまう問題について、追加の対応策を講じました。 <br>
+  ・ ポイントラウンドでかつ、外部表示に自身の経過時間が表示されるラウンドにおいて、演出中にBorder表示（Margin）が表示される問題を修正しました。 <br>
+  ・ 外部表示に自身の経過時間が表示されるラウンドにおいて、演出中にラウンドが終了しても一定時間はゴールタイムを表示するように変更しました。 <br>
+  ・ データベースからの指定できるTools独自の変数を増やし、より多くの情報を動的に表示できるようにしました。 <br>
+  ・ データベースからゲーム開始前に表示するテキストを追加し、一部ラウンドに機能を盛り込みました。 <br>
+  ・ 一部ラウンドにおいて、新機能を追加しました。しかし暫くは機能メンテナンスを行い調整を行った後に正式に公開させていただきます。 <br>
+  ・ 名前が似てしまった別のFG Toolsにおいて、使用してもエラーが発生しにくいよう調整を行い、ラウンド終了のログを読み取れるようにしました。今後も調整を続けます。 <br>
+  ・ ここに記載するまでもない軽微すぎるバグを幾つか修正しました。 <br>
+  ・ 一部プログラムの最適化を行いました。 <br>
+
   ○ `2025.5.2.0 (2025/05/19 更新)` <br>
   ・ 一部地域設定により、断続的にエラーが発生してしまう問題を修正しました。 <br>
   ・ SquadListの一部設定項目が正しい値として保存されない問題を修正しました。 <br>
@@ -1748,6 +1759,17 @@ This tool is available in English, Japanese, and Russian.<br>
 
 <details>
     <summary>Details</summary>
+
+  ○ `2025.5.3.0 (27/05/2025 update)` <br>
+  ・ Additional measures have been taken to address the issue of some sound effects being played incorrectly during matchmaking. <br>
+  ・ Fixed a problem in which the Border display (margin) was displayed during the performance of a point round and in a round in which the external display shows the player's elapsed time. <br>
+  ・ In rounds where the external display shows the own elapsed time, the goal time is now displayed for a certain period of time even if the round ends during the performance. <br>
+  ・ More Tools-specific variables can be specified from the database, allowing more information to be displayed dynamically. <br>
+  ・ Added text to be displayed before the game starts from the database and included features in some rounds. <br>
+  ・ New features have been added in some rounds. However, for the time being, we will officially release the new features after performing functional maintenance and making adjustments. <br>
+  ・ In another FG Tools that has a similar name, we have made adjustments to make it less error prone to use and to be able to read the log of the end of the round. We will continue to make adjustments. <br>
+  ・ We have fixed several bugs that are too minor to mention here. <br>
+  ・ Some program optimizations were made. <br>
 
   ○ `2025.5.2.0 (19/05/2025 update)` <br>
   ・ Fixed a problem that caused intermittent errors due to some regional settings. <br>
