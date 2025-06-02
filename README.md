@@ -118,6 +118,14 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2025.6.0.0 (2025/06/02 更新)` <br>
+  ・ カスタムゲームの新マッチメイキング要素を取り入れました。 アルゴリズムが難しいため、数バージョンをかけて対応していきます。今回はベース部分を構築しました。 <br>
+  ・ 一部カスタムゲームをプレイ後、Toolsがラウンド情報やプレイヤー情報を処理してくれなくなる問題を修正しました。 <br>
+  ・ Toolsの独自機能が作用するラウンドにおいて、より専門性が高い表示ができるようラウンド設定における内部システムの変更を行いました。 <br>
+  ・ コース検索ツールにおいて、Unityラウンドのサムネイル取得に失敗したとき、検索ボタンがグレーアウトしてしまい検索機能が使えなくなったり、自動更新にチェックがついているとラウンド読み込み時にToolsがスタックしてしまう問題を修正しました。 <br>
+  ・ 本来サーバーとの通信が切断された状態でラウンド読み込み画面に突入したときに表示される「強制終了ボタン」を出現させる条件が間違っていることで、動かなくなっていた問題を修正しました。 <br>
+  ・ 前回バージョンで告知したけど機能メンテナンスを行っている新機能について、プログラム上で条件が間違っていた問題を修正しました。 現在もゲーム側のアルゴリズムの把握に時間を要しており、調査が完了次第機能メンテナンス状態を解除させていただきます。 <br>
+
   ○ `2025.5.3.0 (2025/05/27 更新)` <br>
   ・ マッチメイキング中に一部効果音が誤って再生されてしまう問題について、追加の対応策を講じました。 <br>
   ・ ポイントラウンドでかつ、外部表示に自身の経過時間が表示されるラウンドにおいて、演出中にBorder表示（Margin）が表示される問題を修正しました。 <br>
@@ -1759,6 +1767,14 @@ This tool is available in English, Japanese, and Russian.<br>
 
 <details>
     <summary>Details</summary>
+
+  ○ `2025.6.0.0 (02/06/2025 update)` <br>
+  ・ We have incorporated a new matchmaking element for custom games. Due to the difficulty in understanding the algorithm, we will be working on several versions of this project. This time we built the base part. <br>
+  ・ Fixed a problem where Tools would not process round and player information after playing some custom games. <br>
+  ・ The internal system in the round settings has been changed to provide a more specialized display in the rounds where Tools' unique functions are in effect. <br>
+  ・ Fixed a problem in the Course Search tool where the search button would be grayed out and the search function would not work when the Unity round thumbnail acquisition failed, and Tools would get stuck when loading a round if auto-update was checked. <br>
+  ・ Fixed a problem in which the “force close button” that appears when entering the round loading screen while communication with the server is originally disconnected was stuck due to incorrect conditions for it to appear. <br>
+  ・ We have corrected a problem with a new feature that was announced in the previous version but is under functional maintenance, which had an incorrect condition in the program. We are still taking time to understand the algorithm on the game side and will lift the feature maintenance status as soon as the investigation is completed. <br>
 
   ○ `2025.5.3.0 (27/05/2025 update)` <br>
   ・ Additional measures have been taken to address the issue of some sound effects being played incorrectly during matchmaking. <br>
