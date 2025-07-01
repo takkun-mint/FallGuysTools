@@ -118,6 +118,17 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2025.7.0.0 (2025/07/01 更新)` <br>
+  ・ 運営がBGMの指定ミスにより再生されない一部のラウンドにおいて、Tools側でBGMを再生できる機能を追加しました。 <br>
+  ・ 前回追加したカスタムゲームの新マッチメイキング要素について、より安定性を高める処理を行いました。 <br>
+  ・ 光るボタンを取り合うラウンドにおいて、ボタンを最小数が決まっているという報告を受け正しいボタン数が表示されるよう調整を行いました。 <br>
+  ・ コース検索ツールにおいて、Tools起動後から何も検索がされていない状態で自動更新が有効になっているのにもかかわらず、自動更新が行われない問題を修正しました。 <br>
+  ・ 設定画面においてSave/Loadを押したあと、画面が閉じるまでにタイムラグが生じる問題を修正しました。 <br>
+  ・ Tools起動時に言語設定に関するエラーが発生してしまうことがある問題を修正しました。 <br>
+  ・ 設定画面「Toolsについて」において、関連リンクの画像にカーソルをホバーしても説明文が表示されない問題を修正しました。 <br>
+  ・ タイムアタックのモードにおいて、メイン画面に経過時間の表示を削除しておりましたが、再度表示するよう変更しました。 <br>
+  ・ 一部専用モードの設定・機能を変更/アップデートを行いました。 <br>
+
   ○ `2025.6.0.0 (2025/06/02 更新)` <br>
   ・ カスタムゲームの新マッチメイキング要素を取り入れました。 アルゴリズムが難しいため、数バージョンをかけて対応していきます。今回はベース部分を構築しました。 <br>
   ・ 一部カスタムゲームをプレイ後、Toolsがラウンド情報やプレイヤー情報を処理してくれなくなる問題を修正しました。 <br>
@@ -1767,6 +1778,17 @@ This tool is available in English, Japanese, and Russian.<br>
 
 <details>
     <summary>Details</summary>
+
+  ○ `2025.7.0.0 (01/07/2025 update)` <br>
+  ・ Added the ability for Tools to play BGM in some rounds where the BGM is not played due to an error in specifying the BGM by the management. <br>
+  ・ The new matchmaking element of the custom game added in the last issue has been processed to make it more stable. <br>
+  ・ In the round of fighting for the glowing button, we have received a report that the minimum number of buttons is fixed and have adjusted the display to show the correct number of buttons. <br>
+  ・ Fixed a problem in the course search tool where automatic updates were not performed even though automatic updates were enabled when no searches have been performed since Tools was started. <br>
+  ・ Fixed a problem that caused a time lag before the screen closed after Save/Load was pressed in the settings screen. <br>
+  ・ Fixed an issue that could cause an error regarding language settings when starting Tools. <br>
+  ・ In the “About Tools” settings screen, an issue has been corrected in which the description text is not displayed when hovering the cursor over the image of a related link. <br>
+  ・ In the Time Attack mode, the elapsed time display was removed from the main screen, but it is now displayed again. <br>
+  ・ Settings and functions of some dedicated modes have been changed/updated. <br>
 
   ○ `2025.6.0.0 (02/06/2025 update)` <br>
   ・ We have incorporated a new matchmaking element for custom games. Due to the difficulty in understanding the algorithm, we will be working on several versions of this project. This time we built the base part. <br>
