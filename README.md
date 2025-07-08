@@ -118,6 +118,13 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2025.7.1.0 (2025/07/08 更新)` <br>
+  ・ 制作者オリジナルのファイルサーバーを構築し、Google Driveから本格的に移行を行いました。 Tools専用のファイルをダウンロードするときのパフォーマンスが大きく向上しました。 <br>
+      （制作者のファイルサーバーと正しく通信ができない場合に限り、Google Driveをフォールバックとして採用します。） <br>
+  ・ PINGを外部表示している時、Pingのステータスに応じてアイコンが変化するようにしました。間接視野越しでネットワークの不調が分かりやすく表示されるようにしました。 <br>
+  ・ 一部ラウンドにおいて、プレイヤーに対し留意すべきポイントを表示できるようになりました。 <br>
+  ・ Discord RPCにおいて、「マッチメイク中...」というステータス表示に対応しました。 <br>
+
   ○ `2025.7.0.0 (2025/07/01 更新)` <br>
   ・ 運営がBGMの指定ミスにより再生されない一部のラウンドにおいて、Tools側でBGMを再生できる機能を追加しました。 <br>
   ・ 前回追加したカスタムゲームの新マッチメイキング要素について、より安定性を高める処理を行いました。 <br>
@@ -1778,6 +1785,13 @@ This tool is available in English, Japanese, and Russian.<br>
 
 <details>
     <summary>Details</summary>
+
+  ○ `2025.7.1.0 (2025/07/08 update)` <br>
+  ・ We built the creator's original file server and made a full-scale migration from Google Drive. Performance when downloading Tools-only files was greatly improved. <br>
+      (Google Drive will be employed as a fallback only in cases where proper communication with the creator's file server is not possible.) <br>
+  ・ When ping is displayed externally, the icon now changes according to the ping status. Network malfunctions are now displayed clearly through the indirect view. <br>
+  ・ In some rounds, points to keep in mind for players can now be displayed. <br>
+  ・ In Discord RPC, the status “Matchmaking in progress...” is now supported. status display in Discord RPC. <br>
 
   ○ `2025.7.0.0 (01/07/2025 update)` <br>
   ・ Added the ability for Tools to play BGM in some rounds where the BGM is not played due to an error in specifying the BGM by the management. <br>
