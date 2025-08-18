@@ -118,6 +118,18 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2025.8.0.0 (2025/08/19 更新)` <br>
+  ・ ラウンド開始前にそのラウンドのクリア人数・及び制限時間について留意する必要があるゲームにアラートを表示できるようにしました。 <br>
+  ・ ポイントラウンドにおいて、クリアボーダーとの差がない場合は「±0」と表示されるようにしました。 <br>
+  ・ プログラムにおいて、プログラムに直接記入していた数々のローカライズ関連のテキストをデータベースより移管し、ローカライズの調整を行いました。 <br>
+  ・ 運営によるラウンド設定が不適切なラウンドをロードした際、Tools側で想定していない動作となっていた問題を修正しました。 <br>
+  ・ ラウンド中、メインウィンドウに表示される残り時間タイマーが更新されない場合がある問題を修正しました。 <br>
+  ・ 外部表示されるPINGの表示について、PINGの大きさに合わせ色やアイコンで通信品質の低下を視覚的に分かりやすくする調整を行いました。 <br>
+  ・ コース検索ツールにおいて、検索中のフラグ管理を見直し、より効率よく操作できるよう調整を行いました。 <br>
+  ・ 一部ラウンドにおいて、外部表示テキストが表示終了後すぐに本の表示に戻らないことがある問題を修正しました。 <br>
+  ・ 一部ラウンドにおいて、制限時間を表示しながらラウンドの経過時間両方を表示できるようにしました。 <br>
+  ・ 外部表示関連が一部飛び出していた問題を現認したため、サイズを調整しました。 <br>
+
   ○ `2025.7.1.0 (2025/07/08 更新)` <br>
   ・ 制作者オリジナルのファイルサーバーを構築し、Google Driveから本格的に移行を行いました。 Tools専用のファイルをダウンロードするときのパフォーマンスが大きく向上しました。 <br>
       （制作者のファイルサーバーと正しく通信ができない場合に限り、Google Driveをフォールバックとして採用します。） <br>
@@ -1786,7 +1798,19 @@ This tool is available in English, Japanese, and Russian.<br>
 <details>
     <summary>Details</summary>
 
-  ○ `2025.7.1.0 (2025/07/08 update)` <br>
+  ○ `2025.8.0.0 (19/08/2025 update)` <br>
+  ・ We have added an alert feature for games that require players to be aware of the number of players who have cleared the round and the time limit before the round begins. <br>
+  ・ In the point round, if there is no difference with the clear border, it will be displayed as “±0”. <br>
+  ・ In the program, we transferred numerous localization-related texts that had been entered directly into the program to a database and made localization adjustments. <br>
+  ・ Fixed an issue where loading a round with inappropriate round settings by the operator would cause unexpected behavior on the Tools side. <br>
+  ・ Fixed an issue where the remaining time timer displayed in the main window during a round would not update. <br>
+  ・ We have made adjustments to the external display of PING to make it easier to visually understand the deterioration in communication quality by using colors and icons that correspond to the size of the PING. <br>
+  ・ We have revised the search flag management in the course search tool and made adjustments to make it more efficient to use. <br>
+  ・ Fixed an issue where, in some rounds, the external display text would not return to the book display immediately after it finished displaying. <br>
+  ・ In some rounds, we have made it possible to display both the time limit and the elapsed time for the round. <br>
+  ・ We adjusted the size because we noticed that some of the external display was sticking out. <br>
+
+  ○ `2025.7.1.0 (08/07/2025 update)` <br>
   ・ We built the creator's original file server and made a full-scale migration from Google Drive. Performance when downloading Tools-only files was greatly improved. <br>
       (Google Drive will be employed as a fallback only in cases where proper communication with the creator's file server is not possible.) <br>
   ・ When ping is displayed externally, the icon now changes according to the ping status. Network malfunctions are now displayed clearly through the indirect view. <br>
