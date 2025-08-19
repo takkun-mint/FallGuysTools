@@ -120,7 +120,7 @@ This tool is available in English, Japanese, and Russian.<br>
 
   ○ `2025.8.0.0 (2025/08/19 更新)` <br>
   ・ ラウンド開始前にそのラウンドのクリア人数・及び制限時間について留意する必要があるゲームにアラートを表示できるようにしました。 <br>
-  ・ ポイントラウンドにおいて、クリアボーダーとの差がない場合は「±0」と表示されるようにしました。 <br>
+  ・ ポイントやスクワッドのサバイバルラウンドにおいて、クリアボーダーとの差がない場合は「±0」と表示されるようにしました。 <br>
   ・ プログラムにおいて、プログラムに直接記入していた数々のローカライズ関連のテキストをデータベースより移管し、ローカライズの調整を行いました。 <br>
   ・ 運営によるラウンド設定が不適切なラウンドをロードした際、Tools側で想定していない動作となっていた問題を修正しました。 <br>
   ・ ラウンド中、メインウィンドウに表示される残り時間タイマーが更新されない場合がある問題を修正しました。 <br>
@@ -1800,7 +1800,7 @@ This tool is available in English, Japanese, and Russian.<br>
 
   ○ `2025.8.0.0 (19/08/2025 update)` <br>
   ・ We have added an alert feature for games that require players to be aware of the number of players who have cleared the round and the time limit before the round begins. <br>
-  ・ In the point round, if there is no difference with the clear border, it will be displayed as “±0”. <br>
+  ・ In survival rounds for points and squads, if there is no difference from the clear border, it will be displayed as “±0.”  <br>
   ・ In the program, we transferred numerous localization-related texts that had been entered directly into the program to a database and made localization adjustments. <br>
   ・ Fixed an issue where loading a round with inappropriate round settings by the operator would cause unexpected behavior on the Tools side. <br>
   ・ Fixed an issue where the remaining time timer displayed in the main window during a round would not update. <br>
