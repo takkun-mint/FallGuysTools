@@ -118,6 +118,17 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2025.9.0.0 (2025/09/23 更新)` <br>
+  ・ Tools側でBGMやイントロサウンドを代替して再生するプログラムにおいて、oggなどのループ音源に対応した再生ができるようにしました。 <br>
+  ・ クリエイティブAPIとの通信に関して大きく仕様を変更しました。Fall Guys DBなど通信が行えなかった要素に対しても正しく通信ができるようになりました。 <br>
+  ・ Tools起動直後の初回読み込みについて、読み込み中に必要ないサーバー通信を行おうとして処理速度が低下していた問題を修正しました。 <br>
+  ・ 一部レースラウンドにおいて、ゲーム上のクリア人数表示をオーバーライドする処理について許容値を調整しました。 <br>
+  ・ 探索モードにおいて、LAPS指定されているラウンドでマッチメイキングを解除するとLAPSの表示が消えてしまうことがある問題を修正しました。 <br>
+  ・ ラウンド終了条件を確認するフラグについて、不適切な値の上書きがあった問題を修正しました。 <br>
+  ・ PlayerListのTIMEの欄に経過時間を表示するプログラムにおいて、稀にエラーが発生することがある問題を修正しました。 <br>
+  ・ コース検索ツールにおいて、一部エラーメッセージが正しく表示されず汎用のテキストが表示されていた問題を修正しました。 <br>
+  ・ その他プログラムの最適化を行いました。 <br>
+
   ○ `2025.8.0.0 (2025/08/19 更新)` <br>
   ・ ラウンド開始前にそのラウンドのクリア人数・及び制限時間について留意する必要があるゲームにアラートを表示できるようにしました。 <br>
   ・ ポイントやスクワッドのサバイバルラウンドにおいて、クリアボーダーとの差がない場合は「±0」と表示されるようにしました。 <br>
@@ -1797,6 +1808,17 @@ This tool is available in English, Japanese, and Russian.<br>
 
 <details>
     <summary>Details</summary>
+
+  ○ `2025.9.0.0 (23/09/2025 update)` <br>
+  ・ The Tools side has implemented support for playing looping audio sources like OGG files in programs that replace and play BGM or intro sounds. <br>
+  ・ We've made significant changes to the communication specifications with the Creative API. This now enables proper communication even with elements that previously couldn't connect, such as the Fall Guys DB. <br>
+  ・ We have fixed an issue where Tools experienced a slowdown in processing speed during its initial load immediately after startup, due to attempting unnecessary server communication during the loading process. <br>
+  ・ We have adjusted the tolerance for the process that overrides the in-game clear count display during certain race rounds. <br>
+  ・ Fixed an issue where the LAPS indicator would sometimes disappear when matchmaking was disabled during a round designated as LAPS in Explore Mode. <br>
+  ・ We fixed an issue where an inappropriate value was overwritten for the flag that checks the round end condition. <br>
+  ・ We have fixed an issue where errors occasionally occurred in the program that displays elapsed time in the TIME column of PlayerList. <br>
+  ・ We have fixed an issue where some error messages were not displayed correctly in the course search tool, instead showing generic text. <br>
+  ・ Other program optimizations have been performed. <br>
 
   ○ `2025.8.0.0 (19/08/2025 update)` <br>
   ・ We have added an alert feature for games that require players to be aware of the number of players who have cleared the round and the time limit before the round begins. <br>
