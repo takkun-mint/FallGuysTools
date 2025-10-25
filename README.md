@@ -118,6 +118,28 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2025.10.0.0 (2025/10/25 更新)` <br>
+  ・ 一部最大ラウンド数が定められているゲームにおいて、TextA,Bに「ラウンド情報」を表示していると、現在のラウンド数と最大ラウンド数の両方が表示されるようにしました。 <br>
+  ・ カスタムやディスカバーからゲームを開始すると、クリエイティブラウンドの情報取得に失敗してしまう問題を修正しました。 <br>
+  ・ PCの時刻設定において、「午前/午後」などの12時間表記にしていると一部の地域においてToolsが正常に動作しない問題を修正しました。 <br>
+  ・ コンテンツアップデートがあるかどうかを確認しているサーバーの更新が止まっているときにデータベース上で機能停止や取得先を変更できるよう調整を行いました。 <br>
+  ・ 設定画面で外部表示の自動調整をOFFにしているとき、表示の位置を確認するボタンを押すと毎回位置が初期化されてしまう問題を修正しました。 <br>
+  ・ Fall Guysの起動が確認できなかった場合でもゲームの起動待ちとしてLoadingアイコンが表示されたままになる問題を修正しました。 <br>
+  ・ マッチメイキング中のステータス「プレイヤー待機」において、正しくカウントダウンが始まらない問題を修正しました。 <br>
+  ・ ディスカバーでクリエイティブを遊んだとき、よりスヌーズに進行できるようクリエイティブAPIとの通信タイミングを調整しました。 <br>
+  ・ カスタムやディスカバーでプレイするとき、サーバー接続がタイムアウトしたときに効果音と失敗した旨のテキストを表示するようにしました。 <br>
+  ・ カスタムやディスカバーでプレイするとき、サーバーへの接続タイムアウトまでのカウントダウンが全く表示されないか表示されたままになってしまう問題を修正しました。 <br>
+  ・ キャンディードロボーシステムにおいて、バグにより正常に動作していなかった問題を修正しました。 <br>
+  ・ キャンディードロボーシステムにおいて、1秒経過するたびに画面上部のテキストが点滅してしまう問題を修正しました。 <br>
+  ・ Toolsデータベースの大幅な仕様変更にあわせ、プログラム側でも調整を行いました。 <br>
+  ・ Tools独自のテキストが表示されるラウンドにおいて、より柔軟な取扱ができるようプログラムを調整しました。 <br>
+  ・ Tools独自のテキストが表示されるラウンドにおいて、実用上には支障がなかったものの例外が発生してしまう箇所について修正を行いました。 <br>
+  ・ コース検索ツールにおいて、Tools起動直後で検索が安定しない問題を修正しました。 <br>
+  ・ コース検索ツールにおいて、クリエイティブラウンドを検索したとき、制限時間やクリア率が設定できなかった時代のラウンドを検索したときに制限時間やクリア率が表示されなかった問題を修正しました。 <br>
+  ・ コース検索ツールにおいて、一部データベースから値を取得するプログラムを最適化しました。 <br>
+  ・ 外部表示の自動調整をOFFにしているとき、画面の位置によって初期化されてしまう問題を修正しました。 <br>
+  ・ データベースからの指定できるTools独自の変数を増やし、より多くの情報を動的に表示できるようにしました。 <br>
+
   ○ `2025.9.0.0 (2025/09/23 更新)` <br>
   ・ Tools側でBGMやイントロサウンドを代替して再生するプログラムにおいて、oggなどのループ音源に対応した再生ができるようにしました。 <br>
   ・ クリエイティブAPIとの通信に関して大きく仕様を変更しました。Fall Guys DBなど通信が行えなかった要素に対しても正しく通信ができるようになりました。 <br>
@@ -1808,6 +1830,28 @@ This tool is available in English, Japanese, and Russian.<br>
 
 <details>
     <summary>Details</summary>
+
+  ○ `2025.10.0.0 (25/10/2025 update)` <br>
+  ・ In games where a maximum round count is set, when displaying “Round Information” in TextA or TextB, both the current round count and the maximum round count are now shown. <br>
+  ・ Fixed an issue where launching the game from Custom or Discover would fail to retrieve information for the Creative round. <br>
+  ・ We have fixed an issue where Tools would not function properly in certain regions when the PC's time setting was configured to a 12-hour format such as AM/PM. <br>
+  ・ We have made adjustments to allow for functional suspension or source changes on the database when server updates checking for content updates are halted. <br>
+  ・ We have fixed an issue where pressing the button to check the display position would reset the position every time when automatic adjustment for external displays was turned off in the settings screen. <br>
+  ・ We have fixed an issue where the loading icon would remain displayed as if waiting for the game to launch, even when Fall Guys could not be started. <br>
+  ・ Fixed an issue where the countdown did not start correctly during the “Player Waiting” status in matchmaking. <br>
+  ・ When playing with Creatives in Discover, we adjusted the timing of communication with the Creative API to enable smoother progression. <br>
+  ・ When playing in Custom or Discover modes, we've added sound effects and a failure message to display when the server connection times out. <br>
+  ・ Fixed an issue where the countdown to the server connection timeout would either not appear at all or remain displayed when playing in Custom or Discover modes. <br>
+  ・ We have fixed an issue in the Sweet Thieves System where it was not functioning properly due to a bug. <br>
+  ・ We have fixed an issue in the Sweet Thieves system where text at the top of the screen would flash every second. <br>
+  ・ In response to significant specification changes in the Tools database, adjustments were also made on the program side. <br>
+  ・ We have adjusted the program to allow for more flexible handling during rounds where Tools displays its own text. <br>
+  ・ We have made corrections to areas where exceptions occurred during rounds displaying Tools' unique text, even though they did not cause practical issues. <br>
+  ・ We have fixed an issue where searches were unstable immediately after launching the Tools in the Course Search Tool. <br>
+  ・ We have fixed an issue in the Course Search Tool where time limits and clear rates were not displayed when searching for rounds created before time limits and clear rates were implemented. <br>
+  ・ We optimized the program that retrieves values from certain databases within the course search tool. <br>
+  ・ Fixed an issue where the display would reset depending on the screen position when automatic external display adjustment was turned off. <br>
+  ・ We have increased the number of Tools-specific variables that can be specified from the database, enabling the dynamic display of more information. <br>
 
   ○ `2025.9.0.0 (23/09/2025 update)` <br>
   ・ The Tools side has implemented support for playing looping audio sources like OGG files in programs that replace and play BGM or intro sounds. <br>
