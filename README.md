@@ -118,6 +118,13 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2026.5.0.0 (2026/05/18 更新)` <br>
+  ・ 一部ラウンド終了時にサウンドが断続的に再生されることがある問題を修正しました。 <br>
+  ・ 最大ラウンド数が定められているゲームにおける、プログラムの処理を見直しました。 <br>
+  ・ ポイント取得ラウンドで現在のスコアが100点を超えているときに脱落圏内にいると表示されるアイコンが左方向にズレ続けてしまう問題を修正しました。 <br>
+  ・ スクワッドのサバイバルラウンドで、現在脱落圏内にいる状態で進出圏内に進める可能性が出たときに表示される専用のアイコンと脱落圏内を示すアイコンが同時に表示されてしまい正しいステータスを把握できない問題を修正しました。 <br>
+  ・ クリエイティブAPIのタイムアウト時間を設定しました。 <br>
+
   ○ `2025.10.0.0 (2025/10/25 更新)` <br>
   ・ 一部最大ラウンド数が定められているゲームにおいて、TextA,Bに「ラウンド情報」を表示していると、現在のラウンド数と最大ラウンド数の両方が表示されるようにしました。 <br>
   ・ カスタムやディスカバーからゲームを開始すると、クリエイティブラウンドの情報取得に失敗してしまう問題を修正しました。 <br>
@@ -1830,6 +1837,13 @@ This tool is available in English, Japanese, and Russian.<br>
 
 <details>
     <summary>Details</summary>
+
+○ `2026.5.0.0 (18/05/2026 update)` <br>
+  ・ Fixed an issue where sound would play intermittently at the end of some rounds. <br>
+  ・ Revised the program processing for games with a set maximum number of rounds. <br>
+  ・ Fixed an issue where the icon indicating that a player is in the elimination zone would continue to shift to the left when the current score exceeded 100 points during a point-scoring round. <br>
+  ・ Fixed an issue in squad survival rounds where the dedicated icon for potentially advancing while currently in the elimination zone would display at the same time as the elimination zone icon, preventing the correct status from being understood. <br>
+  ・ Set a timeout duration for the Creative API. <br>
 
   ○ `2025.10.0.0 (25/10/2025 update)` <br>
   ・ In games where a maximum round count is set, when displaying “Round Information” in TextA or TextB, both the current round count and the maximum round count are now shown. <br>
