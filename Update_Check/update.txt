@@ -1,3 +1,3 @@
 Ver: {2026.6.0.0}
-Fourced = False
+Fourced = True
 HideVersion = False

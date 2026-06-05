@@ -1850,7 +1850,7 @@ This tool is available in English, Japanese, and Russian.<br>
   ・ Adjusted sound effect-related systems in conjunction with the replacement of the sound effect system. <br>
   ・ Fixed an issue with Discord RPC (status display) where the remaining player count from the previous game was displayed before the game started, and added a "Before Start" status. <br>
   ・ Fixed an issue with Discord RPC (status display) where the icon from the previous stage would continue to be displayed while waiting for the next round (e.g., displaying the Round 2 icon while waiting for Round 3). <br>
-  ・ Updated Discord RPC (status display) so that it no longer displays "Final" when playing Creative rounds in Explore mode or by entering a custom code.
+  ・ Updated Discord RPC (status display) so that it no longer displays "Final" when playing Creative rounds in Explore mode or by entering a custom code. <br>
 
 ○ `2026.5.0.0 (18/05/2026 update)` <br>
   ・ Fixed an issue where sound would play intermittently at the end of some rounds. <br>
