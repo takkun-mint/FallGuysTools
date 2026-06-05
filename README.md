@@ -118,6 +118,13 @@ This tool is available in English, Japanese, and Russian.<br>
   <details>
     <summary>詳細を表示</summary>
 
+  ○ `2026.6.0.0 (2026/06/05 更新)` <br>
+  ・ 効果音再生に使っているシステムを全て新しいシステムに差し替えました。 <br>
+  ・ 効果音システム差し替えに伴い、効果音に関するシステムを調整しました。 <br>
+  ・ Discord RPC（ステータス表示）に関して、ゲーム開始前に前回のゲームの残り人数が表示されていた問題を修正し、「開始前」というステータスを追加しました。 <br>
+  ・ Discord RPC（ステータス表示）に関して、次のラウンドを待機している際に一つ前のステージのアイコンが表示され続ける問題を修正しました。（例: ラウンド3を待機中と表示していながら、ラウンド2のアイコンが表示されていた） <br>
+  ・ Discord RPC（ステータス表示）について、自由探索モードやカスタムでコードを入力してクリエイティブラウンドをプレイした際「ファイナル」と表示されないようにしました。 <br>
+
   ○ `2026.5.0.0 (2026/05/18 更新)` <br>
   ・ 一部ラウンド終了時にサウンドが断続的に再生されることがある問題を修正しました。 <br>
   ・ 最大ラウンド数が定められているゲームにおける、プログラムの処理を見直しました。 <br>
@@ -1837,6 +1844,13 @@ This tool is available in English, Japanese, and Russian.<br>
 
 <details>
     <summary>Details</summary>
+
+○ `2026.6.0.0 (2026/06/05 update)` <br>
+  ・ Replaced all systems used for sound effect playback with a new system. <br>
+  ・ Adjusted sound effect-related systems in conjunction with the replacement of the sound effect system. <br>
+  ・ Fixed an issue with Discord RPC (status display) where the remaining player count from the previous game was displayed before the game started, and added a "Before Start" status. <br>
+  ・ Fixed an issue with Discord RPC (status display) where the icon from the previous stage would continue to be displayed while waiting for the next round (e.g., displaying the Round 2 icon while waiting for Round 3). <br>
+  ・ Updated Discord RPC (status display) so that it no longer displays "Final" when playing Creative rounds in Explore mode or by entering a custom code.
 
 ○ `2026.5.0.0 (18/05/2026 update)` <br>
   ・ Fixed an issue where sound would play intermittently at the end of some rounds. <br>
